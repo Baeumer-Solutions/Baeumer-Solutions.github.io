@@ -1,12 +1,9 @@
-# Decap CMS Konfiguration
-# OWNER/REPO in der gemeinsamen Sitzung eintragen, plus OAuth (siehe README).
+# Sveltia CMS Konfiguration (Decap-kompatibel)
 backend:
   name: github
-  repo: OWNER/p12-web
+  repo: Baeumer-Solutions/Baeumer-Solutions.github.io
   branch: main
-
-# Editorial Workflow: Aenderungen laufen als Pull Request (Vorschau vor Live).
-publish_mode: editorial_workflow
+  base_url: https://sveltia-cms-auth.kbaeumer832906.workers.dev
 
 media_folder: "src/assets/uploads"
 public_folder: "/assets/uploads"
