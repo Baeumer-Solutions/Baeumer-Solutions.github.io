@@ -94,7 +94,7 @@ const hub = `<!DOCTYPE html>
 <meta name="description" content="Praktische Anleitungen zur Krisenvorsorge: Notvorrat-Liste, Wasservorrat, Blackout-Vorsorge, Checkliste. Klar, ehrlich, ohne Panikmache.">
 <meta name="robots" content="index,follow"><link rel="canonical" href="${SITE}/ratgeber">
 <meta property="og:type" content="website"><meta property="og:title" content="Krisenvorsorge-Ratgeber | Protect-12">
-<meta property="og:image" content="https://cdn.prod.website-files.com/6a31544107cb9e6b141637f4/6a3266291eef41c92e1609f1_p12-og.png">
+<meta property="og:image" content="https://protect12.de/assets/og.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/p12.css">
