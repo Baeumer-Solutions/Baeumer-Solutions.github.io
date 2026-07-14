@@ -94,7 +94,7 @@ const hub = `<!DOCTYPE html>
 <meta name="description" content="Praktische Anleitungen zur Krisenvorsorge: Notvorrat-Liste, Wasservorrat, Blackout-Vorsorge, Checkliste. Klar, ehrlich, ohne Panikmache.">
 <meta name="robots" content="index,follow"><link rel="canonical" href="${SITE}/ratgeber">
 <meta property="og:type" content="website"><meta property="og:title" content="Krisenvorsorge-Ratgeber | Protect-12">
-<meta property="og:image" content="https://protect12.de/assets/og.png">
+<meta property="og:image" content="https://protect-12.de/assets/og.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/p12.css">
@@ -131,6 +131,20 @@ routes.push("/ratgeber/");
 // ---------- admin (CMS) ----------
 const adminSrc = path.join(ROOT,"admin");
 if (fs.existsSync(adminSrc)){ ensure(path.join(DIST,"admin")); for (const f of fs.readdirSync(adminSrc)) fs.copyFileSync(path.join(adminSrc,f), path.join(DIST,"admin",f)); }
+
+
+// ---------- app redirects (Fragebogen + Mitgliederbereich bleiben Webflow) ----------
+for (const rp of ["fragebogen","mein-bereich"]){
+  const target = `https://app.protect-12.de/${rp}`;
+  write(path.join(DIST,rp,"index.html"), `<!DOCTYPE html>
+<html lang="de"><head><meta charset="UTF-8">
+<meta name="robots" content="noindex,nofollow">
+<title>Einen Moment, Sie werden weitergeleitet | Protect-12</title>
+<script>location.replace("${target}"+location.search+location.hash);</script>
+<meta http-equiv="refresh" content="2;url=${target}">
+<style>body{font-family:Montserrat,Arial,sans-serif;background:#1B2430;color:#fff;display:flex;align-items:center;justify-content:center;height:100vh;margin:0}a{color:#fff}</style>
+</head><body><p>Einen Moment, Sie werden weitergeleitet &hellip;<br><a href="${target}">Hier klicken, falls nichts passiert.</a></p></body></html>`);
+}
 
 // ---------- sitemap + robots + CNAME ----------
 const uniq = [...new Set(routes)];
