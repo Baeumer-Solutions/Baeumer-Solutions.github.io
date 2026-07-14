@@ -1,0 +1,31 @@
+# Decap CMS Konfiguration
+# OWNER/REPO in der gemeinsamen Sitzung eintragen, plus OAuth (siehe README).
+backend:
+  name: github
+  repo: OWNER/p12-web
+  branch: main
+
+# Editorial Workflow: Aenderungen laufen als Pull Request (Vorschau vor Live).
+publish_mode: editorial_workflow
+
+media_folder: "src/assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "ratgeber"
+    label: "Ratgeber-Artikel"
+    folder: "content/ratgeber"
+    create: true
+    slug: "{{fields.slug}}"
+    extension: "md"
+    fields:
+      - { name: "title", label: "SEO-Titel (mit | Protect-12)", widget: "string" }
+      - { name: "description", label: "SEO-Beschreibung (unter 155 Zeichen)", widget: "text" }
+      - { name: "slug", label: "URL-Kuerzel (z.B. notvorrat-anlegen)", widget: "string" }
+      - { name: "kicker", label: "Kicker (kleine Zeile oben)", widget: "string", default: "Ratgeber" }
+      - { name: "h1", label: "Ueberschrift (H1)", widget: "string" }
+      - { name: "lead", label: "Einleitung (Lead)", widget: "text" }
+      - { name: "date", label: "Datum", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+      - { name: "order", label: "Reihenfolge im Hub (1 = oben)", widget: "number", default: 10, value_type: "int" }
+      - { name: "draft", label: "Entwurf (nicht veroeffentlichen)", widget: "boolean", default: false }
+      - { name: "body", label: "Inhalt", widget: "markdown" }
