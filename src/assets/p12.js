@@ -11,8 +11,8 @@
 
   /* Make-Webhooks. Beim Deploy bestaetigen/ersetzen (Kontakt-Hook aus altem Live-Bundle als Default). */
   var P12_HOOKS = {
-    contact:   "https://hook.eu2.make.com/eqbua98cd14jyhwlov7nach5wa8kyo14",
-    community: "https://hook.eu2.make.com/eqbua98cd14jyhwlov7nach5wa8kyo14"
+    contact:   "https://hook.eu2.make.com/i44tx5i2o9okgqib6fh4cl239an2jdd7",
+    community: "https://hook.eu2.make.com/i44tx5i2o9okgqib6fh4cl239an2jdd7"
   };
 
   var MAILTO_CONTACT = "mailto:"+MAIL+"?subject=Protect-12%20Gespr%C3%A4ch%20vereinbaren&body="+
@@ -151,13 +151,15 @@
     form.addEventListener("submit", function(ev){
       ev.preventDefault();
       errBox.style.display="none";
-      var data={ formular:cfg.formular, seite:location.pathname, zeit:new Date().toISOString() };
+      var raw={};
       var ok=true;
-      cfg.fields.forEach(function(f){ var el=form.querySelector('[name="'+f.name+'"]'); data[f.name]=el?el.value.trim():"";
-        if(f.req && !data[f.name]) ok=false; });
+      cfg.fields.forEach(function(f){ var el=form.querySelector('[name="'+f.name+'"]'); raw[f.name]=el?el.value.trim():"";
+        if(f.req && !raw[f.name]) ok=false; });
       if(!form.querySelector("#p12f_consent").checked) ok=false;
       if(!ok){ errBox.innerHTML="Bitte f&uuml;llen Sie die Pflichtfelder aus und best&auml;tigen Sie die Datenschutzerkl&auml;rung."; errBox.style.display="block"; return; }
       var btn=form.querySelector("button[type=submit]"); btn.disabled=true; btn.textContent="Wird gesendet ...";
+      var nachricht = (type==="community") ? ("VORANMELDUNG Krisenvorsorge-Netzwerk.\n"+(raw.region?("Region/PLZ: "+raw.region+"\n"):"")+(raw.reason?("Begruendung: "+raw.reason):"")) : ((raw.message||"")+(raw.ort?("\nWohnort: "+raw.ort):"")+(raw.haushalt?("\nHaushalt: "+raw.haushalt):""));
+      var data={ formular:cfg.formular, name:(raw.name||""), email:(raw.email||""), telefon:(raw.phone||""), seite:location.href, nachricht:nachricht, datenschutz:"ja", zeit:new Date().toISOString() };
       fetch(cfg.hook, {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify(data)})
         .then(function(r){ if(!r.ok) throw new Error(r.status); return r; })
         .then(function(){ success(o); })
