@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Krisenvorsorge-Lagebild: die Lage live | Protect-12</title>
+<meta name="description" content="Das laufende Krisenvorsorge-Lagebild von Protect-12: amtliche Warnungen (BBK), Naturgefahren weltweit, Erdbeben, Netz- und Weltraumwetter und Prognosem&auml;rkte. Live aus echten Fachquellen.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://protect-12.de/lagebild">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Krisenvorsorge-Lagebild: die Lage live | Protect-12">
+<meta property="og:description" content="Amtliche Warnungen, Naturgefahren, Erdbeben, Weltraumwetter und Prognosen. Live aus echten Fachquellen, in einem Bild.">
+<meta property="og:image" content="https://cdn.prod.website-files.com/6a31544107cb9e6b141637f4/6a3266291eef41c92e1609f1_p12-og.png">
+<meta property="og:url" content="https://protect-12.de/lagebild">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/p12.css">
+<style>
+  .lb-hero .wrap{padding:80px 26px 84px}
+  .lb-meta{display:flex;gap:12px 26px;flex-wrap:wrap;align-items:center;margin-top:20px;font-size:13.5px;color:var(--mist-txt)}
+  .lb-meta .live{display:inline-flex;align-items:center;gap:8px;font-weight:700;color:#fff}
+  .lb-meta .live .pulse{width:10px;height:10px;background:#3fae57;border-radius:50%;box-shadow:0 0 0 0 rgba(63,174,87,.6);animation:pulse 2s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(63,174,87,.55)}70%{box-shadow:0 0 0 12px rgba(63,174,87,0)}100%{box-shadow:0 0 0 0 rgba(63,174,87,0)}}
+
+  .panel{background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);position:relative;overflow:hidden;margin-bottom:22px}
+  .panel .phead{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:16px 24px;border-bottom:1px solid var(--line);background:var(--grey)}
+  .panel .phead .t{font-weight:800;color:var(--navy);font-size:15px;letter-spacing:.02em;display:flex;align-items:center;gap:10px}
+  .panel .phead .t .bar{width:5px;height:20px;background:var(--red)}
+  .panel .phead .src{font-size:11.5px;color:var(--muted)}
+  .panel .pbody{padding:22px 24px}
+  .lb-item{display:flex;gap:14px;padding:13px 0;border-bottom:1px solid var(--grey);align-items:flex-start}
+  .lb-item:last-child{border:0}
+  .lb-item .mag{flex:0 0 54px;height:54px;background:var(--navy);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:800;line-height:1}
+  .lb-item .mag small{font-size:9px;font-weight:600;color:var(--mist-txt);margin-top:2px}
+  .lb-item .mag.o{background:#B0770A}.lb-item .mag.r{background:var(--red)}
+  .lb-item .txt{flex:1}
+  .lb-item .txt .h{font-weight:700;color:var(--navy);font-size:14.5px}
+  .lb-item .txt .m{color:var(--muted);font-size:12.5px;margin-top:2px}
+  .loading{color:var(--muted);font-size:14px;padding:8px 0}
+  .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:22px}
+  .kpi{background:#fff;border:1px solid var(--line);border-top:3px solid var(--navy);box-shadow:var(--shadow-sm);padding:18px 18px;position:relative}
+  .kpi:nth-child(even){background:var(--navy);border-top-color:var(--red)}
+  .kpi .n{font-size:30px;font-weight:800;color:var(--navy);line-height:1}
+  .kpi:nth-child(even) .n{color:#fff}
+  .kpi .l{font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-top:7px}
+  .kpi:nth-child(even) .l{color:var(--mist-txt)}
+  .meaning{background:var(--grey);border-left:3px solid var(--red);padding:14px 18px;margin-top:14px;font-size:13.5px;color:var(--ink)}
+  .meaning b{color:var(--navy)}
+  .gauge-row{display:grid;grid-template-columns:280px 1fr;gap:26px;align-items:center}
+  @media(max-width:760px){.gauge-row{grid-template-columns:1fr}.kpis{grid-template-columns:1fr 1fr}}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  @media(max-width:900px){.two{grid-template-columns:1fr}}
+  .fc{border:1px solid var(--line);box-shadow:var(--shadow-sm);padding:18px 20px;background:#fff;position:relative;overflow:hidden}
+  .fc .qq{font-weight:700;color:var(--navy);font-size:14.5px;min-height:42px}
+  .fc .barrow{display:flex;align-items:center;gap:12px;margin-top:12px}
+  .fc .track{flex:1;height:10px;background:var(--grey);position:relative}
+  .fc .fill{height:10px;background:linear-gradient(90deg,#C31212,#E05A5A)}
+  .fc .pct{font-weight:800;color:var(--navy);font-size:18px;min-width:52px;text-align:right}
+  .fc a{font-size:12px;font-weight:700;display:inline-block;margin-top:10px}
+  .disc{font-size:12px;color:var(--muted);margin-top:8px}
+</style>
+</head>
+<body data-page="lagebild.html">
+<div id="p12-header"></div>
+
+<header class="hero lb-hero">
+  <div id="radar-slot"></div>
+  <div class="wrap">
+    <span class="kicker">Das Lagebild, live</span>
+    <h1>Die Lage. In einem Bild. Aus echten Quellen.</h1>
+    <p class="lead">Krisenvorsorge beginnt mit einem klaren Blick auf die Lage. Dieses Lagebild zieht seine Daten live aus &ouml;ffentlichen Fachquellen: amtliche Warnungen des Bundes, Naturgefahren weltweit, Erdbeben, Netz- und Weltraumwetter sowie Prognosem&auml;rkte. Kein Alarmismus, sondern Fakten, sachlich eingeordnet.</p>
+    <div class="lb-meta">
+      <span class="live"><span class="pulse"></span> Live</span>
+      <span>Stand: <b id="lb-stand" style="color:#fff">wird geladen &hellip;</b></span>
+      <span><button class="btn btn-ghost" id="lb-refresh" style="padding:8px 16px;font-size:13px">Aktualisieren</button></span>
+    </div>
+  </div>
+</header>
+
+<section style="padding-top:46px">
+  <div class="wrap">
+    <!-- Gesamt-Aufmerksamkeitsindex -->
+    <div class="panel reveal">
+      <div class="phead"><div class="t"><span class="bar"></span>Gesamtlage &middot; Aufmerksamkeitsindex</div><div class="src">Heuristik von Protect-12 aus den Quellen unten</div></div>
+      <div class="pbody">
+        <div class="gauge-row">
+          <div style="text-align:center"><svg id="gauge" viewBox="0 0 220 130" width="260" height="auto"></svg>
+            <div style="margin-top:6px;font-weight:800;font-size:20px;color:var(--navy)" id="gauge-label">&hellip;</div></div>
+          <div>
+            <p id="gauge-text" class="lead-p">Das Lagebild fasst mehrere Fachquellen zu einem Aufmerksamkeitsindex zusammen. Er ist eine Orientierung von Protect-12, kein amtlicher Wert. Er zeigt, ob heute eher Ruhe herrscht oder ob es Anlass gibt, genauer hinzusehen.</p>
+            <div class="meaning"><b>F&uuml;r Ihren Haushalt:</b> Ein Lagebild ersetzt keine Vorsorge, es macht sie planbar. Wer die Lage kennt, reagiert fr&uuml;her und ruhiger. Die Protect-12 Analyse &uuml;bersetzt genau das in Ihren konkreten Plan.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="kpis reveal" id="kpis">
+      <div class="kpi"><div class="n" id="kpi-nina">&hellip;</div><div class="l">Amtliche Warnungen DE</div></div>
+      <div class="kpi"><div class="n" id="kpi-gdacs">&hellip;</div><div class="l">Naturgefahren weltweit</div></div>
+      <div class="kpi"><div class="n" id="kpi-eq">&hellip;</div><div class="l">Beben M4,5+ (24 h)</div></div>
+      <div class="kpi"><div class="n" id="kpi-kp">&hellip;</div><div class="l">Kp-Index (Weltraumwetter)</div></div>
+    </div>
+
+    <div class="two">
+      <!-- NINA Deutschland -->
+      <div class="panel reveal">
+        <div class="phead"><div class="t"><span class="bar"></span>Deutschland &middot; Amtliche Warnungen</div><div class="src">Quelle: BBK / NINA (warnung.bund.de)</div></div>
+        <div class="pbody"><div id="nina" class="loading">Warnungen werden geladen &hellip;</div>
+          <div class="meaning"><b>Warum das z&auml;hlt:</b> Diese Meldungen betreffen Trinkwasser, Strom, Telekommunikation und Gefahrstoffe direkt vor Ort. Genau die Bereiche, die Protect-12 f&uuml;r Ihren Haushalt durchpr&uuml;ft.</div>
+        </div>
+      </div>
+      <!-- GDACS -->
+      <div class="panel reveal">
+        <div class="phead"><div class="t"><span class="bar"></span>Weltweit &middot; Naturgefahren</div><div class="src">Quelle: GDACS (EU / UN)</div></div>
+        <div class="pbody"><div id="gdacs" class="loading">Ereignisse werden geladen &hellip;</div>
+          <div class="meaning"><b>Warum das z&auml;hlt:</b> Was anderswo passiert, zeigt, wie schnell Versorgung kippt und wie lange Wiederherstellung dauert. Die Szenarien der Analyse speisen sich aus solchen realen Verl&auml;ufen.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="two">
+      <!-- USGS -->
+      <div class="panel reveal">
+        <div class="phead"><div class="t"><span class="bar"></span>Seismik &middot; Erdbeben (24 h)</div><div class="src">Quelle: USGS</div></div>
+        <div class="pbody"><div id="usgs" class="loading">Beben werden geladen &hellip;</div></div>
+      </div>
+      <!-- NOAA -->
+      <div class="panel reveal">
+        <div class="phead"><div class="t"><span class="bar"></span>Netz &amp; Weltraumwetter</div><div class="src">Quelle: NOAA SWPC (Kp-Index)</div></div>
+        <div class="pbody">
+          <div class="gauge-row" style="grid-template-columns:180px 1fr">
+            <div style="text-align:center"><svg id="kpgauge" viewBox="0 0 220 130" width="180" height="auto"></svg>
+              <div style="margin-top:4px;font-weight:800;color:var(--navy)" id="kp-label">&hellip;</div></div>
+            <div><p id="kp-text" class="disc">Der Kp-Index misst geomagnetische St&uuml;rme. Hohe Werte k&ouml;nnen Stromnetze, GPS und Funk st&ouml;ren.</p></div>
+          </div>
+          <div class="meaning"><b>Warum das z&auml;hlt:</b> Starke Sonnenst&uuml;rme sind ein reales, untersch&auml;tztes Risiko f&uuml;r Strom und Navigation. Redundanz bei Kommunikation und Energie ist deshalb Teil jeder Analyse.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- METACULUS -->
+    <div class="panel reveal">
+      <div class="phead"><div class="t"><span class="bar"></span>Prognosem&auml;rkte &middot; Wie sch&auml;tzen Fachleute die Risiken ein?</div><div class="src">Quelle: Metaculus (Community-Prognosen)</div></div>
+      <div class="pbody">
+        <p class="disc" style="margin-bottom:14px">Prognosem&auml;rkte b&uuml;ndeln die Einsch&auml;tzungen vieler Forecaster zu einer Wahrscheinlichkeit. Kein Orakel, aber ein n&uuml;chterner Gradmesser. Die Werte werden live in Ihrem Browser von Metaculus geladen.</p>
+        <div class="grid g3" id="metaculus"><div class="loading">Prognosen werden geladen &hellip;</div></div>
+      </div>
+    </div>
+
+    <div class="claim reveal">
+      <div class="lbl">Vom Lagebild zum Plan</div>
+      <p>Ein Lagebild sagt Ihnen, was drau&szlig;en passiert. Die Protect-12 Analyse sagt Ihnen, was das f&uuml;r Ihren Haushalt bedeutet, und was Sie zuerst tun sollten.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div id="radar-slot2"></div>
+  <div class="wrap">
+    <span class="kicker">Vom Lagebild zum Plan</span>
+    <h2>Sie sehen die Lage. Kennen Sie auch Ihre?</h2>
+    <p>Machen Sie den kostenlosen Schnelltest oder sprechen Sie direkt mit uns &uuml;ber eine vollst&auml;ndige Analyse Ihres Haushalts.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+      <a class="btn btn-red" data-cta href="#">Gespr&auml;ch vereinbaren &rarr;</a>
+      <a class="btn btn-ghost" href="faq-kontakt.html#selfcheck">Zum Schnelltest</a>
+    </div>
+  </div>
+</section>
+
+<div id="p12-footer"></div>
+<script src="assets/p12.js"></script>
+<script>
+document.getElementById("radar-slot").innerHTML =
+  '<svg class="radar" viewBox="0 0 600 600" aria-hidden="true"><g fill="none" stroke="#33465c" stroke-width="1"><circle cx="300" cy="300" r="70"/><circle cx="300" cy="300" r="140"/><circle cx="300" cy="300" r="210"/><circle cx="300" cy="300" r="280"/><line x1="300" y1="10" x2="300" y2="590"/><line x1="10" y1="300" x2="590" y2="300"/><line x1="90" y1="90" x2="510" y2="510"/><line x1="510" y1="90" x2="90" y2="510"/></g><circle cx="380" cy="228" r="4" fill="#C31212"/><circle cx="250" cy="360" r="3" fill="#E05A5A"/><circle cx="356" cy="356" r="3" fill="#E05A5A"/></svg><svg class="shield-wm" viewBox="0 0 100 120" aria-hidden="true"><path d="M50 4 L92 20 V60 C92 90 72 108 50 116 C28 108 8 90 8 60 V20 Z" fill="#ffffff"/></svg>';
+document.getElementById("radar-slot2").innerHTML = document.querySelector("#radar-slot .radar").outerHTML;
+</script>
+<script src="assets/lagebild.js"></script>
+</body>
+</html>
