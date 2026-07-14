@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /fragebogen
+Disallow: /mein-bereich
+
+Sitemap: https://protect-12.de/sitemap.xml
