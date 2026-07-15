@@ -33,7 +33,8 @@ function rewriteJs(js){
   const map = {
     "index.html":"/", "das-system.html":"/das-system/", "ablauf-experten.html":"/ablauf-experten/",
     "lagebild.html":"/lagebild/", "community.html":"/community/", "faq-kontakt.html":"/faq-kontakt/",
-    "ratgeber.html":"/ratgeber/", "downloads.html":"/downloads/"
+    "ratgeber.html":"/ratgeber/", "downloads.html":"/downloads/",
+    "impressum.html":"/impressum/", "datenschutz.html":"/datenschutz/"
   };
   for (const [k,v] of Object.entries(map)) js = js.split(k).join(v);
   return js.split("assets/logo-weiss.png").join("/assets/logo-weiss.png");
