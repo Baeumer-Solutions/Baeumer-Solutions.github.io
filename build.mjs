@@ -63,7 +63,8 @@ if (fs.existsSync(dlSrc)){
 
 // ---------- static pages ----------
 const routes = [];
-for (const f of fs.readdirSync(path.join(SRC,"pages"))){
+// Nur .html wird zur Route. Ohne den Filter macht jede beliebige Datei in src/pages eine Seite auf.
+for (const f of fs.readdirSync(path.join(SRC,"pages")).filter(f => f.endsWith(".html"))){
   const name = f.replace(/\.html$/,"");
   const html = rewriteHtml(fs.readFileSync(path.join(SRC,"pages",f),"utf8"));
   if (name === "index"){ write(path.join(DIST,"index.html"), html); routes.push("/"); }
@@ -150,7 +151,12 @@ const adminSrc = path.join(ROOT,"admin");
 if (fs.existsSync(adminSrc)){ ensure(path.join(DIST,"admin")); for (const f of fs.readdirSync(adminSrc)) fs.copyFileSync(path.join(adminSrc,f), path.join(DIST,"admin",f)); }
 
 // ---------- sitemap + robots + CNAME ----------
-const uniq = [...new Set(routes)];
+// /lagebild/ liegt NICHT in diesem Repo: es kommt aus der GitHub-Pages-Projektseite
+// Baeumer-Solutions/lagebild (Lageupdate, gerendert von Kestrel/RiskCompass_HorizonScan/render_p12.py).
+// Eine Projektseite ueberdeckt den gleichnamigen Pfad der Org-Pages. Die URL existiert also,
+// nur eben nicht als Route dieses Builds, deshalb hier von Hand in die Sitemap.
+const EXTERN = ["/lagebild/"];
+const uniq = [...new Set([...routes, ...EXTERN])];
 const sm = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`+
   uniq.map(r=>`  <url><loc>${SITE}${r}</loc><lastmod>${new Date().toISOString().slice(0,10)}</lastmod></url>`).join("\n")+
   `\n</urlset>\n`;
