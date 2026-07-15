@@ -21,7 +21,11 @@ function rewriteHtml(html){
   return html
     .replace(/(href|src)="assets\//g, '$1="/assets/')
     .replace(/href="index\.html"/g, 'href="/"')
-    .replace(/(href|src)="([a-z0-9-]+)\.html(#[^"]*)?"/g, (m, attr, name, anchor) => `${attr}="/${name}/${anchor||""}"`);
+    .replace(/(href|src)="([a-z0-9-]+)\.html(#[^"]*)?"/g, (m, attr, name, anchor) => `${attr}="/${name}/${anchor||""}"`)
+    // data-page muss dieselbe Form haben wie die NAV-hrefs in p12.js (die rewriteJs auf Clean-URLs zieht),
+    // sonst greift der Aktiv-Marker im Menue nie. Kein href/src, also eigener Schritt.
+    .replace(/data-page="index\.html"/g, 'data-page="/"')
+    .replace(/data-page="([a-z0-9-]+)\.html"/g, (m, name) => `data-page="/${name}/"`);
 }
 // same idea for the shared p12.js (nav hrefs + logo live as JS string literals)
 function rewriteJs(js){
@@ -94,7 +98,7 @@ const hub = `<!DOCTYPE html>
 <meta name="description" content="Praktische Anleitungen zur Krisenvorsorge: Notvorrat-Liste, Wasservorrat, Blackout-Vorsorge, Checkliste. Klar, ehrlich, ohne Panikmache.">
 <meta name="robots" content="index,follow"><link rel="canonical" href="${SITE}/ratgeber">
 <meta property="og:type" content="website"><meta property="og:title" content="Krisenvorsorge-Ratgeber | Protect-12">
-<meta property="og:image" content="https://protect-12.de/assets/og.png">
+<meta property="og:image" content="https://protect12.de/assets/og.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/p12.css">
@@ -103,7 +107,7 @@ const hub = `<!DOCTYPE html>
 .art .b{padding:20px 22px;flex:1}.art .k{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--red)}
 .art h3{margin:8px 0 8px;font-size:19px}.art p{color:var(--muted);font-size:14.5px}.art .foot{padding:0 22px 20px}</style>
 </head>
-<body data-page="ratgeber">
+<body data-page="/ratgeber/">
 <div id="p12-header"></div>
 <header class="hero"><div id="radar-slot"></div><div class="wrap">
   <span class="kicker">Ratgeber</span><h1>Krisenvorsorge-Ratgeber</h1>
@@ -131,20 +135,6 @@ routes.push("/ratgeber/");
 // ---------- admin (CMS) ----------
 const adminSrc = path.join(ROOT,"admin");
 if (fs.existsSync(adminSrc)){ ensure(path.join(DIST,"admin")); for (const f of fs.readdirSync(adminSrc)) fs.copyFileSync(path.join(adminSrc,f), path.join(DIST,"admin",f)); }
-
-
-// ---------- app redirects (Fragebogen + Mitgliederbereich bleiben Webflow) ----------
-for (const rp of ["fragebogen","mein-bereich"]){
-  const target = `https://app.protect-12.de/${rp}`;
-  write(path.join(DIST,rp,"index.html"), `<!DOCTYPE html>
-<html lang="de"><head><meta charset="UTF-8">
-<meta name="robots" content="noindex,nofollow">
-<title>Einen Moment, Sie werden weitergeleitet | Protect-12</title>
-<script>location.replace("${target}"+location.search+location.hash);</script>
-<meta http-equiv="refresh" content="2;url=${target}">
-<style>body{font-family:Montserrat,Arial,sans-serif;background:#1B2430;color:#fff;display:flex;align-items:center;justify-content:center;height:100vh;margin:0}a{color:#fff}</style>
-</head><body><p>Einen Moment, Sie werden weitergeleitet &hellip;<br><a href="${target}">Hier klicken, falls nichts passiert.</a></p></body></html>`);
-}
 
 // ---------- sitemap + robots + CNAME ----------
 const uniq = [...new Set(routes)];
