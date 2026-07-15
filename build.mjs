@@ -20,6 +20,7 @@ const write = (p, c) => { ensure(path.dirname(p)); fs.writeFileSync(p, c); };
 function rewriteHtml(html){
   return html
     .replace(/(href|src)="assets\//g, '$1="/assets/')
+    .replace(/href="downloads\//g, 'href="/downloads/')
     .replace(/href="index\.html"/g, 'href="/"')
     .replace(/(href|src)="([a-z0-9-]+)\.html(#[^"]*)?"/g, (m, attr, name, anchor) => `${attr}="/${name}/${anchor||""}"`)
     // data-page muss dieselbe Form haben wie die NAV-hrefs in p12.js (die rewriteJs auf Clean-URLs zieht),
@@ -31,7 +32,8 @@ function rewriteHtml(html){
 function rewriteJs(js){
   const map = {
     "index.html":"/", "das-system.html":"/das-system/", "ablauf-experten.html":"/ablauf-experten/",
-    "lagebild.html":"/lagebild/", "community.html":"/community/", "faq-kontakt.html":"/faq-kontakt/", "ratgeber.html":"/ratgeber/"
+    "lagebild.html":"/lagebild/", "community.html":"/community/", "faq-kontakt.html":"/faq-kontakt/",
+    "ratgeber.html":"/ratgeber/", "downloads.html":"/downloads/"
   };
   for (const [k,v] of Object.entries(map)) js = js.split(k).join(v);
   return js.split("assets/logo-weiss.png").join("/assets/logo-weiss.png");
@@ -46,6 +48,17 @@ for (const f of fs.readdirSync(path.join(SRC,"assets"))){
   const from = path.join(SRC,"assets",f), to = path.join(DIST,"assets",f);
   if (f === "p12.js") write(to, rewriteJs(fs.readFileSync(from,"utf8")));
   else fs.copyFileSync(from, to);
+}
+
+// ---------- downloads (PDF/XLSX, unveraendert durchreichen) ----------
+const dlSrc = path.join(SRC,"downloads");
+let downloads = [];
+if (fs.existsSync(dlSrc)){
+  ensure(path.join(DIST,"downloads"));
+  for (const f of fs.readdirSync(dlSrc)){
+    fs.copyFileSync(path.join(dlSrc,f), path.join(DIST,"downloads",f));
+    downloads.push({ datei:f, groesse: fs.statSync(path.join(dlSrc,f)).size });
+  }
 }
 
 // ---------- static pages ----------
@@ -112,7 +125,7 @@ const hub = `<!DOCTYPE html>
 <header class="hero"><div id="radar-slot"></div><div class="wrap">
   <span class="kicker">Ratgeber</span><h1>Krisenvorsorge-Ratgeber</h1>
   <p class="lead">Praktische Anleitungen zur Krisenvorsorge: klar, ehrlich, ohne Panikmache. Jeder Artikel zeigt, was wirklich z&auml;hlt, und wo eine individuelle Analyse den Unterschied macht.</p>
-  <div class="cta-row"><a class="btn btn-red" href="/faq-kontakt/#selfcheck">Zum kostenlosen Schnelltest</a></div>
+  <div class="cta-row"><a class="btn btn-red" href="/downloads/">Checklisten herunterladen</a><a class="btn btn-ghost" href="/faq-kontakt/#selfcheck">Zum kostenlosen Schnelltest</a></div>
 </div></header>
 <section><div class="wrap">
   <div class="section-head reveal"><span class="kicker">Anleitungen &amp; Checklisten</span><h2>Wo m&ouml;chten Sie anfangen?</h2></div>
