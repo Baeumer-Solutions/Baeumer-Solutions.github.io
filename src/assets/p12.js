@@ -60,6 +60,7 @@
         '<div><h4>Mehr</h4>'+
           '<a href="ablauf-experten.html">Ihr Weg</a><a href="ablauf-experten.html#experten">Expertennetzwerk</a>'+
           '<a href="community.html">Community</a><a href="ratgeber.html">Ratgeber</a>'+
+          '<a href="downloads.html">Checklisten zum Download</a>'+
           '<a href="faq-kontakt.html">Fragen &amp; Antworten</a></div>'+
         '<div><h4>Kontakt</h4>'+
           '<a href="mailto:'+MAIL+'">'+MAIL+'</a><a href="'+TELHREF+'">'+TEL+'</a>'+
