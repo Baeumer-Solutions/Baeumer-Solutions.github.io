@@ -10,7 +10,7 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Krisenvorsorge-Beratung: Ablauf &amp; Experten | Protect-12">
 <meta property="og:description" content="Vom Fragebogen zum fertigen Plan. Wie Ihre Analyse abl&auml;uft und welches Expertennetzwerk dahintersteht.">
-<meta property="og:image" content="https://protect-12.de/assets/og.png">
+<meta property="og:image" content="https://protect12.de/assets/og.png">
 <meta property="og:url" content="https://protect-12.de/ablauf-experten">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +21,9 @@
   .exp{background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);padding:26px 24px;position:relative;overflow:hidden;border-top:3px solid var(--navy)}
   .exp .no{font-size:12px;font-weight:800;color:var(--red);letter-spacing:.12em}
   .exp .br{font-size:11px;font-weight:700;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;margin-top:4px}
-  .exp h3{margin:8px 0 8px;font-size:18px}
+  .exp h3{margin:8px 0 6px;font-size:18px}
+  .exp .fach{font-size:13px;font-weight:700;color:var(--navy-3);margin-bottom:9px;
+    padding-bottom:9px;border-bottom:1px solid var(--grey);line-height:1.35}
   .exp p{font-size:14.5px;color:var(--muted)}
   .exp .gh{position:absolute;right:12px;bottom:-14px;font-size:60px;font-weight:800;color:var(--navy);opacity:.05;line-height:1}
   .hh{background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);overflow:hidden;position:relative}
@@ -87,7 +89,7 @@
   <div class="wrap">
     <div class="section-head reveal"><span class="kicker">Das Expertennetzwerk</span>
       <h2>Zw&ouml;lf Lebensbereiche. Ein Netzwerk aus Spezialisten.</h2>
-      <p class="lead">Hinter jeder Protect-12 Analyse steht ein Netzwerk aus Fachleuten, die ihr Wissen aus Verantwortung in der Praxis haben, nicht aus Lehrb&uuml;chern. Sie arbeiten im Hintergrund. Diskretion ist Teil unseres Selbstverst&auml;ndnisses, deshalb stellen wir Ihnen Kompetenzen vor, keine Namen.</p></div>
+      <p class="lead">Hinter jeder Protect-12 Analyse steht ein Netzwerk aus Fachleuten, die ihr Wissen aus Verantwortung in der Praxis haben, nicht aus Lehrb&uuml;chern. F&uuml;r jeden der zw&ouml;lf Bereiche steht ein eigenes Fachgebiet. Sie arbeiten im Hintergrund. Diskretion ist Teil unseres Selbstverst&auml;ndnisses, deshalb stellen wir Ihnen Kompetenzen vor, keine Namen.</p></div>
     <div class="grid g4 reveal" id="expgrid"></div>
     <div class="claim reveal" style="margin-top:26px">
       <div class="lbl">Die Analyse-Leitung</div>
@@ -162,14 +164,18 @@ var QUAL=[
  {n:"04",t:"Freigabe",p:"Die finale Qualit&auml;tsabnahme erfolgt durch die Projektleitung pers&ouml;nlich. Erst mit deren Freigabe wird Ihr Paket &uuml;bergeben."}
 ];
 var EXP=[
- {n:"01",b:"Bereiche 01 &amp; 02",t:"Lage, Standort &amp; Sicherheit",p:"Erfahrung aus militärischen Spezialeinheiten und dem beh&ouml;rdlichen Sicherheitsbereich. Bewertet Wohnlage, Umfeld und Sozialraum und &uuml;bersetzt Risiken, die im Alltag unsichtbar bleiben, in Schutzkonzepte."},
- {n:"02",b:"Bereiche 03 &amp; 04",t:"Wasser, Nahrung &amp; Vorratslogistik",p:"Versorgungslogistik und Lebensmitteltechnologie. Entwickelt ein Versorgungskonzept, das zur Familie passt: Trinkwasser, Kalorien, N&auml;hrstoffe, Haltbarkeit und Rotation. Kein Bunkerregal, ein System, das im Alltag mitl&auml;uft."},
- {n:"03",b:"Bereich 05",t:"Energie, W&auml;rme &amp; Haustechnik",p:"Elektro- und Energietechnik mit Praxis in Notstrom- und Inselanlagen. Beurteilt, wie lange Ihr Haushalt ohne Netz funktioniert, und dimensioniert Notstrom, Speicher sowie sicheres Heizen nach tats&auml;chlichem Bedarf."},
- {n:"04",b:"Bereich 06",t:"Gesundheit &amp; Notfallmedizin",p:"Notfallmedizin und einsatzmedizinische Versorgung. Plant die medizinische Eigenversorgung f&uuml;r Zeiten, in denen professionelle Hilfe verz&ouml;gert eintrifft, mit Blick auf chronische Erkrankungen, Kinder und &auml;ltere Angeh&ouml;rige."},
- {n:"05",b:"Bereich 07",t:"Kommunikation &amp; Notfunk",p:"Fernmelde- und Funktechnik mit langj&auml;hriger Praxis im Amateur- und Notfunk. Entwickelt ein Konzept, mit dem Sie erreichbar bleiben, wenn Mobilfunk und Internet ausfallen: Funkl&ouml;sungen, Empfangstechnik, klare Meldewege."},
- {n:"06",b:"Bereich 08",t:"Mobilit&auml;t &amp; Evakuierung",p:"Einsatz- und Verlegeplanung in kritischen Lagen. Aus Standort, Fahrzeugen und familiärer Situation entstehen Routen, Ausweichziele und ein Gep&auml;ckkonzept: mehrere Wege, klare Ausl&ouml;ser, keine Improvisation unter Druck."},
- {n:"07",b:"Bereich 10",t:"Finanzen, Werte &amp; Absicherung",p:"Finanz- und Verm&ouml;gensplanung. Bewertet Liquidit&auml;t, Reserven, Sachwerte und Versicherungsschutz und zeigt, wie Dokumente krisenfest organisiert werden. Ziel ist Handlungsf&auml;higkeit, wenn Karten oder Konten streiken."},
- {n:"08",b:"Bereiche 09 &amp; 11",t:"Mentale St&auml;rke, F&uuml;hrung &amp; Gemeinschaft",p:"F&uuml;hrungserfahrung in kritischen Lagen und einsatzpsychologische Ausbildung. Zeichnet ein Bild davon, was Ihren Haushalt tr&auml;gt: ruhige Entscheidungen, klare Rollen und ein belastbares Umfeld. Resilienz ist nie nur Material."}
+ {n:"01",b:"Bereich 01",t:"Standort &amp; Umfeld",f:"Lagebeurteilung &amp; Sicherheitsanalyse",p:"Erfahrung aus milit&auml;rischen Spezialeinheiten und dem beh&ouml;rdlichen Sicherheitsbereich. Bewertet Wohnlage, Umfeld, Zufahrten und die N&auml;he kritischer Infrastruktur und &uuml;bersetzt Risiken, die im Alltag unsichtbar bleiben, in ein klares Bild Ihrer Lage."},
+ {n:"02",b:"Bereich 02",t:"Grey Man &amp; Selbstschutz",f:"Selbstschutz &amp; Deeskalation",p:"Personenschutz und Sicherheitsausbildung aus der Praxis. Bewertet Auftreten, Unauff&auml;lligkeit und h&auml;usliche Sicherung. Der Ansatz bleibt n&uuml;chtern: Position, Distanz und klare Ansprache wirken zuverl&auml;ssiger als jede Ausr&uuml;stung."},
+ {n:"03",b:"Bereich 03",t:"Wasser",f:"Wasserversorgung &amp; Aufbereitung",p:"Versorgungslogistik mit Schwerpunkt Trinkwasser. Rechnet Bedarf, Vorrat und Reichweite je Person durch und w&auml;hlt Aufbereitung und Filter aus, die zu Ihrer Wohnsituation passen, nicht zum Katalog."},
+ {n:"04",b:"Bereich 04",t:"Nahrung &amp; Vorrat",f:"Lebensmitteltechnologie &amp; Vorratslogistik",p:"Lebensmitteltechnologie und Lagerhaltung. Entwickelt ein Versorgungskonzept, das zur Familie passt: Kalorien, N&auml;hrstoffe, Haltbarkeit und Rotation. Kein Bunkerregal, ein System, das im Alltag mitl&auml;uft."},
+ {n:"05",b:"Bereich 05",t:"Energie &amp; W&auml;rme",f:"Energietechnik &amp; Notstrom",p:"Elektro- und Energietechnik mit Praxis in Notstrom- und Inselanlagen. Beurteilt, wie lange Ihr Haushalt ohne Netz funktioniert, und dimensioniert Notstrom, Speicher sowie sicheres Heizen nach tats&auml;chlichem Bedarf."},
+ {n:"06",b:"Bereich 06",t:"Gesundheit &amp; Medizin",f:"Notfallmedizin &amp; Eigenversorgung",p:"Notfallmedizin und einsatzmedizinische Versorgung. Plant die medizinische Eigenversorgung f&uuml;r Zeiten, in denen professionelle Hilfe verz&ouml;gert eintrifft, mit Blick auf chronische Erkrankungen, Kinder und &auml;ltere Angeh&ouml;rige."},
+ {n:"07",b:"Bereich 07",t:"Kommunikation &amp; Information",f:"Fernmelde- &amp; Funktechnik",p:"Langj&auml;hrige Praxis im Amateur- und Notfunk. Entwickelt ein Konzept, mit dem Sie erreichbar bleiben und verl&auml;ssliche Informationen erhalten, wenn Mobilfunk und Internet ausfallen: Funkl&ouml;sungen, Empfangstechnik, klare Meldewege."},
+ {n:"08",b:"Bereich 08",t:"Mobilit&auml;t &amp; Bewegung",f:"Einsatz- &amp; Verlegeplanung",p:"Bewegungsplanung in kritischen Lagen. Aus Standort, Fahrzeugen und famili&auml;rer Situation entstehen Routen, Ausweichziele und ein Gep&auml;ckkonzept: mehrere Wege, klare Ausl&ouml;ser, keine Improvisation unter Druck."},
+ {n:"09",b:"Bereich 09",t:"Netzwerk &amp; Gemeinschaft",f:"Bev&ouml;lkerungsschutz &amp; Nachbarschaft",p:"Erfahrung aus Hilfsorganisationen und dem Bev&ouml;lkerungsschutz. Bewertet Nachbarschaft, Vertrauenskreis und Absprachen als das, was sie im Ernstfall sind: die erste Reihe, lange bevor Hilfe von au&szlig;en eintrifft."},
+ {n:"10",b:"Bereich 10",t:"Finanzen &amp; Werte",f:"Finanz- &amp; Verm&ouml;gensplanung",p:"Finanz- und Verm&ouml;gensplanung. Bewertet Liquidit&auml;t, Reserven, Sachwerte und Versicherungsschutz und zeigt, wie Dokumente krisenfest organisiert werden. Ziel ist Handlungsf&auml;higkeit, wenn Karten oder Konten streiken."},
+ {n:"11",b:"Bereich 11",t:"Mentalit&auml;t &amp; Entscheidung",f:"Einsatzpsychologie &amp; F&uuml;hrung",p:"F&uuml;hrungserfahrung in kritischen Lagen und einsatzpsychologische Ausbildung. Zeichnet ein Bild davon, was Ihren Haushalt tr&auml;gt: ruhige Entscheidungen, klare Rollen, ge&uuml;bte Abl&auml;ufe. Resilienz ist nie nur Material."},
+ {n:"12",b:"Bereich 12",t:"Gesamtsystem &amp; Integration",f:"Systemanalyse &amp; Integration",p:"Der Blick auf das Ganze. Pr&uuml;ft, wie die zw&ouml;lf Bereiche ineinandergreifen, wo Abh&auml;ngigkeitsketten rei&szlig;en und in welcher Reihenfolge Ma&szlig;nahmen wirken. Die Schwachstelle sitzt selten im Bereich, meist an der Naht zwischen zweien."}
 ];
 var PRAXIS=[
  {t:"Der Hof im Voralpenland",ll:"Zwei Erwachsene, Tiere, eigene Wasserquelle, Holzofen, gewachsene Vorr&auml;te. Ein Haushalt, der sich zu Recht als gut aufgestellt empfand, und genau wissen wollte, wie gut.",bf:"Der schw&auml;chste Bereich war Kommunikation. Ohne Strom und Netz w&auml;re der Hof bestens versorgt und zugleich vollst&auml;ndig blind gewesen. Keine Ausstattungsl&uuml;cke, eine Systeml&uuml;cke.",he:"Die wirksamste Empfehlung kostete keine 100 Euro: ein einfaches Funk-Setup, feste Abl&auml;ufe, zwei kurze &Uuml;bungen. Ein Wochenende, und der Gesamtwert stieg st&auml;rker als durch jede Anschaffung.",fz:"Die teuerste L&uuml;cke war die billigste Reparatur. Wirkung h&auml;ngt nicht am Budget, sondern an der Reihenfolge."},
@@ -187,7 +193,7 @@ QUAL.forEach(function(q){ var d=document.createElement("div"); d.className="card
 
 var eg=document.getElementById("expgrid");
 EXP.forEach(function(x){ var d=document.createElement("div"); d.className="exp";
-  d.innerHTML='<div class="no">'+x.n+'</div><div class="br">'+x.b+'</div><h3>'+x.t+'</h3><p>'+x.p+'</p><span class="gh">'+x.n+'</span>'; eg.appendChild(d); });
+  d.innerHTML='<div class="no">'+x.n+'</div><div class="br">'+x.b+'</div><h3>'+x.t+'</h3><div class="fach">'+x.f+'</div><p>'+x.p+'</p><span class="gh">'+x.n+'</span>'; eg.appendChild(d); });
 
 var pg=document.getElementById("praxisgrid");
 PRAXIS.forEach(function(p){ var d=document.createElement("div"); d.className="hh";
