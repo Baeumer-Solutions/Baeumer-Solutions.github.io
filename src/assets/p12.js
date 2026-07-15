@@ -66,7 +66,7 @@
         '<div><h4>Kontakt</h4>'+
           '<a href="mailto:'+MAIL+'">'+MAIL+'</a><a href="'+TELHREF+'">'+TEL+'</a>'+
           '<a href="#" data-cta>Gespr&auml;ch vereinbaren</a>'+
-          '<a href="#" data-legal="impressum">Impressum</a><a href="#" data-legal="datenschutz">Datenschutz</a></div>'+
+          '<a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div>'+
       '</div>'+
       '<div class="legal"><span>&copy; Protect-12 &middot; Krisenvorsorge mit System &middot; Konzept und Umsetzung: B&auml;umer Solutions</span>'+
         '<span>protect-12.de</span></div>'+
@@ -142,7 +142,7 @@
       '<div class="p12modal-body"><div class="p12form-intro"><h3>'+cfg.title+'</h3><p>'+cfg.sub+'</p></div>'+
       '<form class="p12form" novalidate><div class="ff-grid">'+cfg.fields.map(field).join("")+'</div>'+
       '<label class="consent"><input type="checkbox" required id="p12f_consent"> Ich habe die '+
-        '<a href="#" data-legal="datenschutz">Datenschutzerkl&auml;rung</a> gelesen und bin mit der Verarbeitung meiner Angaben zur Bearbeitung meiner Anfrage einverstanden. <span style="color:var(--red)">*</span></label>'+
+        '<a href="datenschutz.html" target="_blank" rel="noopener">Datenschutzerkl&auml;rung</a> gelesen und bin mit der Verarbeitung meiner Angaben zur Bearbeitung meiner Anfrage einverstanden. <span style="color:var(--red)">*</span></label>'+
       '<div class="p12form-err" style="display:none"></div>'+
       '<button type="submit" class="btn btn-red" style="width:100%;justify-content:center;margin-top:6px">'+cfg.submit+'</button>'+
       '<p class="p12form-alt">Lieber direkt? <a href="'+cfg.mailto+'">Schreiben Sie uns eine E-Mail</a> oder rufen Sie an: <a href="'+TELHREF+'">'+TEL+'</a></p>'+
