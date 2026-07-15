@@ -28,6 +28,7 @@
     {href:"ablauf-experten.html", label:"Ablauf & Experten"},
     {href:"lagebild.html", label:"Lagebild"},
     {href:"ratgeber.html", label:"Ratgeber"},
+    {href:"downloads.html", label:"Downloads"},
     {href:"community.html", label:"Community"},
     {href:"faq-kontakt.html", label:"FAQ & Kontakt"}
   ];
