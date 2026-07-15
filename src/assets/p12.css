@@ -172,6 +172,11 @@ footer.site-footer .legal{margin-top:34px;padding-top:20px;border-top:1px solid 
 .reveal.in{opacity:1;transform:none}
 .center{text-align:center}
 .lead-p{font-size:17.5px;color:var(--muted)}
+@media(max-width:1120px) and (min-width:961px){
+  .nav-main{gap:16px}
+  .nav-main a{font-size:13px}
+  .nav-cta{padding:10px 14px;font-size:12px}
+}
 @media(max-width:960px){
   .g4{grid-template-columns:repeat(2,1fr)}
   .g3{grid-template-columns:1fr}
