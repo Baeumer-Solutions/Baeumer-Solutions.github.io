@@ -41,6 +41,14 @@ Diese Mengen orientieren sich an der Logik des BBK-Vorratskalkulators. Sie sind 
 
 Denken Sie an einen Dosenöffner ohne Strom, an einen Campingkocher mit Brennstoff und an Dinge, die auch ungekocht essbar sind. Und vergessen Sie Medikamente, Hygiene, Babynahrung und Tierfutter nicht.
 
+<div class="dl-inline">
+<div class="dl-inline-k">Zum Mitnehmen</div>
+<h3>Diese Liste als PDF zum Abhaken</h3>
+<p>Vier Seiten mit allen Mengen pro Person, einer freien Spalte für Ihren Haushalt und der Liste dessen, was nicht essbar und trotzdem Pflicht ist. Kostenlos, ohne Anmeldung.</p>
+<p><a class="btn btn-red" href="/downloads/Protect12_Notvorratsliste_10_Tage.pdf" download>Notvorratsliste herunterladen &darr;</a>
+<a class="btn btn-line" href="/downloads/">Alle Checklisten ansehen</a></p>
+</div>
+
 ## Fünf Regeln für die Praxis
 
 - **Vorrat leben, nicht lagern.** Kaufen Sie, was Sie ohnehin essen, und rotieren Sie: Neues nach hinten, Älteres nach vorn. So läuft nichts ab.
