@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import crypto from "node:crypto";
 import matter from "gray-matter";
 import { marked } from "marked";
 
@@ -14,7 +15,19 @@ const escAttr = s => String(s).replace(/&/g,"&amp;").replace(/"/g,"&quot;").repl
 const escText = s => String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;");
 const rmDir = d => fs.existsSync(d) && fs.rmSync(d, {recursive:true, force:true});
 const ensure = d => fs.mkdirSync(d, {recursive:true});
-const write = (p, c) => { ensure(path.dirname(p)); fs.writeFileSync(p, c); };
+// Asset-Version aus dem Inhalt von p12.css/p12.js. Haengt an jedem Verweis in den Seiten,
+// damit Browser nie eine alte CSS mit einer neuen JS mischen (oder umgekehrt). Das gab am
+// 16.07.2026 die kaputte Grafik im Hero: neue Seiten, alte Datei aus dem Cache.
+const ASSET_V = crypto.createHash("sha1").update(
+  fs.readFileSync(path.join(SRC,"assets","p12.css")) + fs.readFileSync(path.join(SRC,"assets","p12.js"))
+).digest("hex").slice(0,8);
+const versionieren = html => html
+  .replace(/\/assets\/p12\.css(\?v=[a-f0-9]+)?/g, "/assets/p12.css?v="+ASSET_V)
+  .replace(/\/assets\/p12\.js(\?v=[a-f0-9]+)?/g, "/assets/p12.js?v="+ASSET_V);
+const write = (p, c) => {
+  ensure(path.dirname(p));
+  fs.writeFileSync(p, p.endsWith(".html") ? versionieren(String(c)) : c);
+};
 
 // clean-URL + root-relative rewrite for static HTML pages
 function rewriteHtml(html){
