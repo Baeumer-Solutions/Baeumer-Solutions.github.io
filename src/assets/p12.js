@@ -20,8 +20,9 @@
   var MAILTO_COMMUNITY = "mailto:"+MAIL+"?subject=Voranmeldung%20Krisenvorsorge-Netzwerk&body="+
     encodeURIComponent("Guten Tag,\n\nich moechte mich fuer das Protect-12 Krisenvorsorge-Netzwerk vormerken lassen.\n\nName:\nRegion/PLZ (optional):\nWarum ich dabei sein moechte:\n\nViele Gruesse");
 
-  var SHIELD = '<svg class="shield-wm" viewBox="0 0 100 120" aria-hidden="true">'+
-    '<path d="M50 4 L92 20 V60 C92 90 72 108 50 116 C28 108 8 90 8 60 V20 Z" fill="#ffffff"/></svg>';
+  /* Echtes Protect-12 Schild (Marke, aus dem Logo vektorisiert). Fuellregel evenodd
+     wegen der Spirale. Wird als angeschnittenes Wasserzeichen an den Rand gesetzt. */
+  var SHIELD_D = "M4.89 36.97 1.71 39.02 3.75 49.26 6.03 57.22 8.87 64.85 12.51 72.92 15.47 78.38 22.87 89.76 31.17 99.77 40.05 108.42 49.83 116.04 55.18 112.29 63.03 105.57 71.22 97.04 77.47 89.19 83.39 80.2 88.62 70.42 92.72 60.52 95.34 52.33 93.86 50.85 85.55 45.96 75.65 41.75 64.16 38.79 52.1 37.54 54.84 45.85 63.59 46.99 71.1 48.92 80.09 52.45 84.87 54.95 85.67 55.86 82.94 63.03 79.41 70.53 72.24 82.37 63.48 93.4 56.66 100.23 49.94 105.92 42.89 99.89 36.86 93.86 31.63 87.71 26.96 81.34 21.16 71.79 15.81 60.18 11.95 48.24 10.01 39.36 9.44 34.81ZM0.8 25.03 0.46 27.42 1.14 34.36 7.39 30.83 12.97 28.44 14.22 38.79 16.61 49.26 19.45 57.91 24.69 69.4 29.92 78.16 36.52 87.03 42.21 93.4 49.94 100.46 58.36 92.72 67.46 81.8 74.63 70.53 80.55 57.45 74.18 54.49 66.89 52.1 60.41 50.74 52.1 50.06 49.03 42.32 46.87 33.45 53.81 33.33 60.41 33.9 72.24 36.29 85.21 41.07 96.47 47.67 98.07 40.16 98.07 38.79 87.94 33.33 79.07 29.81 70.19 27.3 63.59 26.05 54.15 25.14 45.73 25.14 37.77 25.94 38.68 34.47 40.39 41.98 42.78 49.26 46.87 58.13 58.48 58.7 69.85 61.66 66.55 68.15 61.21 76.45 54.95 84.3 49.94 89.42 43.8 82.94 37.88 75.31 32.99 67.46 28.1 57.45 24.57 47.33 22.18 36.86 21.05 26.96 21.05 16.84 10.69 20.36ZM90.33 20.82 82.14 17.75 73.15 15.24 62.91 13.42 54.04 12.74 42.89 12.86 33.11 13.99 25.26 15.7 25.26 26.39 25.82 32.54 27.65 42.32 30.49 51.88 34.02 60.3 39.25 69.74 44.48 77.13 49.94 83.39 53.01 80.09 57.68 74.18 61.32 68.71 63.82 64.16 58.59 63.03 55.29 62.68 49.94 70.65 45.05 63.48 41.98 57.91 39.7 53.01 37.43 46.87 35.72 40.96 34.47 35.04 33.56 27.53 33.33 22.41 36.41 21.73 46.19 20.93 55.86 21.05 67.01 22.3 75.77 24.35 82.82 26.62 91.35 30.26 98.75 34.36 99.54 25.37ZM0.68 11.26 0.34 20.59 6.03 17.75 12.4 15.13 17.63 13.31 23.32 11.72 29.92 10.24 36.41 9.22 42.21 8.65 48.01 8.42 59.04 8.76 67.35 9.78 73.38 10.92 81.11 12.97 87.83 15.24 94.88 18.2 99.54 20.59 99.54 16.04 99.2 11.15 90.33 7.39 81.23 4.44 71.22 2.16 62.68 0.91 55.4 0.34 44.48 0.34 37.2 0.91 29.35 2.05 23.32 3.3 21.5 3.87 20.82 3.87 14.56 5.69 6.14 8.76Z";
 
   var NAV = [
     {href:"das-system.html", label:"Das System"},
@@ -51,7 +52,7 @@
   }
 
   function buildFooter(){
-    return '<footer class="site-footer">'+SHIELD+'<div class="wrap">'+
+    return '<footer class="site-footer"><div class="wrap">'+
       '<div class="cols">'+
         '<div><img class="brandlogo" src="assets/logo-weiss.png" alt="Protect-12" style="height:34px">'+
           '<p class="brand-blurb">Krisenvorsorge mit System. Eine strukturierte Analyse Ihres Haushalts, ein laufendes Lagebild und ein gepr&uuml;ftes Netzwerk. Eine Leistung von B&auml;umer Solutions.</p></div>'+
@@ -73,6 +74,50 @@
       '</div></footer>';
   }
 
+  /* ------------------------------------------------------------------
+     Das wandernde Schild. Ein einziges Wasserzeichen, fest am rechten
+     Rand, angeschnitten. Beim Scrollen wandert es langsam mit nach
+     unten und laeuft dabei ueber Navy- und ueber weisse Flaechen.
+     Die Farbe macht mix-blend-mode:difference von selbst: auf dunklem
+     Grund wird das Schild hell, auf hellem Grund dunkel. Pixelgenau,
+     auch mitten auf einer Sektionskante.
+     ------------------------------------------------------------------ */
+  var RM = window.matchMedia && matchMedia("(prefers-reduced-motion:reduce)").matches;
+
+  function mountSchild(){
+    if(document.querySelector(".p12-schild")) return;
+    var el = document.createElement("div");
+    el.className = "p12-schild"; el.setAttribute("aria-hidden","true");
+    el.innerHTML = '<svg viewBox="0 0 100 116.5"><path d="'+SHIELD_D+'" fill="#ffffff" fill-rule="evenodd"/></svg>';
+    document.body.appendChild(el);
+
+    function bahn(){ return Math.max(0, innerHeight - el.offsetHeight) ; }
+    function fortschritt(){
+      var max = Math.max(1, document.documentElement.scrollHeight - innerHeight);
+      return Math.min(1, Math.max(0, (window.pageYOffset||0) / max));
+    }
+    function setzen(p){
+      /* von knapp unter dem Kopf bis knapp ueber den Fuss */
+      var y = 40 + p * Math.max(0, innerHeight - el.offsetHeight - 40);
+      el.style.transform = "translateY("+y.toFixed(1)+"px)";
+    }
+    if(RM){ setzen(.5); return; }
+
+    var ziel = fortschritt(), ist = ziel;
+    setzen(ist);
+    addEventListener("scroll", function(){ ziel = fortschritt(); }, {passive:true});
+    addEventListener("resize", function(){ ziel = fortschritt(); });
+    function frame(){
+      requestAnimationFrame(frame);
+      if(document.hidden) return;
+      var d = ziel - ist;
+      if(Math.abs(d) < 0.0004){ ist = ziel; return; }
+      ist += d * 0.07;                    /* laeuft dem Scrollen weich hinterher */
+      setzen(ist);
+    }
+    requestAnimationFrame(frame);
+  }
+
   function each(sel, fn){ Array.prototype.forEach.call(document.querySelectorAll(sel), fn); }
   function bindAll(sel, fn){ each(sel, function(el){ el.addEventListener("click", fn); }); }
   function bindWithin(root, sel, fn){ Array.prototype.forEach.call(root.querySelectorAll(sel), function(el){ el.addEventListener("click", fn); }); }
@@ -83,6 +128,8 @@
     if(h) h.outerHTML = buildHeader(active);
     var f = document.getElementById("p12-footer");
     if(f) f.outerHTML = buildFooter();
+
+    mountSchild();
 
     var b = document.getElementById("p12burger"), m = document.getElementById("p12mnav");
     if(b && m){ b.addEventListener("click", function(){ m.classList.toggle("open"); }); }
