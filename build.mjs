@@ -124,7 +124,7 @@ const hub = `<!DOCTYPE html>
 </head>
 <body data-page="/ratgeber/">
 <div id="p12-header"></div>
-<header class="hero"><div id="radar-slot"></div><div class="wrap">
+<header class="hero"><div class="wrap">
   <span class="kicker">Ratgeber</span><h1>Krisenvorsorge-Ratgeber</h1>
   <p class="lead">Praktische Anleitungen zur Krisenvorsorge: klar, ehrlich, ohne Panikmache. Jeder Artikel zeigt, was wirklich z&auml;hlt, und wo eine individuelle Analyse den Unterschied macht.</p>
   <div class="cta-row"><a class="btn btn-red" href="/downloads/">Checklisten herunterladen</a><a class="btn btn-ghost" href="/faq-kontakt/#selfcheck">Zum kostenlosen Schnelltest</a></div>
@@ -135,14 +135,13 @@ const hub = `<!DOCTYPE html>
       ${cards || '<p>Artikel folgen in K&uuml;rze.</p>'}
   </div>
 </div></section>
-<section class="band"><div id="radar-slot2"></div><div class="wrap">
+<section class="band"><div class="wrap">
   <span class="kicker">Von der Liste zum Plan</span><h2>Eine Liste ist ein Anfang. Ihr Plan ist das Ziel.</h2>
   <p>Ratgeber zeigen, was man haben k&ouml;nnte. Die Protect-12 Analyse zeigt, was bei Ihnen fehlt und was zuerst dran ist.</p>
   <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap"><a class="btn btn-red" data-cta href="#">Gespr&auml;ch vereinbaren &rarr;</a><a class="btn btn-ghost" href="/das-system/">Das System ansehen</a></div>
 </div></section>
 <div id="p12-footer"></div>
 <script src="/assets/p12.js"></script>
-<script>document.getElementById("radar-slot").innerHTML='<svg class="radar" viewBox="0 0 600 600" aria-hidden="true"><g fill="none" stroke="#33465c" stroke-width="1"><circle cx="300" cy="300" r="70"/><circle cx="300" cy="300" r="140"/><circle cx="300" cy="300" r="210"/><circle cx="300" cy="300" r="280"/><line x1="300" y1="10" x2="300" y2="590"/><line x1="10" y1="300" x2="590" y2="300"/></g><circle cx="380" cy="228" r="4" fill="#C31212"/></svg><svg class="shield-wm" viewBox="0 0 100 120" aria-hidden="true"><path d="M50 4 L92 20 V60 C92 90 72 108 50 116 C28 108 8 90 8 60 V20 Z" fill="#ffffff"/></svg>';document.getElementById("radar-slot2").innerHTML=document.querySelector("#radar-slot .radar").outerHTML;</script>
 </body></html>`;
 write(path.join(DIST,"ratgeber","index.html"), hub);
 routes.push("/ratgeber/");
