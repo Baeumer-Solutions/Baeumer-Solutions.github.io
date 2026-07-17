@@ -14,8 +14,8 @@
   --amber:#B0770A; --amber-bg:#FBF2E0;
   --red-chip-bg:#FBE5E5; --red-chip-tx:#8C1010;
   --maxw:1160px;
-  --shadow:0 1px 2px rgba(27,36,48,.05), 0 6px 14px rgba(27,36,48,.075), 0 20px 44px rgba(27,36,48,.11);
-  --shadow-sm:0 1px 2px rgba(27,36,48,.05), 0 4px 10px rgba(27,36,48,.07);
+  --shadow:0 1px 2px rgba(27,36,48,.04), 0 2px 4px rgba(27,36,48,.05), 0 8px 18px rgba(27,36,48,.07);
+  --shadow-sm:0 1px 2px rgba(27,36,48,.04), 0 3px 7px rgba(27,36,48,.055);
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
