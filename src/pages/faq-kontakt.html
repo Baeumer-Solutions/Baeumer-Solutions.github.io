@@ -10,7 +10,7 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Krisenvorsorge-Analyse: Fragen &amp; Kontakt | Protect-12">
 <meta property="og:description" content="Ehrliche Antworten auf die h&auml;ufigsten Fragen. Plus Selbst-Check und Kontakt.">
-<meta property="og:image" content="https://protect12.de/assets/og.png">
+<meta property="og:image" content="https://protect-12.de/assets/og.png">
 <meta property="og:url" content="https://protect-12.de/faq-kontakt">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,11 +54,11 @@
   <div class="wrap" style="max-width:820px">
     <div class="section-head reveal"><span class="kicker">Selbst-Check</span>
       <h2>In zwei Minuten ein Gef&uuml;hl daf&uuml;r, wo Sie stehen.</h2>
-      <p class="lead">F&uuml;nf ehrliche Fragen. Am Ende sehen Sie eine erste Einsch&auml;tzung, kein Ersatz f&uuml;r die Analyse, aber ein guter Anfang.</p></div>
+      <p class="lead">Zw&ouml;lf kurze Fragen, eine je Lebensbereich. Am Ende sehen Sie eine erste Einsch&auml;tzung, kein Ersatz f&uuml;r die Analyse, aber ein guter Anfang.</p></div>
     <div class="reveal" id="scform"></div>
     <div class="gaugewrap reveal" style="margin-top:18px">
       <div class="val"><span id="scval">0.0</span><small> / 5</small></div>
-      <div class="msg" id="scmsg">Beantworten Sie die f&uuml;nf Fragen, um Ihre erste Einordnung zu sehen.</div>
+      <div class="msg" id="scmsg">Beantworten Sie die zw&ouml;lf Fragen, um Ihre erste Einordnung zu sehen.</div>
       <div style="margin-top:18px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
         <a class="btn btn-red" data-cta href="#">Echte Analyse besprechen &rarr;</a>
         <button class="btn btn-ghost" id="screset" type="button">Noch einmal</button>
@@ -74,7 +74,7 @@
     <h2>Der erste Schritt ist ein Gespr&auml;ch.</h2>
     <p>Protect-12 gibt Ihrer Krisenvorsorge System. Und Ihnen und Ihren Liebsten echte Resilienz. Wir erkl&auml;ren Ablauf und Umfang pers&ouml;nlich.</p>
     <a class="btn btn-red" data-cta href="#">Gespr&auml;ch vereinbaren &rarr;</a>
-    <p style="margin-top:22px;font-size:15px;color:var(--mist-txt)">B&auml;umer Solutions &middot; Kevin B&auml;umer &middot; <a href="mailto:Kontakt@protect-12.de" style="color:#fff">Kontakt@protect-12.de</a> &middot; <a href="tel:+4917623998516" style="color:#fff">+49 176 23998516</a></p>
+    <p style="margin-top:22px;font-size:15px;color:var(--mist-txt)">B&auml;umer Solutions &middot; Kevin B&auml;umer &middot; <a href="mailto:kontakt@protect-12.de" style="color:#fff">kontakt@protect-12.de</a> &middot; <a href="tel:+4917623998516" style="color:#fff">+49 176 23998516</a></p>
   </div>
 </section>
 
@@ -105,11 +105,18 @@ document.getElementById("faqld").textContent = JSON.stringify({"@context":"https
 
 // SELF-CHECK
 var SC=[
- {q:"Wie lange kommt Ihr Haushalt ohne Strom aus, ohne dass es kritisch wird?",o:[["Unter einem Tag",1],["Ein paar Tage",3],["Eine Woche oder mehr",5]]},
+ {q:"Kennen Sie die Risiken Ihres Standorts und eine zweite Route, falls die gewohnte Zufahrt gesperrt ist?",o:[["Nein",1],["Teilweise",3],["Ja, beides",5]]},
+ {q:"Ist Ihr Zuhause grundlegend gesichert, ohne dass Ihre Vorsorge nach au&szlig;en sichtbar ist?",o:[["Eher nicht",1],["Teilweise",3],["Ja, unauff&auml;llig",5]]},
  {q:"Wie viel Trinkwasser haben Sie sicher im Haus, pro Person?",o:[["Kaum Reserve",1],["F&uuml;r einige Tage",3],["F&uuml;r zwei Wochen oder mehr",5]]},
- {q:"Wissen alle im Haushalt, was im Ernstfall zu tun ist?",o:[["Eher nicht",1],["Ungef&auml;hr",3],["Ja, klare Rollen",5]]},
+ {q:"Wie lange tr&auml;gt Ihr Lebensmittelvorrat den Haushalt, ohne einzukaufen?",o:[["Unter drei Tage",1],["Ein bis zwei Wochen",3],["Vier Wochen oder mehr",5]]},
+ {q:"Wie lange kommt Ihr Haushalt ohne Strom aus, ohne dass es kritisch wird?",o:[["Unter einem Tag",1],["Ein paar Tage",3],["Eine Woche oder mehr",5]]},
+ {q:"H&auml;tten Sie Medikamente und Erste-Hilfe-Material f&uuml;r zwei Wochen ohne Apotheke?",o:[["Nein",1],["Teilweise",3],["Ja, geplant",5]]},
  {q:"K&ouml;nnten Sie ohne Handynetz noch verl&auml;ssliche Informationen bekommen?",o:[["Nein",1],["Vielleicht",3],["Ja, mehrere Wege",5]]},
- {q:"H&auml;tten Sie Bargeld und wichtige Dokumente griffbereit, wenn Karten streiken?",o:[["Nein",1],["Teilweise",3],["Ja, geordnet",5]]}
+ {q:"K&ouml;nnten Sie Ihr Zuhause kurzfristig verlassen: Gep&auml;ck, Ziel und Route stehen fest?",o:[["Nein",1],["Grob &uuml;berlegt",3],["Ja, vorbereitet",5]]},
+ {q:"Gibt es Menschen in Ihrer N&auml;he, mit denen Sie sich f&uuml;r den Ernstfall abgesprochen haben?",o:[["Nein",1],["Lose",3],["Ja, verbindlich",5]]},
+ {q:"H&auml;tten Sie Bargeld und wichtige Dokumente griffbereit, wenn Karten streiken?",o:[["Nein",1],["Teilweise",3],["Ja, geordnet",5]]},
+ {q:"Wissen alle im Haushalt, was im Ernstfall zu tun ist?",o:[["Eher nicht",1],["Ungef&auml;hr",3],["Ja, klare Rollen",5]]},
+ {q:"Haben Sie Ihre Vorsorge schon einmal durchgespielt oder ge&uuml;bt?",o:[["Nie",1],["Ansatzweise",3],["Ja, regelm&auml;&szlig;ig",5]]}
 ];
 var answers={}, scf=document.getElementById("scform");
 SC.forEach(function(s,i){ var d=document.createElement("div"); d.className="scq";
@@ -119,10 +126,10 @@ scf.addEventListener("click",function(e){ var b=e.target.closest("button"); if(!
   var q=b.getAttribute("data-q"); answers[q]=parseInt(b.getAttribute("data-v"),10);
   Array.prototype.forEach.call(scf.querySelectorAll('button[data-q="'+q+'"]'),function(x){x.classList.remove("sel");}); b.classList.add("sel");
   render(); });
-function render(){ var keys=Object.keys(answers); if(keys.length<5){
+function render(){ var keys=Object.keys(answers); if(keys.length<SC.length){
   document.getElementById("scval").textContent=keys.length?"…":"0.0";
-  document.getElementById("scmsg").textContent="Noch "+(5-keys.length)+" Frage"+((5-keys.length)===1?"":"n")+" bis zu Ihrer Einordnung."; return; }
-  var sum=0; keys.forEach(function(k){sum+=answers[k];}); var avg=sum/5;
+  document.getElementById("scmsg").textContent="Noch "+(SC.length-keys.length)+" Frage"+((SC.length-keys.length)===1?"":"n")+" bis zu Ihrer Einordnung."; return; }
+  var sum=0; keys.forEach(function(k){sum+=answers[k];}); var avg=sum/SC.length;
   document.getElementById("scval").textContent=avg.toFixed(1).replace(".",",");
   var m; if(avg<2.5) m="Es gibt sp&uuml;rbare L&uuml;cken. Das ist kein Grund zur Panik, aber ein guter Anlass, genauer hinzusehen. Die Analyse zeigt, was zuerst dran ist.";
   else if(avg<4) m="Solide Basis mit ein paar offenen Stellen. Genau hier trennt die Analyse, was tr&auml;gt, von dem, was unter Last kippt.";
