@@ -76,9 +76,9 @@ Wer den Brennstoff halbieren will, plant Einweichen ein: Hülsenfrüchte über N
 
 <div class="dl-inline">
 <div class="dl-inline-k">Zum Mitnehmen</div>
-<h3>Der komplette Vorratsplan als PDF</h3>
-<p>16 Seiten: die volle Wasserrechnung für Ihre Haushaltsgröße, die Wasser-PACE-Kette, die versteckten Reserven im Haus, das Depotmodell, die Liste zum Abhaken und alles, was nicht essbar und trotzdem Pflicht ist. Dazu der mitrechnende Vorratsrechner als Excel. Kostenlos, ohne Anmeldung.</p>
-<p><a class="btn btn-red" href="/downloads/Protect12_Vorratsplan.pdf" download>Vorratsplan herunterladen &darr;</a>
+<h3>Der Vier-Wochen-Plan als PDF</h3>
+<p>17 Seiten, gebaut für genau diesen Horizont: die Kalorienrechnung für 28 Tage, was 140.000 Kilokalorien je nach Vorratstyp wiegen, der Wochenplan von der Gefriertruhe bis zur Reserve, die vollständige Mengenliste mit Energie je Position und Spalte zum Abhaken, Ihr Wasserbedarf über 28 Tage samt Aufbereitungskette, der Brennstoffbedarf in Gaskartuschen und das Depotmodell gegen die Rotationsfalle. Kostenlos, ohne Anmeldung.</p>
+<p><a class="btn btn-red" href="/downloads/Protect12_Vorrat_4_Wochen.pdf" download>Vier-Wochen-Plan herunterladen &darr;</a>
 <a class="btn btn-line" href="/downloads/">Alle Checklisten ansehen</a></p>
 </div>
 
