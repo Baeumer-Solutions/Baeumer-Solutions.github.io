@@ -171,8 +171,9 @@ footer.site-footer a:hover{color:#fff}
 footer.site-footer .brand-blurb{color:#9fb0c2;max-width:34ch;font-size:14px;margin-top:12px}
 footer.site-footer .legal{margin-top:34px;padding-top:20px;border-top:1px solid rgba(255,255,255,.1);
   display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;position:relative;z-index:2}
-.reveal{opacity:0;transform:translateY(20px);transition:opacity .7s ease, transform .7s ease}
-.reveal.in{opacity:1;transform:none}
+/* Nur verstecken, wenn p12.js laeuft und das Einblenden auch wirklich ausloesen kann. */
+html.p12js .reveal{opacity:0;transform:translateY(20px);transition:opacity .7s ease, transform .7s ease}
+html.p12js .reveal.in{opacity:1;transform:none}
 .center{text-align:center}
 .lead-p{font-size:17.5px;color:var(--muted)}
 /* Sieben Navi-Punkte plus CTA brauchen Platz. Zwischen 1041 und 1240 px enger setzen,
@@ -200,7 +201,7 @@ footer.site-footer .legal{margin-top:34px;padding-top:20px;border-top:1px solid 
   .claim{padding:34px 26px}
 }
 @media(prefers-reduced-motion:reduce){
-  .reveal{opacity:1;transform:none;transition:none}
+  html.p12js .reveal{opacity:1;transform:none;transition:none}
   html{scroll-behavior:auto}
 }
 /* ---- Logo ---- */
