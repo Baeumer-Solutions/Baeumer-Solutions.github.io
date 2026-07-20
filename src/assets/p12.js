@@ -5,6 +5,9 @@
    ============================================================ */
 (function(){
   "use strict";
+  /* Markiert, dass JS lebt. Ohne diese Klasse zeigt das CSS alle .reveal-Bloecke
+     voll an, damit ein Skriptfehler nie wieder Texte unsichtbar macht. */
+  document.documentElement.className += " p12js";
   var MAIL = "Kontakt@protect-12.de";
   var TEL = "+49 176 23998516";
   var TELHREF = "tel:+4917623998516";
@@ -138,8 +141,15 @@
     bindAll("[data-community]", function(ev){ ev.preventDefault(); openForm("community"); });
     bindAll("[data-legal]", function(ev){ ev.preventDefault(); openLegal(ev.currentTarget.getAttribute("data-legal")); });
 
-    var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } }); }, {threshold:.12});
-    each(".reveal", function(el){ io.observe(el); });
+    /* threshold 0 statt .12: Bloecke, die hoeher sind als der Bildschirm (ganze
+       Ratgeber-Artikel auf dem Handy), erreichen nie 12 Prozent Sichtbarkeit und
+       blieben sonst dauerhaft auf opacity 0, also unsichtbar. */
+    if("IntersectionObserver" in window){
+      var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } }); }, {threshold:0, rootMargin:"0px 0px -8% 0px"});
+      each(".reveal", function(el){ io.observe(el); });
+    } else {
+      each(".reveal", function(el){ el.classList.add("in"); });
+    }
     var cio = new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ runCount(e.target); cio.unobserve(e.target); } }); }, {threshold:.5});
     each("[data-count]", function(el){ cio.observe(el); });
   }
