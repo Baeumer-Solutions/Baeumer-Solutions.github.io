@@ -8,7 +8,7 @@
   /* Markiert, dass JS lebt. Ohne diese Klasse zeigt das CSS alle .reveal-Bloecke
      voll an, damit ein Skriptfehler nie wieder Texte unsichtbar macht. */
   document.documentElement.className += " p12js";
-  var MAIL = "Kontakt@protect-12.de";
+  var MAIL = "kontakt@protect-12.de";
   var TEL = "+49 176 23998516";
   var TELHREF = "tel:+4917623998516";
 
@@ -58,7 +58,7 @@
     return '<footer class="site-footer"><div class="wrap">'+
       '<div class="cols">'+
         '<div><img class="brandlogo" src="assets/logo-weiss.png" alt="Protect-12" style="height:34px">'+
-          '<p class="brand-blurb">Krisenvorsorge mit System. Eine strukturierte Analyse Ihres Haushalts, ein laufendes Lagebild und ein gepr&uuml;ftes Netzwerk. Eine Leistung von B&auml;umer Solutions.</p></div>'+
+          '<p class="brand-blurb">Krisenvorsorge mit System. Eine strukturierte Analyse Ihres Haushalts, ein laufendes Lagebild und ein gepr&uuml;ftes Netzwerk.</p></div>'+
         '<div><h4>Das System</h4>'+
           '<a href="das-system.html">Zw&ouml;lf Bereiche</a><a href="das-system.html#szenarien">Acht Szenarien</a>'+
           '<a href="das-system.html#unterlagen">F&uuml;nfzehn Unterlagen</a><a href="lagebild.html">Lagebild</a></div>'+
@@ -68,11 +68,11 @@
           '<a href="downloads.html">Checklisten zum Download</a>'+
           '<a href="faq-kontakt.html">Fragen &amp; Antworten</a></div>'+
         '<div><h4>Kontakt</h4>'+
-          '<a href="mailto:'+MAIL+'">'+MAIL+'</a><a href="'+TELHREF+'">'+TEL+'</a>'+
+          '<a href="mailto:'+MAIL+'">'+MAIL+'</a>'+
           '<a href="#" data-cta>Gespr&auml;ch vereinbaren</a>'+
           '<a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div>'+
       '</div>'+
-      '<div class="legal"><span>&copy; Protect-12 &middot; Krisenvorsorge mit System &middot; Konzept und Umsetzung: B&auml;umer Solutions</span>'+
+      '<div class="legal"><span>&copy; Protect-12 &middot; Krisenvorsorge mit System</span>'+
         '<span>protect-12.de</span></div>'+
       '</div></footer>';
   }
@@ -235,7 +235,9 @@
       '<p>Wir melden uns pers&ouml;nlich bei Ihnen. Wenn es eilt, erreichen Sie uns direkt unter '+
       '<a href="'+TELHREF+'">'+TEL+'</a>.</p>'+
       '<button class="btn btn-navy" data-x style="margin-top:10px">Schlie&szlig;en</button></div>';
-    var x=o.ov.querySelector("[data-x]"); if(x) x.addEventListener("click", o.close);
+    /* ALLE data-x-Knoepfe binden: querySelector traf nur das X im Kopf,
+       der neue Schliessen-Button im Erfolgstext blieb ohne Listener. */
+    Array.prototype.forEach.call(o.ov.querySelectorAll("[data-x]"), function(x){ x.addEventListener("click", o.close); });
   }
 
   function openLegal(which){
@@ -247,14 +249,14 @@
     impressum: '<h2 style="font-size:24px;margin-bottom:14px">Impressum</h2>'+
       '<p><b>Angaben gem&auml;&szlig; &sect; 5 Digitale-Dienste-Gesetz (DDG)</b><br>B&auml;umer Solutions<br>Inhaber: Kevin B&auml;umer<br>Donzenbachstra&szlig;e 5<br>57572 Niederfischbach<br>Deutschland</p>'+
       '<p style="margin-top:14px">Protect-12 ist ein Angebot von B&auml;umer Solutions.</p>'+
-      '<p style="margin-top:14px"><b>Kontakt</b><br>Telefon: +49 176 23998516<br>E-Mail: Kontakt@protect-12.de</p>'+
+      '<p style="margin-top:14px"><b>Kontakt</b><br>Telefon: +49 176 23998516<br>E-Mail: kontakt@protect-12.de</p>'+
       '<p style="margin-top:14px"><b>Umsatzsteuer-ID</b><br>USt-IdNr. gem&auml;&szlig; &sect; 27a UStG: DE462173157</p>'+
       '<p style="margin-top:14px"><b>Redaktionell verantwortlich (&sect; 18 Abs. 2 MStV)</b><br>Kevin B&auml;umer, Anschrift wie oben.</p>'+
       '<p style="margin-top:14px"><b>EU-Streitschlichtung</b><br>Plattform der EU-Kommission: ec.europa.eu/consumers/odr. Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>'+
       '<p style="margin-top:14px">Standardklauseln zur Haftung f&uuml;r Inhalte (&sect; 7 Abs. 1 DDG; &sect;&sect; 8 bis 10 DDG), Haftung f&uuml;r Links und Urheberrecht gelten unver&auml;ndert.</p>'+
       '<p style="margin-top:14px;color:var(--muted)">Stand: Juli 2026</p>',
     datenschutz: '<h2 style="font-size:24px;margin-bottom:14px">Datenschutzerkl&auml;rung</h2>'+
-      '<p><b>1. Verantwortlicher</b><br>B&auml;umer Solutions, Inhaber Kevin B&auml;umer, Donzenbachstra&szlig;e 5, 57572 Niederfischbach. Telefon +49 176 23998516, Kontakt@protect-12.de.</p>'+
+      '<p><b>1. Verantwortlicher</b><br>B&auml;umer Solutions, Inhaber Kevin B&auml;umer, Donzenbachstra&szlig;e 5, 57572 Niederfischbach. Telefon +49 176 23998516, kontakt@protect-12.de.</p>'+
       '<p style="margin-top:12px"><b>2. Hosting</b><br>Die Seite wird bei einem Dienstleister gehostet, auf Grundlage eines Auftragsverarbeitungsvertrags und, soweit einschl&auml;gig, der EU-Standardvertragsklauseln.</p>'+
       '<p style="margin-top:12px"><b>3. Server-Logfiles</b><br>Beim Aufruf werden technisch notwendige Daten verarbeitet (Browsertyp, Betriebssystem, Referrer-URL, Uhrzeit, IP-Adresse).</p>'+
       '<p style="margin-top:12px"><b>4. Cookies und lokale Speicherung</b><br>Keine Tracking-Cookies ohne Einwilligung. Technisch notwendig gespeichert wird nur die Cookie-Auswahl (&sect; 25 Abs. 2 TDDDG). Optionale Statistik nur nach Einwilligung.</p>'+
@@ -262,7 +264,7 @@
       '<p style="margin-top:12px"><b>6. Anfrage- und Voranmelde-Formular</b><br>Ihre Angaben werden zur Bearbeitung Ihrer Anfrage verarbeitet, technisch &uuml;ber unseren Auftragsverarbeiter Make (EU-Rechenzentrum) an unser Postfach. Eine Verwendung f&uuml;r Werbezwecke findet nicht statt.</p>'+
       '<p style="margin-top:12px"><b>7. Fragebogen und Onlineportal</b><br>Auftragsverarbeiter Airtable (USA) als Datenbank sowie Make. Bei besonderen Kategorien Art. 9 Abs. 2 lit. a DSGVO.</p>'+
       '<p style="margin-top:12px"><b>8. Eingebundene Inhalte</b><br>Google Fonts (Google Ireland Limited); Skript-Bibliotheken &uuml;ber cdnjs (Cloudflare, Inc.).</p>'+
-      '<p style="margin-top:12px"><b>9. Ihre Rechte</b><br>Auskunft, Berichtigung, L&ouml;schung, Einschr&auml;nkung, Daten&uuml;bertragbarkeit und Widerspruch (Art. 15 bis 21 DSGVO). Widerruf an Kontakt@protect-12.de.</p>'+
+      '<p style="margin-top:12px"><b>9. Ihre Rechte</b><br>Auskunft, Berichtigung, L&ouml;schung, Einschr&auml;nkung, Daten&uuml;bertragbarkeit und Widerspruch (Art. 15 bis 21 DSGVO). Widerruf an kontakt@protect-12.de.</p>'+
       '<p style="margin-top:12px"><b>10. Beschwerderecht</b><br>Zust&auml;ndig u.a. der Landesbeauftragte f&uuml;r Datenschutz Rheinland-Pfalz, Hintere Bleiche 34, 55116 Mainz.</p>'+
       '<p style="margin-top:14px;color:var(--muted)">Stand: Juli 2026</p>'
   };
