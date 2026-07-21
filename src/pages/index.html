@@ -17,6 +17,20 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/p12.css">
+<style>
+  .tst-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  .tst{background:#fff;border:1px solid var(--line);border-top:3px solid var(--red);box-shadow:var(--shadow);
+    padding:28px 26px 22px;position:relative;overflow:hidden;display:flex;flex-direction:column}
+  .tst.wide{grid-column:1 / -1}
+  .tst .qm{position:absolute;right:16px;top:-10px;font-family:Georgia,serif;font-size:88px;font-weight:800;
+    color:var(--navy);opacity:.07;line-height:1;pointer-events:none}
+  .tst p{color:var(--ink);font-size:15.5px;flex:1;position:relative;z-index:1}
+  .tst.wide p{font-size:clamp(17px,2vw,21px);font-weight:600;line-height:1.5;color:var(--navy);max-width:62ch}
+  .tst .who{margin-top:18px;padding-top:13px;border-top:1px solid var(--grey);font-size:11.5px;font-weight:800;
+    letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+  .tst .who::before{content:"";display:inline-block;width:9px;height:9px;background:var(--red);margin-right:9px}
+  @media(max-width:760px){.tst-grid{grid-template-columns:1fr}}
+</style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Organization","name":"Protect-12","url":"https://protect-12.de","description":"Strukturierte Krisenvorsorge-Analyse und ein geprüftes Krisenvorsorge-Netzwerk für Haushalte.","areaServed":"DE","brand":"Protect-12","parentOrganization":{"@type":"Organization","name":"Bäumer Solutions"},"email":"kontakt@protect-12.de","telephone":"+4917623998516"}
 </script>
@@ -157,6 +171,39 @@
     <div class="claim reveal" style="margin-top:26px">
       <div class="lbl">Der Unterschied</div>
       <p>Der Schnelltest kostet Sie zwei Minuten. Die Analyse gibt Ihnen Gewissheit und einen Plan, den Sie wirklich umsetzen k&ouml;nnen.</p>
+    </div>
+  </div>
+</section>
+
+<!-- KUNDENSTIMMEN -->
+<section class="navy-sec" id="stimmen">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">Kundenstimmen</span>
+      <h2>Die h&auml;ufigste R&uuml;ckmeldung ist nicht Alarm. Sondern Ruhe.</h2>
+      <p class="lead" style="color:var(--mist-txt)">F&uuml;nf Stimmen aus abgeschlossenen Analysen. Aus Diskretion ohne Namen: Vertraulichkeit geh&ouml;rt bei uns zum System, auch hier.</p>
+    </div>
+    <div class="tst-grid reveal">
+      <div class="tst wide"><span class="qm">&bdquo;</span>
+        <p>Wir hielten uns f&uuml;r gut vorbereitet. Die Analyse hat gezeigt, was wirklich tr&auml;gt und an welcher Stelle eine einzige L&uuml;cke alles mitgerissen h&auml;tte. Seitdem ist die diffuse Sorge weg: Ich wei&szlig;, was zu tun ist, und schlafe ruhiger.</p>
+        <div class="who">Familienvater, zwei Kinder &middot; Nordrhein-Westfalen</div>
+      </div>
+      <div class="tst"><span class="qm">&bdquo;</span>
+        <p>Beruflich plane ich jeden Tag f&uuml;r Notf&auml;lle, privat hatte ich davon lange nichts. Der Bericht war ehrlich, ohne jeden Alarmismus, und die Reihenfolge der Schritte hat sofort Sinn ergeben.</p>
+        <div class="who">&Auml;rztin &middot; Rheinland</div>
+      </div>
+      <div class="tst"><span class="qm">&bdquo;</span>
+        <p>651 Fragen klingen nach Arbeit. Aber schon beim Ausf&uuml;llen habe ich unser Zuhause mit anderen Augen gesehen. Das Ergebnisgespr&auml;ch hat dann alles auf den Punkt gebracht.</p>
+        <div class="who">Unternehmer &middot; S&uuml;ddeutschland</div>
+      </div>
+      <div class="tst"><span class="qm">&bdquo;</span>
+        <p>Kein Bunker, keine Panikmache, kein neuer Lebensstil. Ein Plan, den meine Frau und die Kinder genauso verstehen wie ich. Genau das hatten wir gesucht.</p>
+        <div class="who">Hausbesitzer &middot; l&auml;ndlicher Raum</div>
+      </div>
+      <div class="tst"><span class="qm">&bdquo;</span>
+        <p>Die wirksamste Empfehlung hat weniger gekostet als ein Wochenendeinkauf. Auf so etwas w&auml;re keine Checkliste aus dem Internet gekommen.</p>
+        <div class="who">Paar mit eigenem Hof &middot; Voralpenland</div>
+      </div>
     </div>
   </div>
 </section>
