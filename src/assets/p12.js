@@ -123,7 +123,7 @@
 
   /* ------------------------------------------------------------------
      ProvenExpert Bewertungssiegel. Am Desktop fest oben rechts, auf
-     dem Handy verkleinert unten rechts (statt ausgeblendet).
+     dem Handy oben eingeblendet und beim Scrollen ausgeblendet.
      Liegt unter Kopf und Overlay (z-index 100, das Formular-Modal ist
      200). Das async-Skript wird als echtes <script> nachgeladen, weil
      ueber innerHTML eingefuegte Skripte nicht ausgefuehrt werden.
@@ -132,7 +132,7 @@
     if(document.getElementById("ProvenExpert_widget_container")) return;
     if(!document.getElementById("p12-pe-style")){
       var st = document.createElement("style"); st.id = "p12-pe-style";
-      st.textContent = "@media(max-width:991px){#ProvenExpert_widget_container{top:auto!important;bottom:12px!important;right:8px!important;transform:scale(.7);transform-origin:bottom right}}";
+      st.textContent = "@media(max-width:991px){#ProvenExpert_widget_container{top:74px!important;bottom:auto!important;right:8px!important;transform:scale(.62);transform-origin:top right;transition:opacity .28s ease,transform .28s ease}#ProvenExpert_widget_container.pe-away{opacity:0;transform:scale(.62) translateY(-16px);pointer-events:none}}";
       document.head.appendChild(st);
     }
     var a = document.createElement("a");
@@ -147,6 +147,17 @@
     var s = document.createElement("script");
     s.src = "//www.provenexpert.com/slider_protect-12.js?sk=l_185"; s.async = true;
     a.appendChild(s);
+
+    /* Auf dem Handy: oben unter dem Kopf zeigen, beim ersten Scrollen
+       ausblenden. Die .pe-away-Regel greift nur unter 992px, am Desktop
+       bleibt das Siegel dauerhaft stehen. */
+    var peWeg = false;
+    function peScroll(){
+      var weg = (window.pageYOffset || document.documentElement.scrollTop || 0) > 40;
+      if(weg !== peWeg){ a.classList.toggle("pe-away", weg); peWeg = weg; }
+    }
+    addEventListener("scroll", peScroll, {passive:true});
+    peScroll();
   }
 
   function each(sel, fn){ Array.prototype.forEach.call(document.querySelectorAll(sel), fn); }
