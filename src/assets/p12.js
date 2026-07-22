@@ -122,8 +122,8 @@
   }
 
   /* ------------------------------------------------------------------
-     ProvenExpert Bewertungssiegel. Fest am rechten Rand, ab 992px
-     sichtbar (darunter ausgeblendet, wie vom Anbieter vorgesehen).
+     ProvenExpert Bewertungssiegel. Am Desktop fest oben rechts, auf
+     dem Handy verkleinert unten rechts (statt ausgeblendet).
      Liegt unter Kopf und Overlay (z-index 100, das Formular-Modal ist
      200). Das async-Skript wird als echtes <script> nachgeladen, weil
      ueber innerHTML eingefuegte Skripte nicht ausgefuehrt werden.
@@ -132,7 +132,7 @@
     if(document.getElementById("ProvenExpert_widget_container")) return;
     if(!document.getElementById("p12-pe-style")){
       var st = document.createElement("style"); st.id = "p12-pe-style";
-      st.textContent = "@media(max-width:991px){#ProvenExpert_widget_container{display:none!important}}";
+      st.textContent = "@media(max-width:991px){#ProvenExpert_widget_container{top:auto!important;bottom:12px!important;right:8px!important;transform:scale(.7);transform-origin:bottom right}}";
       document.head.appendChild(st);
     }
     var a = document.createElement("a");
