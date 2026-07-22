@@ -121,6 +121,34 @@
     requestAnimationFrame(frame);
   }
 
+  /* ------------------------------------------------------------------
+     ProvenExpert Bewertungssiegel. Fest am rechten Rand, ab 992px
+     sichtbar (darunter ausgeblendet, wie vom Anbieter vorgesehen).
+     Liegt unter Kopf und Overlay (z-index 100, das Formular-Modal ist
+     200). Das async-Skript wird als echtes <script> nachgeladen, weil
+     ueber innerHTML eingefuegte Skripte nicht ausgefuehrt werden.
+     ------------------------------------------------------------------ */
+  function mountProvenExpert(){
+    if(document.getElementById("ProvenExpert_widget_container")) return;
+    if(!document.getElementById("p12-pe-style")){
+      var st = document.createElement("style"); st.id = "p12-pe-style";
+      st.textContent = "@media(max-width:991px){#ProvenExpert_widget_container{display:none!important}}";
+      document.head.appendChild(st);
+    }
+    var a = document.createElement("a");
+    a.id = "ProvenExpert_widget_container";
+    a.href = "https://www.provenexpert.com/protect-12/?utm_source=Widget&utm_medium=Widget&utm_campaign=Widget";
+    a.title = "Kundenbewertungen & Erfahrungen zu Protect-12. Mehr Infos anzeigen.";
+    a.target = "_blank"; a.rel = "noopener noreferrer";
+    a.style.cssText = "text-decoration:none;transition:none;z-index:100;position:fixed;line-height:0;right:0;top:150px";
+    a.innerHTML = '<img src="https://images.provenexpert.com/29/b5/541b3de4803f9fe7d721f12c9407/widget_landscape_185_de_0.png" alt="Erfahrungen &amp; Bewertungen zu Protect-12" width="185" height="154" style="border:0">'+
+      '<span id="ProvenExpert_slider_feedback" style="position:absolute;padding:0;top:0;left:185px"></span>';
+    document.body.appendChild(a);
+    var s = document.createElement("script");
+    s.src = "//www.provenexpert.com/slider_protect-12.js?sk=l_185"; s.async = true;
+    a.appendChild(s);
+  }
+
   function each(sel, fn){ Array.prototype.forEach.call(document.querySelectorAll(sel), fn); }
   function bindAll(sel, fn){ each(sel, function(el){ el.addEventListener("click", fn); }); }
   function bindWithin(root, sel, fn){ Array.prototype.forEach.call(root.querySelectorAll(sel), function(el){ el.addEventListener("click", fn); }); }
@@ -133,6 +161,7 @@
     if(f) f.outerHTML = buildFooter();
 
     mountSchild();
+    mountProvenExpert();
 
     var b = document.getElementById("p12burger"), m = document.getElementById("p12mnav");
     if(b && m){ b.addEventListener("click", function(){ m.classList.toggle("open"); }); }
