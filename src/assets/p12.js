@@ -70,7 +70,8 @@
         '<div><h4>Kontakt</h4>'+
           '<a href="mailto:'+MAIL+'">'+MAIL+'</a>'+
           '<a href="#" data-cta>Gespr&auml;ch vereinbaren</a>'+
-          '<a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div>'+
+          '<a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a>'+
+          '<a href="#" data-cc-open>Cookie-Einstellungen</a></div>'+
       '</div>'+
       '<div class="legal"><span>&copy; Protect-12 &middot; Krisenvorsorge mit System</span>'+
         '<span>protect-12.de</span></div>'+
@@ -128,7 +129,63 @@
      200). Das async-Skript wird als echtes <script> nachgeladen, weil
      ueber innerHTML eingefuegte Skripte nicht ausgefuehrt werden.
      ------------------------------------------------------------------ */
+  /* ------------------------------------------------------------------
+     Einwilligung fuer externe Inhalte (seit 11.08.2026).
+     Ohne ausdrueckliches Ja wird NICHTS von Dritten nachgeladen. Betrifft
+     heute allein das ProvenExpert-Siegel. Die Wahl liegt im localStorage
+     unter p12-consent ("alle" oder "notwendig"), damit wir nicht bei jedem
+     Aufruf erneut fragen (Paragraf 25 Abs. 2 Nr. 2 TDDDG).
+     ------------------------------------------------------------------ */
+  var CC_KEY = "p12-consent";
+  function ccLies(){ try{ return localStorage.getItem(CC_KEY); }catch(e){ return null; } }
+  function ccSchreib(w){ try{ localStorage.setItem(CC_KEY, w); }catch(e){} }
+
+  function ccEntfernen(){
+    var a = document.getElementById("ProvenExpert_widget_container");
+    if(a) a.parentNode.removeChild(a);
+  }
+
+  function ccBanner(){
+    if(document.getElementById("p12cc")) return;
+    var w = ccLies();
+    var el = document.createElement("div");
+    el.id = "p12cc"; el.className = "p12cc";
+    el.setAttribute("role","dialog");
+    el.setAttribute("aria-label","Einwilligung fuer externe Inhalte");
+    el.innerHTML =
+      '<div class="p12cc-in">'+
+        '<div class="p12cc-tx"><b>Externe Inhalte</b>'+
+          '<p>Wir setzen keine Tracking-Cookies und keine Webanalyse ein. Nur f&uuml;r unser '+
+          'Bewertungssiegel wird ein Inhalt von ProvenExpert nachgeladen, dabei erh&auml;lt der '+
+          'Anbieter Ihre IP-Adresse. Das passiert nur, wenn Sie zustimmen. Ihre Wahl k&ouml;nnen '+
+          'Sie jederzeit im Seitenfu&szlig; &auml;ndern. Mehr in der '+
+          '<a href="datenschutz.html">Datenschutzerkl&auml;rung</a>.</p></div>'+
+        '<div class="p12cc-btn">'+
+          '<button type="button" class="btn btn-ghost" data-cc="notwendig">Nur notwendige</button>'+
+          '<button type="button" class="btn btn-red" data-cc="alle">Externe Inhalte erlauben</button>'+
+        '</div>'+
+      '</div>';
+    document.body.appendChild(el);
+    if(w) el.className = "p12cc offen";
+    Array.prototype.forEach.call(el.querySelectorAll("[data-cc]"), function(b){
+      b.addEventListener("click", function(){
+        var wahl = b.getAttribute("data-cc");
+        ccSchreib(wahl);
+        el.parentNode.removeChild(el);
+        if(wahl === "alle") mountProvenExpert(); else ccEntfernen();
+      });
+    });
+  }
+
+  function ccInit(){
+    var w = ccLies();
+    if(w === "alle") mountProvenExpert();
+    else if(w !== "notwendig") ccBanner();
+    bindAll("[data-cc-open]", function(ev){ ev.preventDefault(); ccBanner(); });
+  }
+
   function mountProvenExpert(){
+    if(ccLies() !== "alle") return;            /* harte Sperre, doppelt haelt besser */
     if(document.getElementById("ProvenExpert_widget_container")) return;
     if(!document.getElementById("p12-pe-style")){
       var st = document.createElement("style"); st.id = "p12-pe-style";
@@ -172,7 +229,7 @@
     if(f) f.outerHTML = buildFooter();
 
     mountSchild();
-    mountProvenExpert();
+    ccInit();
 
     var b = document.getElementById("p12burger"), m = document.getElementById("p12mnav");
     if(b && m){ b.addEventListener("click", function(){ m.classList.toggle("open"); }); }
@@ -280,34 +337,12 @@
     Array.prototype.forEach.call(o.ov.querySelectorAll("[data-x]"), function(x){ x.addEventListener("click", o.close); });
   }
 
+  /* Die Rechtstexte stehen seit 11.08.2026 NUR NOCH auf ihren eigenen Seiten.
+     Das frueher hier eingebettete Kurz-Impressum war eine zweite, veraltete
+     Fassung und ist ersatzlos raus. Alte data-legal-Verweise springen jetzt
+     auf die echte Seite. */
   function openLegal(which){
-    var t = (which==="impressum")? LEGAL.impressum : LEGAL.datenschutz;
-    overlay('<div class="p12modal"><div class="p12modal-head"><span>PROTECT-12</span><button data-x aria-label="Schlie&szlig;en">&#10005;</button></div><div class="p12modal-body legal-body">'+t+'</div></div>');
+    location.href = (which === "impressum") ? "impressum.html" : "datenschutz.html";
   }
-
-  var LEGAL = {
-    impressum: '<h2 style="font-size:24px;margin-bottom:14px">Impressum</h2>'+
-      '<p><b>Angaben gem&auml;&szlig; &sect; 5 Digitale-Dienste-Gesetz (DDG)</b><br>B&auml;umer Solutions<br>Inhaber: Kevin B&auml;umer<br>Donzenbachstra&szlig;e 5<br>57572 Niederfischbach<br>Deutschland</p>'+
-      '<p style="margin-top:14px">Protect-12 ist ein Angebot von B&auml;umer Solutions.</p>'+
-      '<p style="margin-top:14px"><b>Kontakt</b><br>Telefon: +49 176 23998516<br>E-Mail: kontakt@protect-12.de</p>'+
-      '<p style="margin-top:14px"><b>Umsatzsteuer-ID</b><br>USt-IdNr. gem&auml;&szlig; &sect; 27a UStG: DE462173157</p>'+
-      '<p style="margin-top:14px"><b>Redaktionell verantwortlich (&sect; 18 Abs. 2 MStV)</b><br>Kevin B&auml;umer, Anschrift wie oben.</p>'+
-      '<p style="margin-top:14px"><b>EU-Streitschlichtung</b><br>Plattform der EU-Kommission: ec.europa.eu/consumers/odr. Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>'+
-      '<p style="margin-top:14px">Standardklauseln zur Haftung f&uuml;r Inhalte (&sect; 7 Abs. 1 DDG; &sect;&sect; 8 bis 10 DDG), Haftung f&uuml;r Links und Urheberrecht gelten unver&auml;ndert.</p>'+
-      '<p style="margin-top:14px;color:var(--muted)">Stand: Juli 2026</p>',
-    datenschutz: '<h2 style="font-size:24px;margin-bottom:14px">Datenschutzerkl&auml;rung</h2>'+
-      '<p><b>1. Verantwortlicher</b><br>B&auml;umer Solutions, Inhaber Kevin B&auml;umer, Donzenbachstra&szlig;e 5, 57572 Niederfischbach. Telefon +49 176 23998516, kontakt@protect-12.de.</p>'+
-      '<p style="margin-top:12px"><b>2. Hosting</b><br>Die Seite wird bei einem Dienstleister gehostet, auf Grundlage eines Auftragsverarbeitungsvertrags und, soweit einschl&auml;gig, der EU-Standardvertragsklauseln.</p>'+
-      '<p style="margin-top:12px"><b>3. Server-Logfiles</b><br>Beim Aufruf werden technisch notwendige Daten verarbeitet (Browsertyp, Betriebssystem, Referrer-URL, Uhrzeit, IP-Adresse).</p>'+
-      '<p style="margin-top:12px"><b>4. Cookies und lokale Speicherung</b><br>Keine Tracking-Cookies ohne Einwilligung. Technisch notwendig gespeichert wird nur die Cookie-Auswahl (&sect; 25 Abs. 2 TDDDG). Optionale Statistik nur nach Einwilligung.</p>'+
-      '<p style="margin-top:12px"><b>5. Live-Lagebild</b><br>Die Lagebild-Seite ruft &ouml;ffentlich zug&auml;ngliche Fachdaten direkt in Ihrem Browser ab (u.a. BBK/NINA, USGS, GDACS, NOAA). Dabei erhalten die Anbieter technisch Ihre IP-Adresse. Es werden keine personenbezogenen Daten an uns &uuml;bermittelt.</p>'+
-      '<p style="margin-top:12px"><b>6. Anfrage- und Voranmelde-Formular</b><br>Ihre Angaben werden zur Bearbeitung Ihrer Anfrage verarbeitet, technisch &uuml;ber unseren Auftragsverarbeiter Make (EU-Rechenzentrum) an unser Postfach. Eine Verwendung f&uuml;r Werbezwecke findet nicht statt.</p>'+
-      '<p style="margin-top:12px"><b>7. Fragebogen und Onlineportal</b><br>Auftragsverarbeiter Airtable (USA) als Datenbank sowie Make. Bei besonderen Kategorien Art. 9 Abs. 2 lit. a DSGVO.</p>'+
-      '<p style="margin-top:12px"><b>8. Eingebundene Inhalte</b><br>Google Fonts (Google Ireland Limited); Skript-Bibliotheken &uuml;ber cdnjs (Cloudflare, Inc.).</p>'+
-      '<p style="margin-top:12px"><b>9. Ihre Rechte</b><br>Auskunft, Berichtigung, L&ouml;schung, Einschr&auml;nkung, Daten&uuml;bertragbarkeit und Widerspruch (Art. 15 bis 21 DSGVO). Widerruf an kontakt@protect-12.de.</p>'+
-      '<p style="margin-top:12px"><b>10. Beschwerderecht</b><br>Zust&auml;ndig u.a. der Landesbeauftragte f&uuml;r Datenschutz Rheinland-Pfalz, Hintere Bleiche 34, 55116 Mainz.</p>'+
-      '<p style="margin-top:14px;color:var(--muted)">Stand: Juli 2026</p>'
-  };
-
   if(document.readyState!=="loading") mount(); else document.addEventListener("DOMContentLoaded", mount);
 })();
