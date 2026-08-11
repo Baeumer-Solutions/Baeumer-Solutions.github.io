@@ -18,6 +18,11 @@
     community: "https://hook.eu2.make.com/i44tx5i2o9okgqib6fh4cl239an2jdd7"
   };
 
+  /* Riegel seit 11.08.2026: der Webhook stand offen, Bots haben leere POSTs
+     geschickt und Make hat brav leere Mails erzeugt. Jede echte Absendung
+     traegt jetzt dieses Kennwort, Make wirft alles ohne weg. */
+  var P12_TOKEN = "p12web-7Q3xR9tK";
+
   var MAILTO_CONTACT = "mailto:"+MAIL+"?subject=Protect-12%20Gespr%C3%A4ch%20vereinbaren&body="+
     encodeURIComponent("Guten Tag,\n\nich interessiere mich fuer eine Protect-12 Krisenvorsorge-Analyse und wuerde gern ein unverbindliches Gespraech vereinbaren.\n\nName:\nWohnort (ungefaehr):\nHaushalt (Personen):\nTelefonisch erreichbar:\n\nViele Gruesse");
   var MAILTO_COMMUNITY = "mailto:"+MAIL+"?subject=Voranmeldung%20Krisenvorsorge-Netzwerk&body="+
@@ -316,7 +321,7 @@
       if(!ok){ errBox.innerHTML="Bitte f&uuml;llen Sie die Pflichtfelder aus und best&auml;tigen Sie die Datenschutzerkl&auml;rung."; errBox.style.display="block"; return; }
       var btn=form.querySelector("button[type=submit]"); btn.disabled=true; btn.textContent="Wird gesendet ...";
       var nachricht = (type==="community") ? ("VORANMELDUNG Krisenvorsorge-Netzwerk.\n"+(raw.region?("Region/PLZ: "+raw.region+"\n"):"")+(raw.reason?("Begruendung: "+raw.reason):"")) : ((raw.message||"")+(raw.ort?("\nWohnort: "+raw.ort):"")+(raw.haushalt?("\nHaushalt: "+raw.haushalt):""));
-      var data={ formular:cfg.formular, name:(raw.name||""), email:(raw.email||""), telefon:(raw.phone||""), seite:location.href, nachricht:nachricht, datenschutz:"ja", zeit:new Date().toISOString() };
+      var data={ formular:cfg.formular, name:(raw.name||""), email:(raw.email||""), telefon:(raw.phone||""), seite:location.href, nachricht:nachricht, datenschutz:"ja", zeit:new Date().toISOString(), token:P12_TOKEN };
       fetch(cfg.hook, {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify(data)})
         .then(function(r){ if(!r.ok) throw new Error(r.status); return r; })
         .then(function(){ success(o); })
