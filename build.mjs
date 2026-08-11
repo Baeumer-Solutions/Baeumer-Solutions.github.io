@@ -127,8 +127,6 @@ const hub = `<!DOCTYPE html>
 <meta name="robots" content="index,follow"><link rel="canonical" href="${SITE}/ratgeber">
 <meta property="og:type" content="website"><meta property="og:title" content="Krisenvorsorge-Ratgeber | Protect-12">
 <meta property="og:image" content="https://protect-12.de/assets/og.png">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/p12.css">
 <style>.art{background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);overflow:hidden;position:relative;display:flex;flex-direction:column;border-top:3px solid var(--navy);text-decoration:none}
 .art .lbl{background:linear-gradient(180deg,#233042,#1B2430);color:#fff;padding:16px 22px;font-weight:800;letter-spacing:.03em}
