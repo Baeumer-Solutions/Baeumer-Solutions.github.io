@@ -23,6 +23,9 @@
 
   var KEY_PREFIX = "p12-fb-einwilligung-";
   var MELDE_HOOK = "https://hook.eu2.make.com/i44tx5i2o9okgqib6fh4cl239an2jdd7";
+  /* Muss zum Token in p12.js und zum Make-Filter passen, sonst wird die
+     Einwilligungs-Meldung als Fremd-POST verworfen (Stand 11.08.2026). */
+  var P12_TOKEN = "p12web-7Q3xR9tK";
 
   function pfad() { return (location.pathname || "").replace(/\/+$/, ""); }
   function istFragebogen() { return /\/fragebogen$/i.test(pfad()); }
@@ -119,7 +122,8 @@
           seite: location.href,
           nachricht: text,
           datenschutz: "ja",
-          zeit: new Date().toISOString()
+          zeit: new Date().toISOString(),
+          token: P12_TOKEN
         })
       }).catch(function () { /* Zustellung ist Kuer, der Riegel ist Pflicht */ });
     } catch (e) { /* still weiter */ }
