@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Das Protect-12 Fr&uuml;hwarnsystem: Richtung statt Schlagzeile | Protect-12</title>
+<meta name="description" content="Wie aus L&auml;rm eine belastbare Lagebeurteilung wird: Herkunftsklassen, zwei getrennte Achsen, Falsifikationsbedingungen und eine ver&ouml;ffentlichte Trefferbilanz. Das Fr&uuml;hwarnsystem von Protect-12.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://protect-12.de/fruehwarnsystem">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Das Protect-12 Fr&uuml;hwarnsystem">
+<meta property="og:description" content="Das Lagebild sagt, wie die Lage jetzt ist. Das Fr&uuml;hwarnsystem sagt, wohin sie sich bewegt, wie sicher das ist und woran man merken w&uuml;rde, dass es falsch ist.">
+<meta property="og:image" content="https://protect-12.de/assets/og.png">
+<meta property="og:url" content="https://protect-12.de/fruehwarnsystem">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/p12.css">
+<style>
+/* ======== Zwei-Achsen-Diagramm ======== */
+.diag{background:linear-gradient(160deg,#243244,#1B2430);padding:28px 26px 20px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.diag .cap{color:var(--mist-txt);font-size:13px;margin-bottom:14px}
+.diag .cap b{color:#fff}
+.zline{fill:none;stroke-linejoin:round;stroke-linecap:round;stroke-dasharray:1600;stroke-dashoffset:1600;
+  transition:stroke-dashoffset 2s cubic-bezier(.3,.7,.3,1)}
+.in .zline{stroke-dashoffset:0}
+.zline.b{transition-delay:.35s}
+.zfl{opacity:0;transition:opacity .8s ease .9s}
+.in .zfl{opacity:1}
+.zleg{display:flex;gap:22px;flex-wrap:wrap;margin-top:12px}
+.zleg span{display:flex;align-items:center;gap:9px;color:var(--mist-txt);font-size:13px;font-weight:600}
+.zleg i{width:22px;height:3px;display:block}
+/* ======== Herkunftsklassen ======== */
+.hk{background:#fff;border:1px solid var(--line);box-shadow:var(--shadow)}
+.hkrow{display:grid;grid-template-columns:186px 1fr 226px;gap:20px;padding:18px 24px;border-bottom:1px solid var(--grey);align-items:start}
+.hkrow:last-child{border-bottom:0}
+.hkrow.head{background:linear-gradient(180deg,#233042,#1B2430);border-bottom:0}
+.hkrow.head div{color:#fff;font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.hkrow .kl{font-size:12px;font-weight:800;letter-spacing:.11em;color:var(--navy);text-transform:uppercase}
+.hkrow .bsp{font-size:14.5px;color:var(--muted)}
+.hkrow.stumm{background:var(--grey)}
+.hkrow.stumm .kl{color:var(--red-chip-tx)}
+/* ======== Regelkarten ======== */
+.regel{background:#fff;border:1px solid var(--line);border-top:3px solid var(--red);box-shadow:var(--shadow);
+  padding:28px 26px;position:relative;overflow:hidden}
+.regel .rk{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--red)}
+.regel h3{margin:10px 0 10px;font-size:19px}
+.regel p{color:var(--muted);font-size:15px}
+.regel p+p{margin-top:10px}
+.regel .gh{position:absolute;right:12px;bottom:-18px;font-size:78px;font-weight:800;color:var(--navy);opacity:.05;line-height:1}
+/* ======== Grenzen ======== */
+.grenz{background:var(--navy);color:#fff;padding:36px 34px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.grenz h3{color:#fff;font-size:21px;margin-bottom:16px}
+.grenz ul{list-style:none}
+.grenz li{padding:11px 0 11px 28px;position:relative;color:var(--mist-txt);font-size:15.5px;border-bottom:1px solid rgba(255,255,255,.09)}
+.grenz li:last-child{border:0}
+.grenz li::before{content:"";position:absolute;left:0;top:20px;width:13px;height:2px;background:var(--red-soft)}
+.grenz li b{color:#fff}
+@media(max-width:820px){
+  .hkrow{grid-template-columns:1fr;gap:7px;padding:16px 18px}
+  .hkrow.head{display:none}
+  .hkrow .bsp::before{content:"Beispiel: ";font-weight:700;color:var(--navy)}
+}
+@media(prefers-reduced-motion:reduce){.zline{stroke-dashoffset:0;transition:none}.zfl{opacity:1;transition:none}}
+</style>
+</head>
+<body data-page="fruehwarnsystem.html">
+<div id="p12-header"></div>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="kicker">Das Fr&uuml;hwarnsystem</span>
+    <h1>Wie aus L&auml;rm eine belastbare Lage wird</h1>
+    <p class="lead">Es gibt keinen Mangel an Nachrichten. Es gibt einen Mangel an Einordnung. Das Protect-12 Fr&uuml;hwarnsystem misst nicht, wer Recht hat. Es misst, was tats&auml;chlich beobachtbar ist, wie weit die &ouml;ffentliche Aufmerksamkeit davon abweicht und wie zuverl&auml;ssig die eigenen Einsch&auml;tzungen bisher waren.</p>
+    <div class="cta-row"><a class="btn btn-red" data-cta href="#">Gespr&auml;ch vereinbaren &rarr;</a><a class="btn btn-ghost" href="#luecke">Das eigentliche Produkt</a></div>
+    <p class="badge-line">Zielraum: Deutschland, &Ouml;sterreich, Schweiz. Geopolitik in dem Umfang, in dem sie hier durchschl&auml;gt.</p>
+  </div>
+</header>
+
+<!-- ABGRENZUNG -->
+<section id="abgrenzung">
+  <div class="wrap">
+    <div class="section-head reveal"><span class="kicker">Zwei Werkzeuge, zwei Fragen</span>
+      <h2>Das Lagebild zeigt den Zustand. Das Fr&uuml;hwarnsystem zeigt die Bewegung.</h2>
+      <p class="lead">Beides ist n&ouml;tig, und beides ist nicht dasselbe. Wer nur den Zustand kennt, merkt eine Entwicklung erst, wenn sie fertig ist.</p></div>
+    <div class="cmp reveal">
+      <div class="col"><div class="head"><div class="k">Bereits online</div><h3>Das Lagebild</h3></div>
+        <ul>
+          <li>Beantwortet eine einzige Frage: wie ist die Lage gerade jetzt.</li>
+          <li>Misst Zust&auml;nde, z&auml;hlt amtliche Warnungen, zeigt Messwerte.</li>
+          <li>Wird mehrmals t&auml;glich neu gerechnet.</li>
+          <li>&Ouml;ffentlich einsehbar, f&uuml;r jeden.</li>
+        </ul></div>
+      <div class="col hi"><div class="head"><div class="k">Im Aufbau</div><h3>Das Fr&uuml;hwarnsystem</h3></div>
+        <ul>
+          <li>Beantwortet drei Fragen: wohin bewegt sich die Lage, wie sicher ist das, und woran w&uuml;rde man merken, dass die Einsch&auml;tzung falsch ist.</li>
+          <li>Trennt Messwerte streng von Berichterstattung und wertet den Abstand zwischen beiden aus.</li>
+          <li>Jede Einsch&auml;tzung tr&auml;gt eine Bedingung, unter der sie als widerlegt gilt.</li>
+          <li>Jede Prognose wird nachgehalten, auch die falschen.</li>
+        </ul></div>
+    </div>
+    <div class="claim reveal" style="margin-top:26px">
+      <div class="lbl">Der Kernsatz</div>
+      <p>Die Wahrheit wird nicht behauptet. Sie wird eingegrenzt.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DIE LUECKE -->
+<section class="mist" id="luecke">
+  <div class="wrap">
+    <div class="section-head reveal"><span class="kicker">Das eigentliche Produkt</span>
+      <h2>Der Wert liegt im Abstand zwischen zwei Linien.</h2>
+      <p class="lead">Messwerte und Aufmerksamkeit laufen auf getrennten Achsen. Eine Nachrichtenlage darf die Lagezahl nie bewegen, sonst misst das System die Berichterstattung und nennt es Wirklichkeit. Interessant wird es dort, wo die beiden Linien auseinanderlaufen.</p></div>
+    <div class="diag reveal">
+      <div class="cap"><b>Schematische Darstellung</b> &nbsp;&middot;&nbsp; gemessene Anspannung gegen &ouml;ffentliche Aufmerksamkeit</div>
+      <svg viewBox="0 0 900 300" width="100%" height="auto" aria-label="Messwerte und Aufmerksamkeit im Zeitverlauf">
+        <g stroke="#33465c" stroke-width="1" opacity=".55">
+          <line x1="58" y1="26" x2="58" y2="252"/><line x1="58" y1="252" x2="870" y2="252"/>
+          <line x1="58" y1="100" x2="870" y2="100" opacity=".38"/><line x1="58" y1="176" x2="870" y2="176" opacity=".38"/>
+        </g>
+        <g class="zfl">
+          <polygon points="360,156 420,130 480,124 480,165 420,205 360,214" fill="#C31212" opacity=".32"/>
+          <polygon points="600,92 660,60 740,84 740,107 660,110 600,114" fill="#D8DCE3" opacity=".24"/>
+        </g>
+        <polyline class="zline a" stroke="#C31212" stroke-width="3.4"
+          points="60,222 180,212 300,182 420,130 540,118 660,110 780,106 866,100"/>
+        <polyline class="zline b" stroke="#D8DCE3" stroke-width="2.6" stroke-dasharray="1600"
+          points="60,232 180,228 300,222 420,205 540,124 660,60 780,96 866,142"/>
+        <g class="zfl" font-family="Montserrat" font-size="12.5" font-weight="700">
+          <text x="424" y="234" fill="#fff" text-anchor="middle">hier wird etwas &uuml;bersehen</text>
+          <text x="660" y="40" fill="#D8DCE3" text-anchor="middle">hier wird etwas aufgebauscht</text>
+        </g>
+        <g fill="#8FA0B4" font-family="Montserrat" font-size="12" text-anchor="middle">
+          <text x="150" y="274">ruhige Phase</text><text x="440" y="274">Messwerte ziehen an</text>
+          <text x="700" y="274">Thema wird gro&szlig;</text><text x="850" y="274">sp&auml;ter</text>
+        </g>
+      </svg>
+      <div class="zleg">
+        <span><i style="background:#C31212"></i>Gemessene Anspannung: Messwerte, amtliche Meldungen, Marktpreise, beobachtetes Verhalten</span>
+        <span><i style="background:#D8DCE3"></i>&Ouml;ffentliche Aufmerksamkeit: Berichterstattung, Suchverhalten, Ank&uuml;ndigungen</span>
+      </div>
+    </div>
+    <div class="grid g2 reveal" style="margin-top:24px">
+      <div class="regel"><div class="rk">Lesart A</div><h3>Messwerte oben, Aufmerksamkeit unten</h3>
+        <p>Etwas zieht messbar an, ohne dass jemand hinsieht. Das ist der Fall, f&uuml;r den ein Fr&uuml;hwarnsystem &uuml;berhaupt gebaut wird. Hier entsteht Vorlauf, den man nutzen kann.</p><span class="gh">A</span></div>
+      <div class="regel"><div class="rk">Lesart B</div><h3>Aufmerksamkeit oben, Messwerte unten</h3>
+        <p>Ein Thema ist gro&szlig;, die messbare Lage folgt ihm aber nicht. Auch das ist eine Aussage, und zwar eine entlastende. Ein System, das nur warnen kann, ist genauso schief wie eines, das nur beruhigen kann.</p><span class="gh">B</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- HERKUNFTSKLASSEN -->
+<section id="herkunft">
+  <div class="wrap">
+    <div class="section-head reveal"><span class="kicker">Woher die Zahlen kommen</span>
+      <h2>Jeder Datenpunkt tr&auml;gt seine Herkunft mit sich.</h2>
+      <p class="lead">Die Herkunftsklasse entscheidet, was ein Datenpunkt bewirken darf. Das ist der wichtigste bauliche Unterschied zu einem gew&ouml;hnlichen Nachrichten-Auswerter.</p></div>
+    <div class="hk reveal">
+      <div class="hkrow head"><div>Klasse</div><div>Beispiel</div><div>Wirkung auf die Lagezahl</div></div>
+      <div class="hkrow"><div class="kl">Messwert</div><div class="bsp">Netzfrequenz, Pegelstand, Gasspeicherf&uuml;llstand, Inflationsrate</div><div><span class="chip chip-green">voll wirksam</span></div></div>
+      <div class="hkrow"><div class="kl">Amtlich</div><div class="bsp">Wetterwarnung, NINA-Meldung, Reisehinweis, Beh&ouml;rdenbericht</div><div><span class="chip chip-green">voll wirksam</span></div></div>
+      <div class="hkrow"><div class="kl">Markt</div><div class="bsp">Gaspreis, Kriegsrisikopr&auml;mie, Frachtrate, Ausschreibungsvolumen</div><div><span class="chip chip-green">voll wirksam</span></div></div>
+      <div class="hkrow"><div class="kl">Verhalten</div><div class="bsp">Flugbewegungen, Botschaftsevakuierung, Beschaffungsvorgang, Buchungsdaten</div><div><span class="chip chip-green">voll wirksam</span></div></div>
+      <div class="hkrow stumm"><div class="kl">Medien</div><div class="bsp">Berichterstattung, Zitat, Ank&uuml;ndigung, Kommentar</div><div><span class="chip chip-red">nur Aufmerksamkeitsachse</span></div></div>
+      <div class="hkrow stumm"><div class="kl">Modell</div><div class="bsp">Eigene Rechnung, Prognosemarkt, Sprachmodellauswertung</div><div><span class="chip chip-amber">darf einordnen, nie hinzuf&uuml;gen</span></div></div>
+    </div>
+    <div class="claim reveal" style="margin-top:26px">
+      <div class="lbl">Warum Medien nicht in die Lagezahl d&uuml;rfen</div>
+      <p>Sonst w&auml;re ein Thema, &uuml;ber das viel geschrieben wird, automatisch gef&auml;hrlich. Und eines, &uuml;ber das niemand schreibt, automatisch harmlos.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DREI ZUSAGEN -->
+<section class="mist" id="zusagen">
+  <div class="wrap">
+    <div class="section-head reveal"><span class="kicker">Drei Zusagen</span>
+      <h2>Woran Sie uns messen d&uuml;rfen.</h2>
+      <p class="lead">Eine Warnung ist nur dann etwas wert, wenn ihr eine umkehrbare Handlung folgen kann. Eine Farbe allein ist keine Warnung, sie ist eine Stimmung. Deshalb gelten drei feste Zusagen.</p></div>
+    <div class="grid g3 reveal">
+      <div class="regel"><div class="rk">Zusage 01</div><h3>Jede Zahl hat eine ausgewiesene Herkunft</h3>
+        <p>Messwert, amtliche Meldung, Marktpreis, beobachtetes Verhalten, Medienbericht oder Modellrechnung. Wer eine Zahl anzweifelt, kann sie bis zur Ursprungsbeobachtung zur&uuml;ckverfolgen.</p><span class="gh">01</span></div>
+      <div class="regel"><div class="rk">Zusage 02</div><h3>Jede Einsch&auml;tzung nennt ihre Widerlegung</h3>
+        <p>Es steht dabei, was eintreten m&uuml;sste, damit die Einsch&auml;tzung als falsch gilt. Erst das macht aus einer Meinung ein pr&uuml;fbares Produkt.</p><span class="gh">02</span></div>
+      <div class="regel"><div class="rk">Zusage 03</div><h3>Die Trefferbilanz wird ver&ouml;ffentlicht</h3>
+        <p>Jede Prognose wird nachgehalten und die Bilanz offengelegt, auch die Fehlprognosen. Ein Fr&uuml;hwarnsystem ohne ver&ouml;ffentlichte Trefferquote ist ein Kommentar.</p><span class="gh">03</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- KONSTRUKTIONSREGELN -->
+<section id="regeln">
+  <div class="wrap">
+    <div class="section-head reveal"><span class="kicker">Handwerk</span>
+      <h2>Drei Regeln, die wir uns selbst auferlegt haben.</h2>
+      <p class="lead">Die ideologische F&auml;rbung sitzt selten in fremden Texten. Sie sitzt in den eigenen Formeln, weil die niemand mehr liest. Ein Nachrichtentext wird kritisch gelesen. Eine Rechenvorschrift, die einmal im Code steht, nicht mehr.</p></div>
+    <div class="grid g3 reveal">
+      <div class="regel"><div class="rk">Regel 01</div><h3>Der Symmetrietest</h3>
+        <p>Bei jeder Skala und jedem Punktwert wird gefragt: misst diese Zahl einen Zustand, oder verschl&uuml;sselt sie eine Meinung dar&uuml;ber, was gut ist?</p>
+        <p>Der Pr&uuml;fstein: w&uuml;rde jemand mit der gegenteiligen politischen Haltung dieselbe Formel akzeptieren? Wenn nein, ist es keine Messung.</p><span class="gh">01</span></div>
+      <div class="regel"><div class="rk">Regel 02</div><h3>Ausfall ist keine Entwarnung</h3>
+        <p>F&auml;llt eine Quelle aus, darf die Lage nicht ruhiger aussehen. Stattdessen wird der letzte bekannte Stand gehalten, ausdr&uuml;cklich als veraltet gekennzeichnet, mit Altersangabe und Ausfallgrund.</p>
+        <p>Ein alter Wert, klar als alt markiert, ist ehrlicher als eine erfundene Entwarnung.</p><span class="gh">02</span></div>
+      <div class="regel"><div class="rk">Regel 03</div><h3>Dauer statt Spitzenwert</h3>
+        <p>Ein Maximum ist ein Einzelfall, ein Anteil ist ein Zustand. Gemessen wird der Anteil der Zeit au&szlig;erhalb des normalen Bandes, nicht der h&ouml;chste Wert des Tages.</p>
+        <p>Sonst schl&auml;gt ein einzelner Ausschlag Alarm an einem Tag, der zu 99 Prozent unauff&auml;llig war.</p><span class="gh">03</span></div>
+    </div>
+    <div class="claim reveal" style="margin-top:26px">
+      <div class="lbl">Warum wir das so offen sagen</div>
+      <p>Diese drei Regeln entstanden nicht am Rei&szlig;brett, sondern aus Fehlern im eigenen Haus, die wir gefunden und abgestellt haben.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WAS SIE BEKOMMEN -->
+<section class="mist" id="ausgabe">
+  <div class="wrap">
+    <div class="section-head reveal"><span class="kicker">In der Praxis</span>
+      <h2>Was bei Ihnen ankommt.</h2>
+      <p class="lead">Sie sollen nicht selbst Nachrichten sortieren m&uuml;ssen. Sie bekommen eine Einordnung, die sagt, ob eine Entwicklung Ihre Vorbereitung betrifft, und wenn ja, welche Ma&szlig;nahme aus Ihrem Umsetzungsplan gerade vorzuziehen w&auml;re.</p></div>
+    <div class="grid g4 reveal">
+      <div class="card"><div class="num">RICHTUNG</div><h3>Wohin es sich bewegt</h3><p>Je Themenfeld eine Aussage &uuml;ber die Bewegungsrichtung und das Tempo, nicht nur &uuml;ber den Zustand.</p><span class="ghost">A</span></div>
+      <div class="card"><div class="num">SICHERHEIT</div><h3>Wie belastbar das ist</h3><p>Jede Aussage tr&auml;gt ihre Konfidenz. Fehlen die aussagekr&auml;ftigsten Quellen, sinkt sie, auch wenn viele andere melden.</p><span class="ghost">B</span></div>
+      <div class="card"><div class="num">HANDLUNG</div><h3>Eine umkehrbare Empfehlung</h3><p>Jede Stufe tr&auml;gt eine konkrete Ma&szlig;nahme, die sich ohne Schaden wieder zur&uuml;cknehmen l&auml;sst.</p><span class="ghost">C</span></div>
+      <div class="card"><div class="num">BILANZ</div><h3>Die Trefferquote</h3><p>Regelm&auml;&szlig;ig ver&ouml;ffentlicht, mit den Fehlprognosen. Sie sollen sehen k&ouml;nnen, wie gut das System bisher war.</p><span class="ghost">D</span></div>
+    </div>
+    <p class="center reveal" style="margin-top:26px;font-weight:700;color:var(--navy);font-size:18px">Das Fr&uuml;hwarnsystem befindet sich derzeit in der fachlichen Pr&uuml;fung. Umfang und Zugang geben wir bekannt, sobald die Pr&uuml;ffassung abgenommen ist.</p>
+  </div>
+</section>
+
+<!-- GRENZEN -->
+<section id="grenzen">
+  <div class="wrap">
+    <div class="section-head reveal"><span class="kicker">Ehrlichkeit</span>
+      <h2>Was dieses System ausdr&uuml;cklich nicht leistet.</h2></div>
+    <div class="grenz reveal">
+      <h3>Vier klare Grenzen</h3>
+      <ul>
+        <li><b>Keine Vorhersage einzelner Ereignisse mit Datum.</b> Es gibt Wahrscheinlichkeiten mit Zeitfenster, keine Termine.</li>
+        <li><b>Keine politische Bewertung</b> und keine Handlungsempfehlung an Staaten.</li>
+        <li><b>Keine Anlage- oder Rechtsberatung.</b></li>
+        <li><b>Kein Ersatz f&uuml;r amtliche Warnungen.</b> Bei Gefahr im Verzug gelten NINA, AT-Alert und Alertswiss, nicht dieses System.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <span class="kicker">Zuerst die eigene Lage</span>
+    <h2>Ein Fr&uuml;hwarnsystem hilft nur dem, der wei&szlig;, wo er steht.</h2>
+    <p>Eine Warnung ist erst dann n&uuml;tzlich, wenn klar ist, welche Ma&szlig;nahme sie ausl&ouml;sen soll. Genau das liefert die Protect-12 Analyse.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+      <a class="btn btn-red" data-cta href="#">Gespr&auml;ch vereinbaren &rarr;</a>
+      <a class="btn btn-ghost" href="ablauf-experten.html">So l&auml;uft die Analyse ab</a>
+      <a class="btn btn-ghost" href="https://protect-12.de/lagebild/">Zum aktuellen Lagebild</a></div>
+  </div>
+</section>
+
+<div id="p12-footer"></div>
+<script src="assets/p12.js"></script>
+</body>
+</html>
