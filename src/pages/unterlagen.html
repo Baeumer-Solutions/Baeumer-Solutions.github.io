@@ -3,148 +3,81 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ihre Unterlagen: dreizehn Dokumente mit Ausschnitten | Protect-12</title>
-<meta name="description" content="Was Sie am Ende der Krisenvorsorge-Analyse in der Hand halten: dreizehn Dokumente in f&uuml;nf Ordnern, jedes einzeln erkl&auml;rt, mit Musterausschnitt, Nutzen und der Begr&uuml;ndung, warum es dieses Dokument gibt.">
+<title>Ihre Unterlagen: rund 500 Seiten, auf Ihren Haushalt gerechnet | Protect-12</title>
+<meta name="description" content="Dreizehn Dokumente, rund 500 Seiten, drei mitrechnende Excel-Werkzeuge. Sehen Sie echte Seiten aus einem ausgelieferten Analyse-Paket, Dokument f&uuml;r Dokument.">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://protect-12.de/unterlagen">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Ihre Unterlagen aus der Protect-12 Analyse">
-<meta property="og:description" content="Dreizehn Dokumente, jedes mit Musterausschnitt und klarem Nutzen.">
+<meta property="og:description" content="Rund 500 Seiten, dreizehn Dokumente. Echte Seiten aus einem ausgelieferten Paket.">
 <meta property="og:image" content="https://protect-12.de/assets/og.png">
 <meta property="og:url" content="https://protect-12.de/unterlagen">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="assets/p12.css">
 <style>
-/* ===== Ordner-Uebersicht ===== */
-.ordner{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
-.ord{background:#fff;border:1px solid var(--line);border-top:3px solid var(--navy);box-shadow:var(--shadow-sm);
-  padding:20px 18px;position:relative;overflow:hidden}
-.ord:last-child{border-top-color:var(--navy-3)}
-.ord .on{font-size:11px;font-weight:800;letter-spacing:.13em;color:var(--red)}
-.ord h3{font-size:16px;margin:8px 0 8px;line-height:1.3}
-.ord p{font-size:13.5px;color:var(--muted)}
-.ord .anz{margin-top:11px;font-size:11.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--navy-3)}
-/* ===== Dokumentblatt ===== */
-.dok{background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);overflow:hidden;position:relative;margin-bottom:26px}
-.dok .kopf{background:linear-gradient(160deg,#243244,#1B2430);color:#fff;padding:24px 30px;position:relative;overflow:hidden}
-.dok .kopf .dn{font-size:11.5px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;color:var(--red-soft)}
-.dok .kopf h3{color:#fff;font-size:clamp(20px,2.2vw,26px);margin-top:7px;letter-spacing:-.02em}
-.dok .kopf .tags{margin-top:13px;display:flex;gap:8px;flex-wrap:wrap}
-.dok .kopf .tags span{background:rgba(255,255,255,.12);color:#fff;font-size:11.5px;font-weight:700;letter-spacing:.05em;padding:6px 12px}
-.dok .kopf .tags span.xls{background:#217346}
-.dok .kopf .gh{position:absolute;right:18px;bottom:-28px;font-size:96px;font-weight:800;color:#fff;opacity:.07;line-height:1}
-.dok .rumpf{padding:26px 30px 28px}
-.dgrid{display:grid;grid-template-columns:1.02fr .98fr;gap:30px;align-items:start}
-.dok h4{color:var(--navy);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;margin:24px 0 11px;
-  padding-bottom:8px;border-bottom:1px solid var(--grey)}
-.dok h4:first-child{margin-top:0}
-.dok p{color:var(--muted);font-size:15.5px}
-.dok p+p{margin-top:11px}
-.dok p b{color:var(--navy)}
-.dok ul{list-style:none;margin-top:2px}
-.dok li{padding:8px 0 8px 22px;position:relative;font-size:14.5px;color:var(--muted)}
-.dok li::before{content:"";position:absolute;left:0;top:15px;width:8px;height:8px;background:var(--red)}
-.nutzen{background:var(--navy);color:#fff;padding:18px 22px;margin-bottom:4px}
-.nutzen .nl{font-size:10.5px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--red-soft)}
-.nutzen p{color:#fff;font-size:17px;font-weight:700;margin-top:8px;line-height:1.4}
-.warum{background:var(--grey);border-left:3px solid var(--navy);padding:16px 20px}
-.warum p{color:var(--ink);font-size:15px}
-.warum p+p{margin-top:10px}
-.wann{background:#fff;border:1px solid var(--line);border-left:3px solid var(--red);padding:14px 18px;margin-top:14px}
-.wann .wl{font-size:10.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--red)}
-.wann p{color:var(--ink);font-size:14.5px;margin-top:6px}
-/* ===== Musterausschnitt: Seitenoptik ===== */
-.vor .vl{font-size:10.5px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--red);margin-bottom:9px}
-.seite{background:#fff;border:1px solid var(--line);box-shadow:0 16px 38px rgba(27,36,48,.17);overflow:hidden;position:relative}
-.seite .skopf{background:#1B2430;color:#fff;padding:9px 15px;font-size:9px;font-weight:800;letter-spacing:.13em;
-  text-transform:uppercase;display:flex;justify-content:space-between;gap:10px}
-.seite .skopf span:last-child{color:var(--red-soft)}
-.seite .sin{padding:17px 18px 15px}
-.seite .sfuss{border-top:1px solid var(--grey);padding:7px 15px;font-size:8.5px;color:var(--muted);
-  display:flex;justify-content:space-between;letter-spacing:.08em;text-transform:uppercase}
-.seite h6{font-size:15px;color:var(--navy);margin:0 0 3px;font-weight:800;line-height:1.25}
-.seite .stl{font-size:10px;color:var(--muted);margin-bottom:12px}
-.seite .stxt{font-size:11.5px;color:var(--ink);line-height:1.55}
-.seite .stxt+.stxt{margin-top:8px}
-.seite .sh{font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--red);margin:13px 0 7px}
-/* Tabelle im Muster */
-.mtab{width:100%;border-collapse:collapse;font-size:10.5px}
-.mtab th{background:#233042;color:#fff;font-size:8.5px;letter-spacing:.09em;text-transform:uppercase;padding:6px 7px;text-align:left;font-weight:800}
-.mtab td{border-bottom:1px solid var(--grey);padding:6px 7px;color:var(--ink);vertical-align:top}
-.mtab tr:last-child td{border-bottom:0}
-.mtab td.n{color:var(--red);font-weight:800}
-.mtab td.r{text-align:right;white-space:nowrap}
-/* KPI-Leiste */
-.mkpi{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:13px}
-.mkpi>div{background:#fff;padding:9px 9px}
-.mkpi .kl{font-size:8px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
-.mkpi .kv{font-size:20px;font-weight:800;color:var(--navy);line-height:1.05;margin-top:3px}
-.mkpi .kn{font-size:8.5px;color:var(--muted);margin-top:1px}
-/* Modulbalken */
-.mbar{display:grid;grid-template-columns:104px 1fr 30px;gap:8px;align-items:center;margin-bottom:5px;font-size:10px}
-.mbar .bl{color:var(--navy);font-weight:600}
-.mbar .bt{height:10px;background:var(--grey);position:relative}
-.mbar .bt i{position:absolute;left:0;top:0;bottom:0}
-.mbar .bv{font-weight:800;text-align:right;font-size:10.5px}
-/* Kriterienblock */
-.krit1{border:1px solid var(--line);border-left:3px solid #E0A63A;padding:11px 13px;font-size:11px;color:var(--ink)}
-.krit1 .kk{font-size:8.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
-.krit1 .kt{font-weight:800;color:var(--navy);font-size:12.5px;margin:3px 0 6px}
-.krit1 .kz{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0 0}
-.krit1 .kz span{font-size:9px;font-weight:800;letter-spacing:.06em;padding:4px 8px;background:var(--grey);color:var(--navy)}
-.krit1 .kz span.amp{background:#F6E7C4;color:#7A5A12}
-/* Excel-Optik */
-.xls{border:1px solid #B7BEC8;background:#fff;font-size:10px}
-.xr{display:grid;border-bottom:1px solid #DFE3E8}
-.xr>div{padding:6px 8px;border-right:1px solid #EDF0F3;color:var(--ink)}
-.xr>div:last-child{border-right:0}
-.xr.h{background:#217346;color:#fff;font-weight:800;font-size:9px;letter-spacing:.06em;text-transform:uppercase}
-.xr.h>div{color:#fff;border-right-color:rgba(255,255,255,.25)}
-.xr:last-child{border-bottom:0}
-.xr .ok{color:#217346;font-weight:800}
-.xtabs{display:flex;gap:2px;background:#E9EDF1;padding:5px 6px 0;border-top:1px solid #B7BEC8}
-.xtabs span{background:#F2F4F7;border:1px solid #B7BEC8;border-bottom:0;padding:4px 9px;font-size:8.5px;font-weight:700;color:var(--muted)}
-.xtabs span.on{background:#fff;color:#217346}
-/* Kettenglieder SPOF */
-.kette2{display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:10px}
-.kette2 span{background:var(--grey);color:var(--navy);font-weight:700;padding:6px 9px}
-.kette2 span.rot{background:#C31212;color:#fff}
-.kette2 em{font-style:normal;color:var(--red);font-weight:800}
-/* Notfallkarten */
-.karten{display:grid;grid-template-columns:1fr 1fr;gap:9px}
-.karte{background:#1B2430;color:#fff;padding:11px 12px;font-size:9.5px;line-height:1.5}
-.karte b{color:#fff;display:block;font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--red-soft);margin-bottom:6px}
-/* Jahresraster Drill */
-.jahr{display:grid;grid-template-columns:repeat(6,1fr);gap:4px;font-size:9px}
-.jahr>div{border:1px solid var(--line);padding:6px 5px;text-align:center;color:var(--muted)}
-.jahr>div.akt{background:var(--navy);color:#fff;border-color:var(--navy);font-weight:700}
-.jahr>div b{display:block;color:var(--navy);font-size:9.5px}
-.jahr>div.akt b{color:#fff}
-/* Register Notfallordner */
-.reg{display:grid;gap:4px;font-size:10.5px}
-.reg>div{display:grid;grid-template-columns:26px 1fr;gap:9px;border-bottom:1px solid var(--grey);padding:6px 0;color:var(--ink)}
-.reg>div:last-child{border-bottom:0}
-.reg .rn{font-weight:800;color:var(--red)}
-/* PACE */
-.pace{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;font-size:9px;text-align:center}
-.pace>div{padding:8px 5px;border-top:3px solid var(--navy);background:var(--grey);color:var(--navy)}
-.pace>div:nth-child(2){border-top-color:#3F5875}
-.pace>div:nth-child(3){border-top-color:#7B8DA3}
-.pace>div:nth-child(4){border-top-color:var(--red)}
-.pace b{display:block;font-size:10px;margin-bottom:3px}
-/* Excel-Block */
-.xlbox{background:var(--navy);color:#fff;padding:34px 32px;box-shadow:var(--shadow)}
+/* ===== Stapel im Hero ===== */
+.stapel{position:relative;height:330px;margin-top:6px}
+.stapel img{position:absolute;width:198px;box-shadow:0 20px 44px rgba(0,0,0,.42);border:1px solid rgba(255,255,255,.14)}
+.stapel img:nth-child(1){left:0;top:44px;transform:rotate(-7deg);z-index:1}
+.stapel img:nth-child(2){left:118px;top:16px;transform:rotate(-2.5deg);z-index:2}
+.stapel img:nth-child(3){left:246px;top:0;transform:rotate(1.5deg);z-index:4}
+.stapel img:nth-child(4){left:374px;top:20px;transform:rotate(5deg);z-index:3}
+.stapel img:nth-child(5){left:496px;top:52px;transform:rotate(9deg);z-index:2}
+/* ===== Dokumentzeile ===== */
+.dz{display:grid;grid-template-columns:1fr 1fr;gap:46px;align-items:center;padding:52px 0;border-bottom:1px solid var(--line)}
+.dz:last-child{border-bottom:0}
+.dz.rechts .dtxt{order:2}
+.dz.rechts .dbild{order:1}
+.dnum{font-size:11.5px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--red)}
+.dz h3{font-size:clamp(23px,2.6vw,32px);margin:10px 0 0;letter-spacing:-.025em;line-height:1.16}
+.dsub{font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--navy-3);margin-top:10px}
+.dz .lead2{font-size:17px;color:var(--muted);margin-top:16px;line-height:1.62}
+.dz .lead2 b{color:var(--navy)}
+.dwarum{background:var(--grey);border-left:3px solid var(--navy);padding:17px 21px;margin-top:18px}
+.dwarum .wl{font-size:10.5px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--red)}
+.dwarum p{color:var(--ink);font-size:15px;margin-top:7px}
+.dfakt{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+.dfakt span{background:#fff;border:1px solid var(--line);color:var(--navy);font-size:12.5px;font-weight:700;padding:7px 12px}
+.dfakt span.rot{background:var(--navy);color:#fff;border-color:var(--navy)}
+.dfakt span.gruen{background:#217346;color:#fff;border-color:#217346}
+.dz ul{list-style:none;margin-top:16px}
+.dz li{padding:7px 0 7px 22px;position:relative;font-size:15px;color:var(--muted)}
+.dz li::before{content:"";position:absolute;left:0;top:14px;width:8px;height:8px;background:var(--red)}
+/* Seitenbild */
+.dbild{position:relative}
+.blatt{position:relative;display:block;cursor:zoom-in}
+.blatt img{width:100%;display:block;box-shadow:0 26px 56px rgba(27,36,48,.26);border:1px solid var(--line)}
+.blatt::after{content:"Seite vergr\00F6\00DFern";position:absolute;left:0;right:0;bottom:0;
+  background:linear-gradient(180deg,rgba(27,36,48,0),rgba(27,36,48,.86));color:#fff;
+  font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:38px 16px 13px;
+  opacity:0;transition:opacity .2s ease}
+.blatt:hover::after{opacity:1}
+.blattnr{position:absolute;top:-14px;right:-14px;background:var(--red);color:#fff;font-size:12px;font-weight:800;
+  letter-spacing:.06em;padding:9px 14px;box-shadow:0 8px 20px rgba(195,18,18,.35);z-index:3}
+.bunter{margin-top:12px;font-size:12.5px;color:var(--muted);letter-spacing:.02em}
+/* Zweitblatt */
+.zwei{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+/* Lightbox */
+#lb{position:fixed;inset:0;background:rgba(15,20,28,.9);z-index:300;display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+#lb.on{display:flex}
+#lb img{max-width:min(980px,94vw);max-height:92vh;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+#lb .zu{position:absolute;top:18px;right:22px;color:#fff;font-size:30px;font-weight:800;line-height:1;cursor:pointer}
+/* Excel */
+.xlbox{background:var(--navy);color:#fff;padding:36px 34px;box-shadow:var(--shadow)}
 .xlbox h3{color:#fff;font-size:21px;margin-bottom:8px}
 .xlbox>p{color:var(--mist-txt);font-size:15.5px;max-width:74ch}
 .xl3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
-.xl3>div{background:rgba(255,255,255,.07);border-top:3px solid #3FA96F;padding:20px 20px}
+.xl3>div{background:rgba(255,255,255,.07);border-top:3px solid #3FA96F;padding:22px 20px}
 .xl3 .xn{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#7FD8A3}
 .xl3 h5{color:#fff;font-size:17px;margin:8px 0 8px;font-weight:800}
 .xl3 p{color:var(--mist-txt);font-size:14.5px}
-@media(max-width:1000px){.ordner{grid-template-columns:repeat(2,1fr)}.dgrid{grid-template-columns:1fr;gap:22px}}
+@media(max-width:1000px){.dz{grid-template-columns:1fr;gap:26px;padding:38px 0}
+  .dz.rechts .dtxt{order:1}.dz.rechts .dbild{order:2}
+  .stapel{height:200px}.stapel img{width:118px}
+  .stapel img:nth-child(1){left:0;top:26px}.stapel img:nth-child(2){left:70px;top:10px}
+  .stapel img:nth-child(3){left:146px;top:0}.stapel img:nth-child(4){left:222px;top:12px}
+  .stapel img:nth-child(5){left:296px;top:31px}}
 @media(max-width:900px){.xl3{grid-template-columns:1fr}.xlbox{padding:26px 22px}}
-@media(max-width:600px){.ordner{grid-template-columns:1fr}.dok .kopf{padding:20px}.dok .rumpf{padding:22px 18px 24px}
-  .mkpi{grid-template-columns:repeat(2,1fr)}.jahr{grid-template-columns:repeat(3,1fr)}.pace{grid-template-columns:repeat(2,1fr)}}
 </style>
 </head>
 <body data-page="unterlagen.html">
@@ -152,44 +85,42 @@
 
 <header class="hero">
   <div class="wrap">
-    <span class="kicker">Ihr Ergebnis</span>
-    <h1>Was Sie am Ende in der Hand halten</h1>
-    <p class="lead">Kein einzelnes Gutachten, sondern ein aufeinander abgestimmtes Paket: <b style="color:#fff">dreizehn Dokumente in f&uuml;nf Ordnern</b>, dazu drei mitrechnende Excel-Werkzeuge und zwei Nachschlagewerke. Auf dieser Seite steht jedes Dokument einzeln: wof&uuml;r es gut ist, warum es &uuml;berhaupt existiert, und wie eine Seite daraus aussieht.</p>
-    <div class="cta-row"><a class="btn btn-red" data-cta href="#">Gespr&auml;ch vereinbaren &rarr;</a><a class="btn btn-ghost" href="#dokumente">Zu den Ausschnitten</a></div>
-    <p class="badge-line">Alle gezeigten Ausschnitte sind Muster eines fiktiven Haushalts. Keine echten Kundendaten.</p>
+    <div style="display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center">
+      <div>
+        <span class="kicker">Ihr Ergebnis</span>
+        <h1>Rund 500 Seiten, die es nur einmal gibt</h1>
+        <p class="lead">Dreizehn Dokumente, drei mitrechnende Excel-Werkzeuge, zwei Nachschlagewerke. Jede Seite auf Ihren Haushalt gerechnet, mit Ihren Namen, Ihren Wegen, Ihren Zahlen. <b style="color:#fff">Auf dieser Seite sehen Sie echte Seiten aus einem ausgelieferten Paket</b>, anonymisiert, aber sonst unver&auml;ndert.</p>
+        <div class="cta-row"><a class="btn btn-red" data-cta href="#">Gespr&auml;ch vereinbaren &rarr;</a><a class="btn btn-ghost" href="#doks">Alle Dokumente ansehen</a></div>
+      </div>
+      <div class="stapel">
+        <img src="assets/muster/d09.jpg" alt="Drill-Kalender" loading="lazy">
+        <img src="assets/muster/d12.jpg" alt="Ma&szlig;nahmen" loading="lazy">
+        <img src="assets/muster/d02b.jpg" alt="Modulseite der Hauptanalyse" loading="lazy">
+        <img src="assets/muster/d03.jpg" alt="SPOF-Analyse" loading="lazy">
+        <img src="assets/muster/d10.jpg" alt="Notfallordner" loading="lazy">
+      </div>
+    </div>
   </div>
 </header>
 
-<section id="aufbau">
+<section>
   <div class="wrap">
-    <div class="counts reveal" style="margin-bottom:44px">
+    <div class="counts reveal">
       <div class="count"><div class="n"><span data-count="13">0</span></div><div class="l">Dokumente</div></div>
-      <div class="count"><div class="n"><span data-count="5">0</span></div><div class="l">Ordner</div></div>
+      <div class="count"><div class="n"><span data-count="497">0</span></div><div class="l">Seiten im Beispielpaket</div></div>
+      <div class="count"><div class="n"><span data-count="144">0</span></div><div class="l">bewertete Kriterien</div></div>
+      <div class="count"><div class="n"><span data-count="116">0</span></div><div class="l">Ma&szlig;nahmen mit Preis</div></div>
       <div class="count"><div class="n"><span data-count="3">0</span></div><div class="l">Excel-Werkzeuge</div></div>
-      <div class="count"><div class="n"><span data-count="2">0</span></div><div class="l">Nachschlagewerke</div></div>
     </div>
-    <div class="section-head reveal"><span class="kicker">Der Aufbau</span>
-      <h2>F&uuml;nf Ordner, in der Reihenfolge Ihrer Nutzung.</h2>
-      <p class="lead">Der h&auml;ufigste Fehler bei umfangreichen Analysen ist, dass niemand wei&szlig;, wo er anfangen soll. Deshalb liegt oben auf dem Paket ein einzelnes Blatt, das genau das beantwortet, und darunter f&uuml;nf Ordner, die dem nat&uuml;rlichen Ablauf folgen: erst verstehen, dann nachschlagen, dann umsetzen, dann griffbereit halten, dann vertiefen.</p></div>
-    <div class="ordner reveal">
-      <div class="ord"><div class="on">Ordner 01</div><h3>Einstieg</h3><p>Der Teil, den Sie am St&uuml;ck lesen. Klar, warm, ohne Fachsprache. Beginnt mit der Zusammenfassung Ihrer Lage.</p><div class="anz">1 Dokument</div></div>
-      <div class="ord"><div class="on">Ordner 02</div><h3>Analyse</h3><p>Das Nachschlagewerk zu Ihrer Lage. Jede Bewertung mit Begr&uuml;ndung, jede Schwachstelle mit Kaskade.</p><div class="anz">3 Dokumente</div></div>
-      <div class="ord"><div class="on">Ordner 03</div><h3>Plan</h3><p>Der Arbeitsteil. Was zuerst, was danach, mit Preis und Zeit. Enth&auml;lt alle drei Excel-Werkzeuge.</p><div class="anz">6 Dokumente</div></div>
-      <div class="ord"><div class="on">Ordner 04</div><h3>Ernstfall</h3><p>Das, was greifbar sein muss. Nicht zum Lesen gedacht, sondern zum Danebenlegen.</p><div class="anz">2 Dokumente</div></div>
-      <div class="ord"><div class="on">Ordner 05</div><h3>Wissen</h3><p>Zwei umfangreiche Nachschlagewerke als Beilage. Unabh&auml;ngig von Ihrer Analyse, aber passend dazu.</p><div class="anz">2 Beilagen</div></div>
-    </div>
-    <div class="claim reveal" style="margin-top:26px">
-      <div class="lbl">Die Regel dahinter</div>
-      <p>Jedes Dokument funktioniert auch allein. Sie k&ouml;nnen die Notfallkarten benutzen, ohne die Hauptanalyse gelesen zu haben, und den Umsetzungsplan abarbeiten, ohne die Szenarien zu kennen. Das ist Absicht: Ein Paket, das nur als Ganzes funktioniert, wird nicht benutzt.</p>
-    </div>
+    <p class="center" style="margin-top:20px;font-size:14px;color:var(--muted)">Zahlen aus einem tats&auml;chlich ausgelieferten Paket. Der Umfang folgt Ihrem Haushalt: mehr Personen und mehr Objekte bedeuten mehr Seiten.</p>
   </div>
 </section>
 
-<section class="mist" id="dokumente">
+<section class="mist" id="doks">
   <div class="wrap">
-    <div class="section-head reveal"><span class="kicker">Die dreizehn Dokumente</span>
-      <h2>Jedes mit Nutzen, Begr&uuml;ndung und Ausschnitt.</h2>
-      <p class="lead">Zu jedem Dokument steht hier, was es Ihnen bringt, warum wir es &uuml;berhaupt gebaut haben, was im Einzelnen drinsteht und wann Sie es aufschlagen. Dazu jeweils ein Musterausschnitt in der echten Optik des Dokuments, gerechnet auf einen fiktiven Haushalt mit vier Personen.</p></div>
+    <div class="section-head reveal"><span class="kicker">Dokument f&uuml;r Dokument</span>
+      <h2>Was Sie bekommen, und warum es das gibt.</h2>
+      <p class="lead">Alle gezeigten Seiten stammen aus einem echten, abgeschlossenen Paket. Namen, Orte und Postleitzahlen sind ersetzt, alles andere ist unver&auml;ndert: dieselbe Tiefe, dieselbe Sprache, dieselbe Gestaltung. Klicken Sie eine Seite an, um sie gro&szlig; zu sehen.</p></div>
     <div id="dokliste"></div>
   </div>
 </section>
@@ -200,14 +131,14 @@
       <h2>Drei Werkzeuge, die mitrechnen.</h2></div>
     <div class="xlbox reveal">
       <h3>Warum nicht alles einfach PDF ist</h3>
-      <p>Weil drei Teile Ihres Pakets keine Dokumente sind, sondern Werkzeuge. Ein Vorratsplan, der nicht mitrechnet, ist nach dem ersten Einkauf falsch. Eine Checkliste, die man nicht abhaken kann, ist eine Leseliste. Und eine Packliste, die sich nicht auf die anwesenden Personen umstellen l&auml;sst, passt genau einmal. Alles drei w&uuml;rde als PDF im Ordner verstauben.</p>
+      <p>Weil drei Teile Ihres Pakets keine Dokumente sind, sondern Werkzeuge. Ein Vorratsplan, der nicht mitrechnet, ist nach dem ersten Einkauf falsch. Eine Checkliste, die man nicht abhaken kann, ist eine Leseliste. Und eine Packliste, die sich nicht auf die anwesenden Personen umstellen l&auml;sst, passt genau einmal.</p>
       <div class="xl3">
-        <div><div class="xn">Werkzeug 01</div><h5>Checklisten-Arbeitsmappe</h5>
-          <p>Ein Blatt je Modul, dazu ein Anleitungsblatt vorn. Jeder Punkt mit Priorit&auml;t, Kostenklasse und Zeitaufwand, abhakbar. Der Fortschritt ist jederzeit sichtbar, und genau deshalb ist dies in der Praxis das meistgenutzte Teil des Pakets.</p></div>
-        <div><div class="xn">Werkzeug 02</div><h5>Vorratsrechner</h5>
-          <p>Rechnet live mit: Energiebedarf je Person nach anerkannten Formeln, Proteinbedarf nach den D-A-CH-Referenzwerten, Tiere nach WSAVA-Standard. &Auml;ndern Sie eine Personenzahl, &auml;ndert sich alles Weitere von selbst.</p></div>
-        <div><div class="xn">Werkzeug 03</div><h5>Packliste</h5>
-          <p>Spalten je Person, Zeilen je Zweck. Umstellbar auf kurze Abwesenheit oder l&auml;ngeres Ausweichen, mit Gewichtssumme je Tasche. Wer packt, hakt ab, und niemand tr&auml;gt zweimal dasselbe.</p></div>
+        <div><div class="xn">Werkzeug 01 &middot; 13 Bl&auml;tter</div><h5>Checklisten-Arbeitsmappe</h5>
+          <p>Ein Blatt je Modul, dazu ein Anleitungsblatt. Jeder Punkt mit Priorit&auml;t, Kostenklasse und Zeitaufwand, abhakbar. In der Praxis das meistgenutzte Teil des Pakets, weil es das einzige ist, in dem etwas passiert.</p></div>
+        <div><div class="xn">Werkzeug 02 &middot; 5 Bl&auml;tter</div><h5>Vorratsrechner</h5>
+          <p>Grundumsatz nach Mifflin-St Jeor, Aktivit&auml;tsfaktoren nach DGE, Protein nach den D-A-CH-Referenzwerten, Tiere nach WSAVA. &Auml;ndern Sie eine Personenzahl, rechnet sich alles Weitere neu.</p></div>
+        <div><div class="xn">Werkzeug 03 &middot; 3 Bl&auml;tter</div><h5>Packliste</h5>
+          <p>Spalten je Person, Zeilen je Zweck, umschaltbar zwischen 72 Stunden und l&auml;ngerem Ausweichen. Mit Gewichtssumme je Tasche, damit nichts unrealistisch wird.</p></div>
       </div>
     </div>
   </div>
@@ -216,24 +147,22 @@
 <section class="mist" id="beilagen">
   <div class="wrap">
     <div class="section-head reveal"><span class="kicker">Ordner 05</span>
-      <h2>Zwei Nachschlagewerke als Beilage.</h2>
-      <p class="lead">Diese beiden Werke sind nicht auf Sie gerechnet, sie liegen jedem Paket bei. Sie beantworten die Fragen, die nach der Analyse kommen, wenn jemand tiefer einsteigen will, ohne selbst recherchieren zu m&uuml;ssen.</p></div>
+      <h2>Und zwei Nachschlagewerke obendrauf.</h2>
+      <p class="lead">Diese beiden Werke sind nicht auf Sie gerechnet, sie liegen jedem Paket bei. Zusammen noch einmal mehrere hundert Seiten, f&uuml;r alle Fragen, die nach der Analyse kommen.</p></div>
     <div class="grid g2 reveal">
-      <div class="dok" style="margin-bottom:0"><div class="kopf"><div class="dn">Beilage</div><h3>Das Nachschlagewerk</h3>
-        <div class="tags"><span>Grundlagenwerk</span><span>Zum Bl&auml;ttern</span></div><span class="gh">A</span></div>
-        <div class="rumpf"><p>Das Grundlagenwerk zu allen zw&ouml;lf Modulen: Zusammenh&auml;nge, Begriffe, Verfahren, Hintergr&uuml;nde. Gedacht f&uuml;r den Moment, in dem Sie in Ihrer Analyse auf etwas sto&szlig;en, das Sie genauer verstehen wollen.</p>
-        <p style="margin-top:11px"><b>Warum wir es beilegen:</b> Weil eine Analyse Antworten gibt und dabei neue Fragen aufwirft. Ohne dieses Werk w&uuml;rden Sie diese Fragen im Internet beantworten, wo die Qualit&auml;t nicht steuerbar ist.</p></div></div>
-      <div class="dok" style="margin-bottom:0"><div class="kopf"><div class="dn">Beilage</div><h3>Das Feldbuch</h3>
-        <div class="tags"><span>Praxisteil</span><span>Zum Mitnehmen</span></div><span class="gh">B</span></div>
-        <div class="rumpf"><p>Der praktische Gegenpart: Handgriffe, Abl&auml;ufe, Ma&szlig;e, Faustformeln. Kein Flie&szlig;text zum Lesen, sondern Nachschlagestoff f&uuml;r den Moment, in dem etwas getan werden muss.</p>
-        <p style="margin-top:11px"><b>Warum wir es beilegen:</b> Weil im Ernstfall niemand ein Grundlagenwerk liest. Das Feldbuch ist bewusst so gebaut, dass man es mit einer Hand aufschl&auml;gt und in unter einer Minute findet, was man braucht.</p></div></div>
+      <div class="card"><div class="num">387 SEITEN</div><h3>Das Nachschlagewerk</h3>
+        <p>Das Grundlagenwerk zu allen zw&ouml;lf Modulen: Zusammenh&auml;nge, Begriffe, Verfahren, Hintergr&uuml;nde. F&uuml;r den Moment, in dem Sie in Ihrer Analyse auf etwas sto&szlig;en, das Sie genauer verstehen wollen.</p>
+        <p style="margin-top:10px"><b style="color:var(--navy)">Warum wir es beilegen:</b> Weil eine Analyse Antworten gibt und dabei neue Fragen aufwirft. Ohne dieses Werk w&uuml;rden Sie diese Fragen im Internet beantworten, wo die Qualit&auml;t nicht steuerbar ist.</p><span class="ghost">A</span></div>
+      <div class="card"><div class="num">PRAXISTEIL</div><h3>Das Feldbuch</h3>
+        <p>Der praktische Gegenpart: Handgriffe, Abl&auml;ufe, Ma&szlig;e, Faustformeln. Kein Flie&szlig;text zum Lesen, sondern Nachschlagestoff f&uuml;r den Moment, in dem etwas getan werden muss.</p>
+        <p style="margin-top:10px"><b style="color:var(--navy)">Warum wir es beilegen:</b> Weil im Ernstfall niemand ein Grundlagenwerk liest. Das Feldbuch ist so gebaut, dass man es mit einer Hand aufschl&auml;gt und in unter einer Minute findet, was man braucht.</p><span class="ghost">B</span></div>
     </div>
   </div>
 </section>
 
-<section id="regeln">
+<section id="zusagen">
   <div class="wrap">
-    <div class="section-head reveal"><span class="kicker">Drei Zusagen zum Paket</span>
+    <div class="section-head reveal"><span class="kicker">Drei Zusagen</span>
       <h2>Woran Sie die Unterlagen messen d&uuml;rfen.</h2></div>
     <div class="grid g3 reveal">
       <div class="card"><div class="num">ZUSAGE 01</div><h3>Keine Schablone</h3><p>Jede Aussage steht dort, weil sie aus Ihren Antworten folgt. Mindestens f&uuml;nf w&ouml;rtliche Zitate aus Ihrem Fragebogen und Ihren Gespr&auml;chen sind im Paket verteilt, damit Sie das nachpr&uuml;fen k&ouml;nnen.</p><span class="ghost">1</span></div>
@@ -250,8 +179,8 @@
 <section class="band">
   <div class="wrap">
     <span class="kicker">Der Weg dahin</span>
-    <h2>Diese Unterlagen entstehen aus 651 Antworten.</h2>
-    <p>Wie aus Ihrem Fragebogen dieses Paket wird, steht Schritt f&uuml;r Schritt auf der Ablauf-Seite. Der erste Schritt ist ein unverbindliches Gespr&auml;ch.</p>
+    <h2>Diese Seiten entstehen aus 651 Antworten.</h2>
+    <p>Wie aus Ihrem Fragebogen dieses Paket wird, steht Schritt f&uuml;r Schritt auf der Ablauf-Seite. Der erste Schritt ist ein unverbindliches Gespr&auml;ch von etwa drei&szlig;ig Minuten.</p>
     <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
       <a class="btn btn-red" data-cta href="#">Gespr&auml;ch vereinbaren &rarr;</a>
       <a class="btn btn-ghost" href="ablauf-experten.html">So l&auml;uft die Analyse ab</a>
@@ -259,254 +188,141 @@
   </div>
 </section>
 
+<div id="lb"><span class="zu">&#10005;</span><img src="" alt=""></div>
 <div id="p12-footer"></div>
 <script src="assets/p12.js"></script>
 <script>
-function seite(kopf, inhalt, fuss){
-  return '<div class="seite"><div class="skopf"><span>'+kopf+'</span><span>Musterhaushalt</span></div>'+
-    '<div class="sin">'+inhalt+'</div>'+
-    '<div class="sfuss"><span>&copy; Protect-12 &middot; Vertraulich</span><span>'+(fuss||'')+'</span></div></div>';
-}
-function balken(name,wert){
-  var f = wert>=4 ? '#2F7D4F' : (wert>=2.5 ? '#E0A63A' : '#C31212');
-  return '<div class="mbar"><div class="bl">'+name+'</div><div class="bt"><i style="width:'+(wert/5*100)+'%;background:'+f+'"></i></div>'+
-    '<div class="bv" style="color:'+f+'">'+wert.toFixed(1)+'</div></div>';
-}
-
 var DOK=[
-{n:"00",o:"Wurzel des Pakets",t:"So nutzen Sie Ihr Paket",f:"1 Blatt",
- nutzen:"Sie wissen nach zwei Minuten, womit Sie anfangen.",
- warum:"<p>Wir haben dieses Blatt eingef&uuml;hrt, nachdem uns aufgefallen war, dass umfangreiche Pakete oft ungelesen liegen bleiben. Nicht aus Desinteresse, sondern weil der Einstieg fehlt. Wer f&uuml;nf Ordner vor sich hat, sucht instinktiv nach dem Anfang, und wenn er ihn nicht findet, verschiebt er die Sache auf n&auml;chste Woche.</p><p>Deshalb liegt jetzt ganz oben ein einzelnes Blatt, das nur eine Aufgabe hat: die erste Stunde zu strukturieren.</p>",
- pkt:["Empfohlene Lesereihenfolge mit Zeitangabe","Wozu jeder der f&uuml;nf Ordner da ist","Was in den ersten sieben Tagen sinnvoll ist","An wen Sie sich mit R&uuml;ckfragen wenden"],
- wann:"Als Allererstes, noch bevor Sie irgendetwas anderes aufschlagen.",
- mock: seite('So nutzen Sie Ihr Paket',
-  '<h6>Womit Sie anfangen</h6><div class="stl">Ihre erste Stunde, in vier Schritten</div>'+
-  '<table class="mtab"><tr><th style="width:26px">1</th><th>Schritt</th><th class="r">Dauer</th></tr>'+
-  '<tr><td class="n">01</td><td>Lesefassung, Kapitel 1: Ihre Lage zusammengefasst</td><td class="r">20 Min</td></tr>'+
-  '<tr><td class="n">02</td><td>SPOF-Analyse: die drei Punkte, an denen alles h&auml;ngt</td><td class="r">15 Min</td></tr>'+
-  '<tr><td class="n">03</td><td>Ma&szlig;nahmenblatt: wer bei Ihnen was &uuml;bernimmt</td><td class="r">10 Min</td></tr>'+
-  '<tr><td class="n">04</td><td>Checklisten &ouml;ffnen und den ersten Punkt abhaken</td><td class="r">15 Min</td></tr></table>'+
-  '<div class="sh">In den ersten sieben Tagen</div>'+
-  '<div class="stxt">Alles, was 0 Euro kostet und unter einer Stunde dauert. In Ihrem Fall sind das 55 Punkte. Sie brauchen daf&uuml;r keine Anschaffung und keine Absprache mit Dritten.</div>','Blatt 1 von 1')},
+{n:"00",t:"Sie wissen nach zwei Minuten, womit Sie anfangen.",
+ name:"So nutzen Sie Ihr Paket",ordner:"Wurzel des Pakets",s:2,bild:"d00",cap:"Seite 1: die Lesereihenfolge f&uuml;r Ihre erste Stunde",
+ lead:"Ein einzelnes Blatt liegt ganz oben auf dem Paket. Es sagt Ihnen, welches Dokument Sie zuerst aufschlagen, was in der ersten Woche dran ist und wo Sie welche Antwort finden. <b>Kein Pflichtprogramm, sondern eine Landkarte.</b>",
+ warum:"Wir haben dieses Blatt eingef&uuml;hrt, nachdem uns aufgefallen war, dass umfangreiche Pakete oft ungelesen liegen bleiben. Nicht aus Desinteresse, sondern weil der Einstieg fehlt. Wer f&uuml;nf Ordner vor sich hat und keinen Anfang findet, verschiebt die Sache auf n&auml;chste Woche.",
+ fakt:["2 Seiten","Liegt obenauf"], pkt:["Lesereihenfolge mit Zeitangabe je Schritt","Wozu jeder der f&uuml;nf Ordner da ist","Was in den ersten sieben Tagen sinnvoll ist"]},
 
-{n:"01",o:"Ordner 01 Einstieg",t:"Die Lesefassung",f:"kompakt",
- nutzen:"Der eine Teil, den Sie am St&uuml;ck lesen, und danach verstehen Sie Ihre Lage.",
- warum:"<p>Eine dreihundertseitige Analyse liest niemand von vorn. Das ist keine Schw&auml;che des Lesers, sondern eine Eigenschaft des Formats. Trotzdem muss es einen Moment geben, in dem Sie Ihre Lage als Ganzes verstehen, und zwar in einem Zug.</p><p>Genau daf&uuml;r ist die Lesefassung da: klar geschrieben, ohne Fachsprache, in einer W&auml;rme, die man einem Menschen gegen&uuml;ber anschl&auml;gt und nicht einem Aktenzeichen. <b>Kapitel 1 ist die Zusammenfassung Ihrer gesamten Lage.</b> Wer nur das liest, hat schon mehr verstanden als die meisten.</p>",
- pkt:["Kapitel 1: Ihre Lage auf wenigen Seiten zusammengefasst","Je Modul eine Kurzlage in verst&auml;ndlicher Sprache","Je Modul die eine wichtigste Ma&szlig;nahme","Gesamteinordnung und die n&auml;chsten Schritte","W&ouml;rtliche Zitate aus Ihren eigenen Antworten"],
- wann:"Am ersten Abend, in einem Zug. Auch geeignet, um Partner oder Familie mitzunehmen.",
- mock: seite('Lesefassung &middot; Kapitel 1',
-  '<h6>Wo Sie heute stehen</h6><div class="stl">Zusammenfassung Ihrer Lage</div>'+
-  '<div class="stxt">Ihr Haushalt steht besser da, als Sie selbst vermuten, und schlechter, als die Ausstattung nahelegt. Das klingt widerspr&uuml;chlich und ist es nicht: Sie haben in den letzten Jahren viel angeschafft, aber wenig verabredet. Material ist reichlich vorhanden, Absprachen fehlen fast vollst&auml;ndig.</div>'+
-  '<div class="stxt">Ihr st&auml;rkstes Modul ist die Versorgung mit Nahrung. Ihr schw&auml;chstes ist Kommunikation, und das hat Folgen weit &uuml;ber dieses eine Modul hinaus.</div>'+
-  '<div class="sh">Was Sie selbst gesagt haben</div>'+
-  '<div class="krit1" style="border-left-color:var(--red)"><div class="stxt" style="font-style:italic">&bdquo;Wir haben eigentlich alles da. Ich wei&szlig; nur nicht, ob es reicht, und ich wei&szlig; auch nicht, wer im Ernstfall was macht.&ldquo;</div>'+
-  '<div class="kk" style="margin-top:7px">Aus Ihrem Auftaktgespr&auml;ch</div></div>','Seite 3')},
+{n:"01",t:"Der eine Teil, den Sie am St&uuml;ck lesen. Danach verstehen Sie Ihre Lage.",
+ name:"Die Lesefassung",ordner:"Ordner 01 Einstieg",s:13,bild:"d01",cap:"Seite 4: Gesamtscore, kritische Module und der Einstieg in die zw&ouml;lf Bereiche",
+ lead:"Klar geschrieben, ohne Fachsprache, in einer W&auml;rme, die man einem Menschen gegen&uuml;ber anschl&auml;gt und nicht einem Aktenzeichen. Beginnt mit Ihrem Gesamtwert und der Frage, welche Bereiche zuerst dran sind. <b>Wer nur dieses eine Dokument liest, hat schon mehr verstanden als die meisten.</b>",
+ warum:"Eine dreihundertseitige Analyse liest niemand von vorn. Das ist keine Schw&auml;che des Lesers, sondern eine Eigenschaft des Formats. Trotzdem muss es einen Moment geben, in dem Sie Ihre Lage als Ganzes begreifen, und zwar in einem Zug.",
+ fakt:["13 Seiten","Rund 3.800 W&ouml;rter","Am St&uuml;ck lesbar"], pkt:["Gesamtwert und Ampel &uuml;ber alle zw&ouml;lf Module","Je Modul eine Kurzlage in Alltagssprache","Je Modul die eine wichtigste Ma&szlig;nahme","W&ouml;rtliche Zitate aus Ihren eigenen Antworten"]},
 
-{n:"02",o:"Ordner 02 Analyse",t:"Die Hauptanalyse",f:"das gr&ouml;&szlig;te Dokument",
- nutzen:"F&uuml;r jeden einzelnen Punkt k&ouml;nnen Sie nachlesen, worauf die Bewertung beruht.",
- warum:"<p>Eine Note ohne Begr&uuml;ndung ist eine Behauptung. Deshalb steht in diesem Dokument zu jedem der 144 Kriterien nicht nur ein Wert, sondern auch, woraus er folgt, warum er nicht h&ouml;her ist und wie sicher wir uns sind.</p><p>Das macht das Dokument gro&szlig;, und das ist der Preis f&uuml;r etwas Wichtiges: <b>Sie k&ouml;nnen uns widersprechen.</b> Wer nur eine Zahl bekommt, kann sie glauben oder nicht. Wer die Begr&uuml;ndung mitbekommt, kann sie pr&uuml;fen.</p>",
- pkt:["Dashboard mit allen zw&ouml;lf Modulwerten auf einer Seite","Je Modul ein Steckbrief: Bedeutung f&uuml;r Sie und IST-Zustand","Alle 144 Kriterien einzeln, mit Begr&uuml;ndung und Konfidenz","Bewertung &uuml;ber sechs Zeithorizonte je Modul","F&uuml;nf bis zehn Risiken je Modul, ausf&uuml;hrlich erkl&auml;rt","Abh&auml;ngigkeiten und Kaskaden zwischen den Modulen"],
- wann:"Nicht am St&uuml;ck. Immer dann, wenn Sie zu einem Punkt genau wissen wollen, worauf er beruht.",
- mock: seite('Hauptanalyse &middot; Dashboard',
-  '<h6>Ihre zw&ouml;lf Module im &Uuml;berblick</h6><div class="stl">Gesamtwert 2,9 von 5 &middot; Handlungsbedarf</div>'+
-  balken('01 Standort',3.4)+balken('02 Grey Man',2.6)+balken('03 Wasser',3.8)+
-  balken('04 Nahrung',4.2)+balken('05 Energie',2.4)+balken('07 Kommunikation',1.8)+
-  '<div class="sh">So sieht ein einzelnes Kriterium aus</div>'+
-  '<div class="krit1"><div class="kk">Modul 07 &middot; Kriterium K2</div>'+
-  '<div class="kt">Redundante Kommunikationsmittel &middot; 1 von 5</div>'+
-  '<div class="stxt"><b>Begr&uuml;ndung:</b> Es ist kein Ger&auml;t vorhanden, das ohne Mobilfunknetz eine Verbindung herstellt. Das vorhandene Autoradio empf&auml;ngt, sendet aber nicht.</div>'+
-  '<div class="stxt" style="margin-top:5px"><b>Warum nicht h&ouml;her:</b> Stufe 3 setzt mindestens ein getestetes PMR-Paar voraus.</div>'+
-  '<div class="kz"><span class="amp">Ampel: kritisch</span><span>Konfidenz: hoch</span><span>Abstand zu Stufe 3: unter 100 Euro</span></div></div>','Seite 12')},
+{n:"02",t:"F&uuml;r jeden einzelnen Punkt k&ouml;nnen Sie nachlesen, worauf die Bewertung beruht.",
+ name:"Die Hauptanalyse",ordner:"Ordner 02 Analyse",s:334,bild:"d02",bild2:"d02b",
+ cap:"Links: wie die Analyse zu lesen ist. Rechts: eine Modulseite mit Score, Kriterienwerten und Ihrem eigenen Zitat",
+ lead:"Alle zw&ouml;lf Module, alle 144 Kriterien, jedes mit Wert von 0 bis 5, Begr&uuml;ndung, einem Satz warum es nicht h&ouml;her steht, Konfidenz und dem Abstand zum n&auml;chsten Wert in Geld, Zeit und K&ouml;nnen. <b>Das ist kein Bericht, das ist Ihr Nachschlagewerk.</b>",
+ warum:"Eine Note ohne Begr&uuml;ndung ist eine Behauptung. Das macht das Dokument gro&szlig;, und das ist der Preis f&uuml;r etwas Wichtiges: Sie k&ouml;nnen uns widersprechen. Wer nur eine Zahl bekommt, kann sie glauben oder nicht. Wer die Begr&uuml;ndung mitbekommt, kann sie pr&uuml;fen.",
+ fakt:["334 Seiten","Rund 112.000 W&ouml;rter","144 Kriterien einzeln"],
+ pkt:["Dashboard mit allen Modulwerten auf einer Seite","Je Modul Steckbrief, IST-Zustand und Top-Findings","Alle 144 Kriterien mit Begr&uuml;ndung und Konfidenz","Bewertung &uuml;ber sechs Zeithorizonte je Modul","F&uuml;nf bis zehn Risiken je Modul, ausf&uuml;hrlich erkl&auml;rt"]},
 
-{n:"03",o:"Ordner 02 Analyse",t:"Die SPOF-Analyse",f:"die unbequemste Unterlage",
- nutzen:"Sie sehen die drei bis f&uuml;nf Stellen, an denen bei Ihnen wirklich alles h&auml;ngt.",
- warum:"<p>SPOF steht f&uuml;r Single Point of Failure. Diese Punkte sind deshalb gef&auml;hrlich, weil sie in den Einzelmodulen unauff&auml;llig aussehen: Vier Module k&ouml;nnen gr&uuml;n sein und trotzdem an einem einzigen Punkt h&auml;ngen, den keines von ihnen abbildet.</p><p>Wir haben dieses Dokument aus den Modulen herausgel&ouml;st, weil es sonst untergeht. <b>Es ist der Teil des Pakets mit dem gr&ouml;&szlig;ten Hebel pro investierter Stunde</b>, und in der Praxis derjenige, der Kunden am meisten &uuml;berrascht.</p>",
- pkt:["Je Schwachstelle der IST-Zustand und warum sie ein SPOF ist","Die Kaskade: was in welcher Reihenfolge ausf&auml;llt","Vier Fr&uuml;hindikatoren, an denen Sie es kommen sehen","Eine Worst-Case-Szene, konkret erz&auml;hlt statt abstrakt","Sofortma&szlig;nahme und dauerhafte L&ouml;sung getrennt ausgewiesen","Restrisiko und der rechnerische Effekt der Ma&szlig;nahme"],
- wann:"Direkt nach der Lesefassung. Wenn Sie nur zwei Dokumente lesen, dann diese beiden.",
- mock: seite('SPOF-Analyse &middot; Schwachstelle 01',
-  '<h6>Alles liegt im selben Kellerraum</h6><div class="stl">Betrifft Module 03, 04, 10 und 12</div>'+
-  '<div class="sh">Die Kaskade</div>'+
-  '<div class="kette2"><span class="rot">Wassereinbruch Keller</span><em>&rarr;</em><span>Vorrat unbrauchbar</span><em>&rarr;</em><span>Dokumente weg</span><em>&rarr;</em><span>Bargeld weg</span><em>&rarr;</em><span>Handlungsf&auml;higkeit unter 24 h</span></div>'+
-  '<div class="sh">Vier Fr&uuml;hindikatoren</div>'+
-  '<table class="mtab"><tr><td class="n">1</td><td>Feuchte Stellen an der Kellerwand nach Starkregen</td></tr>'+
-  '<tr><td class="n">2</td><td>Pegelstand am n&auml;chsten Gew&auml;sser &uuml;ber Meldestufe 2</td></tr>'+
-  '<tr><td class="n">3</td><td>R&uuml;ckstau in der Waschmaschinenleitung</td></tr>'+
-  '<tr><td class="n">4</td><td>Warnung der Gemeinde zu &uuml;berlasteter Kanalisation</td></tr></table>'+
-  '<div class="sh">Sofort gegen dauerhaft</div>'+
-  '<div class="stxt"><b>Sofort, 0 Euro:</b> Dokumente und Bargeld aus dem Keller holen, zweiter Ort im Obergeschoss.<br><b>Dauerhaft, 250 bis 900 Euro:</b> R&uuml;ckstausicherung pr&uuml;fen und nachr&uuml;sten lassen.</div>','Seite 4')}
+{n:"03",t:"Sie sehen die wenigen Stellen, an denen bei Ihnen wirklich alles h&auml;ngt.",
+ name:"Die SPOF-Analyse",ordner:"Ordner 02 Analyse",s:31,bild:"d03",cap:"Seite 4: Kaskadenschaltbild und die Frage, was diesen Punkt zum Single Point of Failure macht",
+ lead:"SPOF steht f&uuml;r Single Point of Failure. Diese Punkte sind gef&auml;hrlich, weil sie in den Einzelmodulen unauff&auml;llig aussehen: <b>Vier Module k&ouml;nnen gr&uuml;n sein und trotzdem an einem einzigen Punkt h&auml;ngen</b>, den keines von ihnen abbildet.",
+ warum:"Wir haben dieses Dokument aus den Modulen herausgel&ouml;st, weil es sonst untergeht. Es ist der Teil des Pakets mit dem gr&ouml;&szlig;ten Hebel pro investierter Stunde, und derjenige, der Kunden am meisten &uuml;berrascht.",
+ fakt:["31 Seiten","Mit Kaskadenschaltbild","Sofort und dauerhaft getrennt"],
+ pkt:["Je Schwachstelle das Schaltbild der Kaskade","Vier Fr&uuml;hindikatoren, an denen Sie es kommen sehen","Eine Worst-Case-Szene, konkret erz&auml;hlt","Sofortma&szlig;nahme und strukturelle L&ouml;sung getrennt","Restrisiko nach Ma&szlig;nahme, ehrlich beziffert"]},
+
+{n:"04",t:"Sie wissen, welche Lage Sie am h&auml;rtesten trifft und wann es dabei eng wird.",
+ name:"Die Szenarien&uuml;bersicht",ordner:"Ordner 02 Analyse",s:32,bild:"d04",bild2:"d04b",
+ cap:"Links: der Verlauf &uuml;ber sechs Zeithorizonte mit Ampel je Stufe. Rechts: was in dieser Lage konkret passiert",
+ lead:"Acht realistische Lagen, gerechnet gegen Ihre eigenen Werte. Je Szenario der Verlauf &uuml;ber sechs Zeithorizonte, der Punkt an dem es bei Ihnen eng wird, und was dann zuerst kippt. <b>Ausformuliert, nicht in Stichworten.</b>",
+ warum:"Ihre Modulwerte sagen, wie Sie heute dastehen. Sie sagen nicht, was davon unter Last &uuml;brig bleibt. Der Nutzen liegt im Vergleich: Ein Haushalt, der bei kurzen Lagen gl&auml;nzt und bei langen einbricht, sieht das erst, wenn die Kurven nebeneinander liegen.",
+ fakt:["32 Seiten","8 Szenarien","6 Zeithorizonte je Lage"],
+ pkt:["Je Szenario eine eigene Verlaufskurve mit Ihren Werten","Ampel und Einordnung je Zeithorizont","Der kritische Punkt und was ihn bei Ihnen ausl&ouml;st","Welche Module in dieser Lage die Hauptlast tragen"]},
+
+{n:"05",t:"Sie haben eine Reihenfolge, die zu Ihrer Zeit und Ihrem Budget passt.",
+ name:"Der Umsetzungsplan",ordner:"Ordner 03 Plan",s:20,bild:"d05",cap:"Seite 6: Ausl&ouml;ser, Regel und Zust&auml;ndigkeit f&uuml;r die Entscheidung Bleiben oder Gehen",
+ lead:"&Uuml;bersetzt alle Empfehlungen in Monats- und Quartalsbl&ouml;cke, kalibriert auf Ihre tats&auml;chliche Zeit und Ihr tats&auml;chliches Budget. <b>Kapitel 1 ist das Decision Sheet</b> mit dem 48-Stunden-Protokoll und den Ausl&ouml;sern, die vorher feststehen m&uuml;ssen.",
+ warum:"Der h&auml;ufigste Grund, warum Vorsorgeempfehlungen nicht umgesetzt werden, ist nicht Faulheit, sondern eine falsche Taktung. Ein Plan, der vier Stunden pro Woche voraussetzt, wird nicht umgesetzt, wenn zwei Stunden im Monat realistisch sind. Er erzeugt nur ein schlechtes Gewissen.",
+ fakt:["20 Seiten","Kapitel 1: Decision Sheet","Auf Ihr Budget gerechnet"],
+ pkt:["48-Stunden-Protokoll f&uuml;r die ersten zwei Tage","Ausl&ouml;ser, Regel und Zust&auml;ndigkeit je Entscheidung","Ma&szlig;nahmen in Monats- und Quartalsbl&ouml;cken","Prognose: welcher Wert nach welcher Ma&szlig;nahme erreichbar ist"]},
+
+{n:"06",t:"Sie sehen jederzeit, was erledigt ist und was als N&auml;chstes dran w&auml;re.",
+ name:"Die Checklisten",ordner:"Ordner 03 Plan",s:0,xls:"13 Bl&auml;tter",bild:null,
+ lead:"Ein Blatt je Modul, dazu ein Anleitungsblatt. Jeder Punkt mit Priorit&auml;t, Kostenklasse und Zeitaufwand, abhakbar, sortierbar. <b>Aus dem schlechten Gewissen wird ein Fortschrittsbalken.</b>",
+ warum:"Dies ist in der Praxis das meistgenutzte Teil des Pakets, und der Grund daf&uuml;r ist banal: Es ist das einzige, in dem etwas passiert. Alle anderen Dokumente informieren, dieses hier ver&auml;ndert sich, w&auml;hrend Sie arbeiten. Deshalb ist es eine Arbeitsmappe und kein PDF.",
+ fakt:["Excel, 13 Bl&auml;tter","Abhakbar","Fortschritt sichtbar"],
+ pkt:["Je Modul ein eigenes Arbeitsblatt","Anleitungsblatt vorn","Priorit&auml;t, Kosten und Zeit je Punkt","Fortschritt je Modul und gesamt"]},
+
+{n:"07",t:"Sie wissen, wie viel Sie f&uuml;r Ihre Personen brauchen, statt zu sch&auml;tzen.",
+ name:"Der Vorratsplan Ern&auml;hrung",ordner:"Ordner 03 Plan",s:18,xls:"5 Bl&auml;tter",bild:"d07",
+ cap:"Seite 6: Bedarf je Person und Tier, hochgerechnet auf 72 Stunden, mit Trockenmasse und Wasser",
+ lead:"Personenscharf gerechnet: Grundumsatz nach Mifflin-St Jeor, Aktivit&auml;tsfaktoren nach DGE, Protein nach den D-A-CH-Referenzwerten, Tiere nach WSAVA-Standard. <b>Dazu die Excel, die mitrechnet, wenn sich etwas &auml;ndert.</b>",
+ warum:"Vorratsempfehlungen im Internet rechnen mit einem Durchschnittsmenschen. Den gibt es in Ihrem Haushalt nicht. Ein Kleinkind, ein Erwachsener mit k&ouml;rperlicher Arbeit und ein Hund haben drei v&ouml;llig verschiedene Bedarfe, und die Summe ist selten das, was man vermutet.",
+ fakt:["18 Seiten","Plus Excel mit 5 Bl&auml;ttern","Rechnet live mit"],
+ pkt:["Bedarf je Person und Tier, einzeln berechnet","Reichweite in Tagen bei aktuellem Bestand","Rezepte, Kochenergie und Tagespl&auml;ne","Rotationslogik, damit nichts unbemerkt verf&auml;llt"]},
+
+{n:"08",t:"Im Ernstfall packt jeder seine Tasche, ohne dass jemand nachdenken muss.",
+ name:"Die Packliste",ordner:"Ordner 03 Plan",s:0,xls:"3 Bl&auml;tter",bild:null,
+ lead:"Spalten je Person, Zeilen je Zweck, umschaltbar zwischen 72 Stunden und l&auml;ngerem Ausweichen. Mit Gewichtssumme je Tasche, <b>damit niemand mehr tr&auml;gt, als er tragen kann.</b>",
+ warum:"Packlisten aus dem Internet sind Listen f&uuml;r eine Person, die es nicht gibt. Sie enthalten Dinge, die Sie nicht besitzen, und lassen weg, was bei Ihnen entscheidend ist. Diese Liste ist nach Personen sortiert und nicht nach Kategorien, weil im Ernstfall jeder seine eigene Tasche packt.",
+ fakt:["Excel, 3 Bl&auml;tter","Je Person eine Spalte","Mit Gewichtssumme"],
+ pkt:["72 Stunden und l&auml;ngeres Ausweichen getrennt","Ber&uuml;cksichtigt Medikamente, Kinder, Tiere","Abgestimmt auf Ihre vorhandene Ausr&uuml;stung"]},
+
+{n:"09",t:"Aus einmaliger Vorbereitung wird eine Gewohnheit, die von selbst l&auml;uft.",
+ name:"Der Drill-Kalender",ordner:"Ordner 03 Plan",s:7,bild:"d09",cap:"Seite 2: Monats&uuml;bungen mit Ziel, Ablauf und Auswertungsfragen zum Abhaken",
+ lead:"Zw&ouml;lf kurze &Uuml;bungen &uuml;ber das Jahr, jede mit Ziel, Ablauf und Auswertungsfragen. <b>In der Auswertung aller Analysen ist &Uuml;bungskultur der st&auml;rkste einzelne Resilienzfaktor</b>, st&auml;rker als Vorrat, st&auml;rker als Ausr&uuml;stung.",
+ warum:"&Uuml;ben ist unbequem und wird verschoben, solange es freiwillig bleibt. Deshalb liefern wir keinen Appell, sondern Termine: kurze &Uuml;bungen, meist unter einer Stunde, mit steigendem Schwierigkeitsgrad &uuml;ber die Monate.",
+ fakt:["7 Seiten","12 &Uuml;bungen","Rund 9 Stunden im Jahr"],
+ pkt:["Je Monat eine &Uuml;bung mit klarem Ziel","Ablauf und Auswertungsfragen zum Abhaken","Steigender Schwierigkeitsgrad","Enth&auml;lt die j&auml;hrlichen Kontrolltermine"]},
+
+{n:"12",t:"Jede Empfehlung hat einen Namen daneben, nicht nur eine Nummer.",
+ name:"Das Ma&szlig;nahmenblatt",ordner:"Ordner 03 Plan",s:14,bild:"d12",bild2:"d12b",
+ cap:"Links: Kennzahlen und Zuordnung. Rechts: die Ma&szlig;nahmen mit Aufwand in Euro und Zeit",
+ lead:"Alle Empfehlungen aus allen zw&ouml;lf Modulen an einem Ort, getrennt nach sofort, mittelfristig und strukturell, jede mit Aufwand in Euro und Zeit bis zur Erledigung. <b>Und mit einem Namen in der letzten Spalte.</b>",
+ warum:"Analysen scheitern selten am Inhalt, sondern an der Zust&auml;ndigkeit. Solange eine Ma&szlig;nahme allen geh&ouml;rt, geh&ouml;rt sie niemandem. Die Zuordnung ist ein Vorschlag, den Sie am K&uuml;chentisch &auml;ndern d&uuml;rfen, aber keine Zeile bleibt ohne Namen.",
+ fakt:["14 Seiten","116 Ma&szlig;nahmen","55 davon unter einer Stunde"],
+ pkt:["Getrennt nach sofort, mittelfristig, strukturell","Je Ma&szlig;nahme Aufwand in Euro und Zeit","Zust&auml;ndigkeit je Person, &auml;nderbar","Quick Wins separat ausgewiesen"]},
+
+{n:"10",t:"Alles Wichtige liegt an einem Ort, den jeder im Haushalt kennt.",
+ name:"Der Notfallordner",ordner:"Ordner 04 Ernstfall",s:17,bild:"d10",cap:"Seite 6: die PACE-Kette f&uuml;r Trinkwasser, von der prim&auml;ren L&ouml;sung bis zur Notl&ouml;sung",
+ lead:"Dokumente, Vollmachten, Vertr&auml;ge und Kontakte krisenfest an einem Ort. <b>Teil 2 ist die PACE-Ausr&uuml;stungsempfehlung:</b> f&uuml;r jeden Zweck vier Ebenen, prim&auml;r, alternativ, R&uuml;ckfall und Notl&ouml;sung, aufgebaut auf dem, was Sie bereits besitzen.",
+ warum:"Im Ernstfall sucht niemand. Wer im Dunkeln mit vier Personen im Flur steht, geht an einen Ort, oder er geht gar nicht. Genau diesen Ort legt dieser Ordner fest, und zwar physisch: ein Ordner mit Registern, kein digitaler Speicher.",
+ fakt:["17 Seiten","Teil 2: PACE","Vier Ebenen je Zweck"],
+ pkt:["Registerstruktur f&uuml;r alle wichtigen Dokumente","Kontakte analog, ohne Handy nutzbar","PACE-Kette je Funktionsbereich, farbig","Ausr&uuml;stungsl&uuml;cken ausdr&uuml;cklich benannt"]},
+
+{n:"11",t:"Das Wichtigste ist dort, wo Sie im Ernstfall tats&auml;chlich sind.",
+ name:"Die Notfallkarten",ordner:"Ordner 04 Ernstfall",s:9,bild:"d11",cap:"Seite 2: Kartenvorlage je Person, zum Ausf&uuml;llen und Laminieren",
+ lead:"Ein Kartenset je Person, verteilt auf Portemonnaie, Sicherungskasten und Handschuhfach. Darauf steht bewusst wenig: <b>nur das, was man unter Stress nicht mehr zusammenbekommt.</b>",
+ warum:"Ein Notfallordner n&uuml;tzt nichts, wenn er zu Hause liegt und Sie im Auto sitzen. Drei Nummern, ein Treffpunkt, die medizinischen Angaben. Alles Weitere steht im Ordner und hat dort auch Zeit.",
+ fakt:["9 Seiten","Je Person ein Set","F&uuml;r drei Orte gedacht"],
+ pkt:["Wichtige Kontakte, auch au&szlig;erhalb der Region","Drei Treffpunkte, gestaffelt","Medizinische Angaben je Person","Regel f&uuml;r den Fall, dass man getrennt wird"]}
 ];
 
-DOK.push(
-{n:"04",o:"Ordner 02 Analyse",t:"Die Szenarien&uuml;bersicht",f:"acht Szenarien",
- nutzen:"Sie wissen, welche Lage Sie am h&auml;rtesten trifft und wann es dabei eng wird.",
- warum:"<p>Ihre Modulwerte sagen, wie Sie heute dastehen. Sie sagen nicht, was davon unter Last &uuml;brig bleibt. Genau das rechnet dieses Dokument aus: acht Lagen, jede gegen Ihre eigenen Werte laufen gelassen.</p><p><b>Der Nutzen liegt im Vergleich.</b> Ein Haushalt, der bei kurzen Lagen gl&auml;nzt und bei langen einbricht, sieht das erst, wenn beide Kurven nebeneinander liegen. Und daraus folgt unmittelbar, welche Ma&szlig;nahme sich zuerst lohnt.</p>",
- pkt:["Je Szenario eine eigene Verlaufskurve mit Ihren Werten","Der kritische Punkt und was ihn bei Ihnen ausl&ouml;st","Welche Module in dieser Lage die Hauptlast tragen","Der Verlauf ausf&uuml;hrlich erz&auml;hlt, nicht nur in Stichworten","Was sich verschiebt, wenn Sie die Sofort-Stufe umsetzen"],
- wann:"Wenn Sie entscheiden wollen, welche der vielen Empfehlungen zuerst dran ist.",
- mock: seite('Szenarien &middot; S3 Wasserausfall',
-  '<h6>Ausfall der Trinkwasserversorgung</h6><div class="stl">Ihr Verlauf &uuml;ber sechs Zeithorizonte</div>'+
-  '<svg viewBox="0 0 420 130" width="100%" height="auto">'+
-  '<g stroke="#D8DCE3" stroke-width="1"><line x1="30" y1="10" x2="30" y2="104"/><line x1="30" y1="104" x2="410" y2="104"/></g>'+
-  '<polyline fill="none" stroke="#C31212" stroke-width="2.4" points="38,18 112,25 186,48 260,70 334,80 404,88"/>'+
-  '<polyline fill="none" stroke="#1B2430" stroke-width="2.4" points="38,42 112,92 186,74 260,48 334,32 404,24"/>'+
-  '<circle cx="112" cy="92" r="4.5" fill="#C31212" stroke="#fff" stroke-width="1.5"/>'+
-  '<text x="150" y="96" font-size="8.5" font-family="Montserrat" font-weight="700" fill="#1B2430">kritischer Punkt</text>'+
-  '<g fill="#7B8DA3" font-size="7" font-family="Montserrat" text-anchor="middle">'+
-  '<text x="38" y="118">0-72h</text><text x="112" y="118">3-14 T</text><text x="186" y="118">4 Wo</text>'+
-  '<text x="260" y="118">3 Mon</text><text x="334" y="118">6 Mon</text><text x="404" y="118">1 Jahr</text></g></svg>'+
-  '<div class="stxt" style="margin-top:6px"><b>Bei Ihnen wird es eng nach 3 bis 14 Tagen.</b> Ihr Vorrat von 60 Litern deckt bei vier Personen den Trinkbedarf gut zwei Wochen, den Hygienebedarf jedoch nur f&uuml;nf Tage. Ab Tag sechs beginnt die Rationierung, ab Tag zw&ouml;lf ist Nachschub zwingend.</div>'+
-  '<div class="sh">Module in der Hauptlast</div>'+
-  '<div class="kz" style="display:flex;gap:6px;flex-wrap:wrap"><span style="background:#C31212;color:#fff;font-size:9px;font-weight:800;padding:4px 8px">03 Wasser</span>'+
-  '<span style="background:var(--grey);font-size:9px;font-weight:800;padding:4px 8px">04 Nahrung</span>'+
-  '<span style="background:var(--grey);font-size:9px;font-weight:800;padding:4px 8px">06 Medizin</span></div>','Seite 18')},
-
-{n:"05",o:"Ordner 03 Plan",t:"Der pers&ouml;nliche Umsetzungsplan",f:"Ihr Fahrplan",
- nutzen:"Sie haben eine Reihenfolge, die zu Ihrer Zeit und Ihrem Budget passt.",
- warum:"<p>Der h&auml;ufigste Grund, warum Vorsorgeempfehlungen nicht umgesetzt werden, ist nicht Faulheit, sondern eine falsche Taktung. Ein Plan, der vier Stunden pro Woche voraussetzt, wird nicht umgesetzt, wenn zwei Stunden im Monat realistisch sind. Er erzeugt nur ein schlechtes Gewissen.</p><p>Deshalb fragen wir Zeit und Budget bereits im Erstgespr&auml;ch ab und rechnen den kompletten Plan darauf. <b>Kapitel 1 ist das Decision Sheet</b>, das 48-Stunden-Protokoll f&uuml;r die ersten zwei Tage einer Lage.</p>",
- pkt:["Kapitel 1: 48-Stunden-Protokoll und Entscheidungswege","Ma&szlig;nahmen in Monats- und Quartalsbl&ouml;cken","Je Ma&szlig;nahme Kostenklasse und Zeitaufwand","Quick Wins unter 100 Euro separat ausgewiesen","Prognose: welcher Wert nach welcher Ma&szlig;nahme erreichbar ist"],
- wann:"Nach dem Ergebnisgespr&auml;ch, und danach immer wieder. Das Dokument, mit dem Sie arbeiten.",
- mock: seite('Umsetzungsplan &middot; Kapitel 1',
-  '<h6>Das 48-Stunden-Protokoll</h6><div class="stl">Was in den ersten zwei Tagen passiert, und wer es tut</div>'+
-  '<table class="mtab"><tr><th style="width:56px">Zeit</th><th>Handlung</th><th style="width:62px">Wer</th></tr>'+
-  '<tr><td class="n">0 bis 1 h</td><td>Lage feststellen: Strom, Wasser, Netz, Nachbarn. Nichts kaufen, nichts entscheiden.</td><td>Anna</td></tr>'+
-  '<tr><td class="n">1 bis 4 h</td><td>Kinder erreichen, Sammelpunkt best&auml;tigen, Badewanne f&uuml;llen</td><td>Anna</td></tr>'+
-  '<tr><td class="n">4 bis 12 h</td><td>K&uuml;hlschrankregel in Kraft, Beleuchtung auf Reserve umstellen</td><td>Martin</td></tr>'+
-  '<tr><td class="n">12 bis 48 h</td><td>Erste Lagebeurteilung mit Nachbarn, Entscheidung Bleiben oder Gehen</td><td>gemeinsam</td></tr></table>'+
-  '<div class="sh">Ihr Takt</div>'+
-  '<div class="mkpi"><div><div class="kl">Zeit</div><div class="kv">2 h</div><div class="kn">pro Woche</div></div>'+
-  '<div><div class="kl">Budget</div><div class="kv">120 &euro;</div><div class="kn">pro Monat</div></div>'+
-  '<div><div class="kl">Sofort-Stufe</div><div class="kv">90</div><div class="kn">Tage</div></div>'+
-  '<div><div class="kl">Prognose</div><div class="kv">3,7</div><div class="kn">nach 12 Monaten</div></div></div>','Seite 2')},
-
-{n:"06",o:"Ordner 03 Plan",t:"Die Checklisten",f:"Excel-Arbeitsmappe",xls:true,
- nutzen:"Sie sehen jederzeit, was erledigt ist und was als N&auml;chstes dran w&auml;re.",
- warum:"<p>Dies ist in der Praxis das meistgenutzte Teil des Pakets, und der Grund daf&uuml;r ist banal: Es ist das einzige, in dem etwas passiert. Alle anderen Dokumente informieren, dieses hier ver&auml;ndert sich, w&auml;hrend Sie arbeiten.</p><p><b>Aus dem schlechten Gewissen wird ein Fortschrittsbalken.</b> Das klingt klein und ist psychologisch der wirksamste Hebel im ganzen Paket. Deshalb ist es eine Arbeitsmappe und kein PDF.</p>",
- pkt:["Je Modul ein eigenes Arbeitsblatt","Anleitungsblatt vorn, damit nichts erkl&auml;rt werden muss","Priorit&auml;t, Kostenklasse und Zeitaufwand je Punkt","Sortierbar nach Aufwand, Preis oder Dringlichkeit","Fortschritt je Modul und gesamt jederzeit sichtbar"],
- wann:"Jede Woche, in Ihrem vereinbarten Zeitfenster.",
- mock: seite('Checklisten &middot; Blatt Modul 07',
-  '<div class="xls"><div class="xr h" style="grid-template-columns:22px 1fr 52px 46px 34px"><div>&#10003;</div><div>Ma&szlig;nahme</div><div>Kosten</div><div>Zeit</div><div>Prio</div></div>'+
-  '<div class="xr" style="grid-template-columns:22px 1fr 52px 46px 34px"><div class="ok">&#10003;</div><div>Drei Nummern auswendig lernen</div><div>0 &euro;</div><div>15 Min</div><div>Sofort</div></div>'+
-  '<div class="xr" style="grid-template-columns:22px 1fr 52px 46px 34px"><div class="ok">&#10003;</div><div>Kontaktblatt ausgedruckt und datiert</div><div>0 &euro;</div><div>30 Min</div><div>Sofort</div></div>'+
-  '<div class="xr" style="grid-template-columns:22px 1fr 52px 46px 34px"><div></div><div>Batterieradio mit UKW und DAB plus</div><div>40 bis 80 &euro;</div><div>1 Tag</div><div>30 Tage</div></div>'+
-  '<div class="xr" style="grid-template-columns:22px 1fr 52px 46px 34px"><div></div><div>PMR-Set f&uuml;r beide Haushalte</div><div>150 bis 250 &euro;</div><div>1 Tag</div><div>6 Mon</div></div>'+
-  '<div class="xr" style="grid-template-columns:22px 1fr 52px 46px 34px"><div></div><div>Halbj&auml;hrlicher Trockenlauf der Rufkette</div><div>0 &euro;</div><div>1 h</div><div>laufend</div></div>'+
-  '<div class="xtabs"><span>Anleitung</span><span>M01</span><span>M05</span><span class="on">M07</span><span>M09</span><span>&hellip;</span></div></div>'+
-  '<div class="stxt" style="margin-top:10px"><b>Fortschritt Modul 07:</b> 2 von 6 erledigt. Gesamt &uuml;ber alle Module: 31 von 116.</div>','Blatt 8 von 13')},
-
-{n:"07",o:"Ordner 03 Plan",t:"Der Vorratsplan Ern&auml;hrung",f:"Dokument plus Excel",xls:true,
- nutzen:"Sie wissen, wie viel Sie f&uuml;r Ihre Personen brauchen, statt zu sch&auml;tzen.",
- warum:"<p>Vorratsempfehlungen im Internet rechnen mit einem Durchschnittsmenschen. Den gibt es in Ihrem Haushalt nicht. Ein Kleinkind, ein Erwachsener mit k&ouml;rperlicher Arbeit und ein Hund haben drei v&ouml;llig verschiedene Bedarfe, und die Summe ist selten das, was man vermutet.</p><p>Deshalb rechnet dieses Werkzeug mit anerkannten Formeln, personenscharf: <b>Grundumsatz nach Mifflin-St Jeor, Aktivit&auml;tsfaktoren nach DGE, Proteinbedarf nach den D-A-CH-Referenzwerten, Tiere nach WSAVA-Standard.</b> &Auml;ndern Sie eine Zahl, rechnet sich der Rest neu.</p>",
- pkt:["Bedarf je Person und Tier, einzeln berechnet","Rezepte, passend zum eingelagerten Vorrat","Kochenergie: was die Zubereitung an Brennstoff kostet","Tagespl&auml;ne f&uuml;r die ersten Wochen","Rotationslogik, damit nichts unbemerkt verf&auml;llt"],
- wann:"Beim ersten Aufbau des Vorrats und danach bei jeder Rotation.",
- mock: seite('Vorratsrechner &middot; Bedarf',
-  '<div class="xls"><div class="xr h" style="grid-template-columns:1fr 44px 52px 52px 52px"><div>Person</div><div>Alter</div><div>kcal/Tag</div><div>Protein</div><div>Wasser</div></div>'+
-  '<div class="xr" style="grid-template-columns:1fr 44px 52px 52px 52px"><div>Anna</div><div>41</div><div>2.180</div><div>58 g</div><div>3,5 l</div></div>'+
-  '<div class="xr" style="grid-template-columns:1fr 44px 52px 52px 52px"><div>Martin</div><div>44</div><div>2.640</div><div>68 g</div><div>4,0 l</div></div>'+
-  '<div class="xr" style="grid-template-columns:1fr 44px 52px 52px 52px"><div>Lena</div><div>11</div><div>1.900</div><div>42 g</div><div>2,5 l</div></div>'+
-  '<div class="xr" style="grid-template-columns:1fr 44px 52px 52px 52px"><div>Jonas</div><div>7</div><div>1.550</div><div>34 g</div><div>2,0 l</div></div>'+
-  '<div class="xr" style="grid-template-columns:1fr 44px 52px 52px 52px"><div>Hund, 24 kg</div><div>5</div><div>1.100</div><div>52 g</div><div>1,4 l</div></div>'+
-  '<div class="xr" style="grid-template-columns:1fr 44px 52px 52px 52px;background:#EFF6F1"><div class="ok">Summe Haushalt</div><div></div><div class="ok">9.370</div><div class="ok">254 g</div><div class="ok">13,4 l</div></div>'+
-  '<div class="xtabs"><span class="on">Bedarf</span><span>Vorrat</span><span>Rezepte</span><span>Kochenergie</span><span>Tagespl&auml;ne</span></div></div>'+
-  '<div class="stxt" style="margin-top:10px"><b>Reichweite bei aktuellem Bestand:</b> 19 Tage Kalorien, 11 Tage Wasser inklusive Hygiene.</div>','Blatt 1 von 5')}
-);
-
-DOK.push(
-{n:"08",o:"Ordner 03 Plan",t:"Die Packliste",f:"Excel, je Person",xls:true,
- nutzen:"Im Ernstfall packt jeder seine Tasche, ohne dass jemand nachdenken muss.",
- warum:"<p>Packlisten aus dem Internet sind Listen f&uuml;r eine Person, die es nicht gibt. Sie enthalten Dinge, die Sie nicht besitzen, und lassen weg, was in Ihrem Haushalt entscheidend ist: das Medikament eines Kindes, die Brille, das Ladeger&auml;t f&uuml;r ein bestimmtes Ger&auml;t.</p><p>Diese Liste ist auf Ihre Personen und Ihre vorhandene Ausr&uuml;stung gerechnet. <b>Und sie ist nach Personen sortiert, nicht nach Kategorien</b>, weil im Ernstfall jeder seine eigene Tasche packt und niemand Zeit hat, eine Sammelliste zu sortieren.</p>",
- pkt:["Eine Spalte je Person im Haushalt","Umschaltbar zwischen kurzer Abwesenheit und l&auml;ngerem Ausweichen","Gewichtssumme je Tasche, damit nichts unrealistisch wird","Ber&uuml;cksichtigt Medikamente, Kinder, Tiere und Dokumente","Abgestimmt auf Ihre tats&auml;chlich vorhandene Ausr&uuml;stung"],
- wann:"Einmal zum Packen, danach einmal j&auml;hrlich zur Kontrolle &uuml;ber den Drill-Kalender.",
- mock: seite('Packliste &middot; 72 Stunden',
-  '<div class="xls"><div class="xr h" style="grid-template-columns:1fr 46px 46px 46px 46px"><div>Position</div><div>Anna</div><div>Martin</div><div>Lena</div><div>Jonas</div></div>'+
-  '<div class="xr" style="grid-template-columns:1fr 46px 46px 46px 46px"><div>Ausweis und Kopie</div><div class="ok">&#10003;</div><div class="ok">&#10003;</div><div class="ok">&#10003;</div><div class="ok">&#10003;</div></div>'+
-  '<div class="xr" style="grid-template-columns:1fr 46px 46px 46px 46px"><div>Medikamente pers&ouml;nlich</div><div class="ok">&#10003;</div><div>&ndash;</div><div class="ok">&#10003;</div><div>&ndash;</div></div>'+
-  '<div class="xr" style="grid-template-columns:1fr 46px 46px 46px 46px"><div>Ersatzbrille</div><div class="ok">&#10003;</div><div>&ndash;</div><div>&ndash;</div><div>&ndash;</div></div>'+
-  '<div class="xr" style="grid-template-columns:1fr 46px 46px 46px 46px"><div>Trinkflasche 1 l</div><div class="ok">&#10003;</div><div class="ok">&#10003;</div><div class="ok">&#10003;</div><div class="ok">&#10003;</div></div>'+
-  '<div class="xr" style="grid-template-columns:1fr 46px 46px 46px 46px"><div>Kuscheltier, benannt</div><div>&ndash;</div><div>&ndash;</div><div>&ndash;</div><div class="ok">&#10003;</div></div>'+
-  '<div class="xr" style="grid-template-columns:1fr 46px 46px 46px 46px;background:#EFF6F1"><div class="ok">Gewicht Tasche</div><div class="ok">7,4 kg</div><div class="ok">9,1 kg</div><div class="ok">4,2 kg</div><div class="ok">3,1 kg</div></div>'+
-  '<div class="xtabs"><span class="on">72 Stunden</span><span>Ausweichen l&auml;nger</span><span>Fahrzeug</span></div></div>'+
-  '<div class="stxt" style="margin-top:10px">Das Kuscheltier steht nicht aus Sentimentalit&auml;t auf der Liste. Kinder, die ihren vertrauten Gegenstand dabeihaben, sind in Ausweichlagen deutlich ruhiger, und das entlastet die Erwachsenen.</div>','Blatt 1 von 3')},
-
-{n:"09",o:"Ordner 03 Plan",t:"Der Drill-Kalender",f:"&uuml;ber das Jahr",
- nutzen:"Aus einmaliger Vorbereitung wird eine Gewohnheit, die von selbst l&auml;uft.",
- warum:"<p>In der Auswertung aller Analysen ist &Uuml;bungskultur der st&auml;rkste einzelne Resilienzfaktor. St&auml;rker als Vorrat, st&auml;rker als Ausr&uuml;stung. Familien mit regelm&auml;&szlig;igen &Uuml;bungen reagieren bei Vorwarnungen messbar schneller.</p><p>Der Haken: &Uuml;ben ist unbequem und wird verschoben, solange es freiwillig bleibt. Deshalb liefern wir keinen Appell, sondern Termine. <b>Kurze &Uuml;bungen, meist unter einer Stunde, &uuml;ber das Jahr verteilt und mit steigendem Schwierigkeitsgrad.</b></p>",
- pkt:["Kurze &Uuml;bungen, meist unter einer Stunde","&Uuml;ber das Jahr verteilt statt gesammelt","Je &Uuml;bung ein klares Ziel und ein Erfolgskriterium","Steigender Schwierigkeitsgrad &uuml;ber die Monate","Enth&auml;lt die j&auml;hrlichen Kontrolltermine f&uuml;r Vorrat und Dokumente"],
- wann:"Einmal in den Kalender &uuml;bertragen, danach l&auml;uft es von selbst.",
- mock: seite('Drill-Kalender &middot; Jahres&uuml;bersicht',
-  '<h6>Ihre zw&ouml;lf Termine</h6><div class="stl">Gesamtaufwand im Jahr: rund 9 Stunden</div>'+
-  '<div class="jahr"><div class="akt"><b>Jan</b>Rufkette trocken</div><div><b>Feb</b>Vorratsinventur</div><div><b>M&auml;r</b>Apothekentermin</div>'+
-  '<div><b>Apr</b>Fu&szlig;weg Schule</div><div><b>Mai</b>Wasser abstellen</div><div><b>Jun</b>Dokumentencheck</div>'+
-  '<div><b>Jul</b>Kochen ohne Strom</div><div><b>Aug</b>Routen abfahren</div><div><b>Sep</b>Apothekentermin</div>'+
-  '<div><b>Okt</b>Nachbarschaftsrunde</div><div class="akt"><b>Nov</b>24 h ohne Strom</div><div><b>Dez</b>Jahresr&uuml;ckblick</div></div>'+
-  '<div class="sh">&Uuml;bung Januar im Detail</div>'+
-  '<div class="krit1" style="border-left-color:var(--navy)"><div class="kt">Rufkette trocken durchspielen</div>'+
-  '<div class="stxt"><b>Ziel:</b> Jede Person erreicht die n&auml;chste in der Kette, ohne das Telefon zu benutzen.<br>'+
-  '<b>Dauer:</b> 30 Minuten &middot; <b>Erfolgskriterium:</b> Alle vier Personen sind innerhalb von 20 Minuten erreicht.<br>'+
-  '<b>Typischer Befund:</b> Eine Nummer stimmt nicht mehr. Genau deshalb wird ge&uuml;bt.</div></div>','Seite 1')},
-
-{n:"12",o:"Ordner 03 Plan",t:"Das Ma&szlig;nahmenblatt",f:"wer macht was",
- nutzen:"Jede Empfehlung hat einen Namen daneben, nicht nur eine Nummer.",
- warum:"<p>Dies ist das j&uuml;ngste Dokument im Paket, und es ist aus einem wiederkehrenden Befund entstanden: Analysen scheitern selten am Inhalt, sondern an der Zust&auml;ndigkeit. Solange eine Ma&szlig;nahme allen geh&ouml;rt, geh&ouml;rt sie niemandem.</p><p>Deshalb fasst dieses Blatt alle Empfehlungen aus allen Modulen zusammen und h&auml;ngt an jede Zeile einen Namen. <b>Es ersetzt keinen anderen Teil, es macht sie arbeitsf&auml;hig.</b> Die Zuordnung ist ein Vorschlag, den Sie am K&uuml;chentisch &auml;ndern d&uuml;rfen, aber keine Zeile bleibt ohne Namen.</p>",
- pkt:["Alle Ma&szlig;nahmen aus allen zw&ouml;lf Modulen an einem Ort","Getrennt nach sofort, mittelfristig und strukturell","Je Ma&szlig;nahme Aufwand in Euro und Zeit bis zur Erledigung","Zust&auml;ndigkeit je Person, &auml;nderbar","Quick Wins separat: unter einer Stunde, sofort machbar"],
- wann:"Im Ergebnisgespr&auml;ch gemeinsam durchgehen und die Namen festlegen.",
- mock: seite('Ma&szlig;nahmen &middot; wer macht was',
-  '<div class="mkpi"><div><div class="kl">Ma&szlig;nahmen</div><div class="kv">116</div><div class="kn">gesamt</div></div>'+
-  '<div><div class="kl">Davon sofort</div><div class="kv">40</div><div class="kn">in 30 Tagen</div></div>'+
-  '<div><div class="kl">Quick Wins</div><div class="kv">55</div><div class="kn">unter 1 Stunde</div></div>'+
-  '<div><div class="kl">Zust&auml;ndige</div><div class="kv">2</div><div class="kn">im Haushalt</div></div></div>'+
-  '<div class="sh">Sofort, Auszug</div>'+
-  '<table class="mtab"><tr><th style="width:22px">Nr</th><th style="width:30px">Mod</th><th>Ma&szlig;nahme</th><th class="r">Aufwand</th><th class="r">Zeit</th><th style="width:40px">Wer</th></tr>'+
-  '<tr><td class="n">2</td><td>M01</td><td>Zwei Warn-Apps aktivieren</td><td class="r">0 &euro;</td><td class="r">1 Tag</td><td>Anna</td></tr>'+
-  '<tr><td class="n">11</td><td>M02</td><td>Zwei Notfallbl&auml;tter schreiben</td><td class="r">0 &euro;</td><td class="r">2 Tage</td><td>Anna</td></tr>'+
-  '<tr><td class="n">38</td><td>M05</td><td>Kohlenmonoxid-Melder f&uuml;r jeden Raum mit Feuer</td><td class="r">45 bis 75 &euro;</td><td class="r">3 Tage</td><td>Martin</td></tr>'+
-  '<tr><td class="n">63</td><td>M07</td><td>Kontaktblatt ausgedruckt und datiert</td><td class="r">0 &euro;</td><td class="r">1 Tag</td><td>Anna</td></tr>'+
-  '<tr><td class="n">90</td><td>M10</td><td>Bargeld auf sechs Umschl&auml;ge und drei Orte aufteilen</td><td class="r">0 &euro;</td><td class="r">1 Tag</td><td>Martin</td></tr></table>'+
-  '<div class="stxt" style="margin-top:9px;color:var(--red);font-weight:700">Diese Zuordnung ist noch nicht best&auml;tigt. Ohne Absprache landet alles bei einer Person.</div>','Seite 1 von 1')},
-
-{n:"10",o:"Ordner 04 Ernstfall",t:"Der Notfallordner",f:"griffbereit",
- nutzen:"Alles Wichtige liegt an einem Ort, den jeder im Haushalt kennt.",
- warum:"<p>Im Ernstfall sucht niemand. Wer im Dunkeln mit vier Personen im Flur steht, geht an einen Ort, oder er geht gar nicht. Genau diesen Ort legt dieser Ordner fest, und zwar physisch: ein Ordner mit Registern, kein digitaler Speicher.</p><p><b>Teil 2 ist die PACE-Ausr&uuml;stungsempfehlung.</b> PACE bedeutet, dass es f&uuml;r jeden Zweck vier Ebenen gibt: die prim&auml;re L&ouml;sung, eine Alternative, eine R&uuml;ckfallebene und eine Notl&ouml;sung. Aufgebaut auf dem, was Sie bereits besitzen.</p>",
- pkt:["Dokumentenordnung mit vollst&auml;ndiger Registerstruktur","Vollmachten, Vertr&auml;ge, Nachweise, Policen","Kontakte analog, ohne Handy nutzbar","Teil 2: PACE-Empfehlung in vier Stufen je Zweck","Hinweis, wovon eine zweite Ausfertigung sinnvoll ist"],
- wann:"Einmal anlegen, danach an einem festen Platz liegen lassen. Jahrescheck im Drill-Kalender.",
- mock: seite('Notfallordner &middot; Register',
-  '<div class="reg"><div><span class="rn">01</span><span>Ausweise, Geburts- und Heiratsurkunden</span></div>'+
-  '<div><span class="rn">02</span><span>Vollmachten, Patientenverf&uuml;gung, Sorgerecht</span></div>'+
-  '<div><span class="rn">03</span><span>Versicherungen, Policen, Schadennummern</span></div>'+
-  '<div><span class="rn">04</span><span>Medizinische Bl&auml;tter je Person</span></div>'+
-  '<div><span class="rn">05</span><span>Kontakte analog, zw&ouml;lf Personen mit Adresse</span></div>'+
-  '<div><span class="rn">06</span><span>Grundriss, Absperrpunkte, Z&auml;hlernummern</span></div></div>'+
-  '<div class="sh">Teil 2: PACE am Beispiel W&auml;rme</div>'+
-  '<div class="pace"><div><b>P</b>Gasheizung</div><div><b>A</b>Kaminofen</div><div><b>C</b>Ein Warmraum</div><div><b>E</b>Schlafs&auml;cke, K&ouml;rperw&auml;rme</div></div>'+
-  '<div class="stxt" style="margin-top:9px">Bei Ihnen fehlt heute die Ebene C. Ein festgelegter Warmraum kostet nichts und schlie&szlig;t die gr&ouml;&szlig;te L&uuml;cke in dieser Kette.</div>','Seite 1')},
-
-{n:"11",o:"Ordner 04 Ernstfall",t:"Die Notfallkarten",f:"Kartenset je Person",
- nutzen:"Das Wichtigste ist dort, wo Sie im Ernstfall tats&auml;chlich sind.",
- warum:"<p>Ein Notfallordner n&uuml;tzt nichts, wenn er zu Hause liegt und Sie im Auto sitzen. Deshalb gibt es zus&auml;tzlich ein Kartenset im Format einer Bankkarte, das an drei Orte verteilt wird: Portemonnaie, Sicherungskasten, Handschuhfach.</p><p>Auf den Karten steht bewusst wenig. <b>Nur das, was man unter Stress nicht mehr zusammenbekommt:</b> drei Nummern, ein Sammelpunkt, die ersten f&uuml;nf Handgriffe. Alles Weitere steht im Ordner und hat dort auch Zeit.</p>",
- pkt:["Format f&uuml;r Portemonnaie und Handschuhfach","Die wichtigsten Nummern ohne Handy","Kurzabl&auml;ufe f&uuml;r die ersten Minuten","Je Haushaltsmitglied ein eigenes Set","Kinderkarten mit gr&ouml;&szlig;erer Schrift und weniger Text"],
- wann:"Sofort verteilen und deponieren. Danach nie wieder anfassen, bis sie gebraucht werden.",
- mock: seite('Notfallkarten &middot; Set Anna',
-  '<div class="karten"><div class="karte"><b>Wenn das Netz weg ist</b>'+
-  '1. Ruhig bleiben, Lage feststellen<br>2. Kinder: Schule anfahren, nicht anrufen<br>'+
-  '3. Sammelpunkt 1: zu Hause<br>4. Sammelpunkt 2: Feuerwehrhaus<br>5. Meldezeit: jeden Tag 9 und 19 Uhr</div>'+
-  '<div class="karte"><b>Nummern ohne Handy</b>'+
-  'Martin: 0170 000 00 00<br>Schule Lena: 03 000 000<br>Nachbar Krause: 03 000 111<br>'+
-  'Hausarzt: 03 000 222<br>Stadtwerke St&ouml;rung: 0800 000 000</div></div>'+
-  '<div class="stxt" style="margin-top:10px">Zwei Karten je Person, laminiert. Eine ins Portemonnaie, eine an den Sicherungskasten. F&uuml;r Jonas gibt es eine dritte mit gr&ouml;&szlig;erer Schrift und nur drei Zeilen.</div>','Kartenset 1 von 4')}
-);
-
 var dl=document.getElementById("dokliste");
-DOK.forEach(function(d){
-  var a=document.createElement("article"); a.className="dok reveal"; a.id="d"+d.n;
-  a.innerHTML='<div class="kopf"><div class="dn">Dokument '+d.n+'</div><h3>'+d.t+'</h3>'+
-    '<div class="tags"><span>'+d.o+'</span><span'+(d.xls?' class="xls"':'')+'>'+d.f+'</span></div>'+
-    '<span class="gh">'+d.n+'</span></div>'+
-    '<div class="rumpf"><div class="dgrid"><div>'+
-      '<div class="nutzen"><div class="nl">Ihr Nutzen</div><p>'+d.nutzen+'</p></div>'+
-      '<h4>Warum es dieses Dokument gibt</h4><div class="warum">'+d.warum+'</div>'+
-      '<h4>Im Einzelnen</h4><ul>'+d.pkt.map(function(p){return '<li>'+p+'</li>';}).join("")+'</ul>'+
-      '<div class="wann"><div class="wl">Wann Sie es aufschlagen</div><p>'+d.wann+'</p></div>'+
-    '</div><div class="vor"><div class="vl">Musterausschnitt</div>'+d.mock+'</div></div></div>';
-  dl.appendChild(a);
+DOK.forEach(function(d,i){
+  var z=document.createElement("div"); z.className="dz reveal"+(i%2?" rechts":""); z.id="d"+d.n;
+  var bild="";
+  if(d.bild2){
+    bild='<div class="zwei"><a class="blatt" data-gross="assets/muster/'+d.bild+'.jpg"><img src="assets/muster/'+d.bild+'.jpg" alt="'+d.name+'" loading="lazy"></a>'+
+         '<a class="blatt" data-gross="assets/muster/'+d.bild2+'.jpg"><img src="assets/muster/'+d.bild2+'.jpg" alt="'+d.name+'" loading="lazy"></a></div>';
+  } else if(d.bild){
+    bild='<a class="blatt" data-gross="assets/muster/'+d.bild+'.jpg"><img src="assets/muster/'+d.bild+'.jpg" alt="'+d.name+'" loading="lazy"></a>';
+  } else {
+    bild='<div class="karte-leer" style="background:#217346;color:#fff;padding:42px 32px;box-shadow:0 26px 56px rgba(27,36,48,.26)">'+
+      '<div style="font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;opacity:.8">Excel-Arbeitsmappe</div>'+
+      '<div style="font-size:30px;font-weight:800;margin-top:10px;line-height:1.15">'+d.name+'</div>'+
+      '<div style="font-size:15px;margin-top:12px;opacity:.9">'+d.xls+' &middot; abhakbar, sortierbar, rechnet mit</div></div>';
+  }
+  var nr = d.s ? '<span class="blattnr">'+d.s+' Seiten</span>' : '<span class="blattnr">'+d.xls+'</span>';
+  z.innerHTML=
+   '<div class="dtxt"><div class="dnum">Dokument '+d.n+' &middot; '+d.ordner+'</div>'+
+     '<h3>'+d.t+'</h3><div class="dsub">'+d.name+'</div>'+
+     '<p class="lead2">'+d.lead+'</p>'+
+     '<div class="dwarum"><div class="wl">Warum es dieses Dokument gibt</div><p>'+d.warum+'</p></div>'+
+     '<div class="dfakt">'+d.fakt.map(function(f,k){return '<span'+(k===0?' class="rot"':(d.xls&&k===1?' class="gruen"':''))+'>'+f+'</span>';}).join("")+'</div>'+
+     '<ul>'+d.pkt.map(function(p){return '<li>'+p+'</li>';}).join("")+'</ul></div>'+
+   '<div class="dbild">'+nr+bild+(d.cap?'<div class="bunter">'+d.cap+'</div>':'')+'</div>';
+  dl.appendChild(z);
 });
+
+(function(){
+  var lb=document.getElementById("lb"), img=lb.querySelector("img");
+  document.addEventListener("click",function(e){
+    var a=e.target.closest ? e.target.closest(".blatt") : null;
+    if(a){ e.preventDefault(); img.src=a.getAttribute("data-gross"); lb.classList.add("on"); return; }
+    if(e.target===lb || e.target.classList.contains("zu")) lb.classList.remove("on");
+  });
+  document.addEventListener("keydown",function(e){ if(e.key==="Escape") lb.classList.remove("on"); });
+})();
 </script>
 </body>
 </html>
