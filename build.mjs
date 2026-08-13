@@ -47,6 +47,8 @@ function rewriteJs(js){
     "index.html":"/", "das-system.html":"/das-system/", "ablauf-experten.html":"/ablauf-experten/",
     "lagebild.html":"/lagebild/", "community.html":"/community/", "faq-kontakt.html":"/faq-kontakt/",
     "ratgeber.html":"/ratgeber/", "downloads.html":"/downloads/",
+    "module.html":"/module/", "szenarien.html":"/szenarien/", "praxis.html":"/praxis/",
+    "experten.html":"/experten/", "fruehwarnsystem.html":"/fruehwarnsystem/",
     "impressum.html":"/impressum/", "datenschutz.html":"/datenschutz/"
   };
   for (const [k,v] of Object.entries(map)) js = js.split(k).join(v);
