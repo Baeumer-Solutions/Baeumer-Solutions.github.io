@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aus der Praxis: drei Krisenvorsorge-Analysen im Detail | Protect-12</title>
+<meta name="description" content="Drei anonymisierte Protect-12 Analysen: Ausgangslage, Befund, die gr&ouml;&szlig;ten Hebel mit Preis und Zeitaufwand und was nach einem Jahr davon &uuml;brig war. Namen und Orte ver&auml;ndert, Befunde real.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://protect-12.de/praxis">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Aus der Praxis: drei Analysen im Detail">
+<meta property="og:description" content="Ein Hof, eine Familie, eine Unternehmerin. Drei Ausgangslagen, drei Befunde, drei Wege.">
+<meta property="og:image" content="https://protect-12.de/assets/og.png">
+<meta property="og:url" content="https://protect-12.de/praxis">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/p12.css">
+<style>
+.fall{background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);overflow:hidden;position:relative;margin-bottom:30px}
+.fall .kopf{background:linear-gradient(160deg,#243244,#1B2430);color:#fff;padding:28px 34px;position:relative;overflow:hidden}
+.fall .kopf .fk{font-size:11.5px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--red-soft)}
+.fall .kopf h2{color:#fff;font-size:clamp(22px,2.4vw,30px);margin-top:8px;letter-spacing:-.02em}
+.fall .kopf .meta{margin-top:14px;display:flex;gap:8px;flex-wrap:wrap}
+.fall .kopf .meta span{background:rgba(255,255,255,.12);color:#fff;font-size:11.5px;font-weight:700;
+  letter-spacing:.06em;padding:6px 12px}
+.fall .kopf .gh{position:absolute;right:22px;bottom:-32px;font-size:110px;font-weight:800;color:#fff;opacity:.07;line-height:1}
+.fall .rumpf{padding:30px 34px 32px}
+.fall h4{color:var(--navy);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;margin:30px 0 12px;
+  padding-bottom:8px;border-bottom:1px solid var(--grey)}
+.fall h4:first-child{margin-top:0}
+.fall p{color:var(--muted);font-size:15.5px}
+.fall p+p{margin-top:13px}
+.fall p b{color:var(--navy)}
+/* Befundkasten */
+.befund{background:var(--navy);color:#fff;padding:24px 26px;position:relative;overflow:hidden}
+.befund .bl{font-size:11px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--red-soft)}
+.befund p{color:var(--mist-txt);font-size:16px;margin-top:10px}
+.befund p b{color:#fff}
+/* Hebel-Tabelle */
+.hebel{border:1px solid var(--line);background:#fff}
+.hz{display:grid;grid-template-columns:38px 1fr 150px 130px;gap:18px;padding:16px 20px;border-bottom:1px solid var(--grey);align-items:start}
+.hz:last-child{border-bottom:0}
+.hz.kopfz{background:linear-gradient(180deg,#233042,#1B2430)}
+.hz.kopfz div{color:#fff;font-size:10.5px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+.hz .rang{font-size:15px;font-weight:800;color:var(--red)}
+.hz .was{font-size:14.5px;color:var(--ink)}
+.hz .was b{color:var(--navy)}
+.hz .preis,.hz .zeit{font-size:13.5px;font-weight:700;color:var(--navy)}
+/* Zeitachse 30/90/365 */
+.verlauf{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.verlauf>div{background:var(--grey);border-top:3px solid var(--navy);padding:20px 20px}
+.verlauf>div:last-child{border-top-color:var(--green)}
+.verlauf .vt{font-size:11px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--red)}
+.verlauf h5{font-size:16px;color:var(--navy);margin:8px 0 8px;font-weight:800}
+.verlauf p{font-size:14px;color:var(--muted)}
+.fazit{background:#fff;border:1px solid var(--line);border-left:3px solid var(--red);padding:20px 24px}
+.fazit .fl{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--red)}
+.fazit p{color:var(--ink);font-size:16.5px;font-weight:600;margin-top:9px}
+.hinweis{background:var(--grey);border-left:3px solid var(--navy);padding:18px 22px;margin-top:8px}
+.hinweis p{color:var(--muted);font-size:14.5px}
+@media(max-width:900px){
+  .hz{grid-template-columns:30px 1fr;gap:10px}
+  .hz.kopfz{display:none}
+  .hz .preis::before{content:"Kosten: ";color:var(--muted);font-weight:600}
+  .hz .zeit::before{content:"Aufwand: ";color:var(--muted);font-weight:600}
+  .hz .preis,.hz .zeit{grid-column:2}
+  .verlauf{grid-template-columns:1fr}
+  .fall .kopf{padding:22px 20px}.fall .rumpf{padding:24px 20px 26px}
+}
+</style>
+</head>
+<body data-page="praxis.html">
+<div id="p12-header"></div>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="kicker">Aus der Praxis</span>
+    <h1>Drei Haushalte, drei Ausgangslagen, ein System</h1>
+    <p class="lead">Theorie l&auml;sst sich behaupten. Ergebnisse nicht. Hier stehen drei abgeschlossene Protect-12 Analysen im Detail: was vorlag, was die Analyse fand, welche Ma&szlig;nahmen den gr&ouml;&szlig;ten Unterschied machten, was sie gekostet haben und wie viel davon nach einem Jahr noch stand.</p>
+    <div class="cta-row"><a class="btn btn-red" data-cta href="#">Gespr&auml;ch vereinbaren &rarr;</a><a class="btn btn-ghost" href="#f1">Zum ersten Fall</a></div>
+    <p class="badge-line">Anonymisiert: Namen, Orte und erkennbare Details sind ver&auml;ndert. Befunde, Ma&szlig;nahmen und Zahlen sind real.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="section-head reveal"><span class="kicker">Was diese drei F&auml;lle zeigen</span>
+      <h2>Die teuerste L&uuml;cke ist selten die teuerste Reparatur.</h2>
+      <p class="lead">Drei sehr unterschiedliche Haushalte, drei sehr unterschiedliche Budgets. In allen drei F&auml;llen lag die wirksamste Ma&szlig;nahme nicht dort, wo die Betroffenen sie vermutet h&auml;tten, und in zwei von drei F&auml;llen kostete sie unter 200 Euro. Nicht weil Ausr&uuml;stung egal w&auml;re, sondern weil Reihenfolge schwerer wiegt als Ausstattung.</p></div>
+  </div>
+</section>
+
+<section class="mist" id="faelle">
+  <div class="wrap">
+
+    <!-- FALL 1 -->
+    <article class="fall reveal" id="f1">
+      <div class="kopf"><div class="fk">Fallstudie 01</div><h2>Der Hof im Voralpenland</h2>
+        <div class="meta"><span>2 Erwachsene</span><span>Eigene Wasserquelle</span><span>Holzofen</span><span>Tiere</span><span>Alleinlage</span></div>
+        <span class="gh">01</span></div>
+      <div class="rumpf">
+        <h4>Die Ausgangslage</h4>
+        <p>Ein bewirtschafteter Hof in Alleinlage, zwei Erwachsene, Tiere, eigene Quelle, Holzofen, &uuml;ber Jahrzehnte gewachsene Vorr&auml;te. Ein Haushalt, der sich zu Recht als gut aufgestellt empfand. Die Anfrage kam nicht aus Sorge, sondern aus Neugier: <b>Wir glauben, wir stehen gut da. Wir wollen wissen, ob das stimmt.</b></p>
+        <p>Der Fragebogen best&auml;tigte den ersten Eindruck. Wasser, Nahrung, W&auml;rme und Energie lagen deutlich &uuml;ber dem, was wir bei den meisten Haushalten sehen. Die Reichweite bei Trinkwasser war praktisch unbegrenzt, beim Heizen lag sie bei mehreren Monaten. In vier von zw&ouml;lf Modulen war der Hof besser aufgestellt als jede Empfehlung, die wir h&auml;tten geben k&ouml;nnen.</p>
+        <h4>Der Befund</h4>
+        <div class="befund"><div class="bl">Der schw&auml;chste Bereich</div>
+          <p><b>Kommunikation und Information.</b> Ohne Strom und ohne Netz w&auml;re der Hof hervorragend versorgt und zugleich vollst&auml;ndig blind gewesen. Keine Ausstattungsl&uuml;cke, eine Systeml&uuml;cke.</p></div>
+        <p style="margin-top:16px">Die Alleinlage, die bei Vorrat und W&auml;rme ein Vorteil war, kippte hier ins Gegenteil. Der n&auml;chste Nachbar lag zu weit weg f&uuml;r Zuruf, Mobilfunk war schon im Normalbetrieb schwach, und es gab kein einziges Ger&auml;t im Haus, das ohne Netz eine Verbindung nach au&szlig;en herstellen konnte. Im Verlauf der Szenarienrechnung zeigte sich das immer wieder: der Hof h&auml;tte Wochen durchgehalten, aber ab Stunde zw&ouml;lf nicht mehr gewusst, was drau&szlig;en passiert, und niemand h&auml;tte gewusst, wie es dem Hof geht.</p>
+        <p>Dazu kam ein zweiter Punkt, der ohne den ersten harmlos gewesen w&auml;re: es existierte keine Absprache. Kein fester Zeitpunkt, zu dem man sich meldet, kein Treffpunkt, keine Regel f&uuml;r den Fall, dass einer der beiden unterwegs ist. In einem Haushalt mit zwei Personen f&auml;llt so etwas nicht auf, solange das Telefon funktioniert.</p>
+        <h4>Die gr&ouml;&szlig;ten Hebel</h4>
+        <div class="hebel">
+          <div class="hz kopfz"><div>Rang</div><div>Ma&szlig;nahme</div><div>Kosten</div><div>Aufwand</div></div>
+          <div class="hz"><div class="rang">1</div><div class="was"><b>Einfaches Funk-Setup.</b> Zwei Handfunkger&auml;te plus ein netzunabh&auml;ngiger Weltempf&auml;nger f&uuml;r den Empfang von Lagemeldungen.</div><div class="preis">unter 100 Euro</div><div class="zeit">1 Nachmittag</div></div>
+          <div class="hz"><div class="rang">2</div><div class="was"><b>Feste Meldeabl&auml;ufe.</b> Zwei t&auml;gliche Meldezeiten, ein definierter Kanal, eine Regel f&uuml;r den Fall, dass jemand nicht antwortet. Auf einer Karte notiert, nicht im Kopf.</div><div class="preis">0 Euro</div><div class="zeit">1 Stunde</div></div>
+          <div class="hz"><div class="rang">3</div><div class="was"><b>Zwei kurze &Uuml;bungen.</b> Einmal Verbindung aufbauen, einmal den Ausfall durchspielen. Danach wusste jeder, welcher Knopf welcher ist.</div><div class="preis">0 Euro</div><div class="zeit">2 Stunden</div></div>
+          <div class="hz"><div class="rang">4</div><div class="was"><b>Papierkarte der Region</b> mit eingezeichneten Nachbarn, Ausweichwegen und Sammelpunkt. Ersetzt das, was sonst das Handy leistet.</div><div class="preis">etwa 15 Euro</div><div class="zeit">1 Stunde</div></div>
+        </div>
+        <h4>Was daraus wurde</h4>
+        <div class="verlauf">
+          <div><div class="vt">Nach 30 Tagen</div><h5>Alles beschafft, Abl&auml;ufe stehen</h5><p>Ger&auml;te da, Meldezeiten vereinbart, Karte an der Innenseite der Haust&uuml;r. Die komplette Sofort-Stufe war abgehakt.</p></div>
+          <div><div class="vt">Nach 90 Tagen</div><h5>Zwei &Uuml;bungen gelaufen</h5><p>Beim zweiten Mal fiel auf, dass die Reichweite im Talkessel schlechter war als angenommen. Der Sammelpunkt wurde daraufhin verlegt.</p></div>
+          <div><div class="vt">Nach einem Jahr</div><h5>Routine statt Projekt</h5><p>Der Funkcheck l&auml;uft nebenher, das Radio steht auf der Fensterbank. Der Gesamtwert des Hofes stieg st&auml;rker als durch jede Anschaffung der letzten Jahre.</p></div>
+        </div>
+        <h4>Fazit</h4>
+        <div class="fazit"><div class="fl">Was dieser Fall zeigt</div>
+          <p>Die teuerste L&uuml;cke war die billigste Reparatur. Wirkung h&auml;ngt nicht am Budget, sondern an der Reihenfolge.</p></div>
+        <div class="hinweis"><p>Bemerkenswert an diesem Fall: der Hof h&auml;tte f&uuml;r zehntausend Euro weiter aufr&uuml;sten k&ouml;nnen, ohne dass sich am eigentlichen Problem etwas ge&auml;ndert h&auml;tte. Genau daf&uuml;r gibt es Modul 12, die Pr&uuml;fung des Zusammenspiels.</p></div>
+      </div>
+    </article>
+
+    <!-- FALL 2 -->
+    <article class="fall reveal" id="f2">
+      <div class="kopf"><div class="fk">Fallstudie 02</div><h2>Die Familie am Stadtrand</h2>
+        <div class="meta"><span>2 Erwachsene</span><span>2 Kinder</span><span>Reihenhaus</span><span>Stadtrandlage</span><span>Mittleres Budget</span></div>
+        <span class="gh">02</span></div>
+      <div class="rumpf">
+        <h4>Die Ausgangslage</h4>
+        <p>Reihenhaus am Stadtrand, zwei Erwachsene, zwei Kinder im Grundschulalter. Der Anlass war ein mehrst&uuml;ndiger Stromausfall im Viertel, bei dem beiden Eltern auffiel, dass sie nicht wussten, wo die Taschenlampen sind. Danach wurde eingekauft: Wasserkanister, Konserven, eine Powerbank, ein Gaskocher, ein Erste-Hilfe-Set.</p>
+        <p><b>Guter Wille, aber nichts folgte einem Plan.</b> Ein typischer Fall von Absicht ohne System. Im Fragebogen zeigte sich das deutlich: einige Kriterien lagen im gr&uuml;nen Bereich, direkt daneben standen Nullwerte. Es gab drei Taschenlampen und keinen einzigen Ersatzakku. Es gab einen Gaskocher und eine halbe Kartusche.</p>
+        <h4>Der Befund</h4>
+        <div class="befund"><div class="bl">Das Klumpenrisiko</div>
+          <p><b>Vorrat, Wasser, Dokumente und Bargeld lagen im selben Kellerraum.</b> Ein einziges Ereignis, ein Rohrbruch, ein Kellerbrand, ein Einbruch, h&auml;tte die komplette Vorsorge an einem Nachmittag entwertet. Niemand hatte das je als Risiko gesehen.</p></div>
+        <p style="margin-top:16px">Das ist der h&auml;ufigste Befund, den wir sehen, und der am schwersten selbst zu entdecken ist. Der Keller ist der logische Ort f&uuml;r alles, was man selten braucht. Genau deshalb landet dort alles, was im Ernstfall gleichzeitig gebraucht wird. Die Analyse rechnet solche Abh&auml;ngigkeiten &uuml;ber Bereichsgrenzen hinweg, und erst dann f&auml;llt auf, dass vier gr&uuml;ne Module an einem einzigen Punkt h&auml;ngen.</p>
+        <p>Der zweite Befund betraf die Kinder. Es gab keine Absprache, was passiert, wenn die Schule schlie&szlig;t und niemand telefonisch erreichbar ist. Beide Eltern arbeiten, beide Arbeitswege f&uuml;hren &uuml;ber dieselbe Br&uuml;cke.</p>
+        <h4>Die gr&ouml;&szlig;ten Hebel</h4>
+        <div class="hebel">
+          <div class="hz kopfz"><div>Rang</div><div>Ma&szlig;nahme</div><div>Kosten</div><div>Aufwand</div></div>
+          <div class="hz"><div class="rang">1</div><div class="was"><b>Zweiter Lagerort.</b> Aufteilung auf Keller und Dachboden, Dokumente und Bargeld getrennt davon. Aus einem Klumpenrisiko wurden zwei unabh&auml;ngige Reserven.</div><div class="preis">etwa 60 Euro Regal</div><div class="zeit">1 Wochenende</div></div>
+          <div class="hz"><div class="rang">2</div><div class="was"><b>48-Stunden-Protokoll, ausgedruckt.</b> Wer holt welches Kind, welcher Weg gilt, wo trifft man sich, wenn nichts geht. Zwei Blatt, an der K&uuml;chent&uuml;r.</div><div class="preis">0 Euro</div><div class="zeit">2 Stunden</div></div>
+          <div class="hz"><div class="rang">3</div><div class="was"><b>Zweiter Schulweg zu Fu&szlig;.</b> Einmal mit beiden Kindern abgelaufen, ohne die Br&uuml;cke. Dauer gemessen, Sammelpunkt festgelegt.</div><div class="preis">0 Euro</div><div class="zeit">3 Stunden</div></div>
+          <div class="hz"><div class="rang">4</div><div class="was"><b>Rotationsroutine.</b> Ein fester Termin im Quartal, Erinnerung im Kalender. Beendet das langsame Verfallen des Vorrats, das sonst unbemerkt l&auml;uft.</div><div class="preis">0 Euro</div><div class="zeit">30 Min je Quartal</div></div>
+          <div class="hz"><div class="rang">5</div><div class="was"><b>Ausr&uuml;stung vervollst&auml;ndigen.</b> Ersatzakkus, zweite Gaskartusche, Kurbelradio. Erst jetzt, nicht vorher.</div><div class="preis">etwa 120 Euro</div><div class="zeit">1 Stunde</div></div>
+        </div>
+        <h4>Was daraus wurde</h4>
+        <div class="verlauf">
+          <div><div class="vt">Nach 30 Tagen</div><h5>Zwei Wochenenden Aufwand</h5><p>Lager geteilt, Protokoll h&auml;ngt, Schulweg abgelaufen. Die Kinder fanden das Ablaufen des zweiten Wegs den besten Teil.</p></div>
+          <div><div class="vt">Nach 90 Tagen</div><h5>Erste Rotation gelaufen</h5><p>Dabei fielen zwei abgelaufene Konserven auf und ein Wasserkanister, der undicht war. Genau daf&uuml;r ist die Routine da.</p></div>
+          <div><div class="vt">Nach einem Jahr</div><h5>Vier Rotationen, ein Umbau</h5><p>Der Dachboden wurde im Sommer zu warm, der zweite Lagerort zog in die Garage um. Der Plan wurde angepasst, nicht aufgegeben.</p></div>
+        </div>
+        <h4>Fazit</h4>
+        <div class="fazit"><div class="fl">Was dieser Fall zeigt</div>
+          <p>Vier gr&uuml;ne Module sind wertlos, wenn sie an einem einzigen Punkt h&auml;ngen. Eine Familie, die ihre Schwachstelle kennt, bevor ein Ernstfall sie findet.</p></div>
+        <div class="hinweis"><p>Die teuerste Position in diesem Fall waren 120 Euro, und sie stand auf Rang f&uuml;nf. Die vier Ma&szlig;nahmen davor kosteten zusammen 60 Euro und f&uuml;nf Stunden.</p></div>
+      </div>
+    </article>
+
+    <!-- FALL 3 -->
+    <article class="fall reveal" id="f3">
+      <div class="kopf"><div class="fk">Fallstudie 03</div><h2>Die Unternehmerin</h2>
+        <div class="meta"><span>Alleinlebend</span><span>Eigenes Unternehmen</span><span>Stadtwohnung</span><span>Budget vorhanden</span><span>Zeit knapp</span></div>
+        <span class="gh">03</span></div>
+      <div class="rumpf">
+        <h4>Die Ausgangslage</h4>
+        <p>Alleinlebend, eigenes Unternehmen, volle Kalenderwochen. Budget war kein Thema, Zeit dagegen das einzige Thema. Die Anforderung im Erstgespr&auml;ch war ungew&ouml;hnlich pr&auml;zise: <b>Maximale Wirkung pro investierter Stunde. Alles, was mehr als zwei Stunden pro Woche kostet, wird nicht stattfinden.</b></p>
+        <p>Das ist genau der Fall, f&uuml;r den die Kalibrierung auf Zeit und Budget gebaut ist. Eine Analyse, die hier eine Liste mit vierzig Ma&szlig;nahmen ausgeworfen h&auml;tte, w&auml;re nach zwei Wochen im Papierkorb gelandet. Vereinbart wurden deshalb zwei Stunden pro Woche als feste Gr&ouml;&szlig;e, und das komplette Ma&szlig;nahmenpaket wurde nach Wirkung pro Stunde sortiert statt nach Bereichen.</p>
+        <h4>Der Befund</h4>
+        <div class="befund"><div class="bl">Die Umkehrung der Reihenfolge</div>
+          <p><b>Nicht die Ausstattung war das Problem, sondern die Sortierung.</b> Alles, was Geld l&ouml;st, war l&ouml;sbar. Alles, was Zeit braucht, war offen: keine Dokumentenordnung, kein Notfallkontakt, der Bescheid wei&szlig;, keine Absprache mit dem Nachbarn, keine ge&uuml;bten Abl&auml;ufe.</p></div>
+        <p style="margin-top:16px">Bei Alleinlebenden verschiebt sich das Gewicht das Module deutlich. Was in einer Familie die zweite Person auff&auml;ngt, f&auml;llt hier ersatzlos aus. Das Modul Netzwerk und Gemeinschaft, in Familien oft ein Nebenthema, wurde hier zum kritischsten &uuml;berhaupt: es gab niemanden, der bemerkt h&auml;tte, wenn zwei Tage lang nichts von ihr zu h&ouml;ren gewesen w&auml;re.</p>
+        <p>Der zweite Punkt war die Wohnung selbst. F&uuml;nfter Stock, Aufzug, keine M&ouml;glichkeit zu heizen ohne Netz, kein Balkon zum Kochen. Bauliche Grenzen, die sich nicht wegkaufen lassen. Die Empfehlung ging deshalb nicht in Richtung Ausr&uuml;stung, sondern in Richtung Ausweichoption.</p>
+        <h4>Die gr&ouml;&szlig;ten Hebel</h4>
+        <div class="hebel">
+          <div class="hz kopfz"><div>Rang</div><div>Ma&szlig;nahme</div><div>Kosten</div><div>Aufwand</div></div>
+          <div class="hz"><div class="rang">1</div><div class="was"><b>Ein Mensch, der Bescheid wei&szlig;.</b> Eine Nachbarin mit Schl&uuml;ssel, eine Freundin mit den wichtigsten Informationen, eine Regel: zwei Tage Funkstille bedeuten nachsehen.</div><div class="preis">0 Euro</div><div class="zeit">1 Gespr&auml;ch</div></div>
+          <div class="hz"><div class="rang">2</div><div class="was"><b>Dokumentenordnung.</b> Alles Wichtige an einem Ort, eine zweite Kopie au&szlig;er Haus. Aufgeteilt in vier Termine zu je 30 Minuten.</div><div class="preis">etwa 40 Euro</div><div class="zeit">2 Wochen im Takt</div></div>
+          <div class="hz"><div class="rang">3</div><div class="was"><b>Definierte Ausweichadresse.</b> Ein abgesprochener Ort au&szlig;erhalb der Stadt f&uuml;r den Fall, dass die Wohnung l&auml;nger nicht bewohnbar ist. Mit Tasche, die dort liegt.</div><div class="preis">etwa 150 Euro</div><div class="zeit">1 Fahrt</div></div>
+          <div class="hz"><div class="rang">4</div><div class="was"><b>Vorrat auf 21 Tage.</b> Einmal bestellt statt in Etappen gekauft. Bei knapper Zeit und vorhandenem Budget der effizienteste Weg.</div><div class="preis">etwa 280 Euro</div><div class="zeit">1 Stunde</div></div>
+          <div class="hz"><div class="rang">5</div><div class="was"><b>Strukturelle Punkte.</b> Wasseraufbereitung, Licht, Powerstation. Bewusst ans Ende gestellt, weil sie ohne die vier Punkte davor wenig ver&auml;ndert h&auml;tten.</div><div class="preis">etwa 900 Euro</div><div class="zeit">verteilt</div></div>
+        </div>
+        <h4>Was daraus wurde</h4>
+        <div class="verlauf">
+          <div><div class="vt">Nach 30 Tagen</div><h5>Die ersten drei Punkte standen</h5><p>Alle drei kosteten zusammen weniger als 200 Euro und h&auml;tten in keiner nach Bereichen sortierten Liste ganz oben gestanden.</p></div>
+          <div><div class="vt">Nach 90 Tagen</div><h5>Sofort-Stufe komplett</h5><p>Vollst&auml;ndig abgehakt in der Checklisten-Arbeitsmappe. Aus dem schlechten Gewissen wurde ein Fortschrittsbalken.</p></div>
+          <div><div class="vt">Nach einem Jahr</div><h5>Zwei Stunden sind geblieben</h5><p>Der w&ouml;chentliche Slot steht bis heute im Kalender. Inzwischen l&auml;uft darin die Fortschreibung, nicht mehr der Aufbau.</p></div>
+        </div>
+        <h4>Fazit</h4>
+        <div class="fazit"><div class="fl">Was dieser Fall zeigt</div>
+          <p>Zwei Stunden pro Woche, konsequent in der richtigen Reihenfolge, schlagen jedes Wochenend-Gro&szlig;projekt, das nie stattfindet.</p></div>
+        <div class="hinweis"><p>Dieselbe Analyse h&auml;tte bei einem Budget von 50 Euro im Monat dieselben ersten drei Ma&szlig;nahmen ergeben. Sie kosten n&auml;mlich fast nichts. Was sich ge&auml;ndert h&auml;tte, ist alles ab Rang vier.</p></div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head reveal"><span class="kicker">Das Muster</span>
+      <h2>Was in allen drei F&auml;llen gleich war.</h2></div>
+    <div class="grid g3 reveal">
+      <div class="card"><div class="num">MUSTER A</div><h3>Der Befund lag woanders als vermutet</h3><p>Kein einziger der drei Haushalte h&auml;tte den eigenen kritischsten Punkt richtig geraten. Beim Hof lag er in der Kommunikation, bei der Familie im Lagerort, bei der Unternehmerin im fehlenden Kontakt.</p><span class="ghost">A</span></div>
+      <div class="card"><div class="num">MUSTER B</div><h3>Die wirksamsten Ma&szlig;nahmen waren die g&uuml;nstigsten</h3><p>In allen drei F&auml;llen standen auf den ersten R&auml;ngen Punkte, die zusammen unter 200 Euro kosteten. Teure Anschaffungen kamen, wenn &uuml;berhaupt, danach.</p><span class="ghost">B</span></div>
+      <div class="card"><div class="num">MUSTER C</div><h3>Niemand wurde zum Prepper</h3><p>Kein Bunker, keine Panik, kein neuer Lebensstil. Was sich ge&auml;ndert hat, ist die Ruhe, mit der diese Haushalte auf Nachrichten reagieren.</p><span class="ghost">C</span></div>
+    </div>
+    <div class="claim reveal" style="margin-top:26px">
+      <div class="lbl">Und das Wichtigste</div>
+      <p>Alle drei Pl&auml;ne wurden umgesetzt. Nicht weil sie besonders ehrgeizig waren, sondern weil sie auf die Zeit und das Budget gerechnet waren, die tats&auml;chlich zur Verf&uuml;gung standen.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <span class="kicker">Ihr Fall</span>
+    <h2>Wo w&uuml;rde bei Ihnen der erste Rang stehen?</h2>
+    <p>Das l&auml;sst sich nicht raten, nur rechnen. Der erste Schritt ist ein unverbindliches Gespr&auml;ch von etwa dreissig Minuten.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+      <a class="btn btn-red" data-cta href="#">Gespr&auml;ch vereinbaren &rarr;</a>
+      <a class="btn btn-ghost" href="ablauf-experten.html">So l&auml;uft die Analyse ab</a>
+      <a class="btn btn-ghost" href="module.html">Die zw&ouml;lf Module</a><a class="btn btn-ghost" href="szenarien.html">Die acht Szenarien</a></div>
+  </div>
+</section>
+
+<div id="p12-footer"></div>
+<script src="assets/p12.js"></script>
+</body>
+</html>
