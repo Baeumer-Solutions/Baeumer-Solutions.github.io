@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ihre Unterlagen: zw&ouml;lf Dokumente in f&uuml;nf Ordnern | Protect-12</title>
+<meta name="description" content="Was Sie am Ende der Krisenvorsorge-Analyse bekommen: zw&ouml;lf Dokumente in f&uuml;nf Ordnern, zwei mitrechnende Excel-Werkzeuge und zwei Nachschlagewerke. Jedes Dokument einzeln erkl&auml;rt.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://protect-12.de/unterlagen">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ihre Unterlagen aus der Protect-12 Analyse">
+<meta property="og:description" content="Zw&ouml;lf Dokumente in f&uuml;nf Ordnern, geordnet nach dem Moment, in dem Sie sie brauchen.">
+<meta property="og:image" content="https://protect-12.de/assets/og.png">
+<meta property="og:url" content="https://protect-12.de/unterlagen">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/p12.css">
+<style>
+/* Ordner-Uebersicht */
+.ordner{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.ord{background:#fff;border:1px solid var(--line);border-top:3px solid var(--navy);box-shadow:var(--shadow-sm);
+  padding:20px 18px;position:relative;overflow:hidden}
+.ord:last-child{border-top-color:var(--navy-3)}
+.ord .on{font-size:11px;font-weight:800;letter-spacing:.13em;color:var(--red)}
+.ord h3{font-size:16px;margin:8px 0 8px;line-height:1.3}
+.ord p{font-size:13.5px;color:var(--muted)}
+.ord .anz{margin-top:11px;font-size:11.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--navy-3)}
+/* Dokumentblatt */
+.dok{background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);overflow:hidden;position:relative;margin-bottom:24px}
+.dok .kopf{background:linear-gradient(160deg,#243244,#1B2430);color:#fff;padding:24px 30px;position:relative;overflow:hidden}
+.dok .kopf .dn{font-size:11.5px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;color:var(--red-soft)}
+.dok .kopf h3{color:#fff;font-size:clamp(20px,2.2vw,26px);margin-top:7px;letter-spacing:-.02em}
+.dok .kopf .tags{margin-top:13px;display:flex;gap:8px;flex-wrap:wrap}
+.dok .kopf .tags span{background:rgba(255,255,255,.12);color:#fff;font-size:11.5px;font-weight:700;
+  letter-spacing:.05em;padding:6px 12px}
+.dok .kopf .tags span.xls{background:#2F7D4F}
+.dok .kopf .gh{position:absolute;right:18px;bottom:-28px;font-size:96px;font-weight:800;color:#fff;opacity:.07;line-height:1}
+.dok .rumpf{padding:26px 30px 28px}
+.dok h4{color:var(--navy);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;margin:24px 0 11px;
+  padding-bottom:8px;border-bottom:1px solid var(--grey)}
+.dok h4:first-child{margin-top:0}
+.dok p{color:var(--muted);font-size:15.5px}
+.dok p+p{margin-top:11px}
+.dok p b{color:var(--navy)}
+.dok ul{list-style:none;margin-top:2px}
+.dok li{padding:8px 0 8px 22px;position:relative;font-size:14.5px;color:var(--muted)}
+.dok li::before{content:"";position:absolute;left:0;top:15px;width:8px;height:8px;background:var(--red)}
+.dok li b{color:var(--navy)}
+.wann{background:var(--grey);border-left:3px solid var(--navy);padding:15px 19px;margin-top:6px}
+.wann .wl{font-size:10.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--red)}
+.wann p{color:var(--ink);font-size:15px;margin-top:6px}
+/* Excel-Block */
+.xlbox{background:var(--navy);color:#fff;padding:34px 32px;box-shadow:var(--shadow)}
+.xlbox h3{color:#fff;font-size:21px;margin-bottom:8px}
+.xlbox>p{color:var(--mist-txt);font-size:15.5px;max-width:74ch}
+.xl2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px}
+.xl2>div{background:rgba(255,255,255,.07);border-top:3px solid #2F7D4F;padding:20px 20px}
+.xl2 .xn{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#7FD8A3}
+.xl2 h5{color:#fff;font-size:17px;margin:8px 0 8px;font-weight:800}
+.xl2 p{color:var(--mist-txt);font-size:14.5px}
+@media(max-width:1000px){.ordner{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:900px){.xl2{grid-template-columns:1fr}.xlbox{padding:26px 22px}}
+@media(max-width:600px){.ordner{grid-template-columns:1fr}.dok .kopf{padding:20px}.dok .rumpf{padding:22px 20px 24px}}
+</style>
+</head>
+<body data-page="unterlagen.html">
+<div id="p12-header"></div>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="kicker">Ihr Ergebnis</span>
+    <h1>Was am Ende bei Ihnen ankommt</h1>
+    <p class="lead">Kein einzelnes Gutachten, sondern ein aufeinander abgestimmtes Paket: <b style="color:#fff">zw&ouml;lf Dokumente in f&uuml;nf Ordnern</b>, dazu zwei mitrechnende Excel-Werkzeuge und zwei Nachschlagewerke als Beilage. Die Ordner sind nicht alphabetisch sortiert, sondern nach dem Moment, in dem Sie das jeweilige Dokument brauchen.</p>
+    <div class="cta-row"><a class="btn btn-red" data-cta href="#">Gespr&auml;ch vereinbaren &rarr;</a><a class="btn btn-ghost" href="#aufbau">Der Aufbau des Pakets</a></div>
+  </div>
+</header>
+
+<section id="aufbau">
+  <div class="wrap">
+    <div class="counts reveal" style="margin-bottom:44px">
+      <div class="count"><div class="n"><span data-count="12">0</span></div><div class="l">Dokumente</div></div>
+      <div class="count"><div class="n"><span data-count="5">0</span></div><div class="l">Ordner</div></div>
+      <div class="count"><div class="n"><span data-count="2">0</span></div><div class="l">Excel-Werkzeuge</div></div>
+      <div class="count"><div class="n"><span data-count="2">0</span></div><div class="l">Nachschlagewerke</div></div>
+    </div>
+    <div class="section-head reveal"><span class="kicker">Der Aufbau</span>
+      <h2>F&uuml;nf Ordner, in der Reihenfolge Ihrer Nutzung.</h2>
+      <p class="lead">Der h&auml;ufigste Fehler bei umfangreichen Analysen ist, dass niemand wei&szlig;, wo er anfangen soll. Deshalb liegt oben auf dem Paket ein einzelnes Blatt, das genau das beantwortet, und darunter f&uuml;nf Ordner, die dem nat&uuml;rlichen Ablauf folgen: erst verstehen, dann nachschlagen, dann umsetzen, dann griffbereit halten, dann vertiefen.</p></div>
+    <div class="ordner reveal">
+      <div class="ord"><div class="on">Ordner 01</div><h3>Einstieg</h3><p>Der Teil, den Sie am St&uuml;ck lesen. Klar, warm, ohne Fachsprache. Beginnt mit der Zusammenfassung auf wenigen Seiten.</p><div class="anz">1 Dokument</div></div>
+      <div class="ord"><div class="on">Ordner 02</div><h3>Analyse</h3><p>Das Nachschlagewerk zu Ihrer Lage. Hier steht jede Bewertung mit Begr&uuml;ndung, hier schlagen Sie nach, wenn Sie es genau wissen wollen.</p><div class="anz">3 Dokumente</div></div>
+      <div class="ord"><div class="on">Ordner 03</div><h3>Plan</h3><p>Der Arbeitsteil. Was zuerst, was danach, mit Preis und Zeit. Enth&auml;lt die beiden Excel-Werkzeuge.</p><div class="anz">5 Dokumente</div></div>
+      <div class="ord"><div class="on">Ordner 04</div><h3>Ernstfall</h3><p>Das, was im Ernstfall greifbar sein muss. Nicht zum Lesen gedacht, sondern zum Danebenlegen.</p><div class="anz">2 Dokumente</div></div>
+      <div class="ord"><div class="on">Ordner 05</div><h3>Wissen</h3><p>Zwei umfangreiche Nachschlagewerke als Beilage. Unabh&auml;ngig von Ihrer Analyse, aber passend dazu.</p><div class="anz">2 Beilagen</div></div>
+    </div>
+    <div class="claim reveal" style="margin-top:26px">
+      <div class="lbl">Die Regel dahinter</div>
+      <p>Jedes Dokument funktioniert auch allein. Sie k&ouml;nnen die Notfallkarten benutzen, ohne die Hauptanalyse gelesen zu haben, und den Umsetzungsplan abarbeiten, ohne die Szenarien zu kennen. Das ist Absicht: Ein Paket, das nur als Ganzes funktioniert, wird nicht benutzt.</p>
+    </div>
+  </div>
+</section>
+
+<section class="mist" id="dokumente">
+  <div class="wrap">
+    <div class="section-head reveal"><span class="kicker">Die zw&ouml;lf Dokumente</span>
+      <h2>Jedes mit einer klaren Aufgabe.</h2>
+      <p class="lead">Zu jedem Dokument steht hier, was drinsteht, wof&uuml;r Sie es benutzen und in welchem Moment Sie es aufschlagen. Der Umfang h&auml;ngt von Ihrem Haushalt ab, die Angaben sind typische Werte.</p></div>
+    <div id="dokliste"></div>
+  </div>
+</section>
+
+<section id="excel">
+  <div class="wrap">
+    <div class="section-head reveal"><span class="kicker">Zum Arbeiten</span>
+      <h2>Zwei Werkzeuge, die mitrechnen.</h2></div>
+    <div class="xlbox reveal">
+      <h3>Warum &uuml;berhaupt Excel und nicht alles als PDF</h3>
+      <p>Weil zwei Teile Ihres Pakets keine Dokumente sind, sondern Werkzeuge. Ein Vorratsplan, der nicht mitrechnet, ist nach dem ersten Einkauf falsch. Eine Checkliste, die man nicht abhaken kann, ist eine Leseliste. Beides w&uuml;rde als PDF im Ordner verstauben.</p>
+      <div class="xl2">
+        <div><div class="xn">Werkzeug 01</div><h5>Die Checklisten-Arbeitsmappe</h5>
+          <p>Ein Blatt je Modul, dazu ein Anleitungsblatt vorn. Jeder Punkt mit Priorit&auml;t, Kostenklasse und Zeitaufwand, abhakbar. Der Fortschritt ist jederzeit sichtbar, und genau das ist der Grund, warum diese Mappe in der Praxis am h&auml;ufigsten benutzt wird.</p></div>
+        <div><div class="xn">Werkzeug 02</div><h5>Der Vorratsrechner</h5>
+          <p>Rechnet live mit: Energiebedarf je Person nach anerkannten Formeln, Proteinbedarf nach den D-A-CH-Referenzwerten, Tiere nach WSAVA-Standard. Dazu Rezepte, Kochenergie und Tagespl&auml;ne. &Auml;ndern Sie eine Personenzahl, &auml;ndert sich alles Weitere von selbst.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mist" id="beilagen">
+  <div class="wrap">
+    <div class="section-head reveal"><span class="kicker">Ordner 05</span>
+      <h2>Zwei Nachschlagewerke als Beilage.</h2>
+      <p class="lead">Diese beiden Werke sind nicht auf Sie gerechnet, sie liegen bei jedem Paket bei. Sie beantworten die Fragen, die nach der Analyse kommen, wenn jemand tiefer einsteigen will.</p></div>
+    <div class="grid g2 reveal">
+      <div class="dok" style="margin-bottom:0"><div class="kopf"><div class="dn">Beilage</div><h3>Das Nachschlagewerk</h3>
+        <div class="tags"><span>Umfangreich</span><span>Zum Bl&auml;ttern</span></div><span class="gh">A</span></div>
+        <div class="rumpf"><p>Das Grundlagenwerk zu allen zw&ouml;lf Modulen: Zusammenh&auml;nge, Begriffe, Verfahren, Hintergr&uuml;nde. Gedacht f&uuml;r den Moment, in dem Sie in Ihrer Analyse auf etwas sto&szlig;en, das Sie genauer verstehen wollen, ohne selbst recherchieren zu m&uuml;ssen.</p></div></div>
+      <div class="dok" style="margin-bottom:0"><div class="kopf"><div class="dn">Beilage</div><h3>Das Feldbuch</h3>
+        <div class="tags"><span>Praxisteil</span><span>Zum Mitnehmen</span></div><span class="gh">B</span></div>
+        <div class="rumpf"><p>Der praktische Gegenpart: Handgriffe, Abl&auml;ufe, Ma&szlig;e, Faustformeln. Kein Flie&szlig;text zum Lesen, sondern Nachschlagestoff f&uuml;r den Moment, in dem etwas getan werden muss.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="regeln">
+  <div class="wrap">
+    <div class="section-head reveal"><span class="kicker">Drei Zusagen zum Paket</span>
+      <h2>Woran Sie die Unterlagen messen d&uuml;rfen.</h2></div>
+    <div class="grid g3 reveal">
+      <div class="card"><div class="num">ZUSAGE 01</div><h3>Keine Schablone</h3><p>Jede Aussage in diesen Dokumenten steht dort, weil sie aus Ihren Antworten folgt. Mindestens f&uuml;nf w&ouml;rtliche Zitate aus Ihrem Fragebogen und Ihren Gespr&auml;chen sind im Paket verteilt, damit Sie das nachpr&uuml;fen k&ouml;nnen.</p><span class="ghost">1</span></div>
+      <div class="card"><div class="num">ZUSAGE 02</div><h3>Nichts ohne Begr&uuml;ndung</h3><p>Zu jeder Bewertung steht, warum sie so ausf&auml;llt, warum sie nicht h&ouml;her ist und wie belastbar sie ist. Zu jeder Ma&szlig;nahme steht, was sie kostet und wie lange sie dauert.</p><span class="ghost">2</span></div>
+      <div class="card"><div class="num">ZUSAGE 03</div><h3>Auf Ihre Verh&auml;ltnisse gerechnet</h3><p>Der Umsetzungsplan wird auf Ihre tats&auml;chliche Zeit und Ihr tats&auml;chliches Budget kalibriert. Ein Plan, den Sie nicht umsetzen k&ouml;nnen, w&auml;re kein Ergebnis, sondern eine Rechnung mit offenem Ende.</p><span class="ghost">3</span></div>
+    </div>
+    <div class="claim reveal" style="margin-top:26px">
+      <div class="lbl">Und nach zw&ouml;lf Monaten</div>
+      <p>Die Unterlagen sind kein Abschluss, sondern ein Ausgangspunkt. F&uuml;r Bestandskunden gibt es den Jahres-Check: derselbe Fragebogen, neue Werte, und Sie sehen schwarz auf wei&szlig;, was sich in zw&ouml;lf Monaten ver&auml;ndert hat.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <span class="kicker">Der Weg dahin</span>
+    <h2>Diese Unterlagen entstehen aus 651 Antworten.</h2>
+    <p>Wie aus Ihrem Fragebogen dieses Paket wird, steht Schritt f&uuml;r Schritt auf der Ablauf-Seite. Der erste Schritt ist ein unverbindliches Gespr&auml;ch.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+      <a class="btn btn-red" data-cta href="#">Gespr&auml;ch vereinbaren &rarr;</a>
+      <a class="btn btn-ghost" href="ablauf-experten.html">So l&auml;uft die Analyse ab</a>
+      <a class="btn btn-ghost" href="module.html">Die zw&ouml;lf Module</a></div>
+  </div>
+</section>
+
+<div id="p12-footer"></div>
+<script src="assets/p12.js"></script>
+<script>
+var DOK=[
+{n:"00",o:"Wurzel des Pakets",t:"So nutzen Sie Ihr Paket",u:"1 Blatt",
+ was:"Ein einzelnes Blatt, das ganz oben liegt. Es beantwortet die einzige Frage, die man vor einem umfangreichen Paket wirklich hat: Womit fange ich an? Es nennt die Reihenfolge, sagt welches Dokument wof&uuml;r da ist und was in der ersten Woche zu tun w&auml;re.",
+ pkt:["Empfohlene Lesereihenfolge","Wozu jeder der f&uuml;nf Ordner da ist","Was in den ersten sieben Tagen sinnvoll ist","Wohin Sie sich mit R&uuml;ckfragen wenden"],
+ wann:"Als Allererstes, noch bevor Sie irgendetwas anderes aufschlagen."},
+{n:"01",o:"Ordner 01 Einstieg",t:"Die Lesefassung",u:"kompakt",
+ was:"Der Teil, den Sie am St&uuml;ck lesen. Klar geschrieben, ohne Fachsprache, warm im Ton. <b>Kapitel 1 ist die Zusammenfassung Ihrer Lage auf wenigen Seiten</b>, danach folgt je Modul eine Kurzlage und die eine wichtigste Ma&szlig;nahme. Am Ende die Gesamteinordnung und die n&auml;chsten Schritte.",
+ pkt:["Kapitel 1: Ihre Lage zusammengefasst","Je Modul eine Kurzlage in verst&auml;ndlicher Sprache","Je Modul die eine wichtigste Ma&szlig;nahme","Gesamteinordnung und n&auml;chste Schritte"],
+ wann:"Am ersten Abend, in einem Zug. Auch geeignet, um Partner oder Familie mitzunehmen, ohne dass jemand dreihundert Seiten lesen muss."},
+{n:"02",o:"Ordner 02 Analyse",t:"Die Hauptanalyse",u:"das gr&ouml;&szlig;te Dokument",
+ was:"Das Herzst&uuml;ck und Ihr Nachschlagewerk. Alle zw&ouml;lf Module mit s&auml;mtlichen 144 Kriterien, jedes mit Bewertung von 0 bis 5, Begr&uuml;ndung, einem Satz warum es nicht h&ouml;her steht, Konfidenz und dem Abstand zum Zielwert in Geld, Zeit und K&ouml;nnen.",
+ pkt:["Dashboard mit allen Modulwerten auf einen Blick","Je Modul ein Steckbrief: Bedeutung f&uuml;r Sie und IST-Zustand","Alle 144 Kriterien einzeln, mit Begr&uuml;ndung und Konfidenz","Bewertung &uuml;ber sechs Zeithorizonte je Modul","F&uuml;nf bis zehn Risiken je Modul, ausf&uuml;hrlich erkl&auml;rt","Abh&auml;ngigkeiten und Kaskaden zwischen den Modulen"],
+ wann:"Nicht am St&uuml;ck. Immer dann, wenn Sie zu einem Punkt genau wissen wollen, worauf die Bewertung beruht."},
+{n:"03",o:"Ordner 02 Analyse",t:"Die SPOF-Analyse",u:"die unbequemste Unterlage",
+ was:"SPOF steht f&uuml;r Single Point of Failure: die Stellen, an denen ein einzelner Ausfall eine Kettenreaktion ausl&ouml;st. Genau hier liegt bei den meisten Haushalten der gr&ouml;&szlig;te Hebel, und genau hier schaut niemand von selbst hin, weil diese Punkte in den Einzelmodulen unauff&auml;llig aussehen.",
+ pkt:["Je Schwachstelle der IST-Zustand und warum sie ein SPOF ist","Die Kaskade: was nacheinander ausf&auml;llt","Vier Fr&uuml;hindikatoren, an denen Sie es kommen sehen","Eine Worst-Case-Szene, konkret erz&auml;hlt","Sofortma&szlig;nahme und dauerhafte L&ouml;sung getrennt","Restrisiko und der Effekt, den die Ma&szlig;nahme rechnerisch h&auml;tte"],
+ wann:"Direkt nach der Lesefassung. Wenn Sie nur zwei Dokumente lesen, dann dieses und die Lesefassung."},
+{n:"04",o:"Ordner 02 Analyse",t:"Die Szenarien&uuml;bersicht",u:"acht Szenarien",
+ was:"Acht realistische Lagen, gerechnet gegen Ihre Werte. Je Szenario eine Verlaufskurve &uuml;ber die sechs Zeithorizonte, der Punkt an dem es bei Ihnen eng wird, und was in dieser Lage zuerst kippt. Nicht abstrakt, sondern mit Ihren Zahlen.",
+ pkt:["Je Szenario eine eigene Verlaufskurve","Der kritische Punkt und was ihn ausl&ouml;st","Welche Module in dieser Lage die Hauptlast tragen","Ausf&uuml;hrlich erz&auml;hlter Verlauf, nicht nur Stichworte"],
+ wann:"Wenn Sie wissen wollen, welche Lage Sie am h&auml;rtesten trifft, und damit auch, welche Ma&szlig;nahme sich zuerst lohnt."},
+{n:"05",o:"Ordner 03 Plan",t:"Der pers&ouml;nliche Umsetzungsplan",u:"Ihr Fahrplan",
+ was:"&Uuml;bersetzt alle Empfehlungen in Monats- und Quartalsbl&ouml;cke, kalibriert auf Ihre tats&auml;chliche Zeit und Ihr tats&auml;chliches Budget. <b>Kapitel 1 ist das Decision Sheet</b>: ein 48-Stunden-Protokoll f&uuml;r die ersten zwei Tage einer Lage, dazu feste Abl&auml;ufe f&uuml;r Finanzen und Netzwerk.",
+ pkt:["Kapitel 1: 48-Stunden-Protokoll und Entscheidungswege","Ma&szlig;nahmen in Monats- und Quartalsbl&ouml;cken","Je Ma&szlig;nahme Kostenklasse und Zeitaufwand","Quick Wins unter 100 Euro separat ausgewiesen","Prognose: welcher Wert nach welcher Ma&szlig;nahme erreichbar ist"],
+ wann:"Nach dem Ergebnisgespr&auml;ch, und danach immer wieder. Das ist das Dokument, mit dem Sie arbeiten."},
+{n:"06",o:"Ordner 03 Plan",t:"Die Checklisten",u:"Excel-Arbeitsmappe",xls:true,
+ was:"Ein Blatt je Modul, dazu ein Anleitungsblatt. Jeder Punkt abhakbar, mit Priorit&auml;t, Kostenklasse und Zeitaufwand, sortiert von Sofortma&szlig;nahmen bis zu Aufgaben mit zwei Jahren Horizont.",
+ pkt:["Je Modul ein eigenes Arbeitsblatt","Anleitungsblatt vorn, damit nichts erkl&auml;rt werden muss","Priorit&auml;t, Preis und Zeit je Punkt","Fortschritt jederzeit sichtbar"],
+ wann:"Jede Woche, in Ihrem vereinbarten Zeitfenster. In der Praxis das meistgenutzte Teil des Pakets."},
+{n:"07",o:"Ordner 03 Plan",t:"Der Vorratsplan Ern&auml;hrung",u:"Dokument plus Excel",xls:true,
+ was:"Ein mitrechnender Vorratsplan auf Basis anerkannter Bedarfsformeln: Energiebedarf je Person, Proteinbedarf nach den D-A-CH-Referenzwerten, Tiere nach WSAVA-Standard. Dazu Rezepte, Kochenergie und Tagespl&auml;ne. &Auml;ndern Sie eine Zahl, rechnet sich der Rest neu.",
+ pkt:["Bedarf je Person und Tier, individuell berechnet","Rezepte, passend zum eingelagerten Vorrat","Kochenergie: was die Zubereitung an Brennstoff kostet","Tagespl&auml;ne f&uuml;r die ersten Wochen","Rotationslogik, damit nichts unbemerkt verf&auml;llt"],
+ wann:"Beim ersten Aufbau des Vorrats und danach bei jeder Rotation."},
+{n:"08",o:"Ordner 03 Plan",t:"Die Packliste",u:"zum Abhaken",
+ was:"Was mitmuss, geordnet nach Person und Zweck, abgestimmt auf Ihr Vorrats- und Ausr&uuml;stungskonzept. Kein Raten unter Druck, sondern eine fertige Liste, die zu dem passt, was Sie tats&auml;chlich besitzen.",
+ pkt:["Getrennt je Person im Haushalt","Abgestimmt auf Ihre vorhandene Ausr&uuml;stung","Unterschieden nach kurzer Abwesenheit und l&auml;ngerem Ausweichen","Ber&uuml;cksichtigt Medikamente, Kinder und Tiere"],
+ wann:"Einmal zum Packen, danach einmal j&auml;hrlich zur Kontrolle."},
+{n:"09",o:"Ordner 03 Plan",t:"Der Drill-Kalender",u:"&uuml;ber das Jahr",
+ was:"Ein &Uuml;bungskalender, der Vorsorge in Routine verwandelt: kurze, terminierte &Uuml;bungen &uuml;ber das Jahr verteilt, damit Abl&auml;ufe sitzen, bevor sie gebraucht werden. In der Auswertung ist &Uuml;bungskultur regelm&auml;&szlig;ig der st&auml;rkste einzelne Resilienzfaktor.",
+ pkt:["Kurze &Uuml;bungen, meist unter einer Stunde","&Uuml;ber das Jahr verteilt statt gesammelt","Je &Uuml;bung ein klares Ziel und ein Erfolgskriterium","Steigender Schwierigkeitsgrad &uuml;ber die Monate"],
+ wann:"Einmal in den Kalender &uuml;bertragen, danach l&auml;uft es von selbst."},
+{n:"10",o:"Ordner 04 Ernstfall",t:"Der Notfallordner",u:"griffbereit",
+ was:"Der zentrale Ordner f&uuml;r den Ernstfall: Dokumente, Vollmachten, Vertr&auml;ge und Kontakte krisenfest an einem Ort, klar strukturiert und schnell auffindbar. <b>Teil 2 ist die PACE-Ausr&uuml;stungsempfehlung</b>: f&uuml;r jeden Zweck eine gestaffelte Empfehlung nach prim&auml;r, alternativ, R&uuml;ckfallebene und Notl&ouml;sung, aufbauend auf dem, was Sie bereits besitzen.",
+ pkt:["Dokumentenordnung mit vollst&auml;ndiger Struktur","Vollmachten, Vertr&auml;ge, Nachweise","Kontakte analog, ohne Handy nutzbar","Teil 2: PACE-Empfehlung in vier Stufen je Zweck"],
+ wann:"Einmal anlegen, danach an einem festen Platz liegen lassen. Jahrescheck &uuml;ber den Drill-Kalender."},
+{n:"11",o:"Ordner 04 Ernstfall",t:"Die Notfallkarten",u:"Kartenset",
+ was:"Die entscheidenden Schritte, Nummern und Abl&auml;ufe im Kartenformat. Gedacht f&uuml;r Portemonnaie, Sicherungskasten und Fahrzeug, also genau dort, wo man sie im Ernstfall wirklich braucht und wo kein Ordner liegt.",
+ pkt:["Format f&uuml;r Portemonnaie und Handschuhfach","Die wichtigsten Nummern ohne Handy","Kurzabl&auml;ufe f&uuml;r die ersten Minuten","Je Haushaltsmitglied ein eigenes Set"],
+ wann:"Sofort verteilen und dort deponieren, wo sie hingeh&ouml;ren. Danach nie wieder anfassen, bis sie gebraucht werden."}
+];
+var dl=document.getElementById("dokliste");
+DOK.forEach(function(d){
+  var a=document.createElement("article"); a.className="dok reveal"; a.id="d"+d.n;
+  var tags='<span>'+d.o+'</span><span'+(d.xls?' class="xls"':'')+'>'+d.u+'</span>';
+  a.innerHTML='<div class="kopf"><div class="dn">Dokument '+d.n+'</div><h3>'+d.t+'</h3>'+
+    '<div class="tags">'+tags+'</div><span class="gh">'+d.n+'</span></div>'+
+    '<div class="rumpf"><h4>Was drinsteht</h4><p>'+d.was+'</p>'+
+    '<h4>Im Einzelnen</h4><ul>'+d.pkt.map(function(p){return '<li>'+p+'</li>';}).join("")+'</ul>'+
+    '<h4>Wann Sie es aufschlagen</h4><div class="wann"><div class="wl">Der richtige Moment</div><p>'+d.wann+'</p></div></div>';
+  dl.appendChild(a);
+});
+</script>
+</body>
+</html>
