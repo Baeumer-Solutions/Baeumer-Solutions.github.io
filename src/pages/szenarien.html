@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Die acht Szenarien der Krisenvorsorge-Analyse | Protect-12</title>
+<meta name="description" content="Acht realistische Szenarien, Stunde f&uuml;r Stunde durchgespielt: welche wir verwenden, warum genau diese acht, wie die Belastungskurve zu lesen ist und was wir bewusst nicht durchspielen.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://protect-12.de/szenarien">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Die acht Szenarien der Protect-12 Analyse">
+<meta property="og:description" content="Warum genau diese acht Szenarien, und was sie &uuml;ber Ihren Haushalt verraten.">
+<meta property="og:image" content="https://protect-12.de/assets/og.png">
+<meta property="og:url" content="https://protect-12.de/szenarien">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/p12.css">
+<style>
+/* Auswahlkriterien */
+.krit4{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.kr{background:#fff;border:1px solid var(--line);border-top:3px solid var(--navy);box-shadow:var(--shadow);
+  padding:26px 24px;position:relative;overflow:hidden}
+.kr .kn{font-size:11px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--red)}
+.kr h3{margin:10px 0 9px;font-size:18px}
+.kr p{font-size:15px;color:var(--muted)}
+.kr p+p{margin-top:9px}
+.kr .gh{position:absolute;right:12px;bottom:-16px;font-size:64px;font-weight:800;color:var(--navy);opacity:.05;line-height:1}
+/* Interaktive Kurve */
+.simu{background:linear-gradient(160deg,#243244,#1B2430);box-shadow:var(--shadow);padding:28px 26px 24px;position:relative;overflow:hidden}
+.simu .cap{color:var(--mist-txt);font-size:13px;margin-bottom:16px}
+.simu .cap b{color:#fff}
+.swahl{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.swahl button{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.22);color:#fff;
+  font-family:inherit;font-size:12.5px;font-weight:700;padding:9px 14px;cursor:pointer;transition:background .15s ease,border-color .15s ease}
+.swahl button:hover{background:rgba(255,255,255,.16)}
+.swahl button.on{background:var(--red);border-color:var(--red)}
+.sinfo{margin-top:18px;background:rgba(255,255,255,.07);border-left:3px solid var(--red);padding:20px 22px}
+.sinfo .sl{font-size:11px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--red-soft)}
+.sinfo h4{color:#fff;font-size:19px;margin:9px 0 8px;font-weight:800}
+.sinfo p{color:var(--mist-txt);font-size:15px}
+.sinfo .peak{color:#fff;font-weight:700;margin-top:10px;font-size:15px}
+.mods{margin-top:18px}
+.mods .ml{font-size:11px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--red-soft);margin-bottom:10px}
+.mchips{display:flex;flex-wrap:wrap;gap:7px}
+.mchips span{font-size:12.5px;font-weight:700;padding:7px 12px;color:#fff}
+.mchips span.w3{background:var(--red)}
+.mchips span.w2{background:rgba(255,255,255,.22)}
+.mchips span.w1{background:rgba(255,255,255,.09);color:var(--mist-txt)}
+.legw{display:flex;gap:18px;flex-wrap:wrap;margin-top:12px;color:#8FA0B4;font-size:12px;font-weight:600}
+.legw i{display:inline-block;width:14px;height:14px;margin-right:7px;vertical-align:-2px}
+/* Szenarienkacheln */
+.szk{background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);overflow:hidden;position:relative;border-top:3px solid var(--navy)}
+.szk .kopf{padding:22px 24px 0}
+.szk .sn{font-size:11.5px;font-weight:800;color:var(--red);letter-spacing:.13em}
+.szk h3{margin:8px 0 9px;font-size:19px}
+.szk .body{padding:0 24px 22px}
+.szk p{font-size:14.5px;color:var(--muted)}
+.szk .zeile{margin-top:14px;padding-top:13px;border-top:1px solid var(--grey)}
+.szk .zl{font-size:10.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--navy)}
+.szk .zv{font-size:14px;color:var(--muted);margin-top:5px}
+.szk .zv b{color:var(--navy)}
+.szk .gh{position:absolute;right:12px;bottom:-16px;font-size:62px;font-weight:800;color:var(--navy);opacity:.05;line-height:1}
+/* Nicht dabei */
+.nicht{background:var(--navy);color:#fff;padding:36px 34px;box-shadow:var(--shadow)}
+.nicht h3{color:#fff;font-size:21px;margin-bottom:16px}
+.nicht ul{list-style:none}
+.nicht li{padding:12px 0 12px 28px;position:relative;color:var(--mist-txt);font-size:15.5px;border-bottom:1px solid rgba(255,255,255,.09)}
+.nicht li:last-child{border:0}
+.nicht li::before{content:"";position:absolute;left:0;top:21px;width:13px;height:2px;background:var(--red-soft)}
+.nicht li b{color:#fff}
+@media(max-width:900px){.krit4{grid-template-columns:1fr}.simu{padding:22px 18px}.nicht{padding:26px 22px}}
+</style>
+</head>
+<body data-page="szenarien.html">
+<div id="p12-header"></div>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="kicker">Die Belastungsprobe</span>
+    <h1>Acht Szenarien, Stunde f&uuml;r Stunde durchgespielt</h1>
+    <p class="lead">Die zw&ouml;lf Module messen, wie Ihr Haushalt heute dasteht. Die Szenarien pr&uuml;fen, was davon unter Last &uuml;brig bleibt. Denn ein Haushalt kann in jedem einzelnen Modul gut abschneiden und trotzdem an einer bestimmten Lage scheitern, weil sie mehrere Module gleichzeitig belastet und in einer Reihenfolge, mit der niemand gerechnet hat.</p>
+    <div class="cta-row"><a class="btn btn-red" data-cta href="#">Gespr&auml;ch vereinbaren &rarr;</a><a class="btn btn-ghost" href="#simulation">Belastungsverlauf ansehen</a></div>
+  </div>
+</header>
+
+<!-- WARUM UEBERHAUPT -->
+<section id="warum">
+  <div class="wrap">
+    <div class="section-head reveal"><span class="kicker">Warum Szenarien</span>
+      <h2>Ein Zustand sagt nichts &uuml;ber Belastbarkeit.</h2>
+      <p class="lead">Eine Bestandsaufnahme beantwortet die Frage, was da ist. Sie beantwortet nicht die Frage, wie lange es h&auml;lt und in welcher Reihenfolge es ausf&auml;llt. Genau das leisten die Szenarien: Sie nehmen Ihre 144 Einzelbewertungen und lassen sie gegen eine konkrete Lage laufen.</p></div>
+    <div class="grid g3 reveal">
+      <div class="card"><div class="num">GRUND 1</div><h3>Lagen belasten mehrere Module gleichzeitig</h3><p>Ein Blackout ist kein Energieproblem. Er ist gleichzeitig ein Wasserproblem, weil Druckerh&ouml;hungsanlagen Strom brauchen, ein Medizinproblem wegen der K&uuml;hlkette, und ein Kommunikationsproblem, sobald die Notstromreserven der Mobilfunkmasten leer sind. Kein einzelnes Modul zeigt das.</p><span class="ghost">1</span></div>
+      <div class="card"><div class="num">GRUND 2</div><h3>Der Schaden kommt selten sofort</h3><p>Die meisten Haushalte sind in den ersten 72 Stunden gut aufgestellt. Der kritische Punkt liegt fast immer sp&auml;ter, und zwar bei jedem Szenario an einer anderen Stelle. Ohne Zeitachse w&uuml;rde man genau diesen Punkt nie sehen.</p><span class="ghost">2</span></div>
+      <div class="card"><div class="num">GRUND 3</div><h3>Abstrakte Risiken werden vergleichbar</h3><p>Solange Risiken nur benannt werden, l&auml;sst sich nicht entscheiden, was zuerst dran ist. Mit einer Kurve je Szenario wird sichtbar, welche Lage Sie am h&auml;rtesten trifft, und damit auch, welche Ma&szlig;nahme den gr&ouml;&szlig;ten Unterschied macht.</p><span class="ghost">3</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- AUSWAHL -->
+<section class="mist" id="auswahl">
+  <div class="wrap">
+    <div class="section-head reveal"><span class="kicker">Die Auswahl</span>
+      <h2>Warum genau diese acht und keine zwanzig.</h2>
+      <p class="lead">Man k&ouml;nnte beliebig viele Lagen durchrechnen. Das w&auml;re allerdings vor allem beeindruckend und wenig n&uuml;tzlich, weil sich die meisten Szenarien im Belastungsprofil kaum unterscheiden. Vier Regeln bestimmen, was aufgenommen wird und was nicht.</p></div>
+    <div class="krit4 reveal">
+      <div class="kr"><div class="kn">Regel 01</div><h3>Belegbar eingetreten, nicht ausgedacht</h3>
+        <p>Jedes der acht Szenarien ist in den vergangenen Jahren in Europa oder in vergleichbar entwickelten L&auml;ndern tats&auml;chlich eingetreten. Kein einziges beruht auf einer Annahme dar&uuml;ber, was passieren k&ouml;nnte.</p>
+        <p>Das ist keine Vorsichtsma&szlig;nahme, sondern eine methodische Notwendigkeit: Nur bei eingetretenen Lagen l&auml;sst sich der Verlauf aus Beobachtung ableiten statt aus Vermutung.</p><span class="gh">01</span></div>
+      <div class="kr"><div class="kn">Regel 02</div><h3>Unterschiedliches Belastungsprofil</h3>
+        <p>Zwei Szenarien mit derselben Kurve sind ein Szenario. Aufgenommen wird nur, was einen eigenen Verlauf hat: Ein Unwetter belastet sofort und l&auml;sst nach, ein Lieferkettenproblem beginnt harmlos und erreicht seinen H&ouml;hepunkt nach Monaten.</p>
+        <p>Genau diese Unterschiede machen die Auswertung wertvoll. Ein Haushalt, der bei kurzen Lagen gl&auml;nzt und bei langen einbricht, sieht das erst im Vergleich der Kurven.</p><span class="gh">02</span></div>
+      <div class="kr"><div class="kn">Regel 03</div><h3>Jedes Modul wird von mindestens einer Lage hart getroffen</h3>
+        <p>Die acht Szenarien sind so gew&auml;hlt, dass keines der zw&ouml;lf Module ungepr&uuml;ft bleibt. Jedes Modul steht in mindestens einem Szenario in der Hauptlast, viele in mehreren.</p>
+        <p>Damit ist ausgeschlossen, dass ein schwacher Punkt nur deshalb unauff&auml;llig bleibt, weil kein Szenario ihn belastet.</p><span class="gh">03</span></div>
+      <div class="kr"><div class="kn">Regel 04</div><h3>Vom Haushalt beeinflussbar</h3>
+        <p>Ein Szenario kommt nur hinein, wenn ein Privathaushalt sein Ergebnis durch eigene Entscheidungen sp&uuml;rbar ver&auml;ndern kann. Alles andere erzeugt Angst ohne Handlungsm&ouml;glichkeit, und das ist das Gegenteil von Vorsorge.</p>
+        <p>Deshalb fehlen Lagen, bei denen ohnehin nur staatliche Stellen handeln k&ouml;nnen. Sie stehen im Lagebild, aber nicht in Ihrer Analyse.</p><span class="gh">04</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SO LIEST MAN DIE KURVE -->
+<section id="lesen">
+  <div class="wrap">
+    <div class="section-head reveal"><span class="kicker">Bevor Sie die Kurven ansehen</span>
+      <h2>Der Ausfall beginnt sofort. Der Haushalt kippt sp&auml;ter.</h2>
+      <p class="lead">Das ist der wichtigste Gedanke auf dieser Seite, und er wird fast immer verwechselt. Eine Lage und ihre Wirkung auf einen Haushalt sind zwei verschiedene Dinge, und sie erreichen ihren H&ouml;hepunkt zu verschiedenen Zeiten.</p></div>
+    <div class="krit4 reveal">
+      <div class="kr" style="border-top-color:#C31212"><div class="kn">Die rote Linie</div><h3>Wie stark die Lage von au&szlig;en dr&uuml;ckt</h3>
+        <p>Beim Wasserausfall ist der Hahn ab Minute eins trocken. Der Druck von au&szlig;en steht also sofort auf Maximum und l&auml;sst mit jeder Woche nach, in der Notversorgung anl&auml;uft und Leitungen repariert werden.</p>
+        <p>Diese Linie beschreibt das Ereignis, nicht Sie. Sie ist f&uuml;r jeden Haushalt in der Region identisch.</p><span class="gh">A</span></div>
+      <div class="kr" style="border-top-color:#7B8DA3"><div class="kn">Die helle Linie</div><h3>Wie handlungsf&auml;hig Ihr Haushalt bleibt</h3>
+        <p>Diese Linie f&auml;llt verz&ouml;gert. Am ersten Tag merkt kaum jemand etwas, es sind ja noch Flaschen im Haus. Erst wenn die Reserve aufgebraucht ist, bricht sie ein. Beim Wasserausfall ist das f&uuml;r einen unvorbereiteten Haushalt <b>nach drei bis vierzehn Tagen</b>, nicht in den ersten Stunden.</p>
+        <p>Diese Linie beschreibt Sie. Sie sieht bei jedem Haushalt anders aus, und genau sie berechnet die Analyse.</p><span class="gh">B</span></div>
+    </div>
+    <div class="claim reveal" style="margin-top:26px">
+      <div class="lbl">Der kritische Punkt</div>
+      <p>Der kritische Punkt ist der <b>Tiefpunkt der hellen Linie</b>, nicht die Spitze der roten. Wo er liegt, entscheidet dar&uuml;ber, welche Ma&szlig;nahme &uuml;berhaupt noch wirkt: Liegt er in den ersten 72 Stunden, z&auml;hlt nur, was schon im Haus ist. Liegt er nach drei Monaten, z&auml;hlen Nachschub, Netzwerk und Durchhaltef&auml;higkeit. Das Ziel jeder Ma&szlig;nahme ist, diesen Punkt nach hinten zu schieben und anzuheben.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SIMULATION -->
+<section class="mist" id="simulation">
+  <div class="wrap">
+    <div class="section-head reveal"><span class="kicker">Der Verlauf</span>
+      <h2>W&auml;hlen Sie ein Szenario und sehen Sie, wann es eng wird.</h2>
+      <p class="lead">Die rote Linie stammt aus den Belastungsprofilen, mit denen die Analyse tats&auml;chlich rechnet. Die hellen Linien zeigen schematisch einen Beispielhaushalt: einmal ohne Vorsorge und einmal nach Umsetzung der Sofort-Stufe. In Ihrer Analyse wird diese Linie mit Ihren eigenen 144 Werten gerechnet.</p></div>
+    <div class="simu reveal">
+      <div class="swahl" id="swahl"></div>
+      <svg viewBox="0 0 920 310" width="100%" height="auto" aria-label="Verlauf des gew&auml;hlten Szenarios">
+        <g stroke="#33465c" stroke-width="1" opacity=".55">
+          <line x1="72" y1="30" x2="72" y2="252"/><line x1="72" y1="252" x2="890" y2="252"/>
+          <line x1="72" y1="40" x2="890" y2="40" opacity=".3"/>
+          <line x1="72" y1="146" x2="890" y2="146" opacity=".3"/>
+        </g>
+        <g fill="#8FA0B4" font-family="Montserrat" font-size="11" text-anchor="end">
+          <text x="64" y="44">hoch</text><text x="64" y="150">mittel</text><text x="64" y="256">gering</text>
+        </g>
+        <polyline id="druck" fill="none" stroke="#C31212" stroke-width="3.2" stroke-linejoin="round"
+          stroke-dasharray="0" points=""/>
+        <polyline id="nach" fill="none" stroke="#7FA8CC" stroke-width="2.4" stroke-linejoin="round"
+          stroke-dasharray="7 5" points=""/>
+        <polyline id="ohne" fill="none" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" points=""/>
+        <g id="punkte"></g>
+        <g id="marke"></g>
+        <g fill="#8FA0B4" font-family="Montserrat" font-size="12" text-anchor="middle">
+          <text x="86" y="276">0 bis 72 h</text><text x="246" y="276">3 bis 14 Tage</text>
+          <text x="406" y="276">4 Wochen</text><text x="566" y="276">3 Monate</text>
+          <text x="726" y="276">6 Monate</text><text x="872" y="276">1 Jahr</text>
+        </g>
+      </svg>
+      <div class="legw" style="margin-top:6px">
+        <span><i style="background:#C31212"></i>Druck der Lage von au&szlig;en</span>
+        <span><i style="background:#FFFFFF"></i>Handlungsf&auml;higkeit ohne Vorsorge</span>
+        <span><i style="background:#7FA8CC"></i>dieselbe nach der Sofort-Stufe</span>
+      </div>
+      <div class="sinfo">
+        <div class="sl">Was in dieser Lage passiert</div>
+        <h4 id="stitel"></h4>
+        <p id="stext"></p>
+        <div class="peak" id="speak"></div>
+        <div class="peak" id="sshift" style="color:#7FA8CC"></div>
+      </div>
+      <div class="mods">
+        <div class="ml">Welche Module diese Lage belastet</div>
+        <div class="mchips" id="smods"></div>
+        <div class="legw">
+          <span><i style="background:#C31212"></i>Hauptlast</span>
+          <span><i style="background:rgba(255,255,255,.22)"></i>stark betroffen</span>
+          <span><i style="background:rgba(255,255,255,.09)"></i>mitbetroffen</span>
+        </div>
+      </div>
+      <div class="cap" style="margin-top:18px;padding-top:16px;border-top:1px solid rgba(255,255,255,.14)">
+        Rote Linie: echte Belastungsprofile aus der Analyse. Helle Linien: schematischer Beispielhaushalt zur Veranschaulichung des Prinzips, kein Rechenergebnis.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIE ACHT -->
+<section id="acht">
+  <div class="wrap">
+    <div class="section-head reveal"><span class="kicker">Die acht im Einzelnen</span>
+      <h2>Was jede Lage mit einem Haushalt macht.</h2></div>
+    <div class="grid g2 reveal" id="szgrid"></div>
+  </div>
+</section>
+
+<!-- NICHT DABEI -->
+<section class="mist" id="nichtdabei">
+  <div class="wrap">
+    <div class="section-head reveal"><span class="kicker">Ehrlichkeit</span>
+      <h2>Was wir bewusst nicht durchspielen.</h2>
+      <p class="lead">Die Auswahl ist genauso eine Aussage wie das, was drinsteht. Diese vier Punkte fehlen mit Absicht.</p></div>
+    <div class="nicht reveal">
+      <h3>Vier Lagen, die Sie hier nicht finden</h3>
+      <ul>
+        <li><b>Der gro&szlig;e Zusammenbruch.</b> Szenarien, in denen staatliche Ordnung dauerhaft verschwindet, erzeugen viel Aufmerksamkeit und keine einzige umsetzbare Ma&szlig;nahme. Sie sind f&uuml;r einen Privathaushalt nicht planbar und stehen deshalb nicht in Ihrer Analyse.</li>
+        <li><b>Kriegerische Vollszenarien.</b> Was daran f&uuml;r Sie beeinflussbar ist, steckt bereits in den acht Lagen: Versorgung, Energie, Kommunikation, Bewegung, soziale Spannung. Der Rest liegt au&szlig;erhalb dessen, was ein Haushalt entscheidet.</li>
+        <li><b>Lagen mit Datum.</b> Wir spielen Verl&auml;ufe durch, keine Termine. Wer Ihnen sagt, wann etwas passiert, verkauft Ihnen eine Meinung als Prognose.</li>
+        <li><b>Alles, was nur Angst erzeugt.</b> Ein Szenario ohne Handlungsm&ouml;glichkeit ist keine Vorsorge, sondern Unterhaltung. Wir haben uns entschieden, darauf zu verzichten, auch wenn es die Analyse dramatischer machen w&uuml;rde.</li>
+      </ul>
+    </div>
+    <div class="claim reveal" style="margin-top:26px">
+      <div class="lbl">Und der laufende Blick nach vorn</div>
+      <p>Welche dieser acht Lagen gerade an Wahrscheinlichkeit gewinnt, beantwortet nicht die Analyse, sondern das Fr&uuml;hwarnsystem. Die Analyse sagt Ihnen, wie gut Sie f&uuml;r jede einzelne aufgestellt sind. <a href="fruehwarnsystem.html" style="font-weight:700">Zum Fr&uuml;hwarnsystem &rarr;</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <span class="kicker">Ihre Kurven</span>
+    <h2>Acht Verl&auml;ufe, gerechnet auf Ihren Haushalt.</h2>
+    <p>In Ihrer Analyse sieht jede dieser acht Lagen anders aus als hier, weil die helle Linie aus Ihren eigenen Werten entsteht. Die Szenarien&uuml;bersicht umfasst rund 65 Seiten.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+      <a class="btn btn-red" data-cta href="#">Gespr&auml;ch vereinbaren &rarr;</a>
+      <a class="btn btn-ghost" href="module.html">Die zw&ouml;lf Module</a>
+      <a class="btn btn-ghost" href="praxis.html">Drei Analysen aus der Praxis</a></div>
+  </div>
+</section>
+
+<div id="p12-footer"></div>
+<script src="assets/p12.js"></script>
+<script>
+var MODNAME={M01:"01 Standort",M02:"02 Grey Man",M03:"03 Wasser",M04:"04 Nahrung",M05:"05 Energie",
+ M06:"06 Medizin",M07:"07 Kommunikation",M08:"08 Mobilit&auml;t",M09:"09 Netzwerk",M10:"10 Finanzen",
+ M11:"11 Mentalit&auml;t",M12:"12 Gesamtsystem"};
+var HOR=["den ersten 72 Stunden","3 bis 14 Tagen","4 Wochen","3 Monaten","6 Monaten","1 Jahr"];
+
+/* p = Druck der Lage (echte Werte aus spec/frameworks/szenarien.json)
+   o = Handlungsfaehigkeit eines Beispielhaushalts ohne Vorsorge (schematisch)
+   v = dieselbe nach Umsetzung der Sofort-Stufe (schematisch)                      */
+var SZ=[
+ {id:"S1",kurz:"Stromausfall",t:"Regionaler Stromausfall",
+  b:"Ein regionaler Stromausfall bis etwa 72 Stunden. Die h&auml;ufigste aller Lagen und f&uuml;r die meisten Haushalte der erste echte Test. Licht, K&uuml;hlung, Heizungssteuerung und Ladeger&auml;te fallen sofort aus, danach folgt das Mobilfunknetz, sobald die Notstromreserven der Masten leer sind.",
+  warum:"Aufgenommen, weil sie im deutschsprachigen Raum regelm&auml;&szlig;ig eintritt und die Grundausstattung eines Haushalts schonungslos offenlegt.",
+  wieso:"Hier fallen Druck und Tiefpunkt ausnahmsweise zusammen: Wer keine Taschenlampe und keinen Kocher hat, sitzt sofort im Dunkeln. Genau deshalb ist dieses Szenario der beste Einstieg.",
+  p:[1.0,0.3,0.1,0,0,0], o:[0.45,0.75,0.95,1,1,1], v:[0.85,0.95,1,1,1,1],
+  g:{M05:3,M07:2,M06:2,M03:1,M04:1,M11:1,M12:1}},
+ {id:"S2",kurz:"Blackout",t:"Gro&szlig;fl&auml;chiger Blackout",
+  b:"Ein gro&szlig;fl&auml;chiger, mehrt&auml;giger bis mehrw&ouml;chiger Ausfall von Strom und angeschlossener Infrastruktur. Aus der &Uuml;berbr&uuml;ckung wird ein Dauerzustand. Hier trennt sich Vorrat von Plan, denn nach der ersten Woche entscheidet nicht mehr die Ausstattung, sondern die Organisation.",
+  warum:"Aufgenommen, weil dieses Szenario als einziges alle zw&ouml;lf Module gleichzeitig belastet und damit das Zusammenspiel pr&uuml;ft.",
+  wieso:"Der Druck ist ab Tag drei am h&ouml;chsten, der Haushalt kippt aber erst danach: Erst geht der K&uuml;hlschrank, dann der Vorrat, dann der Wasserdruck, zuletzt die Geduld. Der Tiefpunkt liegt bei etwa vier Wochen.",
+  p:[0.8,1.0,0.9,0.5,0.3,0.2], o:[0.6,0.25,0.15,0.28,0.4,0.55], v:[0.92,0.8,0.65,0.55,0.58,0.68],
+  g:{M05:3,M03:3,M06:3,M07:3,M04:2,M02:2,M09:2,M10:2,M11:2,M12:2,M01:1,M08:1}},
+ {id:"S3",kurz:"Wasserausfall",t:"Ausfall oder Kontamination der Trinkwasserversorgung",
+  b:"Druckverlust oder Verkeimung im Leitungsnetz. Die oberen Etagen sind zuerst trocken. Anders als beim Strom gibt es hier keine stille Reserve: Wer nichts eingelagert hat, ist ab der ersten Stunde auf Ausgabestellen angewiesen.",
+  warum:"Aufgenommen, weil Wasser die kritischste Ressource &uuml;berhaupt ist und weil die Selbsteinsch&auml;tzung hier regelm&auml;&szlig;ig am weitesten von der Rechnung abweicht.",
+  wieso:"Das Lehrbuchbeispiel f&uuml;r den Unterschied der beiden Linien: Der Hahn ist sofort trocken, der Haushalt bricht aber erst ein, wenn die Flaschen leer sind. Ohne Vorsorge liegt der Tiefpunkt bei drei bis vierzehn Tagen, nicht am ersten Abend.",
+  p:[1.0,0.9,0.6,0.3,0.2,0.1], o:[0.7,0.2,0.35,0.6,0.75,0.85], v:[0.95,0.72,0.6,0.75,0.85,0.92],
+  g:{M03:3,M06:2,M04:2,M05:1,M11:1}},
+ {id:"S4",kurz:"Telekom aus",t:"Ausfall von Telefonie, Internet und Mobilfunk",
+  b:"Kein Netz, keine Warn-App, keine Absprache, kein bargeldloses Bezahlen. Materiell &auml;ndert sich zun&auml;chst nichts, aber die Handlungsf&auml;higkeit sinkt schnell, weil Koordination unm&ouml;glich wird und niemand mehr wei&szlig;, was drau&szlig;en passiert.",
+  warum:"Aufgenommen, weil es das Szenario ist, bei dem gut ausgestattete Haushalte am schlechtesten abschneiden. Erreichbarkeit l&auml;sst sich nicht durch Vorrat ersetzen.",
+  wieso:"Der Tiefpunkt liegt bei drei bis vierzehn Tagen, weil am Anfang noch improvisiert wird: man f&auml;hrt hin, man klingelt, man wartet ab. Erst wenn das nicht mehr tr&auml;gt, wird die fehlende Redundanz sp&uuml;rbar.",
+  p:[1.0,0.8,0.5,0.3,0.2,0.1], o:[0.5,0.35,0.5,0.7,0.8,0.9], v:[0.88,0.82,0.86,0.9,0.94,0.96],
+  g:{M07:3,M09:2,M10:2,M11:1,M12:1}},
+ {id:"S5",kurz:"Lieferkette",t:"Anhaltender Versorgungsengpass",
+  b:"Gest&ouml;rte Lieferketten bei Lebensmitteln, Medikamenten oder Treibstoff. Beginnt harmlos, teilweise unbemerkt, und erreicht den H&ouml;hepunkt erst nach Monaten. Wer Bestand hat, muss nicht in den ersten Ansturm und kauft nicht zu H&ouml;chstpreisen nach.",
+  warum:"Aufgenommen, weil es das langsamste Szenario ist und deshalb als einziges pr&uuml;ft, ob Rotation und Nachschub tats&auml;chlich funktionieren.",
+  wieso:"Hier laufen beide Linien fast parallel, nur um Wochen versetzt. Der Haushalt merkt lange nichts, weil noch etwas im Schrank steht. Der Tiefpunkt liegt bei etwa drei Monaten.",
+  p:[0.2,0.5,0.8,1.0,0.9,0.7], o:[0.95,0.75,0.45,0.2,0.25,0.4], v:[1,0.95,0.8,0.55,0.52,0.62],
+  g:{M04:3,M06:2,M10:2,M05:2,M03:1,M08:1,M12:1}},
+ {id:"S6",kurz:"Pandemie",t:"Epidemie oder Pandemie mit Einschr&auml;nkungen",
+  b:"Gesundheitsrisiko, Isolation, Hygienedruck und Medikamentenbedarf &uuml;ber Wochen und Monate. Belastet weniger die Technik als die Menschen: Rollen, Nerven, Netzwerk und die F&auml;higkeit, &uuml;ber lange Zeit diszipliniert zu bleiben.",
+  warum:"Aufgenommen, weil es das einzige Szenario ist, in dem die eigene Wohnung zum sichersten Ort wird und trotzdem alles knapp werden kann.",
+  wieso:"Der Tiefpunkt liegt bei etwa drei Monaten, und er ist selten materiell. Was zuerst ausgeht, sind Medikamentenpuffer und Nerven, nicht Konserven.",
+  p:[0.3,0.6,0.8,1.0,0.9,0.8], o:[0.9,0.7,0.5,0.3,0.32,0.42], v:[0.98,0.9,0.75,0.6,0.62,0.72],
+  g:{M06:3,M04:2,M09:2,M11:2,M07:1,M10:1,M02:1}},
+ {id:"S7",kurz:"Unwetter",t:"Extremwetter und Hochwasser",
+  b:"Lokale Sch&auml;den, gesperrte Zufahrten, getrennte Orte, Ausfall mehrerer Netze gleichzeitig. Der Verlauf ist steil: sofortige Vollbelastung, danach schnelle Entlastung, sofern Routen und Zweitmobilit&auml;t vorhanden sind.",
+  warum:"Aufgenommen, weil es die einzige Lage ist, in der der Standort selbst zur Hauptvariablen wird, und weil sie im deutschsprachigen Raum j&auml;hrlich eintritt.",
+  wieso:"Eines der wenigen Szenarien, bei denen der Tiefpunkt tats&auml;chlich sofort kommt: Ein Wasserstand oder eine gesperrte Br&uuml;cke wirken in Minuten, nicht in Tagen. Was danach z&auml;hlt, ist Wiederherstellung.",
+  p:[1.0,0.8,0.5,0.2,0.1,0], o:[0.35,0.45,0.7,0.9,0.95,1], v:[0.72,0.82,0.92,0.96,1,1],
+  g:{M01:3,M05:2,M03:2,M08:2,M07:2,M06:1,M12:1}},
+ {id:"S8",kurz:"Soziale Unruhe",t:"Soziale Spannungen und erh&ouml;hte Kriminalit&auml;t",
+  b:"Unruhen, Gewaltbereitschaft im &ouml;ffentlichen Raum, steigende Eigentumsdelikte. Materielle Vorbereitung hilft hier kaum. Was tr&auml;gt, sind Unauff&auml;lligkeit, klare Entscheidungen, abgestimmte Wege und ein belastbares Umfeld.",
+  warum:"Aufgenommen, weil es das einzige Szenario ist, in dem Verhalten wichtiger ist als Ausstattung, und weil sein H&ouml;hepunkt erst nach Wochen kommt.",
+  wieso:"Der Tiefpunkt liegt bei etwa vier Wochen, weil sich Spannung aufbaut statt einzuschlagen. Wer fr&uuml;h Wege und Regeln festgelegt hat, muss sie sp&auml;ter nicht unter Druck erfinden.",
+  p:[0.6,0.8,1.0,0.8,0.6,0.5], o:[0.75,0.55,0.35,0.45,0.6,0.7], v:[0.92,0.82,0.68,0.74,0.82,0.88],
+  g:{M02:3,M01:2,M09:2,M11:2,M08:2,M07:1,M10:1}}
+];
+
+(function(){
+  var X=[86,246,406,566,726,872], Y0=252, YH=212;
+  var sw=document.getElementById("swahl");
+  var lDruck=document.getElementById("druck"), lOhne=document.getElementById("ohne"), lNach=document.getElementById("nach");
+  var punkte=document.getElementById("punkte"), marke=document.getElementById("marke");
+  var titel=document.getElementById("stitel"), text=document.getElementById("stext");
+  var peak=document.getElementById("speak"), shift=document.getElementById("sshift"), mods=document.getElementById("smods");
+  var aktiv=2;
+
+  SZ.forEach(function(s,i){
+    var b=document.createElement("button"); b.type="button"; b.innerHTML=s.id+" &middot; "+s.kurz;
+    b.addEventListener("click",function(){ aktiv=i; zeichnen(); });
+    sw.appendChild(b);
+  });
+
+  function y(v){ return (Y0 - v*YH).toFixed(1); }
+  function pts(arr){ return arr.map(function(v,i){ return X[i]+","+y(v); }).join(" "); }
+  function tief(arr){ var m=Math.min.apply(null,arr); return arr.indexOf(m); }
+
+  function zeichnen(){
+    var s=SZ[aktiv];
+    Array.prototype.forEach.call(sw.children,function(b,i){ b.className=(i===aktiv)?"on":""; });
+    lDruck.setAttribute("points",pts(s.p));
+    lOhne.setAttribute("points",pts(s.o));
+    lNach.setAttribute("points",pts(s.v));
+    var ti=tief(s.o), tv=tief(s.v);
+    punkte.innerHTML=s.o.map(function(v,i){
+      var r=(i===ti)?6.5:4.5, f=(i===ti)?"#C31212":"#FFFFFF";
+      return '<circle cx="'+X[i]+'" cy="'+y(v)+'" r="'+r+'" fill="'+f+'" stroke="#1B2430" stroke-width="2"/>';
+    }).join("");
+    var ty=parseFloat(y(s.o[ti]))+26;
+    if(ty>246) ty=parseFloat(y(s.o[ti]))-16;
+    var tx=Math.min(800, Math.max(150, X[ti]));
+    marke.innerHTML=
+      '<line x1="'+X[ti]+'" y1="'+y(s.o[ti])+'" x2="'+X[ti]+'" y2="252" stroke="#C31212" stroke-width="1" stroke-dasharray="4 4" opacity=".7"/>'+
+      '<text x="'+tx+'" y="'+ty+'" fill="#fff" font-size="12.5" font-weight="700" font-family="Montserrat" text-anchor="middle">kritischer Punkt</text>';
+    titel.innerHTML=s.t;
+    text.innerHTML=s.b;
+    peak.innerHTML="Ohne Vorsorge wird es eng nach <b>"+HOR[ti]+"</b>. "+s.wieso;
+    shift.innerHTML = (tv>ti)
+      ? "Nach der Sofort-Stufe verschiebt sich der Tiefpunkt auf "+HOR[tv]+" und liegt deutlich h&ouml;her."
+      : "Nach der Sofort-Stufe bleibt der Tiefpunkt bei "+HOR[tv]+", der Haushalt f&auml;llt dort aber nicht mehr durch.";
+    var g=s.g, keys=Object.keys(g).sort(function(a,b){ return g[b]-g[a] || a.localeCompare(b); });
+    mods.innerHTML=keys.map(function(k){ return '<span class="w'+g[k]+'">'+MODNAME[k]+'</span>'; }).join("");
+  }
+  zeichnen();
+
+  var sg=document.getElementById("szgrid");
+  SZ.forEach(function(s){
+    var ti=tief(s.o), tv=tief(s.v);
+    var haupt=Object.keys(s.g).filter(function(k){ return s.g[k]===3; }).map(function(k){ return MODNAME[k]; });
+    var d=document.createElement("div"); d.className="szk";
+    d.innerHTML='<div class="kopf"><div class="sn">Szenario '+s.id+'</div><h3>'+s.t+'</h3></div>'+
+      '<div class="body"><p>'+s.b+'</p>'+
+      '<div class="zeile"><div class="zl">Warum es dabei ist</div><div class="zv">'+s.warum+'</div></div>'+
+      '<div class="zeile"><div class="zl">Wann es eng wird, ohne Vorsorge</div><div class="zv"><b>Nach '+HOR[ti]+'</b>. '+s.wieso+'</div></div>'+
+      '<div class="zeile"><div class="zl">Module in der Hauptlast</div><div class="zv"><b>'+haupt.join(", ")+'</b></div></div>'+
+      '<span class="gh">'+s.id.replace("S","0")+'</span></div>';
+    sg.appendChild(d);
+  });
+})();
+</script>
+</body>
+</html>
