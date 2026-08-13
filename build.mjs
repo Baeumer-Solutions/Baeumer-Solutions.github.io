@@ -60,8 +60,11 @@ rmDir(DIST); ensure(DIST);
 
 // ---------- assets ----------
 ensure(path.join(DIST,"assets"));
+// Unterordner in src/assets (z. B. muster/ mit den Seitenbildern) muessen mitkopiert
+// werden. copyFileSync scheitert an Verzeichnissen, deshalb hier die Fallunterscheidung.
 for (const f of fs.readdirSync(path.join(SRC,"assets"))){
   const from = path.join(SRC,"assets",f), to = path.join(DIST,"assets",f);
+  if (fs.statSync(from).isDirectory()) { fs.cpSync(from, to, {recursive:true}); continue; }
   if (f === "p12.js") write(to, rewriteJs(fs.readFileSync(from,"utf8")));
   else fs.copyFileSync(from, to);
 }
