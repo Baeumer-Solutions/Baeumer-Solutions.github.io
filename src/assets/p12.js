@@ -32,43 +32,109 @@
      wegen der Spirale. Wird als angeschnittenes Wasserzeichen an den Rand gesetzt. */
   var SHIELD_D = "M4.89 36.97 1.71 39.02 3.75 49.26 6.03 57.22 8.87 64.85 12.51 72.92 15.47 78.38 22.87 89.76 31.17 99.77 40.05 108.42 49.83 116.04 55.18 112.29 63.03 105.57 71.22 97.04 77.47 89.19 83.39 80.2 88.62 70.42 92.72 60.52 95.34 52.33 93.86 50.85 85.55 45.96 75.65 41.75 64.16 38.79 52.1 37.54 54.84 45.85 63.59 46.99 71.1 48.92 80.09 52.45 84.87 54.95 85.67 55.86 82.94 63.03 79.41 70.53 72.24 82.37 63.48 93.4 56.66 100.23 49.94 105.92 42.89 99.89 36.86 93.86 31.63 87.71 26.96 81.34 21.16 71.79 15.81 60.18 11.95 48.24 10.01 39.36 9.44 34.81ZM0.8 25.03 0.46 27.42 1.14 34.36 7.39 30.83 12.97 28.44 14.22 38.79 16.61 49.26 19.45 57.91 24.69 69.4 29.92 78.16 36.52 87.03 42.21 93.4 49.94 100.46 58.36 92.72 67.46 81.8 74.63 70.53 80.55 57.45 74.18 54.49 66.89 52.1 60.41 50.74 52.1 50.06 49.03 42.32 46.87 33.45 53.81 33.33 60.41 33.9 72.24 36.29 85.21 41.07 96.47 47.67 98.07 40.16 98.07 38.79 87.94 33.33 79.07 29.81 70.19 27.3 63.59 26.05 54.15 25.14 45.73 25.14 37.77 25.94 38.68 34.47 40.39 41.98 42.78 49.26 46.87 58.13 58.48 58.7 69.85 61.66 66.55 68.15 61.21 76.45 54.95 84.3 49.94 89.42 43.8 82.94 37.88 75.31 32.99 67.46 28.1 57.45 24.57 47.33 22.18 36.86 21.05 26.96 21.05 16.84 10.69 20.36ZM90.33 20.82 82.14 17.75 73.15 15.24 62.91 13.42 54.04 12.74 42.89 12.86 33.11 13.99 25.26 15.7 25.26 26.39 25.82 32.54 27.65 42.32 30.49 51.88 34.02 60.3 39.25 69.74 44.48 77.13 49.94 83.39 53.01 80.09 57.68 74.18 61.32 68.71 63.82 64.16 58.59 63.03 55.29 62.68 49.94 70.65 45.05 63.48 41.98 57.91 39.7 53.01 37.43 46.87 35.72 40.96 34.47 35.04 33.56 27.53 33.33 22.41 36.41 21.73 46.19 20.93 55.86 21.05 67.01 22.3 75.77 24.35 82.82 26.62 91.35 30.26 98.75 34.36 99.54 25.37ZM0.68 11.26 0.34 20.59 6.03 17.75 12.4 15.13 17.63 13.31 23.32 11.72 29.92 10.24 36.41 9.22 42.21 8.65 48.01 8.42 59.04 8.76 67.35 9.78 73.38 10.92 81.11 12.97 87.83 15.24 94.88 18.2 99.54 20.59 99.54 16.04 99.2 11.15 90.33 7.39 81.23 4.44 71.22 2.16 62.68 0.91 55.4 0.34 44.48 0.34 37.2 0.91 29.35 2.05 23.32 3.3 21.5 3.87 20.82 3.87 14.56 5.69 6.14 8.76Z";
 
+  /* Navigation mit Untermenues. Ein Eintrag kann ein sub-Array tragen; der
+     Elternpunkt bleibt klickbar und gilt als aktiv, sobald eine seiner
+     Unterseiten offen ist. Ohne JS-Hover: das Untermenue haengt an :hover und
+     :focus-within, funktioniert also auch per Tastatur. */
   var NAV = [
-    {href:"das-system.html", label:"Das System"},
-    {href:"ablauf-experten.html", label:"Ablauf & Experten"},
-    {href:"lagebild.html", label:"Lagebild"},
+    {href:"das-system.html", label:"Das System", sub:[
+      {href:"das-system.html", label:"&Uuml;berblick"},
+      {href:"module.html", label:"Die zw&ouml;lf Module"},
+      {href:"szenarien.html", label:"Die acht Szenarien"},
+      {href:"praxis.html", label:"Aus der Praxis"},
+      {href:"experten.html", label:"Das Expertennetzwerk"}
+    ]},
+    {href:"ablauf-experten.html", label:"Ablauf"},
+    {href:"lagebild.html", label:"Lage", sub:[
+      {href:"lagebild.html", label:"Lagebild"},
+      {href:"fruehwarnsystem.html", label:"Fr&uuml;hwarnsystem"}
+    ]},
     {href:"ratgeber.html", label:"Ratgeber"},
     {href:"downloads.html", label:"Downloads"},
     {href:"community.html", label:"Community"},
     {href:"faq-kontakt.html", label:"FAQ & Kontakt"}
   ];
+
+  /* Aktiv ist ein Punkt, wenn seine eigene Seite offen ist oder eine seiner
+     Unterseiten. Sonst bliebe "Das System" auf /module/ unmarkiert. */
+  function istAktiv(n, active){
+    if(active === n.href) return true;
+    if(!n.sub) return false;
+    for(var i=0;i<n.sub.length;i++){ if(active === n.sub[i].href) return true; }
+    return false;
+  }
+
   function navLinks(active){
     return NAV.map(function(n){
-      var a = (active===n.href)?' class="active"':'';
-      return '<a href="'+n.href+'"'+a+'>'+n.label+'</a>';
+      var a = istAktiv(n,active) ? ' class="active"' : '';
+      if(!n.sub) return '<a href="'+n.href+'"'+a+'>'+n.label+'</a>';
+      var unter = n.sub.map(function(s){
+        var sa = (active===s.href)?' class="active"':'';
+        return '<a href="'+s.href+'"'+sa+'>'+s.label+'</a>';
+      }).join("");
+      return '<span class="nav-drop"><a href="'+n.href+'"'+a+'>'+n.label+
+             ' <em class="caret">&#9662;</em></a><span class="nav-sub">'+unter+'</span></span>';
     }).join("");
   }
 
+  /* Mobil gibt es keine Hover-Ebene: alles wird flach ausgeklappt, Unterpunkte
+     eingerueckt. Das ist auf dem Handy schneller als ein Aufklappmenue. */
+  function navLinksMobil(active){
+    return NAV.map(function(n){
+      var a = (active===n.href)?' class="active"':'';
+      var eig = '<a href="'+n.href+'"'+a+'>'+n.label+'</a>';
+      if(!n.sub) return eig;
+      var unter = n.sub.filter(function(s){ return s.href !== n.href; }).map(function(s){
+        var sa = (active===s.href)?' class="active"':'';
+        return '<a class="mnav-sub" href="'+s.href+'"'+sa.replace(' class="active"',' data-akt="1"')+'>'+s.label+'</a>';
+      }).join("");
+      return eig+unter;
+    }).join("");
+  }
+
+  /* Stil fuer die Untermenues. Bewusst hier und nicht in p12.css, damit die
+     Navigation in einer Datei zusammenbleibt. */
+  function navStil(){
+    if(document.getElementById("p12-nav-style")) return;
+    var st=document.createElement("style"); st.id="p12-nav-style";
+    st.textContent =
+      ".nav-drop{position:relative;display:inline-block}"+
+      ".nav-drop>a .caret{font-style:normal;font-size:10px;opacity:.7;margin-left:3px}"+
+      ".nav-sub{position:absolute;left:0;top:100%;min-width:232px;background:#1B2430;"+
+        "border:1px solid rgba(255,255,255,.14);box-shadow:0 18px 40px rgba(0,0,0,.38);"+
+        "padding:7px 0;opacity:0;visibility:hidden;transform:translateY(6px);"+
+        "transition:opacity .16s ease,transform .16s ease,visibility .16s;z-index:120}"+
+      ".nav-drop:hover .nav-sub,.nav-drop:focus-within .nav-sub{opacity:1;visibility:visible;transform:translateY(0)}"+
+      ".nav-sub a{display:block;padding:10px 18px;white-space:nowrap;font-size:14px}"+
+      ".nav-sub a:hover{background:rgba(255,255,255,.08)}"+
+      ".mnav a.mnav-sub{padding-left:34px;font-size:15px;opacity:.86}"+
+      ".mnav a.mnav-sub[data-akt]{opacity:1;font-weight:700}";
+    document.head.appendChild(st);
+  }
+
   function buildHeader(active){
+    navStil();
     return '<header class="site-header"><div class="wrap">'+
       '<a class="brand" href="index.html"><img class="brandlogo" src="assets/logo-weiss.png" alt="Protect-12"></a>'+
       '<nav class="nav-main">'+navLinks(active)+'<a class="nav-cta" href="#" data-cta>Gespr&auml;ch vereinbaren</a></nav>'+
       '<button class="burger" aria-label="Men&uuml;" id="p12burger"><span></span><span></span><span></span></button>'+
       '</div></header>'+
       '<div class="mnav" id="p12mnav">'+
-      '<a href="index.html">Start</a>'+navLinks(active)+
+      '<a href="index.html">Start</a>'+navLinksMobil(active)+
       '<a href="#" data-cta style="color:var(--red-soft)">Gespr&auml;ch vereinbaren</a></div>';
   }
-
   function buildFooter(){
     return '<footer class="site-footer"><div class="wrap">'+
       '<div class="cols">'+
         '<div><img class="brandlogo" src="assets/logo-weiss.png" alt="Protect-12" style="height:34px">'+
           '<p class="brand-blurb">Krisenvorsorge mit System. Eine strukturierte Analyse Ihres Haushalts, ein laufendes Lagebild und ein gepr&uuml;ftes Netzwerk.</p></div>'+
         '<div><h4>Das System</h4>'+
-          '<a href="das-system.html">Zw&ouml;lf Bereiche</a><a href="das-system.html#szenarien">Acht Szenarien</a>'+
-          '<a href="das-system.html#unterlagen">F&uuml;nfzehn Unterlagen</a><a href="lagebild.html">Lagebild</a></div>'+
+          '<a href="module.html">Die zw&ouml;lf Module</a><a href="szenarien.html">Die acht Szenarien</a>'+
+          '<a href="das-system.html#unterlagen">F&uuml;nfzehn Unterlagen</a><a href="praxis.html">Aus der Praxis</a>'+
+          '<a href="experten.html">Expertennetzwerk</a></div>'+
         '<div><h4>Mehr</h4>'+
-          '<a href="ablauf-experten.html">Ihr Weg</a><a href="ablauf-experten.html#experten">Expertennetzwerk</a>'+
+          '<a href="ablauf-experten.html">Ablauf der Analyse</a><a href="lagebild.html">Lagebild</a>'+
+          '<a href="fruehwarnsystem.html">Fr&uuml;hwarnsystem</a>'+
           '<a href="community.html">Community</a><a href="ratgeber.html">Ratgeber</a>'+
           '<a href="downloads.html">Checklisten zum Download</a>'+
           '<a href="faq-kontakt.html">Fragen &amp; Antworten</a></div>'+
