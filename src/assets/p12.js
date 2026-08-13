@@ -41,6 +41,7 @@
       {href:"das-system.html", label:"&Uuml;berblick"},
       {href:"module.html", label:"Die zw&ouml;lf Module"},
       {href:"szenarien.html", label:"Die acht Szenarien"},
+      {href:"unterlagen.html", label:"Ihre Unterlagen"},
       {href:"praxis.html", label:"Aus der Praxis"},
       {href:"experten.html", label:"Das Expertennetzwerk"}
     ]},
@@ -130,7 +131,7 @@
           '<p class="brand-blurb">Krisenvorsorge mit System. Eine strukturierte Analyse Ihres Haushalts, ein laufendes Lagebild und ein gepr&uuml;ftes Netzwerk.</p></div>'+
         '<div><h4>Das System</h4>'+
           '<a href="module.html">Die zw&ouml;lf Module</a><a href="szenarien.html">Die acht Szenarien</a>'+
-          '<a href="das-system.html#unterlagen">F&uuml;nfzehn Unterlagen</a><a href="praxis.html">Aus der Praxis</a>'+
+          '<a href="unterlagen.html">Ihre Unterlagen</a><a href="praxis.html">Aus der Praxis</a>'+
           '<a href="experten.html">Expertennetzwerk</a></div>'+
         '<div><h4>Mehr</h4>'+
           '<a href="ablauf-experten.html">Ablauf der Analyse</a><a href="lagebild.html">Lagebild</a>'+
