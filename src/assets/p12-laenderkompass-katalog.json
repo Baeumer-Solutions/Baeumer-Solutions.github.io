@@ -1,0 +1,1198 @@
+[
+ {
+  "badge": "L1",
+  "count_label": "10 Fragen",
+  "title": "SZENARIO UND ZIELBILD",
+  "intro": "Bevor wir über Länder sprechen, müssen wir wissen, wovor Sie ausweichen und was der neue Ort leisten soll. Dieselbe Landkarte sortiert sich für jedes Szenario anders.",
+  "items": [
+   {
+    "type": "sub",
+    "title": "WOVOR WEICHEN SIE AUS"
+   },
+   {
+    "type": "q",
+    "id": "LK101",
+    "must": true,
+    "eigen": false,
+    "frage": "Welche Entwicklungen treiben Ihre Überlegung an?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 4,
+    "unit": "",
+    "scale": null,
+    "info": "Mehrfachnennung möglich, bitte in eigenen Worten ergänzen: bewaffneter Konflikt in Europa, wirtschaftlicher Niedergang, staatlicher Zugriff auf Vermögen, Einschränkung von Freiheiten, gesellschaftliche Instabilität, Versorgungskrisen.",
+    "old_id": "LK101"
+   },
+   {
+    "type": "q",
+    "id": "LK102",
+    "must": true,
+    "eigen": false,
+    "frage": "Wie dringlich ist das Thema für Sie?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "vorsorglich, ohne Zeitdruck",
+     "in den nächsten 2 bis 3 Jahren",
+     "in den nächsten 12 Monaten",
+     "so schnell wie möglich"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "LK102"
+   },
+   {
+    "type": "q",
+    "id": "LK103",
+    "must": true,
+    "eigen": false,
+    "frage": "Was soll der Ort im Ausland für Sie sein?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "dauerhafter neuer Lebensmittelpunkt",
+     "Zweitstandort mit Pendeln",
+     "reiner Fluchtpunkt für den Ernstfall",
+     "noch offen"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "LK103"
+   },
+   {
+    "type": "q",
+    "id": "LK104",
+    "must": false,
+    "eigen": false,
+    "frage": "Wollen Sie sich die Rückkehr nach Deutschland ausdrücklich offenhalten?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Ja, Rückkehr fest eingeplant",
+     "Ja, als Option",
+     "Nein, endgültig",
+     "Weiß nicht"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "Das entscheidet über Abmeldung, Steuerstatus und wie viel hier stehen bleibt.",
+    "old_id": "LK104"
+   },
+   {
+    "type": "sub",
+    "title": "WER GEHT MIT"
+   },
+   {
+    "type": "q",
+    "id": "LK105",
+    "must": true,
+    "eigen": false,
+    "frage": "Wer würde mitgehen, und wer bleibt in Deutschland?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 4,
+    "unit": "",
+    "scale": null,
+    "info": "Bitte mit Alter. Zurückbleibende nahe Angehörige sind der häufigste Grund, warum Pläne scheitern oder Rückreisen nötig werden.",
+    "old_id": "LK105"
+   },
+   {
+    "type": "q",
+    "id": "LK106",
+    "must": true,
+    "eigen": false,
+    "frage": "Welche Bindungen halten Sie in Deutschland?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 4,
+    "unit": "",
+    "scale": null,
+    "info": "Firma, Immobilien, pflegebedürftige Angehörige, Vereine, Freundeskreis. Ehrlich aufzählen, das bestimmt die realistische Bauart des Plans.",
+    "old_id": "LK106"
+   },
+   {
+    "type": "q",
+    "id": "LK107",
+    "must": false,
+    "eigen": false,
+    "frage": "Gibt es Tiere, die mitkommen?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 2,
+    "unit": "",
+    "scale": null,
+    "info": "Art und Anzahl. Einreisebestimmungen für Tiere schließen manche Länder praktisch aus.",
+    "old_id": "LK107"
+   },
+   {
+    "type": "sub",
+    "title": "REICHWEITE"
+   },
+   {
+    "type": "q",
+    "id": "LK108",
+    "must": true,
+    "eigen": false,
+    "frage": "Wie weit darf der Ort maximal von Deutschland entfernt sein?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "mit dem Auto erreichbar (bis ca. 1.500 km)",
+     "Kurzstreckenflug (bis ca. 3 Std.)",
+     "Mittelstrecke (bis ca. 6 Std.)",
+     "weltweit, Entfernung egal"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "LK108"
+   },
+   {
+    "type": "q",
+    "id": "LK109",
+    "must": true,
+    "eigen": false,
+    "frage": "Muss der Ort im Ernstfall OHNE Flugzeug erreichbar sein?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Ja, zwingend",
+     "Wünschenswert",
+     "Nein"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "Bei geschlossenem Luftraum zählt nur, wohin Straße oder Schiene führen.",
+    "old_id": "LK109"
+   },
+   {
+    "type": "q",
+    "id": "LK110",
+    "must": false,
+    "eigen": false,
+    "frage": "Wie oft würden Sie in der Aufbauphase zwischen Deutschland und dem Ort pendeln?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "monatlich oder öfter",
+     "einige Male im Jahr",
+     "selten",
+     "gar nicht"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "LK110"
+   }
+  ],
+  "nq": 10
+ },
+ {
+  "badge": "L2",
+  "count_label": "10 Fragen",
+  "title": "HARTE AUSSCHLÜSSE",
+  "intro": "Diese Antworten wirken als Filter: Was hier ausscheidet, taucht in Ihrer Übersicht gar nicht erst auf. Bitte nur ausschließen, was wirklich nicht in Frage kommt, jeder Ausschluss verkleinert die Landkarte.",
+  "items": [
+   {
+    "type": "sub",
+    "title": "REGIONEN"
+   },
+   {
+    "type": "q",
+    "id": "LK201",
+    "must": true,
+    "eigen": false,
+    "frage": "Welche Weltregionen schließen Sie aus?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 4,
+    "unit": "",
+    "scale": null,
+    "info": "Mehrfachnennung: Nordamerika, Mittelamerika, Südamerika, Westeuropa, Nord- und Osteuropa, Südosteuropa und Balkan, Naher Osten, Afrika, Süd- und Südostasien, Ostasien, Ozeanien. Bitte mit einem Satz begründen, die Begründung hilft beim Feinschliff.",
+    "old_id": "LK201"
+   },
+   {
+    "type": "q",
+    "id": "LK202",
+    "must": false,
+    "eigen": false,
+    "frage": "Kommen Inseln für Sie in Frage?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Ja",
+     "Nein",
+     "Nur große Inseln mit eigener Versorgung"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "Inseln sind im Krisenfall schwerer erreichbar, aber leichter abzuschotten.",
+    "old_id": "LK202"
+   },
+   {
+    "type": "sub",
+    "title": "POLITISCHE RAHMEN"
+   },
+   {
+    "type": "q",
+    "id": "LK203",
+    "must": true,
+    "eigen": false,
+    "frage": "Muss das Land außerhalb der EU liegen?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Ja, außerhalb der EU",
+     "Nein, EU ist in Ordnung",
+     "Egal"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "Relevant für Vermögenszugriff, Meldepflichten und Regulierung, aber auch für Freizügigkeit und Erwerbsrechte.",
+    "old_id": "LK203"
+   },
+   {
+    "type": "q",
+    "id": "LK204",
+    "must": true,
+    "eigen": false,
+    "frage": "Muss das Land außerhalb der NATO liegen?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Ja, außerhalb der NATO",
+     "Nein, NATO ist in Ordnung",
+     "Egal"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "Ihre Einschätzung zur Bündniskriegs-Gefahr entscheidet hier.",
+    "old_id": "LK204"
+   },
+   {
+    "type": "q",
+    "id": "LK205",
+    "must": false,
+    "eigen": false,
+    "frage": "Schließen Sie Länder mit aktiver Wehrpflicht aus?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Ja",
+     "Nein",
+     "Egal"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "Relevant, wenn wehrpflichtfähige Personen mitgehen oder eine Einbürgerung angestrebt wird.",
+    "old_id": "LK205"
+   },
+   {
+    "type": "q",
+    "id": "LK206",
+    "must": false,
+    "eigen": false,
+    "frage": "Schließen Sie Länder ohne demokratische Grundordnung aus?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Ja, Demokratie ist Bedingung",
+     "Nein, Stabilität zählt mehr",
+     "Im Einzelfall abwägen"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "Manche stabilen Autokratien sind für Residenten bequem, bis sie es nicht mehr sind.",
+    "old_id": "LK206"
+   },
+   {
+    "type": "sub",
+    "title": "KLIMA UND LEBEN"
+   },
+   {
+    "type": "q",
+    "id": "LK207",
+    "must": false,
+    "eigen": false,
+    "frage": "Welche Klimazonen scheiden aus?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 3,
+    "unit": "",
+    "scale": null,
+    "info": "Mehrfachnennung: tropisch-feucht, Wüste und Extremhitze, lange harte Winter, Erdbeben- und Vulkangebiete, Wirbelsturmzonen.",
+    "old_id": "LK207"
+   },
+   {
+    "type": "q",
+    "id": "LK208",
+    "must": true,
+    "eigen": false,
+    "frage": "Ist ein funktionierendes Gesundheitssystem auf westlichem Niveau Bedingung?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Ja, zwingend",
+     "Gehobener Standard genügt",
+     "Basisversorgung genügt"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "LK208"
+   },
+   {
+    "type": "q",
+    "id": "LK209",
+    "must": true,
+    "eigen": false,
+    "frage": "Muss Verständigung auf Deutsch oder Englisch im Alltag möglich sein?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Deutsch nötig",
+     "Englisch genügt",
+     "Wir lernen die Landessprache",
+     "Egal"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "LK209"
+   },
+   {
+    "type": "q",
+    "id": "LK210",
+    "must": false,
+    "eigen": false,
+    "frage": "Gibt es Länder, die für Sie aus persönlichen Gründen ausscheiden?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 3,
+    "unit": "",
+    "scale": null,
+    "info": "Konkrete Namen mit kurzem Grund, auch Bauchgefühl zählt.",
+    "old_id": "LK210"
+   }
+  ],
+  "nq": 10
+ },
+ {
+  "badge": "L3",
+  "count_label": "16 Fragen",
+  "title": "WAS IHNEN WICHTIG IST",
+  "intro": "Jetzt die Gewichtung. Bewerten Sie jede Eigenschaft von 0 (unwichtig) bis 5 (entscheidend). Es gibt kein Land, das überall 5 verdient, die Gewichtung entscheidet, welche Kompromisse Ihre Übersicht eingeht. Vergeben Sie die 5 sparsam.",
+  "items": [
+   {
+    "type": "sub",
+    "title": "SICHERHEIT UND STAAT"
+   },
+   {
+    "type": "q",
+    "id": "LK301",
+    "must": true,
+    "eigen": false,
+    "frage": "Schutz von Eigentum und Vermögen vor staatlichem Zugriff",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 0,
+    "unit": "",
+    "scale": {
+     "lo": 0,
+     "hi": 5
+    },
+    "info": "",
+    "old_id": "LK301"
+   },
+   {
+    "type": "q",
+    "id": "LK302",
+    "must": true,
+    "eigen": false,
+    "frage": "Politische Stabilität und Rechtsstaatlichkeit",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 0,
+    "unit": "",
+    "scale": {
+     "lo": 0,
+     "hi": 5
+    },
+    "info": "",
+    "old_id": "LK302"
+   },
+   {
+    "type": "q",
+    "id": "LK303",
+    "must": true,
+    "eigen": false,
+    "frage": "Neutralität und Abstand zu Militärbündnissen",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 0,
+    "unit": "",
+    "scale": {
+     "lo": 0,
+     "hi": 5
+    },
+    "info": "",
+    "old_id": "LK303"
+   },
+   {
+    "type": "q",
+    "id": "LK304",
+    "must": true,
+    "eigen": false,
+    "frage": "Niedrige Kriminalität und persönliche Sicherheit",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 0,
+    "unit": "",
+    "scale": {
+     "lo": 0,
+     "hi": 5
+    },
+    "info": "",
+    "old_id": "LK304"
+   },
+   {
+    "type": "q",
+    "id": "LK305",
+    "must": false,
+    "eigen": false,
+    "frage": "Persönliche Freiheitsrechte im Alltag",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 0,
+    "unit": "",
+    "scale": {
+     "lo": 0,
+     "hi": 5
+    },
+    "info": "Meinungsfreiheit, wenig Überwachung, wenig Bevormundung.",
+    "old_id": "LK305"
+   },
+   {
+    "type": "q",
+    "id": "LK306",
+    "must": true,
+    "eigen": false,
+    "frage": "Niedrige Steuer- und Abgabenlast",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 0,
+    "unit": "",
+    "scale": {
+     "lo": 0,
+     "hi": 5
+    },
+    "info": "",
+    "old_id": "LK306"
+   },
+   {
+    "type": "sub",
+    "title": "VERSORGUNG UND KRISENFESTIGKEIT"
+   },
+   {
+    "type": "q",
+    "id": "LK307",
+    "must": true,
+    "eigen": false,
+    "frage": "Krisenrobustheit des Landes selbst",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 0,
+    "unit": "",
+    "scale": {
+     "lo": 0,
+     "hi": 5
+    },
+    "info": "Eigene Energie- und Nahrungsversorgung, funktionierende Grundversorgung auch bei internationalen Verwerfungen.",
+    "old_id": "LK307"
+   },
+   {
+    "type": "q",
+    "id": "LK308",
+    "must": false,
+    "eigen": false,
+    "frage": "Möglichkeit zur Selbstversorgung auf eigenem Grund",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 0,
+    "unit": "",
+    "scale": {
+     "lo": 0,
+     "hi": 5
+    },
+    "info": "Boden, Wasser, Klima, bezahlbares Land.",
+    "old_id": "LK308"
+   },
+   {
+    "type": "q",
+    "id": "LK309",
+    "must": true,
+    "eigen": false,
+    "frage": "Gutes Gesundheitssystem",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 0,
+    "unit": "",
+    "scale": {
+     "lo": 0,
+     "hi": 5
+    },
+    "info": "",
+    "old_id": "LK309"
+   },
+   {
+    "type": "q",
+    "id": "LK310",
+    "must": false,
+    "eigen": false,
+    "frage": "Niedrige Lebenshaltungskosten",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 0,
+    "unit": "",
+    "scale": {
+     "lo": 0,
+     "hi": 5
+    },
+    "info": "",
+    "old_id": "LK310"
+   },
+   {
+    "type": "sub",
+    "title": "ANKOMMEN UND ALLTAG"
+   },
+   {
+    "type": "q",
+    "id": "LK311",
+    "must": false,
+    "eigen": false,
+    "frage": "Kulturelle Nähe zu Mitteleuropa",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 0,
+    "unit": "",
+    "scale": {
+     "lo": 0,
+     "hi": 5
+    },
+    "info": "",
+    "old_id": "LK311"
+   },
+   {
+    "type": "q",
+    "id": "LK312",
+    "must": false,
+    "eigen": false,
+    "frage": "Bestehende deutschsprachige Gemeinschaft vor Ort",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 0,
+    "unit": "",
+    "scale": {
+     "lo": 0,
+     "hi": 5
+    },
+    "info": "",
+    "old_id": "LK312"
+   },
+   {
+    "type": "q",
+    "id": "LK313",
+    "must": true,
+    "eigen": false,
+    "frage": "Nähe zu Deutschland und schnelle Erreichbarkeit",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 0,
+    "unit": "",
+    "scale": {
+     "lo": 0,
+     "hi": 5
+    },
+    "info": "",
+    "old_id": "LK313"
+   },
+   {
+    "type": "q",
+    "id": "LK314",
+    "must": false,
+    "eigen": false,
+    "frage": "Moderne Infrastruktur und schnelles Internet",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 0,
+    "unit": "",
+    "scale": {
+     "lo": 0,
+     "hi": 5
+    },
+    "info": "",
+    "old_id": "LK314"
+   },
+   {
+    "type": "q",
+    "id": "LK315",
+    "must": false,
+    "eigen": false,
+    "frage": "Möglichkeit zu Jagd und legalem Waffenbesitz",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 0,
+    "unit": "",
+    "scale": {
+     "lo": 0,
+     "hi": 5
+    },
+    "info": "",
+    "old_id": "LK315"
+   },
+   {
+    "type": "q",
+    "id": "LK316",
+    "must": true,
+    "eigen": false,
+    "frage": "Realistischer Weg zu dauerhaftem Aufenthaltsrecht oder zweiter Staatsbürgerschaft",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 0,
+    "unit": "",
+    "scale": {
+     "lo": 0,
+     "hi": 5
+    },
+    "info": "",
+    "old_id": "LK316"
+   }
+  ],
+  "nq": 16
+ },
+ {
+  "badge": "L4",
+  "count_label": "12 Fragen",
+  "title": "LEBEN UND ALLTAG AM ZIELORT",
+  "intro": "Wie Ihr Leben dort konkret aussehen soll. Diese Angaben verfeinern die Übersicht und entscheiden später über die Zielregion INNERHALB des Landes.",
+  "items": [
+   {
+    "type": "sub",
+    "title": "WOHNEN UND UMGEBUNG"
+   },
+   {
+    "type": "q",
+    "id": "LK401",
+    "must": true,
+    "eigen": false,
+    "frage": "Stadt, Kleinstadt oder ländlich?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Großstadt",
+     "Kleinstadt",
+     "Dorf oder Alleinlage",
+     "Mischung, Stadtrand"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "LK401"
+   },
+   {
+    "type": "q",
+    "id": "LK402",
+    "must": false,
+    "eigen": false,
+    "frage": "Welche Landschaft zieht Sie an?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 2,
+    "unit": "",
+    "scale": null,
+    "info": "Meer, Seen, Berge, Wald, Ebene. Auch das Gegenteil nennen, was Sie nicht wollen.",
+    "old_id": "LK402"
+   },
+   {
+    "type": "q",
+    "id": "LK403",
+    "must": false,
+    "eigen": false,
+    "frage": "Welches Klima wünschen Sie sich?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "mediterran",
+     "gemäßigt wie Deutschland",
+     "warm ganzjährig",
+     "kühl und klar",
+     "egal"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "LK403"
+   },
+   {
+    "type": "q",
+    "id": "LK404",
+    "must": false,
+    "eigen": false,
+    "frage": "Wollen Sie am Zielort kaufen oder mieten?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Kaufen",
+     "Erst mieten, dann kaufen",
+     "Nur mieten",
+     "Weiß nicht"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "LK404"
+   },
+   {
+    "type": "q",
+    "id": "LK405",
+    "must": false,
+    "eigen": false,
+    "frage": "Welches Budget steht für Immobilie oder Miete bereit?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 2,
+    "unit": "",
+    "scale": null,
+    "info": "Größenordnung genügt: Kaufbudget gesamt oder Monatsmiete.",
+    "old_id": "LK405"
+   },
+   {
+    "type": "sub",
+    "title": "EINKOMMEN UND ARBEIT"
+   },
+   {
+    "type": "q",
+    "id": "LK406",
+    "must": true,
+    "eigen": false,
+    "frage": "Wovon leben Sie am Zielort?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 3,
+    "unit": "",
+    "scale": null,
+    "info": "Mehrfachnennung: ortsunabhängiges Einkommen, Vermietung in Deutschland, Rente oder Pension, Erwerbsarbeit vor Ort, eigenes Unternehmen, Vermögensverzehr.",
+    "old_id": "LK406"
+   },
+   {
+    "type": "q",
+    "id": "LK407",
+    "must": false,
+    "eigen": false,
+    "frage": "Muss Ihre berufliche Tätigkeit am Zielort zulässig und anerkannt sein?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Ja",
+     "Nein",
+     "Egal"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "Relevant bei regulierten Berufen und bei geplanter Firmengründung.",
+    "old_id": "LK407"
+   },
+   {
+    "type": "sub",
+    "title": "GESUNDHEIT, SPRACHE, FÄHIGKEITEN"
+   },
+   {
+    "type": "q",
+    "id": "LK408",
+    "must": false,
+    "eigen": false,
+    "frage": "Welche Gesundheitsbedarfe müssen dauerhaft versorgt sein?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 3,
+    "unit": "",
+    "scale": null,
+    "info": "Dauermedikation, Fachärzte, Zahnbehandlung. Ohne Namen möglich, Kategorien genügen.",
+    "old_id": "LK408"
+   },
+   {
+    "type": "q",
+    "id": "LK409",
+    "must": true,
+    "eigen": false,
+    "frage": "Welche Sprachen sprechen Sie auf welchem Niveau?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 3,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "LK409"
+   },
+   {
+    "type": "q",
+    "id": "LK410",
+    "must": false,
+    "eigen": false,
+    "frage": "Wie viel Aufbauarbeit trauen Sie sich vor Ort zu?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Wir bauen gern selbst auf, auch ein Grundstück",
+     "Renovieren ja, Rohbau nein",
+     "Bezugsfertig muss es sein"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "LK410"
+   },
+   {
+    "type": "q",
+    "id": "LK411",
+    "must": false,
+    "eigen": false,
+    "frage": "Wie wichtig ist Ihnen Anschluss an eine Gemeinschaft vor Ort?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 0,
+    "unit": "",
+    "scale": {
+     "lo": 0,
+     "hi": 5
+    },
+    "info": "Nachbarschaft, Vereine, Kirchgemeinde, Expat-Runden.",
+    "old_id": "LK411"
+   },
+   {
+    "type": "q",
+    "id": "LK412",
+    "must": false,
+    "eigen": false,
+    "frage": "Was darf Ihr Alltag dort auf keinen Fall verlieren?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 3,
+    "unit": "",
+    "scale": null,
+    "info": "Die eine Sache, ohne die der Umzug scheitert: Hobby, Tier, Gewohnheit, Nähe zu jemandem.",
+    "old_id": "LK412"
+   }
+  ],
+  "nq": 12
+ },
+ {
+  "badge": "L5",
+  "count_label": "8 Fragen",
+  "title": "VERMÖGEN UND STRUKTUR",
+  "intro": "Wie viel von Ihrem Vermögen den Weg mitgehen soll und in welcher Form. Wir geben keine Steuer- oder Rechtsberatung, diese Antworten steuern, welche Modelle wir mit den passenden Fachleuten für Sie prüfen. Größenordnungen genügen, keine Kontostände nötig.",
+  "items": [
+   {
+    "type": "q",
+    "id": "LK501",
+    "must": true,
+    "eigen": false,
+    "frage": "Welche Vermögensteile sollen ins Zielland oder in sichere Drittstruktur?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 4,
+    "unit": "",
+    "scale": null,
+    "info": "Mehrfachnennung: Bankguthaben, Wertpapiere, Edelmetalle, Immobilienerlöse, Unternehmensanteile. Mit ungefährem Anteil am Gesamtvermögen.",
+    "old_id": "LK501"
+   },
+   {
+    "type": "q",
+    "id": "LK502",
+    "must": false,
+    "eigen": false,
+    "frage": "Was bleibt bewusst in Deutschland?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 3,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "LK502"
+   },
+   {
+    "type": "q",
+    "id": "LK503",
+    "must": true,
+    "eigen": false,
+    "frage": "Wie wichtig ist Ihnen ein Bankzugang außerhalb der EU?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 0,
+    "unit": "",
+    "scale": {
+     "lo": 0,
+     "hi": 5
+    },
+    "info": "",
+    "old_id": "LK503"
+   },
+   {
+    "type": "q",
+    "id": "LK504",
+    "must": true,
+    "eigen": false,
+    "frage": "Streben Sie eine zweite Staatsbürgerschaft an oder genügt ein Daueraufenthaltsrecht?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Zweite Staatsbürgerschaft angestrebt",
+     "Daueraufenthalt genügt",
+     "Erst einmal nur ein Fuß in der Tür",
+     "Weiß nicht"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "LK504"
+   },
+   {
+    "type": "q",
+    "id": "LK505",
+    "must": true,
+    "eigen": false,
+    "frage": "Ist eine Firmengründung oder Firmenverlagerung ins Ausland Teil der Überlegung?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Ja",
+     "Nein",
+     "Egal"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "Ihre bestehende Gesellschaft oder eine neue Struktur.",
+    "old_id": "LK505"
+   },
+   {
+    "type": "q",
+    "id": "LK506",
+    "must": false,
+    "eigen": false,
+    "frage": "Wie stehen Sie zu Melde- und Steuertransparenz?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 3,
+    "unit": "",
+    "scale": null,
+    "info": "Alles regelkonform und gemeldet, oder ist Ihnen zusätzlich Privatsphäre der Struktur wichtig? Wir arbeiten ausschließlich im legalen Rahmen, aber der Gestaltungsspielraum unterscheidet sich je Land erheblich.",
+    "old_id": "LK506"
+   },
+   {
+    "type": "q",
+    "id": "LK507",
+    "must": false,
+    "eigen": false,
+    "frage": "In welchem Zeitfenster soll die Vermögensverlagerung geschehen?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "schrittweise über Jahre",
+     "innerhalb von 12 Monaten",
+     "so schnell wie rechtlich sauber möglich"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "LK507"
+   },
+   {
+    "type": "q",
+    "id": "LK508",
+    "must": false,
+    "eigen": false,
+    "frage": "Gibt es bereits Strukturen im Ausland?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 3,
+    "unit": "",
+    "scale": null,
+    "info": "Konten, Depots, Gesellschaften, Stiftungen, Schließfächer. Land und Art genügen.",
+    "old_id": "LK508"
+   }
+  ],
+  "nq": 8
+ },
+ {
+  "badge": "L6",
+  "count_label": "7 Fragen",
+  "title": "BESTEHENDE ANKER UND ERFAHRUNGEN",
+  "intro": "Vorhandene Verbindungen schlagen jede Statistik. Ein mittelmäßiges Land mit echtem Anker vor Ort ist oft die bessere Wahl als der Tabellenerste ohne jeden Bezug.",
+  "items": [
+   {
+    "type": "q",
+    "id": "LK601",
+    "must": true,
+    "eigen": false,
+    "frage": "Wo im Ausland haben Sie Familie, Freunde oder verlässliche Kontakte?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 4,
+    "unit": "",
+    "scale": null,
+    "info": "Land, Ort, Art der Verbindung, Belastbarkeit im Ernstfall.",
+    "old_id": "LK601"
+   },
+   {
+    "type": "q",
+    "id": "LK602",
+    "must": true,
+    "eigen": false,
+    "frage": "Wo besitzen Sie oder Ihre Familie bereits Immobilien oder Land im Ausland?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 3,
+    "unit": "",
+    "scale": null,
+    "info": "Mit kurzer Angabe zu Zustand und Verfügbarkeit.",
+    "old_id": "LK602"
+   },
+   {
+    "type": "q",
+    "id": "LK603",
+    "must": false,
+    "eigen": false,
+    "frage": "Welche Länder kennen Sie aus eigener Anschauung gut, und wie war Ihr Eindruck?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 4,
+    "unit": "",
+    "scale": null,
+    "info": "Längere Aufenthalte zählen mehr als Urlaube.",
+    "old_id": "LK603"
+   },
+   {
+    "type": "q",
+    "id": "LK604",
+    "must": false,
+    "eigen": false,
+    "frage": "Welche Länder haben Sie bereits ernsthaft geprüft, und was kam heraus?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 4,
+    "unit": "",
+    "scale": null,
+    "info": "Auch Verworfenes nennen, mit Grund. Das erspart doppelte Arbeit.",
+    "old_id": "LK604"
+   },
+   {
+    "type": "q",
+    "id": "LK605",
+    "must": false,
+    "eigen": false,
+    "frage": "Laufen bereits Anträge, Anmeldungen oder Gespräche irgendwo?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 2,
+    "unit": "",
+    "scale": null,
+    "info": "Visa, Aufenthaltstitel, Kontoeröffnungen, Immobilienbesichtigungen.",
+    "old_id": "LK605"
+   },
+   {
+    "type": "q",
+    "id": "LK606",
+    "must": false,
+    "eigen": false,
+    "frage": "Gibt es ein Land, das Ihr Bauchgefühl favorisiert, unabhängig von aller Logik?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 2,
+    "unit": "",
+    "scale": null,
+    "info": "Wir nehmen das ernst: Das Bauchland wird gegen die Datenlage geprüft statt ignoriert.",
+    "old_id": "LK606"
+   },
+   {
+    "type": "q",
+    "id": "LK607",
+    "must": false,
+    "eigen": false,
+    "frage": "Was möchten Sie uns zur Länderfrage noch mitgeben, das nirgends abgefragt wurde?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 4,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "LK607"
+   }
+  ],
+  "nq": 7
+ }
+]
