@@ -1,0 +1,2428 @@
+[
+ {
+  "badge": "M1",
+  "count_label": "2 offene Fragen",
+  "title": "STANDORT & UMFELD",
+  "intro": "Standort bestimmt die größten Risiken — Hochwasser, Infrastruktur, Fluchtwege.",
+  "items": [
+   {
+    "type": "q",
+    "id": "M01.B13.Q1",
+    "must": false,
+    "eigen": false,
+    "frage": "Welches Werkzeug und Material steht zur Verfügung, um kleinere Schäden am Gebäude selbst zu beheben?",
+    "hints": [
+     "Mehrfachauswahl möglich"
+    ],
+    "eigen_typ": "",
+    "options": [
+     "Handwerkzeug (Hammer, Säge, Zange, Schraubendreher)",
+     "Akkuwerkzeug mit Ersatzakku",
+     "Kettensäge oder Motorsäge",
+     "Schweißgerät oder Trennschleifer",
+     "Baumaterial (Holz, Folie, Schrauben, Nägel, Dichtmasse)",
+     "Nichts davon"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M01.B13.Q1",
+    "multi": true
+   },
+   {
+    "type": "q",
+    "id": "M01.B13.Q2",
+    "must": false,
+    "eigen": false,
+    "frage": "Gibt es eine Kettensäge oder Axt für Sturmschäden und Brennholz, und wer kann sie sicher bedienen?",
+    "hints": [
+     "Betrieb mit Kraftstoff oder Akku bitte in der Technikliste M05.B9.Q1 eintragen."
+    ],
+    "eigen_typ": "",
+    "options": [
+     "Kettensäge und Axt, mindestens zwei Personen bedienen sie sicher",
+     "Kettensäge, aber nur eine Person bedient sie sicher",
+     "Nur Axt oder Handsäge",
+     "Nichts davon"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M01.B13.Q2"
+   }
+  ],
+  "nq": 72
+ },
+ {
+  "badge": "M2",
+  "count_label": "1 offene Fragen",
+  "title": "GREY MAN, SELBSTSCHUTZ & SELBSTVERTEIDIGUNG",
+  "intro": "Unauffälligkeit und situative Wachheit sind die erste Verteidigungslinie.",
+  "items": [
+   {
+    "type": "q",
+    "id": "M02.B19.Q1",
+    "must": false,
+    "eigen": false,
+    "frage": "Welche Schutzausrüstung ist für alle Personen im Haushalt vorhanden?",
+    "hints": [
+     "Mehrfachauswahl möglich"
+    ],
+    "eigen_typ": "",
+    "options": [
+     "Atemschutz FFP2 oder FFP3",
+     "Schutzbrillen",
+     "Arbeitshandschuhe",
+     "Warnwesten für alle Personen",
+     "Feste Kleidung und Regenschutz für alle Personen",
+     "Nichts davon"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M02.B19.Q1",
+    "multi": true
+   }
+  ],
+  "nq": 95
+ },
+ {
+  "badge": "M3",
+  "count_label": "11 offene Fragen",
+  "title": "WASSER",
+  "intro": "Ohne Trinkwasser überleben Menschen 3 Tage. Wasser ist die kritischste Ressource.",
+  "items": [
+   {
+    "type": "q",
+    "id": "M03.B10.Q1",
+    "must": false,
+    "eigen": false,
+    "frage": "Falls Sie einen Brunnen, eine Zisterne oder eine Quelle nutzen: wie wird das Wasser gefördert?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Elektrische Pumpe",
+     "Handpumpe (Schwengelpumpe)",
+     "Elektrisch und Handpumpe",
+     "Schwerkraft (Quelle liegt höher)",
+     "Kein Brunnen, keine Zisterne",
+     "Weiß nicht"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "Brunnen und Pumpe sind zwei verschiedene Dinge mit verschiedenen Ausfallarten. Ein Brunnen mit rein elektrischer Pumpe ist im Stromausfall ein Loch im Boden.",
+    "old_id": "M03.B10.Q1"
+   },
+   {
+    "type": "q",
+    "id": "M03.B10.Q2",
+    "must": false,
+    "eigen": false,
+    "frage": "Funktioniert die Wasserförderung ohne Netzstrom, ohne Aggregat und ohne Batterie?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Ja, vollständig",
+     "Nur mit Notstrom (Aggregat, Speicher)",
+     "Nein",
+     "Nicht zutreffend, kein eigener Bezug",
+     "Weiß nicht"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M03.B10.Q2"
+   },
+   {
+    "type": "q",
+    "id": "M03.B10.Q3",
+    "must": false,
+    "eigen": false,
+    "frage": "Wer in Ihrem Haushalt kann die Pumpe warten oder instand setzen (Dichtungen, Ventile, Kolbenleder, Frostschutz)?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Mehrere Personen",
+     "Eine Person",
+     "Niemand, externer Dienst",
+     "Nicht zutreffend"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "Eine Schwengelpumpe braucht alle ein bis zwei Jahre ein neues Kolbenleder und vor dem Winter Frostschutz. Wer das kann, ist eine Fachrolle.",
+    "old_id": "M03.B10.Q3"
+   },
+   {
+    "type": "q",
+    "id": "M03.B10.Q4",
+    "must": false,
+    "eigen": false,
+    "frage": "Sind Ersatzteile für die Pumpe vorhanden (Kolbenleder, Dichtungssatz, Rückschlagventil, Werkzeug)?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Ja, vollständig",
+     "Teilweise",
+     "Nein",
+     "Nicht zutreffend"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M03.B10.Q4"
+   },
+   {
+    "type": "q",
+    "id": "M03.B10.Q5",
+    "must": false,
+    "eigen": false,
+    "frage": "Wann wurde die Wasserqualität Ihres Brunnens zuletzt im Labor geprüft?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Vor weniger als einem Jahr",
+     "Vor 1 bis 3 Jahren",
+     "Vor mehr als 3 Jahren",
+     "Noch nie",
+     "Nicht zutreffend"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M03.B10.Q5"
+   },
+   {
+    "type": "q",
+    "id": "M03.B10.Q6",
+    "must": false,
+    "eigen": false,
+    "frage": "Wie tief liegt der Wasserspiegel in Ihrem Brunnen unter Geländeoberkante?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 1,
+    "unit": "METER",
+    "scale": null,
+    "info": "Bis etwa 7 Meter reicht eine gewöhnliche Schwengelpumpe. Tiefer liegende Wasserspiegel brauchen eine Tiefbrunnen-Handpumpe.",
+    "old_id": "M03.B10.Q6"
+   },
+   {
+    "type": "q",
+    "id": "M03.B11.Q1",
+    "must": false,
+    "eigen": true,
+    "frage": "Welches Gesamtvolumen an leeren Kanistern und Behältern haben Sie, um zusätzlich Wasser zu bevorraten oder zu transportieren?",
+    "hints": [
+     "Anzahl mal Inhalt. Nur Behälter zählen, die heute leer und einsatzbereit sind."
+    ],
+    "eigen_typ": "Zählen",
+    "options": [],
+    "textlines": 1,
+    "unit": "LITER",
+    "scale": null,
+    "info": "",
+    "old_id": "M03.B11.Q1"
+   },
+   {
+    "type": "q",
+    "id": "M03.B11.Q2",
+    "must": false,
+    "eigen": false,
+    "frage": "Wie viele Liter kann Ihr Wasserfilter nach Herstellerangabe noch aufbereiten, Ersatzkartuschen eingerechnet?",
+    "hints": [
+     "Restkapazität der eingesetzten Kartusche plus Kapazität der Ersatzkartuschen. Modell und Anzahl der Filter bitte in der Technikliste M05.B9.Q1.",
+     "Filter ohne Kapazitätsgrenze (rückspülbare Hohlfaser): bitte 100000 eintragen. Kein Filter: 0."
+    ],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 1,
+    "unit": "LITER",
+    "scale": null,
+    "info": "",
+    "old_id": "M03.B11.Q2"
+   },
+   {
+    "type": "q",
+    "id": "M03.B11.Q3",
+    "must": false,
+    "eigen": false,
+    "frage": "Sind Ihre Wasserbehälter lebensmittelecht und dicht verschließbar?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Ja, alle lebensmittelecht und dicht",
+     "Teilweise, ein Teil ist ungeeignet oder undicht",
+     "Unklar, nie geprüft",
+     "Keine Behälter vorhanden"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M03.B11.Q3"
+   },
+   {
+    "type": "q",
+    "id": "M03.B11.Q4",
+    "must": false,
+    "eigen": false,
+    "frage": "Welches Volumen haben stationäre Wasserspeicher auf Ihrem Grundstück (Tank, IBC-Container, Zisterne, Regentonne)?",
+    "hints": [
+     "0 eintragen, wenn nichts vorhanden ist."
+    ],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 1,
+    "unit": "LITER",
+    "scale": null,
+    "info": "",
+    "old_id": "M03.B11.Q4"
+   },
+   {
+    "type": "q",
+    "id": "M03.B11.Q5",
+    "must": false,
+    "eigen": false,
+    "frage": "Wie kommen Sie ohne Netzstrom an das Wasser aus Brunnen, Zisterne oder Tank?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Handpumpe oder Entnahme durch Schwerkraft",
+     "12-V-Tauchpumpe mit eigener Stromquelle",
+     "Nur mit Netzpumpe, kein Ersatz",
+     "Kein Speicher oder Brunnen vorhanden"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M03.B11.Q5"
+   }
+  ],
+  "nq": 46
+ },
+ {
+  "badge": "M4",
+  "count_label": "14 offene Fragen",
+  "title": "NAHRUNG & VORRAT",
+  "intro": "Nahrungsvorrat: Bedarfsrechnung, Rotation, Kochfähigkeit ohne Strom.",
+  "items": [
+   {
+    "type": "q",
+    "id": "M04.B15.Q1",
+    "must": false,
+    "eigen": false,
+    "frage": "Wie viel Lagerfläche steht für Vorräte insgesamt zur Verfügung (alle Räume zusammen)?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Unter 2 m²",
+     "2 bis 5 m²",
+     "5 bis 15 m²",
+     "Über 15 m²",
+     "Weiß nicht"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "Grundfläche des Lagers, nicht der Wohnung. Keller, Speisekammer, Garage, Nebengebäude zusammenrechnen.",
+    "old_id": "M04.B15.Q1"
+   },
+   {
+    "type": "q",
+    "id": "M04.B15.Q2",
+    "must": false,
+    "eigen": false,
+    "frage": "Wie viele laufende Meter Regal stehen im Lager (Regalbreite mal Anzahl Böden)?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 1,
+    "unit": "LFD. METER",
+    "scale": null,
+    "info": "Beispiel: ein Regal von 2 m Breite mit 5 Böden zählt 10 laufende Meter.",
+    "old_id": "M04.B15.Q2"
+   },
+   {
+    "type": "q",
+    "id": "M04.B15.Q3",
+    "must": false,
+    "eigen": false,
+    "frage": "Ist die Lagerfläche in Zonen gegliedert (Trocken, Kühl, Frost, Wasser, Hygiene, Brennstoff, Technik)?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Ja, klar getrennt und beschriftet",
+     "Teilweise",
+     "Nein, alles gemischt"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M04.B15.Q3"
+   },
+   {
+    "type": "q",
+    "id": "M04.B15.Q4",
+    "must": false,
+    "eigen": false,
+    "frage": "Wie ist die Rotation Ihrer Vorräte organisiert?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Erst rein, erst raus, Datum sichtbar auf jeder Einheit",
+     "Gelegentliche Durchsicht ohne System",
+     "Nicht organisiert"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "Erst rein, erst raus: neue Ware nach hinten, alte nach vorn. Das Datum gehört groß auf die Front, nicht klein auf den Boden.",
+    "old_id": "M04.B15.Q4"
+   },
+   {
+    "type": "q",
+    "id": "M04.B15.Q5",
+    "must": false,
+    "eigen": false,
+    "frage": "Welche Temperaturen herrschen im Lagerraum im Hochsommer und im tiefsten Winter (geschätzt oder gemessen)?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 1,
+    "unit": "GRAD C",
+    "scale": null,
+    "info": "Ein einfaches Min-Max-Thermometer im Lager beantwortet diese Frage für 10 Euro dauerhaft.",
+    "old_id": "M04.B15.Q5"
+   },
+   {
+    "type": "q",
+    "id": "M04.B15.Q6",
+    "must": false,
+    "eigen": false,
+    "frage": "Gibt es eine Bestandsliste (Papier oder digital), die den aktuellen Lagerstand zeigt?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Ja, aktuell gepflegt",
+     "Ja, aber veraltet",
+     "Nein"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M04.B15.Q6"
+   },
+   {
+    "type": "tab",
+    "id": "M04.B16.Q1",
+    "must": false,
+    "frage": "Ihre Lagerräume am Hauptstandort: bitte je Raum eine Zeile.",
+    "hints": [
+     "Länge mal Breite messen, nicht schätzen. Bei Dachschrägen nur die Fläche, auf der Sie aufrecht stehen können.",
+     "Eine Anschrift brauchen wir nicht."
+    ],
+    "info": "Wie viel Vorrat sinnvoll ist, entscheidet nicht der Wunsch, sondern die Fläche, die Temperatur und die Frage, ob Sie im Ernstfall an den Bestand herankommen.",
+    "spalten": [
+     {
+      "key": "raum",
+      "label": "Raum",
+      "typ": "option",
+      "options": [
+       "Keller",
+       "Speisekammer",
+       "Abstellraum",
+       "Garage",
+       "Dachboden",
+       "Gartenhaus oder Nebengebäude",
+       "Sonstiger Raum"
+      ]
+     },
+     {
+      "key": "flaeche",
+      "label": "Fläche",
+      "typ": "zahl",
+      "unit": "M²"
+     },
+     {
+      "key": "stapelhoehe",
+      "label": "Nutzbare Stapelhöhe",
+      "typ": "zahl",
+      "unit": "METER"
+     },
+     {
+      "key": "t_sommer",
+      "label": "Temperatur Sommer",
+      "typ": "zahl",
+      "unit": "GRAD C"
+     },
+     {
+      "key": "t_winter",
+      "label": "Temperatur Winter",
+      "typ": "zahl",
+      "unit": "GRAD C"
+     },
+     {
+      "key": "zustand",
+      "label": "Zustand",
+      "typ": "option",
+      "options": [
+       "trocken",
+       "zeitweise feucht",
+       "feucht oder Schimmel",
+       "weiß nicht"
+      ]
+     }
+    ],
+    "zeilen_min": 0,
+    "zeilen_max": 12,
+    "old_id": "M04.B16.Q1",
+    "vorlagen": [
+     "Keller",
+     "Speisekammer"
+    ]
+   },
+   {
+    "type": "q",
+    "id": "M04.B16.Q2",
+    "must": false,
+    "eigen": false,
+    "frage": "Liegt einer Ihrer Lagerräume unter Geländeniveau, und stand dort schon einmal Wasser?",
+    "hints": [
+     "Auch geringe Mengen zählen, etwa bei Starkregen, Rückstau oder Leitungsschaden."
+    ],
+    "eigen_typ": "",
+    "options": [
+     "Kein Lagerraum unter Geländeniveau",
+     "Unter Geländeniveau, aber noch nie Wasser",
+     "Einmal Wasser",
+     "Wiederholt Wasser"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M04.B16.Q2"
+   },
+   {
+    "type": "q",
+    "id": "M04.B16.Q3",
+    "must": true,
+    "eigen": false,
+    "frage": "Wie kommen Sie an Ihre Lagerräume heran, wenn kein Strom da ist?",
+    "hints": [
+     "Elektrische Tore, Rolltore, Aufzüge und unbeleuchtete Kellertreppen sind der häufigste Grund, warum vorhandener Vorrat unerreichbar ist."
+    ],
+    "eigen_typ": "",
+    "options": [
+     "Alle Räume mechanisch erreichbar, Licht per Lampe",
+     "Teilweise, ein Raum nur über elektrisches Tor oder Aufzug",
+     "Hauptlager nur elektrisch erreichbar"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M04.B16.Q3"
+   },
+   {
+    "type": "q",
+    "id": "M04.B16.Q4",
+    "must": false,
+    "eigen": false,
+    "frage": "Sind Ihre Lagerräume abschließbar, und wer hat einen Schlüssel?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Abschließbar, Schlüssel bei mindestens zwei Vertrauenspersonen",
+     "Abschließbar, nur ein Schlüssel",
+     "Nicht abschließbar"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M04.B16.Q4"
+   },
+   {
+    "type": "tab",
+    "id": "M04.B17.Q1",
+    "must": false,
+    "frage": "Welche Mengen der folgenden Grundnahrungsmittel haben Sie heute im Haus?",
+    "hints": [
+     "Bitte einmal körperlich durch die Räume gehen und zählen, statt aus dem Kopf zu antworten. Fast alle Menschen überschätzen ihren Vorrat um den Faktor zwei bis drei.",
+     "Konserven in Stück, alles andere in Kilogramm."
+    ],
+    "info": "",
+    "spalten": [
+     {
+      "key": "warengruppe",
+      "label": "Warengruppe",
+      "typ": "text"
+     },
+     {
+      "key": "menge",
+      "label": "Menge",
+      "typ": "zahl",
+      "unit_je_zeile": {
+       "Getreide und Nudeln": "KG",
+       "Reis": "KG",
+       "Hülsenfrüchte": "KG",
+       "Kartoffeln": "KG",
+       "Konserven": "STÜCK",
+       "Öl und Fett": "KG",
+       "Zucker und Salz": "KG",
+       "Milchpulver": "KG",
+       "Honig": "KG"
+      }
+     },
+     {
+      "key": "hinweis",
+      "label": "Bemerkung (Sorte, Lagerort)",
+      "typ": "text"
+     }
+    ],
+    "zeilen_min": 9,
+    "zeilen_max": 9,
+    "old_id": "M04.B17.Q1",
+    "zeilen_fest": [
+     "Getreide und Nudeln",
+     "Reis",
+     "Hülsenfrüchte",
+     "Kartoffeln",
+     "Konserven",
+     "Öl und Fett",
+     "Zucker und Salz",
+     "Milchpulver",
+     "Honig"
+    ]
+   },
+   {
+    "type": "q",
+    "id": "M04.B17.Q2",
+    "must": false,
+    "eigen": false,
+    "frage": "Wie viel Prozent Ihres Vorrats läuft innerhalb der nächsten zwölf Monate ab?",
+    "hints": [
+     "Ungefährer Anteil genügt."
+    ],
+    "eigen_typ": "",
+    "options": [
+     "0 bis 10 Prozent",
+     "10 bis 25 Prozent",
+     "25 bis 50 Prozent",
+     "Über 50 Prozent",
+     "Weiß nicht"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M04.B17.Q2"
+   },
+   {
+    "type": "q",
+    "id": "M04.B17.Q3",
+    "must": false,
+    "eigen": false,
+    "frage": "Wie viele Stunden hält Ihre Tiefkühltruhe geschlossen ohne Strom die Kälte?",
+    "hints": [
+     "Herstellerangabe oder eigener Test. Eine volle Truhe hält länger als eine halbleere."
+    ],
+    "eigen_typ": "",
+    "options": [
+     "Unter 12 Stunden",
+     "12 bis 24 Stunden",
+     "24 bis 48 Stunden",
+     "Über 48 Stunden",
+     "Weiß nicht",
+     "Kein Tiefkühlgerät"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M04.B17.Q3"
+   },
+   {
+    "type": "q",
+    "id": "M04.B17.Q4",
+    "must": false,
+    "eigen": false,
+    "frage": "Wie viele Kartuschen oder Brennstoffgebinde für Ihre stromlosen Kochgeräte haben Sie, und passen sie zu allen Geräten?",
+    "hints": [
+     "Die Kocher selbst bitte in der Technikliste M05.B9.Q1 eintragen."
+    ],
+    "eigen_typ": "",
+    "options": [
+     "Über 10 Kartuschen, alle Geräte nutzen dasselbe System",
+     "5 bis 10 Kartuschen, dasselbe System",
+     "Unter 5 Kartuschen",
+     "Verschiedene Systeme, nicht untereinander austauschbar",
+     "Kein Kartuschengerät vorhanden"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M04.B17.Q4"
+   }
+  ],
+  "nq": 70
+ },
+ {
+  "badge": "M5",
+  "count_label": "12 offene Fragen",
+  "title": "ENERGIE & WÄRME",
+  "intro": "Strom und Wärme fallen im Krisenfall oft zuerst aus.",
+  "items": [
+   {
+    "type": "tab",
+    "id": "M05.B9.Q1",
+    "must": false,
+    "frage": "Ihr Technik-Inventar: bitte je Gerät eine Zeile.",
+    "hints": [
+     "Geräte mit Leistung und Alter nennen, nicht nur mit Namen. Ein Aggregat ohne bekannte Leistung ist für die Planung dasselbe wie kein Aggregat.",
+     "Bei Wer kann es bedienen bitte mindestens zwei Namen. Steht dort nur einer, ist das Gerät ein Einzelrisiko."
+    ],
+    "info": "Aus dieser Liste rechnen wir Reichweiten, Ersatzebenen und Übungsstand je Gerät. Powerstations, Powerbanks, Filter und Kühlboxen bitte einzeln eintragen.",
+    "spalten": [
+     {
+      "key": "geraet",
+      "label": "Gerät",
+      "typ": "option",
+      "options": [
+       "Notstromaggregat",
+       "Powerstation",
+       "Powerbank",
+       "Solarpanel",
+       "Batteriespeicher (Haus)",
+       "USV",
+       "Wasserfilter",
+       "Handpumpe oder Tauchpumpe",
+       "Funkgerät",
+       "Radio",
+       "Kocher",
+       "Ofen oder Kamin",
+       "Kühlbox 12 V",
+       "Kettensäge",
+       "Sonstiges"
+      ]
+     },
+     {
+      "key": "bezeichnung",
+      "label": "Marke und Modell",
+      "typ": "text"
+     },
+     {
+      "key": "anzahl",
+      "label": "Anzahl",
+      "typ": "zahl"
+     },
+     {
+      "key": "kapazitaet",
+      "label": "Kapazität",
+      "typ": "zahl",
+      "unit_je_zeile": {
+       "Notstromaggregat": "WATT",
+       "Powerstation": "WH",
+       "Powerbank": "WH",
+       "Solarpanel": "WP",
+       "Batteriespeicher (Haus)": "KWH",
+       "USV": "WH",
+       "Wasserfilter": "LITER",
+       "Handpumpe oder Tauchpumpe": "L/MIN",
+       "Funkgerät": "KM",
+       "Ofen oder Kamin": "KW",
+       "Kühlbox 12 V": "LITER"
+      },
+      "hint": "Aggregat Watt, Powerstation Wh, Solarpanel Wp, Speicher kWh, Filter Liter"
+     },
+     {
+      "key": "leistung",
+      "label": "Dauerleistung oder Verbrauch",
+      "typ": "zahl",
+      "unit": "WATT"
+     },
+     {
+      "key": "baujahr",
+      "label": "Baujahr",
+      "typ": "zahl",
+      "unit": "JAHR"
+     },
+     {
+      "key": "test",
+      "label": "Zuletzt getestet",
+      "typ": "option",
+      "options": [
+       "unter 3 Monate",
+       "3 bis 12 Monate",
+       "1 bis 3 Jahre",
+       "länger oder nie"
+      ]
+     },
+     {
+      "key": "bediener",
+      "label": "Wer kann es bedienen",
+      "typ": "text",
+      "hint": "mindestens zwei Namen"
+     },
+     {
+      "key": "anleitung",
+      "label": "Anleitung",
+      "typ": "option",
+      "options": [
+       "gedruckt vorhanden",
+       "nur digital",
+       "keine"
+      ]
+     }
+    ],
+    "zeilen_min": 0,
+    "zeilen_max": 20,
+    "old_id": "M05.B9.Q1",
+    "vorlagen": [
+     "Notstromaggregat",
+     "Powerstation",
+     "Wasserfilter"
+    ]
+   },
+   {
+    "type": "q",
+    "id": "M05.B9.Q2",
+    "must": true,
+    "eigen": false,
+    "frage": "Wann lief Ihr Notstromaggregat zuletzt unter Last, und wie lange?",
+    "hints": [
+     "Ein Gerät, das seit Jahren steht, startet im Ernstfall häufig nicht."
+    ],
+    "eigen_typ": "",
+    "options": [
+     "Unter 3 Monaten, mit angeschlossenen Verbrauchern",
+     "3 bis 12 Monate",
+     "1 bis 3 Jahre",
+     "Länger oder nie",
+     "Nur im Leerlauf gestartet, nie unter Last",
+     "Kein Aggregat"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M05.B9.Q2"
+   },
+   {
+    "type": "q",
+    "id": "M05.B9.Q3",
+    "must": true,
+    "eigen": false,
+    "frage": "Läuft Ihre Heizung ohne Netzstrom weiter?",
+    "hints": [
+     "Auch Öl-, Gas- und Pelletheizungen brauchen Strom für Pumpe, Steuerung und Zündung. Das ist der häufigste Denkfehler in diesem Bereich."
+    ],
+    "eigen_typ": "",
+    "options": [
+     "Ja, läuft ohne Strom (Holzofen, Schwerkraftheizung)",
+     "Nein, aber Einspeisung über Notstrom ist vorbereitet und getestet",
+     "Einspeisung vorbereitet, aber nie getestet",
+     "Nein, die Heizung fällt aus",
+     "Weiß nicht"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M05.B9.Q3"
+   },
+   {
+    "type": "q",
+    "id": "M05.B9.Q4",
+    "must": false,
+    "eigen": false,
+    "frage": "Passt Ihr Solarpanel ohne Adapter an Ihren Speicher, und haben Sie es im Winter getestet?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Ja, Stecker passt, im Sommer und im Winter getestet",
+     "Stecker passt, nur im Sommer getestet",
+     "Stecker passt, nie getestet",
+     "Adapter fehlt oder unklar",
+     "Kein Solarpanel"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M05.B9.Q4"
+   },
+   {
+    "type": "q",
+    "id": "M05.B9.Q5",
+    "must": false,
+    "eigen": false,
+    "frage": "Was trifft auf die Wartung Ihres Notstromaggregats zu?",
+    "hints": [
+     "Mehrfachauswahl möglich"
+    ],
+    "eigen_typ": "",
+    "options": [
+     "Betriebsstunden sind bekannt (Zähler oder Betriebsbuch)",
+     "Ölwechsel nach Herstellerplan",
+     "Ersatzzündkerze, Öl und Luftfilter vorrätig",
+     "Startet ohne Netzstrom (Handstart oder geladene Starterbatterie)",
+     "Nichts davon",
+     "Kein Aggregat"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M05.B9.Q5",
+    "multi": true
+   },
+   {
+    "type": "q",
+    "id": "M05.B9.Q6",
+    "must": false,
+    "eigen": false,
+    "frage": "Wie speisen Sie Notstrom in das Haus ein?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Netzumschalter oder Notstromsteckdose, vom Elektriker installiert",
+     "Verlängerungskabel direkt an die Verbraucher",
+     "Noch keine Lösung",
+     "Weiß nicht"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "Einspeisung über eine normale Steckdose ist verboten und lebensgefährlich für Monteure am Netz. Zulässig sind nur Netzumschalter oder Notstromsteckdose vom Elektriker.",
+    "old_id": "M05.B9.Q6"
+   },
+   {
+    "type": "q",
+    "id": "M05.B9.Q7",
+    "must": false,
+    "eigen": false,
+    "frage": "Welche Kraftstoffkanister besitzen Sie?",
+    "hints": [
+     "Mehrfachauswahl möglich",
+     "Menge und Alter des Kraftstoffs erfassen wir in Block 5.5."
+    ],
+    "eigen_typ": "",
+    "options": [
+     "Metallkanister mit Zulassung",
+     "Kunststoffkanister mit UN-Zulassung",
+     "Behälter ohne Zulassung",
+     "Kraftstoffstabilisator vorrätig",
+     "Keine Kanister"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M05.B9.Q7",
+    "multi": true
+   },
+   {
+    "type": "q",
+    "id": "M05.B9.Q8",
+    "must": false,
+    "eigen": true,
+    "frage": "Wie viel Watt ziehen Heizungssteuerung und Umwälzpumpe zusammen?",
+    "hints": [
+     "Typenschild der Pumpe oder Messsteckdose. Meist 30 bis 150 Watt. Bei Unsicherheit 150 eintragen, bei Heizung ohne Strombedarf 0."
+    ],
+    "eigen_typ": "Prüfen Messen",
+    "options": [],
+    "textlines": 1,
+    "unit": "WATT",
+    "scale": null,
+    "info": "",
+    "old_id": "M05.B9.Q8"
+   },
+   {
+    "type": "q",
+    "id": "M05.B9.Q9",
+    "must": false,
+    "eigen": false,
+    "frage": "Ist Ihr Ofen oder Kamin vom Schornsteinfeger abgenommen, und für wie lange reicht der Brennstoff?",
+    "hints": [
+     "Leistung in kW bitte in der Technikliste M05.B9.Q1."
+    ],
+    "eigen_typ": "",
+    "options": [
+     "Abgenommen, Brennstoff für eine ganze Heizsaison",
+     "Abgenommen, Brennstoff für einige Wochen",
+     "Abgenommen, kaum Brennstoff",
+     "Nicht abgenommen oder unklar",
+     "Kein Ofen"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M05.B9.Q9"
+   },
+   {
+    "type": "q",
+    "id": "M05.B9.Q10",
+    "must": false,
+    "eigen": false,
+    "frage": "Wie sind Rauch- und CO-Melder in Ihrem Objekt verteilt?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Rauch- und CO-Melder auf jeder Etage, Batterien unter einem Jahr alt",
+     "Rauchmelder auf jeder Etage, kein CO-Melder",
+     "Nur einzelne Melder",
+     "Keine Melder",
+     "Weiß nicht"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "CO-Melder sind Pflicht, sobald Sie mit Aggregat, Gaskocher oder Notheizung in Innenräumen arbeiten.",
+    "old_id": "M05.B9.Q10"
+   },
+   {
+    "type": "q",
+    "id": "M05.B9.Q11",
+    "must": false,
+    "eigen": true,
+    "frage": "Wie viele funktionierende Stirnlampen gibt es im Haushalt?",
+    "hints": [
+     "Nur Lampen zählen, die heute mit geladenem Akku oder frischen Batterien leuchten."
+    ],
+    "eigen_typ": "Zählen",
+    "options": [],
+    "textlines": 1,
+    "unit": "STÜCK",
+    "scale": null,
+    "info": "",
+    "old_id": "M05.B9.Q11"
+   },
+   {
+    "type": "q",
+    "id": "M05.B9.Q12",
+    "must": false,
+    "eigen": false,
+    "frage": "Wie einheitlich ist Ihr Akku- und Batteriesystem, und können Sie ohne Netz laden?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Ein Akkusystem für Lampen, Funk und Werkzeug, Laden über 12 V oder Solar möglich",
+     "Mehrere Systeme, aber Laden ohne Netz möglich",
+     "Laden nur am Netz",
+     "Nie darüber nachgedacht"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M05.B9.Q12"
+   }
+  ],
+  "nq": 50
+ },
+ {
+  "badge": "M6",
+  "count_label": "3 offene Fragen",
+  "title": "GESUNDHEIT & MEDIZIN",
+  "intro": "Im Ernstfall ist der Arzt nicht sofort erreichbar — Kompetenz entscheidet.",
+  "items": [
+   {
+    "type": "q",
+    "id": "M06.B10.Q1",
+    "must": false,
+    "eigen": false,
+    "frage": "Haben Sie Jodtabletten im Haus, und für wen?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Ja, für alle Personen unter 45 Jahren und Schwangere",
+     "Ja, aber nicht für alle",
+     "Nein",
+     "Nicht zutreffend, keine Anlage im Umkreis"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "Reine Bestandsfrage. Jodtabletten werden im Ereignisfall von den Behörden verteilt und nur auf Anweisung eingenommen. Wir geben keine Kaufempfehlung.",
+    "old_id": "M06.B10.Q1"
+   },
+   {
+    "type": "q",
+    "id": "M06.B10.Q2",
+    "must": false,
+    "eigen": false,
+    "frage": "Für wie viele Wochen reichen Hygieneartikel, Windeln, Monatshygiene, Seife und Waschmittel?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 1,
+    "unit": "WOCHEN",
+    "scale": null,
+    "info": "",
+    "old_id": "M06.B10.Q2"
+   },
+   {
+    "type": "q",
+    "id": "M06.B10.Q3",
+    "must": false,
+    "eigen": false,
+    "frage": "Welche medizinischen Geräte im Haushalt brauchen Strom, und wie viel?",
+    "hints": [
+     "Je Gerät: Bezeichnung, Watt, Stunden je Tag. Zum Beispiel CPAP, Sauerstoffkonzentrator, Insulinpumpe, Ladegerät Hörgerät. Ohne Namen der Person. Keine Geräte: bitte keine eintragen."
+    ],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 3,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M06.B10.Q3"
+   }
+  ],
+  "nq": 50
+ },
+ {
+  "badge": "M7",
+  "count_label": "2 offene Fragen",
+  "title": "KOMMUNIKATION & INFORMATION",
+  "intro": "Information ist im Krisenfall Macht und Gefahr zugleich.",
+  "items": [
+   {
+    "type": "q",
+    "id": "M07.B7.Q2",
+    "must": false,
+    "eigen": false,
+    "frage": "Was trifft auf Ihre Funkgeräte zu?",
+    "hints": [
+     "Mehrfachauswahl möglich",
+     "Anzahl und Modell bitte in der Technikliste M05.B9.Q1."
+    ],
+    "eigen_typ": "",
+    "options": [
+     "Mindestens zwei Geräte einsatzbereit",
+     "Akkus wechselbar oder Betrieb mit Standardbatterien",
+     "Ladeweg ohne Netz (12 V oder Solar)",
+     "Externe Antenne oder Antennenverlängerung",
+     "Nichts davon",
+     "Keine Funkgeräte"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M07.B7.Q2",
+    "multi": true
+   },
+   {
+    "type": "q",
+    "id": "M07.B7.Q3",
+    "must": false,
+    "eigen": false,
+    "frage": "Was trifft auf Ihr Radio zu?",
+    "hints": [
+     "Mehrfachauswahl möglich"
+    ],
+    "eigen_typ": "",
+    "options": [
+     "Kurzwellenempfang",
+     "Kurbel- oder Solarbetrieb",
+     "Batteriebetrieb mit Ersatzbatterien",
+     "In den letzten zwölf Monaten getestet",
+     "Nichts davon",
+     "Kein Radio"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M07.B7.Q3",
+    "multi": true
+   }
+  ],
+  "nq": 38
+ },
+ {
+  "badge": "M8",
+  "count_label": "35 offene Fragen",
+  "title": "MOBILITÄT & BEWEGUNG",
+  "intro": "Manchmal muss man weg — Fahrzeug, Routen, BOB und Trigger-Entscheidungen.",
+  "items": [
+   {
+    "type": "q",
+    "id": "M08.B10.Q1",
+    "must": false,
+    "eigen": false,
+    "frage": "Verfügen Sie neben dem Hauptwohnsitz über ein zweites Objekt, das als Rückzugsort dienen kann (Ferienhaus, Elternhaus, Freunde, Grundstück)?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Ja, im eigenen Eigentum",
+     "Ja, verlässlich nutzbar (Familie, Freunde)",
+     "In Planung oder Kauf",
+     "Nein"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M08.B10.Q1"
+   },
+   {
+    "type": "q",
+    "id": "M08.B10.Q2",
+    "must": false,
+    "eigen": false,
+    "frage": "Wie weit ist das zweite Objekt vom Hauptwohnsitz entfernt (Straßenkilometer)?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 1,
+    "unit": "KM",
+    "scale": null,
+    "info": "Falls kein zweites Objekt vorhanden ist, bitte leer lassen.",
+    "old_id": "M08.B10.Q2"
+   },
+   {
+    "type": "q",
+    "id": "M08.B10.Q3",
+    "must": false,
+    "eigen": false,
+    "frage": "Wie viele unterschiedliche Routen dorthin sind Sie tatsächlich schon gefahren oder gegangen?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Keine",
+     "Eine",
+     "Zwei",
+     "Drei oder mehr",
+     "Nicht zutreffend"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M08.B10.Q3"
+   },
+   {
+    "type": "q",
+    "id": "M08.B10.Q4",
+    "must": false,
+    "eigen": false,
+    "frage": "Wie halten die Personen an beiden Standorten Kontakt, wenn Mobilfunk und Internet ausfallen?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Funk mit vereinbarten Zeiten und Frequenzen",
+     "Vereinbarte Treffpunkte und Zeiten ohne Funk",
+     "Boten oder Nachbarn",
+     "Keine Regelung",
+     "Nicht zutreffend"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M08.B10.Q4"
+   },
+   {
+    "type": "q",
+    "id": "M08.B10.Q5",
+    "must": false,
+    "eigen": false,
+    "frage": "Wie ist der Hauptwohnsitz beim Verlassen gesichert (Einbruch, Frost, Wasser und Strom abstellen, Nachbarn informiert)?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Vollständig geregelt, Ablauf schriftlich",
+     "Teilweise geregelt",
+     "Nicht geregelt",
+     "Nicht zutreffend"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M08.B10.Q5"
+   },
+   {
+    "type": "q",
+    "id": "M08.B10.Q6",
+    "must": false,
+    "eigen": false,
+    "frage": "Welche konkreten Auslöser würden Sie zum Wechsel an den zweiten Standort bewegen?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 2,
+    "unit": "",
+    "scale": null,
+    "info": "Je konkreter, desto besser. Beispiel: \"Stromausfall länger als 48 Stunden im Winter\" statt \"wenn es ernst wird\".",
+    "old_id": "M08.B10.Q6"
+   },
+   {
+    "type": "q",
+    "id": "M08.B10.Q7",
+    "must": false,
+    "eigen": false,
+    "frage": "Ist das zweite Objekt eigenständig versorgt (Wasser, Energie, Vorrat) oder muss alles mitgebracht werden?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Eigenständig versorgt für Wochen",
+     "Teilweise, Grundausstattung vor Ort",
+     "Alles muss mitgebracht werden",
+     "Nicht zutreffend"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M08.B10.Q7"
+   },
+   {
+    "type": "tab",
+    "id": "M08.B11.Q1",
+    "must": false,
+    "frage": "Räume am zweiten Objekt, die Sie zur Lagerung nutzen könnten: bitte je Raum eine Zeile.",
+    "hints": [
+     "Raum für Raum in Quadratmetern, wie beim Hauptstandort.",
+     "Kein zweites Objekt: Tabelle leer lassen."
+    ],
+    "info": "",
+    "spalten": [
+     {
+      "key": "raum",
+      "label": "Raum",
+      "typ": "option",
+      "options": [
+       "Keller",
+       "Speisekammer",
+       "Abstellraum",
+       "Garage",
+       "Dachboden",
+       "Gartenhaus oder Nebengebäude",
+       "Sonstiger Raum"
+      ]
+     },
+     {
+      "key": "flaeche",
+      "label": "Fläche",
+      "typ": "zahl",
+      "unit": "M²"
+     },
+     {
+      "key": "t_winter",
+      "label": "Temperatur Winter",
+      "typ": "zahl",
+      "unit": "GRAD C"
+     },
+     {
+      "key": "zustand",
+      "label": "Zustand",
+      "typ": "option",
+      "options": [
+       "trocken",
+       "zeitweise feucht",
+       "feucht oder Schimmel",
+       "weiß nicht"
+      ]
+     }
+    ],
+    "zeilen_min": 0,
+    "zeilen_max": 10,
+    "old_id": "M08.B11.Q1"
+   },
+   {
+    "type": "q",
+    "id": "M08.B11.Q2",
+    "must": false,
+    "eigen": false,
+    "frage": "Gehört Ihnen das zweite Objekt nicht: Was dürfen Sie dort entscheiden?",
+    "hints": [
+     "Wir müssen wissen, was Sie dort tatsächlich entscheiden können und was Sie nur vorschlagen können."
+    ],
+    "eigen_typ": "",
+    "options": [
+     "Eigentum, ich entscheide",
+     "Absprache getroffen, Lagerplatz ist zugesagt",
+     "Nur Vorschlagsrecht",
+     "Ungeklärt",
+     "Nicht zutreffend"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M08.B11.Q2"
+   },
+   {
+    "type": "q",
+    "id": "M08.B11.Q3",
+    "must": false,
+    "eigen": false,
+    "frage": "Was lagert am zweiten Objekt heute bereits?",
+    "hints": [
+     "Wenn dort nichts liegt, ist das eine wichtige Information und kein Versäumnis."
+    ],
+    "eigen_typ": "",
+    "options": [
+     "Nichts",
+     "Grundausstattung (Decken, Werkzeug, einige Konserven)",
+     "Vorrat für etwa eine Woche",
+     "Vollausstattung für mehrere Wochen",
+     "Nicht zutreffend"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M08.B11.Q3"
+   },
+   {
+    "type": "q",
+    "id": "M08.B11.Q4",
+    "must": false,
+    "eigen": false,
+    "frage": "Ist das zweite Objekt beheizbar, und womit?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Stromunabhängig (Ofen, Kamin) und Brennstoff vor Ort",
+     "Stromunabhängig, aber kein Brennstoff vor Ort",
+     "Nur stromabhängige Heizung",
+     "Nicht beheizbar",
+     "Nicht zutreffend"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M08.B11.Q4"
+   },
+   {
+    "type": "q",
+    "id": "M08.B11.Q5",
+    "must": false,
+    "eigen": false,
+    "frage": "Welche Wasserversorgung gibt es am zweiten Objekt?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Brunnen oder Quelle, stromlos nutzbar",
+     "Leitungswasser und Vorrat vor Ort",
+     "Nur Leitungswasser",
+     "Nichts",
+     "Nicht zutreffend"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M08.B11.Q5"
+   },
+   {
+    "type": "q",
+    "id": "M08.B11.Q6",
+    "must": false,
+    "eigen": false,
+    "frage": "Ist das zweite Objekt ganzjährig erreichbar, auch bei Schnee und Hochwasser?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Ja",
+     "Teilweise, mit Einschränkungen",
+     "Nein",
+     "Weiß nicht",
+     "Nicht zutreffend"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M08.B11.Q6"
+   },
+   {
+    "type": "q",
+    "id": "M08.B11.Q7",
+    "must": false,
+    "eigen": false,
+    "frage": "Welcher Ihrer Standorte ist aus Ihrer Sicht der bessere Ausgangspunkt in einer Krise, und warum?",
+    "hints": [
+     "Bitte auch nennen, was gegen den jeweils anderen spricht. Wir prüfen Ihre Einschätzung anschließend gegen die Standortdaten, aber Ihre Sicht ist der Ausgangspunkt."
+    ],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 4,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M08.B11.Q7"
+   },
+   {
+    "type": "q",
+    "id": "M08.B11.Q8",
+    "must": false,
+    "eigen": false,
+    "frage": "Welche Rolle hat der andere Standort, wenn Sie sich für einen entschieden haben?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Zweitlager mit eigenem Bestand",
+     "Anlaufstelle oder Rückfallebene ohne Bestand",
+     "Keine Rolle in der Planung",
+     "Nie überlegt",
+     "Nicht zutreffend"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M08.B11.Q8"
+   },
+   {
+    "type": "q",
+    "id": "M08.B11.Q9",
+    "must": false,
+    "eigen": false,
+    "frage": "Wer aus Ihrem Haushalt hält sich üblicherweise wann an welchem Standort auf?",
+    "hints": [
+     "Werktags, abends, am Wochenende. Daraus ergibt sich, wo Sie im Ernstfall wahrscheinlich verteilt sind. Ohne Namen, eine Nummerierung genügt."
+    ],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 4,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M08.B11.Q9"
+   },
+   {
+    "type": "q",
+    "id": "M08.B11.Q10",
+    "must": false,
+    "eigen": false,
+    "frage": "Wie viele Tage könnten Sie am zweiten Objekt mit dem heutigen Bestand dort bleiben?",
+    "hints": [
+     "Wenn dort nichts liegt, ist die Antwort 0. Auch das ist ein verwertbarer Wert."
+    ],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 1,
+    "unit": "TAGE",
+    "scale": null,
+    "info": "",
+    "old_id": "M08.B11.Q10"
+   },
+   {
+    "type": "tab",
+    "id": "M08.B12.Q1",
+    "must": false,
+    "frage": "Ihre Fahrzeuge: bitte je Fahrzeug eine Zeile, Zahlen aus dem Fahrzeugschein.",
+    "hints": [
+     "Wir brauchen Zahlen aus dem Fahrzeugschein, nicht aus der Erinnerung. Bitte nehmen Sie die Papiere zur Hand.",
+     "Nicht genutzte Zeilen bleiben leer."
+    ],
+    "info": "Die Differenz aus zulässigem Gesamtgewicht und Leermasse ist Ihre Zuladung, einschließlich der Personen. Daraus rechnen wir, wie viel von Ihrem Vorrat im Ernstfall tatsächlich mitkommt.",
+    "spalten": [
+     {
+      "key": "fahrzeug",
+      "label": "Fahrzeug",
+      "typ": "text"
+     },
+     {
+      "key": "modell",
+      "label": "Modell und Baujahr",
+      "typ": "text"
+     },
+     {
+      "key": "antrieb",
+      "label": "Antrieb",
+      "typ": "option",
+      "options": [
+       "Benzin",
+       "Diesel",
+       "Hybrid",
+       "Elektro",
+       "Gas (LPG oder CNG)",
+       "Kein Fahrzeug"
+      ]
+     },
+     {
+      "key": "zgg",
+      "label": "Zulässiges Gesamtgewicht",
+      "typ": "zahl",
+      "unit": "KG",
+      "hint": "Fahrzeugschein Feld F.2"
+     },
+     {
+      "key": "leermasse",
+      "label": "Leermasse",
+      "typ": "zahl",
+      "unit": "KG",
+      "hint": "Fahrzeugschein Feld G"
+     },
+     {
+      "key": "anhaengelast",
+      "label": "Anhängelast gebremst",
+      "typ": "zahl",
+      "unit": "KG",
+      "hint": "Fahrzeugschein Feld O.1"
+     },
+     {
+      "key": "laderaum",
+      "label": "Laderaum bei umgeklappter Rückbank",
+      "typ": "zahl",
+      "unit": "LITER"
+     },
+     {
+      "key": "tank",
+      "label": "Tank in Litern oder Akku in kWh",
+      "typ": "zahl"
+     },
+     {
+      "key": "sitzplaetze",
+      "label": "Sitzplätze",
+      "typ": "zahl"
+     },
+     {
+      "key": "bereifung",
+      "label": "Bereifung",
+      "typ": "option",
+      "options": [
+       "Ganzjahresreifen",
+       "Sommerreifen",
+       "Winterreifen",
+       "Geländereifen"
+      ]
+     },
+     {
+      "key": "allrad",
+      "label": "Allrad",
+      "typ": "option",
+      "options": [
+       "Ja",
+       "Nein"
+      ]
+     },
+     {
+      "key": "test",
+      "label": "Zuletzt gefahren und geprüft",
+      "typ": "option",
+      "options": [
+       "unter 3 Monate",
+       "3 bis 12 Monate",
+       "1 bis 3 Jahre",
+       "länger oder nie"
+      ]
+     },
+     {
+      "key": "bediener",
+      "label": "Wer darf es fahren",
+      "typ": "text",
+      "hint": "mindestens zwei Namen"
+     }
+    ],
+    "zeilen_min": 3,
+    "zeilen_max": 3,
+    "old_id": "M08.B12.Q1",
+    "zeilen_fest": [
+     "Fahrzeug 1",
+     "Fahrzeug 2",
+     "Fahrzeug 3"
+    ]
+   },
+   {
+    "type": "tab",
+    "id": "M08.B12.Q2",
+    "must": false,
+    "frage": "Ihre Anhänger: bitte je Anhänger eine Zeile.",
+    "hints": [
+     "Standschäden an Reifen, Bremsen und Auflaufeinrichtung sind bei selten genutzten Anhängern der Regelfall.",
+     "Kein Anhänger: Tabelle leer lassen."
+    ],
+    "info": "",
+    "spalten": [
+     {
+      "key": "typ",
+      "label": "Typ",
+      "typ": "option",
+      "options": [
+       "Kastenanhänger offen",
+       "Planenanhänger",
+       "Kofferanhänger",
+       "Viehanhänger",
+       "Wohnwagen",
+       "Sonstiges"
+      ]
+     },
+     {
+      "key": "baujahr",
+      "label": "Baujahr",
+      "typ": "zahl",
+      "unit": "JAHR"
+     },
+     {
+      "key": "zgg",
+      "label": "Zulässiges Gesamtgewicht",
+      "typ": "zahl",
+      "unit": "KG"
+     },
+     {
+      "key": "leermasse",
+      "label": "Leermasse",
+      "typ": "zahl",
+      "unit": "KG"
+     },
+     {
+      "key": "laenge",
+      "label": "Innenlänge",
+      "typ": "zahl",
+      "unit": "METER"
+     },
+     {
+      "key": "breite",
+      "label": "Innenbreite",
+      "typ": "zahl",
+      "unit": "METER"
+     },
+     {
+      "key": "hoehe",
+      "label": "Innenhöhe",
+      "typ": "zahl",
+      "unit": "METER"
+     },
+     {
+      "key": "schutz",
+      "label": "Wetterschutz",
+      "typ": "option",
+      "options": [
+       "wettergeschützt und abschließbar",
+       "nur wettergeschützt",
+       "offen"
+      ]
+     },
+     {
+      "key": "test",
+      "label": "Zuletzt bewegt und geprüft",
+      "typ": "option",
+      "options": [
+       "unter 3 Monate",
+       "3 bis 12 Monate",
+       "1 bis 3 Jahre",
+       "länger oder nie"
+      ]
+     },
+     {
+      "key": "bediener",
+      "label": "Wer darf das Gespann fahren",
+      "typ": "text",
+      "hint": "mindestens zwei Namen"
+     }
+    ],
+    "zeilen_min": 0,
+    "zeilen_max": 3,
+    "old_id": "M08.B12.Q2"
+   },
+   {
+    "type": "q",
+    "id": "M08.B12.Q3",
+    "must": false,
+    "eigen": false,
+    "frage": "Wer darf welches Gespann fahren, mit welcher Führerscheinklasse?",
+    "hints": [
+     "Ohne Namen, eine Nummerierung genügt. Klasse B reicht für viele Kombinationen nicht aus: Anhänger über 750 kg und Gespann über 3,5 t brauchen B96 oder BE."
+    ],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 3,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M08.B12.Q3"
+   },
+   {
+    "type": "q",
+    "id": "M08.B12.Q4",
+    "must": false,
+    "eigen": false,
+    "frage": "Wer hat Erfahrung mit dem Rückwärtsfahren eines Gespanns?",
+    "hints": [
+     "Klingt nebensächlich, entscheidet aber im Dunkeln auf einem engen Hof über eine halbe Stunde."
+    ],
+    "eigen_typ": "",
+    "options": [
+     "Mindestens zwei Personen, geübt",
+     "Eine Person",
+     "Niemand",
+     "Nicht zutreffend, kein Anhänger"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M08.B12.Q4"
+   },
+   {
+    "type": "q",
+    "id": "M08.B12.Q5",
+    "must": false,
+    "eigen": false,
+    "frage": "Welche Hilfsmittel für eine geordnete Beladung haben Sie?",
+    "hints": [
+     "Mehrfachauswahl möglich"
+    ],
+    "eigen_typ": "",
+    "options": [
+     "Zurrgurte",
+     "Ladungsnetz",
+     "Stapelkisten mit Deckel",
+     "Sackkarre oder Rollwagen",
+     "Nichts davon"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M08.B12.Q5",
+    "multi": true
+   },
+   {
+    "type": "q",
+    "id": "M08.B12.Q6",
+    "must": true,
+    "eigen": false,
+    "frage": "Wie lange bräuchten Sie heute, um alle Fahrzeuge vollständig zu beladen?",
+    "hints": [
+     "Bitte ehrlich schätzen. Wir vergleichen diesen Wert mit Ihrer realistischen Vorwarnzeit aus Block 8.13."
+    ],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 1,
+    "unit": "MINUTEN",
+    "scale": null,
+    "info": "",
+    "old_id": "M08.B12.Q6"
+   },
+   {
+    "type": "q",
+    "id": "M08.B12.Q7",
+    "must": false,
+    "eigen": false,
+    "frage": "Stehen Ihre Fahrzeuge so, dass sie unabhängig voneinander und ohne Strom ausfahren können?",
+    "hints": [
+     "Zugeparkte Einfahrten und elektrische Tore sind die häufigste Verzögerung."
+    ],
+    "eigen_typ": "",
+    "options": [
+     "Ja, jederzeit und ohne Strom",
+     "Ja, aber nur über ein elektrisches Tor",
+     "Teilweise, ein Fahrzeug parkt das andere zu",
+     "Nein"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M08.B12.Q7"
+   },
+   {
+    "type": "q",
+    "id": "M08.B12.Q8",
+    "must": false,
+    "eigen": false,
+    "frage": "Welche Ausrüstung für den Aufenthalt ohne Infrastruktur haben Sie in ausreichender Zahl für alle Personen?",
+    "hints": [
+     "Mehrfachauswahl möglich",
+     "Bitte auch den Temperaturbereich der Schlafsäcke prüfen."
+    ],
+    "eigen_typ": "",
+    "options": [
+     "Schlafsäcke für alle Personen",
+     "Isomatten für alle Personen",
+     "Zelt für alle Personen",
+     "Feldbetten",
+     "Mobiler Kocher mit Brennstoff",
+     "Nichts davon"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M08.B12.Q8",
+    "multi": true
+   },
+   {
+    "type": "q",
+    "id": "M08.B12.Q9",
+    "must": false,
+    "eigen": false,
+    "frage": "Was müsste zwingend mit, wenn Sie nur eine Fahrt hätten?",
+    "hints": [
+     "In der Reihenfolge der Wichtigkeit, nicht nach Größe."
+    ],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 5,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M08.B12.Q9"
+   },
+   {
+    "type": "q",
+    "id": "M08.B12.Q10",
+    "must": false,
+    "eigen": false,
+    "frage": "Was bliebe bewusst zurück?",
+    "hints": [
+     "Diese Frage ist unangenehm und trotzdem eine der wichtigsten des Abschnitts."
+    ],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 3,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M08.B12.Q10"
+   },
+   {
+    "type": "q",
+    "id": "M08.B12.Q11",
+    "must": false,
+    "eigen": false,
+    "frage": "Wären zwei Fahrten möglich, oder ist die erste Fahrt die einzige?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Ja, zwei Fahrten sind sicher möglich",
+     "Unsicher, hängt von der Lage ab",
+     "Nur eine Fahrt"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M08.B12.Q11"
+   },
+   {
+    "type": "q",
+    "id": "M08.B12.Q12",
+    "must": false,
+    "eigen": false,
+    "frage": "Wie verteilen sich Personen und Tiere auf die Fahrzeuge, und wer fährt?",
+    "hints": [
+     "Ohne Namen, eine Nummerierung genügt. Sitzplätze bitte in der Fahrzeugtabelle."
+    ],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 3,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M08.B12.Q12"
+   },
+   {
+    "type": "q",
+    "id": "M08.B12.Q13",
+    "must": false,
+    "eigen": false,
+    "frage": "Welche Personen brauchen beim Ein- und Aussteigen, beim Tragen oder unterwegs Hilfe?",
+    "hints": [
+     "Ohne Namen, eine Nummerierung genügt. Jede Person, die begleitet werden muss, bindet einen handlungsfähigen Erwachsenen."
+    ],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 3,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M08.B12.Q13"
+   },
+   {
+    "type": "q",
+    "id": "M08.B12.Q14",
+    "must": false,
+    "eigen": false,
+    "frage": "Wie lange kann die empfindlichste Person Ihres Haushalts ohne Pause im Fahrzeug sitzen?",
+    "hints": [
+     "Toilettenbedarf, Medikamentenzeiten, Schmerzen, Unruhe. Daraus ergibt sich die realistische Etappenlänge."
+    ],
+    "eigen_typ": "",
+    "options": [
+     "Unter 1 Stunde",
+     "1 bis 2 Stunden",
+     "2 bis 4 Stunden",
+     "Über 4 Stunden"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M08.B12.Q14"
+   },
+   {
+    "type": "q",
+    "id": "M08.B12.Q15",
+    "must": false,
+    "eigen": true,
+    "frage": "Wie viele fahrbereite Fahrräder gibt es im Haushalt (Reifen, Bremsen, Licht in Ordnung)?",
+    "hints": [],
+    "eigen_typ": "Prüfen",
+    "options": [],
+    "textlines": 1,
+    "unit": "STÜCK",
+    "scale": null,
+    "info": "",
+    "old_id": "M08.B12.Q15"
+   },
+   {
+    "type": "q",
+    "id": "M08.B12.Q16",
+    "must": false,
+    "eigen": false,
+    "frage": "Welche Transporthilfen an Fahrzeug und Fahrrad sind vorhanden?",
+    "hints": [
+     "Mehrfachauswahl möglich"
+    ],
+    "eigen_typ": "",
+    "options": [
+     "Anhängerkupplung",
+     "Dachträger oder Dachbox",
+     "Fahrradanhänger oder Lastenrad",
+     "Nichts davon"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M08.B12.Q16",
+    "multi": true
+   },
+   {
+    "type": "q",
+    "id": "M08.B13.Q1",
+    "must": false,
+    "eigen": false,
+    "frage": "Gibt es ein Ereignis, bei dem Sie auf keinen Fall fahren, sondern bleiben würden?",
+    "hints": [
+     "Zum Beispiel Freisetzung von Gefahrstoffen, Unwetter, unsichere Straßen. Wenn Sie darüber noch nie nachgedacht haben, schreiben Sie das bitte so."
+    ],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 3,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M08.B13.Q1"
+   },
+   {
+    "type": "q",
+    "id": "M08.B13.Q2",
+    "must": true,
+    "eigen": false,
+    "frage": "Wie viel Vorwarnzeit halten Sie in Ihrer Lage für realistisch?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Unter 1 Stunde",
+     "1 bis 6 Stunden",
+     "6 bis 24 Stunden",
+     "Über 24 Stunden",
+     "Weiß nicht"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "Bei vielen Ereignislagen liegen zwischen der amtlichen Warnung und den ersten Räumungen nur wenige Stunden.",
+    "old_id": "M08.B13.Q2"
+   }
+  ],
+  "nq": 72
+ },
+ {
+  "badge": "M9",
+  "count_label": "6 offene Fragen",
+  "title": "NETZWERK & GEMEINSCHAFT",
+  "intro": "Kein Einzelner überlebt lange allein. Netzwerk ist strategische Ressource.",
+  "items": [
+   {
+    "type": "q",
+    "id": "M09.B9.Q1",
+    "must": false,
+    "eigen": false,
+    "frage": "Planen Sie, die Vorsorge mit weiteren Personen außerhalb Ihres Haushalts gemeinsam zu betreiben (Familie, Freunde, Nachbarn)?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Ja, feste Gruppe besteht",
+     "Ja, in Planung",
+     "Nein, nur der eigene Haushalt"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M09.B9.Q1"
+   },
+   {
+    "type": "q",
+    "id": "M09.B9.Q2",
+    "must": false,
+    "eigen": false,
+    "frage": "Wie viele Personen umfasst dieser Kreis insgesamt (mit Ihrem Haushalt)?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 1,
+    "unit": "PERSONEN",
+    "scale": null,
+    "info": "",
+    "old_id": "M09.B9.Q2"
+   },
+   {
+    "type": "q",
+    "id": "M09.B9.Q3",
+    "must": false,
+    "eigen": false,
+    "frage": "Wie viele Personen aus diesem Kreis stehen dem Thema bislang skeptisch oder ablehnend gegenüber?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 1,
+    "unit": "PERSONEN",
+    "scale": null,
+    "info": "",
+    "old_id": "M09.B9.Q3"
+   },
+   {
+    "type": "q",
+    "id": "M09.B9.Q4",
+    "must": false,
+    "eigen": false,
+    "frage": "Wie wurde der Kreis bisher angesprochen?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Einzeln im persönlichen Gespräch",
+     "In der Gruppe mit einer Gesamtpräsentation",
+     "Noch gar nicht",
+     "Nicht zutreffend"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "Erfahrung: Wer einzeln und über den persönlichen Nutzen angesprochen wird, macht eher mit als wer vor der Gruppe überzeugt werden soll.",
+    "old_id": "M09.B9.Q4"
+   },
+   {
+    "type": "q",
+    "id": "M09.B9.Q5",
+    "must": false,
+    "eigen": false,
+    "frage": "Welche Sorge oder welcher persönliche Nutzen bewegt die einzelnen Personen am ehesten (Kinder, Gesundheit, Tiere, Finanzen, Ruhe)?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 2,
+    "unit": "",
+    "scale": null,
+    "info": "Gern je Person ein Stichwort. Diese Angaben fließen in die Empfehlung, wie Sie wen ansprechen.",
+    "old_id": "M09.B9.Q5"
+   },
+   {
+    "type": "q",
+    "id": "M09.B9.Q6",
+    "must": false,
+    "eigen": false,
+    "frage": "Trägt Ihr Vorsorgekonzept auch dann, wenn nur ein Teil der Gruppe mitmacht?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Ja, der Haushalt trägt sich allein",
+     "Eingeschränkt",
+     "Nein, es hängt an der Gruppe",
+     "Nicht geprüft"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M09.B9.Q6"
+   }
+  ],
+  "nq": 36
+ },
+ {
+  "badge": "M10",
+  "count_label": "1 offene Fragen",
+  "title": "FINANZEN, VERMÖGEN & RECHT",
+  "intro": "In Krisenzeiten verändert sich der Wert von Geld. Diversifikation schützt.",
+  "items": [
+   {
+    "type": "q",
+    "id": "M10.B8.Q1",
+    "must": false,
+    "eigen": false,
+    "frage": "Sind Ihre Dokumente und Wertsachen so gelagert, dass Sie sie in fünf Minuten mitnehmen könnten?",
+    "hints": [
+     "Ausweise, Versicherungen, Grundbuch, Vollmachten, Impfpässe, Datenträger. Bitte keine Angabe zum Aufbewahrungsort."
+    ],
+    "eigen_typ": "",
+    "options": [
+     "Ja, Notfallmappe komplett, ein Griff",
+     "Mappe vorhanden, aber unvollständig",
+     "Verteilt an mehreren Orten",
+     "Nichts vorbereitet"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M10.B8.Q1"
+   }
+  ],
+  "nq": 31
+ },
+ {
+  "badge": "M11",
+  "count_label": "4 offene Fragen",
+  "title": "MENTALITÄT, FÜHRUNG & ENTSCHEIDUNG",
+  "intro": "Der Kopf ist die wichtigste Ressource. Stressstabilität liegt oft hinten.",
+  "items": [
+   {
+    "type": "q",
+    "id": "M11.B11.Q1",
+    "must": false,
+    "eigen": false,
+    "frage": "Gibt es Personen in Ihrem Haushalt oder Kreis, die eine wichtige Rolle vom Potenzial her übernehmen könnten, dafür aber noch nicht ausgebildet sind?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Ja, mehrere",
+     "Ja, eine Person",
+     "Nein, alle Rollen sind ausgebildet besetzt",
+     "Nein, es gibt keine Kandidaten",
+     "Weiß nicht"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M11.B11.Q1"
+   },
+   {
+    "type": "q",
+    "id": "M11.B11.Q2",
+    "must": false,
+    "eigen": false,
+    "frage": "Welche Qualifizierungen sind geplant oder wären aus Ihrer Sicht sinnvoll (Erste-Hilfe-Kurs, Funkprüfung, Aggregat-Einweisung, Brunnenwartung, Konservieren, Selbstschutz)?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 2,
+    "unit": "",
+    "scale": null,
+    "info": "Bitte mit Namen: wer soll was lernen.",
+    "old_id": "M11.B11.Q2"
+   },
+   {
+    "type": "q",
+    "id": "M11.B11.Q3",
+    "must": false,
+    "eigen": false,
+    "frage": "Bis wann sollen diese Kompetenzen aufgebaut sein?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Innerhalb von 3 Monaten",
+     "Innerhalb von 6 Monaten",
+     "Innerhalb von 12 Monaten",
+     "Kein Termin",
+     "Nicht zutreffend"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M11.B11.Q3"
+   },
+   {
+    "type": "q",
+    "id": "M11.B11.Q4",
+    "must": false,
+    "eigen": false,
+    "frage": "Wie viel Zeit pro Monat kann Ihr Haushalt realistisch in Übung und Ausbildung investieren?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Unter 2 Stunden",
+     "2 bis 5 Stunden",
+     "5 bis 10 Stunden",
+     "Mehr als 10 Stunden"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M11.B11.Q4"
+   }
+  ],
+  "nq": 39
+ },
+ {
+  "badge": "M12",
+  "count_label": "7 offene Fragen",
+  "title": "GESAMTSYSTEM & INTEGRATION",
+  "intro": "Wie greifen alle Module ineinander? SPOF-Suche im Gesamtsystem.",
+  "items": [
+   {
+    "type": "q",
+    "id": "M12.B9.Q1",
+    "must": false,
+    "eigen": false,
+    "frage": "Gibt es für die wichtigsten Aufgaben im Krisenfall (Wasser, Energie, Medizin, Kommunikation, Vorrat, Führung) eine feste Zuständigkeit?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Ja, alle festgelegt",
+     "Teilweise",
+     "Nein, ergibt sich im Ernstfall",
+     "Weiß nicht"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "Gemeint ist: wenn morgen der Strom ausfällt, weiß jeder ohne Absprache, was sein Teil ist.",
+    "old_id": "M12.B9.Q1"
+   },
+   {
+    "type": "q",
+    "id": "M12.B9.Q2",
+    "must": false,
+    "eigen": false,
+    "frage": "Ist für jede dieser Aufgaben eine zweite Person eingearbeitet, die einspringen kann, wenn die erste ausfällt (krank, abwesend, überfordert)?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Ja, für alle Aufgaben",
+     "Für die meisten",
+     "Für einzelne",
+     "Nein"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M12.B9.Q2"
+   },
+   {
+    "type": "q",
+    "id": "M12.B9.Q3",
+    "must": false,
+    "eigen": false,
+    "frage": "Welche Aufgaben hängen derzeit an genau einer Person? Bitte Aufgabe und Person nennen.",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 2,
+    "unit": "",
+    "scale": null,
+    "info": "Typische Antworten: \"Aggregat nur Peter\", \"Medikamente nur Anna\", \"Funk nur Opa\".",
+    "old_id": "M12.B9.Q3"
+   },
+   {
+    "type": "q",
+    "id": "M12.B9.Q4",
+    "must": false,
+    "eigen": false,
+    "frage": "Welche Fachkenntnisse sind in Ihrem Haushalt oder Kreis vorhanden, und bei wem (Medizin, Elektrik, Wasser und Sanitär, Funk, Landwirtschaft und Tiere, Sicherheit, Küche und Vorrat, Kinderbetreuung, Führung)?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 3,
+    "unit": "",
+    "scale": null,
+    "info": "Gern als Liste: Fachgebiet, Name, Stand (ausgebildet, angelernt, Interesse).",
+    "old_id": "M12.B9.Q4"
+   },
+   {
+    "type": "q",
+    "id": "M12.B9.Q5",
+    "must": false,
+    "eigen": false,
+    "frage": "Wie sind Zuständigkeiten und Vertretungen festgehalten?",
+    "hints": [],
+    "eigen_typ": "",
+    "options": [
+     "Schriftlich, für alle einsehbar",
+     "Mündlich abgesprochen",
+     "Nicht geregelt"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M12.B9.Q5"
+   },
+   {
+    "type": "q",
+    "id": "M12.B10.Q1",
+    "must": true,
+    "eigen": false,
+    "frage": "Wie viele Tage könnten Sie am Hauptstandort ohne Strom, Wasser und Zulieferung durchhalten, mit allen Personen des Haushalts?",
+    "hints": [
+     "Bitte nach dem Zählen schätzen, nicht davor. Wir vergleichen Ihre Schätzung mit der gerechneten Reichweite aus Wasser, Nahrung, Strom und Medikamenten."
+    ],
+    "eigen_typ": "",
+    "options": [],
+    "textlines": 1,
+    "unit": "TAGE",
+    "scale": null,
+    "info": "",
+    "old_id": "M12.B10.Q1"
+   },
+   {
+    "type": "q",
+    "id": "M12.B10.Q2",
+    "must": false,
+    "eigen": false,
+    "frage": "Welche Ersatzteile und Verbrauchsmaterialien haben Sie als Depot vorrätig?",
+    "hints": [
+     "Mehrfachauswahl möglich"
+    ],
+    "eigen_typ": "",
+    "options": [
+     "Sicherungen und Ersatzleuchtmittel",
+     "Dichtungen, Schlauchschellen, Rohrreparaturset",
+     "Filter, Zündkerzen und Öl für Geräte",
+     "Klebeband, Kabelbinder, Draht",
+     "Folie, Planen, Bretter",
+     "Nichts davon"
+    ],
+    "textlines": 0,
+    "unit": "",
+    "scale": null,
+    "info": "",
+    "old_id": "M12.B10.Q2",
+    "multi": true
+   }
+  ],
+  "nq": 31
+ }
+]
