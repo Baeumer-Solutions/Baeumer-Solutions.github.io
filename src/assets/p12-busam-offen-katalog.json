@@ -1159,66 +1159,10 @@
  },
  {
   "badge": "M8",
-  "count_label": "35 offene Fragen",
+  "count_label": "23 offene Fragen",
   "title": "MOBILITÄT & BEWEGUNG",
   "intro": "Manchmal muss man weg — Fahrzeug, Routen, BOB und Trigger-Entscheidungen.",
   "items": [
-   {
-    "type": "q",
-    "id": "M08.B10.Q1",
-    "must": false,
-    "eigen": false,
-    "frage": "Verfügen Sie neben dem Hauptwohnsitz über ein zweites Objekt, das als Rückzugsort dienen kann (Ferienhaus, Elternhaus, Freunde, Grundstück)?",
-    "hints": [],
-    "eigen_typ": "",
-    "options": [
-     "Ja, im eigenen Eigentum",
-     "Ja, verlässlich nutzbar (Familie, Freunde)",
-     "In Planung oder Kauf",
-     "Nein"
-    ],
-    "textlines": 0,
-    "unit": "",
-    "scale": null,
-    "info": "",
-    "old_id": "M08.B10.Q1"
-   },
-   {
-    "type": "q",
-    "id": "M08.B10.Q2",
-    "must": false,
-    "eigen": false,
-    "frage": "Wie weit ist das zweite Objekt vom Hauptwohnsitz entfernt (Straßenkilometer)?",
-    "hints": [],
-    "eigen_typ": "",
-    "options": [],
-    "textlines": 1,
-    "unit": "KM",
-    "scale": null,
-    "info": "Falls kein zweites Objekt vorhanden ist, bitte leer lassen.",
-    "old_id": "M08.B10.Q2"
-   },
-   {
-    "type": "q",
-    "id": "M08.B10.Q3",
-    "must": false,
-    "eigen": false,
-    "frage": "Wie viele unterschiedliche Routen dorthin sind Sie tatsächlich schon gefahren oder gegangen?",
-    "hints": [],
-    "eigen_typ": "",
-    "options": [
-     "Keine",
-     "Eine",
-     "Zwei",
-     "Drei oder mehr",
-     "Nicht zutreffend"
-    ],
-    "textlines": 0,
-    "unit": "",
-    "scale": null,
-    "info": "",
-    "old_id": "M08.B10.Q3"
-   },
    {
     "type": "q",
     "id": "M08.B10.Q4",
@@ -1262,182 +1206,6 @@
    },
    {
     "type": "q",
-    "id": "M08.B10.Q6",
-    "must": false,
-    "eigen": false,
-    "frage": "Welche konkreten Auslöser würden Sie zum Wechsel an den zweiten Standort bewegen?",
-    "hints": [],
-    "eigen_typ": "",
-    "options": [],
-    "textlines": 2,
-    "unit": "",
-    "scale": null,
-    "info": "Je konkreter, desto besser. Beispiel: \"Stromausfall länger als 48 Stunden im Winter\" statt \"wenn es ernst wird\".",
-    "old_id": "M08.B10.Q6"
-   },
-   {
-    "type": "q",
-    "id": "M08.B10.Q7",
-    "must": false,
-    "eigen": false,
-    "frage": "Ist das zweite Objekt eigenständig versorgt (Wasser, Energie, Vorrat) oder muss alles mitgebracht werden?",
-    "hints": [],
-    "eigen_typ": "",
-    "options": [
-     "Eigenständig versorgt für Wochen",
-     "Teilweise, Grundausstattung vor Ort",
-     "Alles muss mitgebracht werden",
-     "Nicht zutreffend"
-    ],
-    "textlines": 0,
-    "unit": "",
-    "scale": null,
-    "info": "",
-    "old_id": "M08.B10.Q7"
-   },
-   {
-    "type": "tab",
-    "id": "M08.B11.Q1",
-    "must": false,
-    "frage": "Räume am zweiten Objekt, die Sie zur Lagerung nutzen könnten: bitte je Raum eine Zeile.",
-    "hints": [
-     "Raum für Raum in Quadratmetern, wie beim Hauptstandort.",
-     "Kein zweites Objekt: Tabelle leer lassen."
-    ],
-    "info": "",
-    "spalten": [
-     {
-      "key": "raum",
-      "label": "Raum",
-      "typ": "option",
-      "options": [
-       "Keller",
-       "Speisekammer",
-       "Abstellraum",
-       "Garage",
-       "Dachboden",
-       "Gartenhaus oder Nebengebäude",
-       "Sonstiger Raum"
-      ]
-     },
-     {
-      "key": "flaeche",
-      "label": "Fläche",
-      "typ": "zahl",
-      "unit": "M²"
-     },
-     {
-      "key": "t_winter",
-      "label": "Temperatur Winter",
-      "typ": "zahl",
-      "unit": "GRAD C"
-     },
-     {
-      "key": "zustand",
-      "label": "Zustand",
-      "typ": "option",
-      "options": [
-       "trocken",
-       "zeitweise feucht",
-       "feucht oder Schimmel",
-       "weiß nicht"
-      ]
-     }
-    ],
-    "zeilen_min": 0,
-    "zeilen_max": 10,
-    "old_id": "M08.B11.Q1"
-   },
-   {
-    "type": "q",
-    "id": "M08.B11.Q2",
-    "must": false,
-    "eigen": false,
-    "frage": "Gehört Ihnen das zweite Objekt nicht: Was dürfen Sie dort entscheiden?",
-    "hints": [
-     "Wir müssen wissen, was Sie dort tatsächlich entscheiden können und was Sie nur vorschlagen können."
-    ],
-    "eigen_typ": "",
-    "options": [
-     "Eigentum, ich entscheide",
-     "Absprache getroffen, Lagerplatz ist zugesagt",
-     "Nur Vorschlagsrecht",
-     "Ungeklärt",
-     "Nicht zutreffend"
-    ],
-    "textlines": 0,
-    "unit": "",
-    "scale": null,
-    "info": "",
-    "old_id": "M08.B11.Q2"
-   },
-   {
-    "type": "q",
-    "id": "M08.B11.Q3",
-    "must": false,
-    "eigen": false,
-    "frage": "Was lagert am zweiten Objekt heute bereits?",
-    "hints": [
-     "Wenn dort nichts liegt, ist das eine wichtige Information und kein Versäumnis."
-    ],
-    "eigen_typ": "",
-    "options": [
-     "Nichts",
-     "Grundausstattung (Decken, Werkzeug, einige Konserven)",
-     "Vorrat für etwa eine Woche",
-     "Vollausstattung für mehrere Wochen",
-     "Nicht zutreffend"
-    ],
-    "textlines": 0,
-    "unit": "",
-    "scale": null,
-    "info": "",
-    "old_id": "M08.B11.Q3"
-   },
-   {
-    "type": "q",
-    "id": "M08.B11.Q4",
-    "must": false,
-    "eigen": false,
-    "frage": "Ist das zweite Objekt beheizbar, und womit?",
-    "hints": [],
-    "eigen_typ": "",
-    "options": [
-     "Stromunabhängig (Ofen, Kamin) und Brennstoff vor Ort",
-     "Stromunabhängig, aber kein Brennstoff vor Ort",
-     "Nur stromabhängige Heizung",
-     "Nicht beheizbar",
-     "Nicht zutreffend"
-    ],
-    "textlines": 0,
-    "unit": "",
-    "scale": null,
-    "info": "",
-    "old_id": "M08.B11.Q4"
-   },
-   {
-    "type": "q",
-    "id": "M08.B11.Q5",
-    "must": false,
-    "eigen": false,
-    "frage": "Welche Wasserversorgung gibt es am zweiten Objekt?",
-    "hints": [],
-    "eigen_typ": "",
-    "options": [
-     "Brunnen oder Quelle, stromlos nutzbar",
-     "Leitungswasser und Vorrat vor Ort",
-     "Nur Leitungswasser",
-     "Nichts",
-     "Nicht zutreffend"
-    ],
-    "textlines": 0,
-    "unit": "",
-    "scale": null,
-    "info": "",
-    "old_id": "M08.B11.Q5"
-   },
-   {
-    "type": "q",
     "id": "M08.B11.Q6",
     "must": false,
     "eigen": false,
@@ -1456,44 +1224,6 @@
     "scale": null,
     "info": "",
     "old_id": "M08.B11.Q6"
-   },
-   {
-    "type": "q",
-    "id": "M08.B11.Q7",
-    "must": false,
-    "eigen": false,
-    "frage": "Welcher Ihrer Standorte ist aus Ihrer Sicht der bessere Ausgangspunkt in einer Krise, und warum?",
-    "hints": [
-     "Bitte auch nennen, was gegen den jeweils anderen spricht. Wir prüfen Ihre Einschätzung anschließend gegen die Standortdaten, aber Ihre Sicht ist der Ausgangspunkt."
-    ],
-    "eigen_typ": "",
-    "options": [],
-    "textlines": 4,
-    "unit": "",
-    "scale": null,
-    "info": "",
-    "old_id": "M08.B11.Q7"
-   },
-   {
-    "type": "q",
-    "id": "M08.B11.Q8",
-    "must": false,
-    "eigen": false,
-    "frage": "Welche Rolle hat der andere Standort, wenn Sie sich für einen entschieden haben?",
-    "hints": [],
-    "eigen_typ": "",
-    "options": [
-     "Zweitlager mit eigenem Bestand",
-     "Anlaufstelle oder Rückfallebene ohne Bestand",
-     "Keine Rolle in der Planung",
-     "Nie überlegt",
-     "Nicht zutreffend"
-    ],
-    "textlines": 0,
-    "unit": "",
-    "scale": null,
-    "info": "",
-    "old_id": "M08.B11.Q8"
    },
    {
     "type": "q",
@@ -2057,79 +1787,10 @@
  },
  {
   "badge": "M9",
-  "count_label": "6 offene Fragen",
+  "count_label": "2 offene Fragen",
   "title": "NETZWERK & GEMEINSCHAFT",
   "intro": "Kein Einzelner überlebt lange allein. Netzwerk ist strategische Ressource.",
   "items": [
-   {
-    "type": "q",
-    "id": "M09.B9.Q1",
-    "must": false,
-    "eigen": false,
-    "frage": "Planen Sie, die Vorsorge mit weiteren Personen außerhalb Ihres Haushalts gemeinsam zu betreiben (Familie, Freunde, Nachbarn)?",
-    "hints": [],
-    "eigen_typ": "",
-    "options": [
-     "Ja, feste Gruppe besteht",
-     "Ja, in Planung",
-     "Nein, nur der eigene Haushalt"
-    ],
-    "textlines": 0,
-    "unit": "",
-    "scale": null,
-    "info": "",
-    "old_id": "M09.B9.Q1"
-   },
-   {
-    "type": "q",
-    "id": "M09.B9.Q2",
-    "must": false,
-    "eigen": false,
-    "frage": "Wie viele Personen umfasst dieser Kreis insgesamt (mit Ihrem Haushalt)?",
-    "hints": [],
-    "eigen_typ": "",
-    "options": [],
-    "textlines": 1,
-    "unit": "PERSONEN",
-    "scale": null,
-    "info": "",
-    "old_id": "M09.B9.Q2"
-   },
-   {
-    "type": "q",
-    "id": "M09.B9.Q3",
-    "must": false,
-    "eigen": false,
-    "frage": "Wie viele Personen aus diesem Kreis stehen dem Thema bislang skeptisch oder ablehnend gegenüber?",
-    "hints": [],
-    "eigen_typ": "",
-    "options": [],
-    "textlines": 1,
-    "unit": "PERSONEN",
-    "scale": null,
-    "info": "",
-    "old_id": "M09.B9.Q3"
-   },
-   {
-    "type": "q",
-    "id": "M09.B9.Q4",
-    "must": false,
-    "eigen": false,
-    "frage": "Wie wurde der Kreis bisher angesprochen?",
-    "hints": [],
-    "eigen_typ": "",
-    "options": [
-     "Einzeln im persönlichen Gespräch",
-     "In der Gruppe mit einer Gesamtpräsentation",
-     "Noch gar nicht",
-     "Nicht zutreffend"
-    ],
-    "textlines": 0,
-    "unit": "",
-    "scale": null,
-    "info": "Erfahrung: Wer einzeln und über den persönlichen Nutzen angesprochen wird, macht eher mit als wer vor der Gruppe überzeugt werden soll.",
-    "old_id": "M09.B9.Q4"
-   },
    {
     "type": "q",
     "id": "M09.B9.Q5",
@@ -2201,31 +1862,10 @@
  },
  {
   "badge": "M11",
-  "count_label": "4 offene Fragen",
+  "count_label": "3 offene Fragen",
   "title": "MENTALITÄT, FÜHRUNG & ENTSCHEIDUNG",
   "intro": "Der Kopf ist die wichtigste Ressource. Stressstabilität liegt oft hinten.",
   "items": [
-   {
-    "type": "q",
-    "id": "M11.B11.Q1",
-    "must": false,
-    "eigen": false,
-    "frage": "Gibt es Personen in Ihrem Haushalt oder Kreis, die eine wichtige Rolle vom Potenzial her übernehmen könnten, dafür aber noch nicht ausgebildet sind?",
-    "hints": [],
-    "eigen_typ": "",
-    "options": [
-     "Ja, mehrere",
-     "Ja, eine Person",
-     "Nein, alle Rollen sind ausgebildet besetzt",
-     "Nein, es gibt keine Kandidaten",
-     "Weiß nicht"
-    ],
-    "textlines": 0,
-    "unit": "",
-    "scale": null,
-    "info": "",
-    "old_id": "M11.B11.Q1"
-   },
    {
     "type": "q",
     "id": "M11.B11.Q2",
@@ -2287,50 +1927,10 @@
  },
  {
   "badge": "M12",
-  "count_label": "7 offene Fragen",
+  "count_label": "4 offene Fragen",
   "title": "GESAMTSYSTEM & INTEGRATION",
   "intro": "Wie greifen alle Module ineinander? SPOF-Suche im Gesamtsystem.",
   "items": [
-   {
-    "type": "q",
-    "id": "M12.B9.Q1",
-    "must": false,
-    "eigen": false,
-    "frage": "Gibt es für die wichtigsten Aufgaben im Krisenfall (Wasser, Energie, Medizin, Kommunikation, Vorrat, Führung) eine feste Zuständigkeit?",
-    "hints": [],
-    "eigen_typ": "",
-    "options": [
-     "Ja, alle festgelegt",
-     "Teilweise",
-     "Nein, ergibt sich im Ernstfall",
-     "Weiß nicht"
-    ],
-    "textlines": 0,
-    "unit": "",
-    "scale": null,
-    "info": "Gemeint ist: wenn morgen der Strom ausfällt, weiß jeder ohne Absprache, was sein Teil ist.",
-    "old_id": "M12.B9.Q1"
-   },
-   {
-    "type": "q",
-    "id": "M12.B9.Q2",
-    "must": false,
-    "eigen": false,
-    "frage": "Ist für jede dieser Aufgaben eine zweite Person eingearbeitet, die einspringen kann, wenn die erste ausfällt (krank, abwesend, überfordert)?",
-    "hints": [],
-    "eigen_typ": "",
-    "options": [
-     "Ja, für alle Aufgaben",
-     "Für die meisten",
-     "Für einzelne",
-     "Nein"
-    ],
-    "textlines": 0,
-    "unit": "",
-    "scale": null,
-    "info": "",
-    "old_id": "M12.B9.Q2"
-   },
    {
     "type": "q",
     "id": "M12.B9.Q3",
@@ -2345,21 +1945,6 @@
     "scale": null,
     "info": "Typische Antworten: \"Aggregat nur Peter\", \"Medikamente nur Anna\", \"Funk nur Opa\".",
     "old_id": "M12.B9.Q3"
-   },
-   {
-    "type": "q",
-    "id": "M12.B9.Q4",
-    "must": false,
-    "eigen": false,
-    "frage": "Welche Fachkenntnisse sind in Ihrem Haushalt oder Kreis vorhanden, und bei wem (Medizin, Elektrik, Wasser und Sanitär, Funk, Landwirtschaft und Tiere, Sicherheit, Küche und Vorrat, Kinderbetreuung, Führung)?",
-    "hints": [],
-    "eigen_typ": "",
-    "options": [],
-    "textlines": 3,
-    "unit": "",
-    "scale": null,
-    "info": "Gern als Liste: Fachgebiet, Name, Stand (ausgebildet, angelernt, Interesse).",
-    "old_id": "M12.B9.Q4"
    },
    {
     "type": "q",
