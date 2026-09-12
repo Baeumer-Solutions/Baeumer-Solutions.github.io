@@ -185,7 +185,7 @@
     });
   }
 
-  function start() {
+  function startBestehend() {
     if (!istFragebogen()) return;
     var kunde = param("k") || param("id") || "unbekannt";
 
@@ -195,6 +195,36 @@
     try { da = localStorage.getItem(KEY_PREFIX + kunde); } catch (e) {}
     if (da) return;                       /* schon erteilt, nicht nochmal fragen */
     riegel(kunde);
+  }
+
+  // Abgelöste Einzelzugänge: nur Fingerabdrücke, keine persönlichen Linkschlüssel.
+  var ABGELOESTE_ZUGAENGE = [
+    "d3f190bf06679cf3937ac5f1438ccc6cec02fa4da5c60fbe1c370f0ae4051047",
+    "24d5db6f16d61e1bf1fcf2e32acfcf4cbc4fdf1c48fb3a3dc011df55453cb7ff",
+    "c48c1502929baa3c1127aae2697043a55bdff392668808c988ddbd1b643cc8da",
+    "dcc4b804eec8d8e8e889790855f5909c31e2e3ad44b8e7c97961e95adf05479b",
+    "f5b6c655ec17291aac3f7ac6eb54306c8acb61751728ef48c3cac1942550177e",
+    "986cf5c89ffa0a9720cc4e98fcea65e5a46e82ac3133aee62dbb1eef95694054",
+    "6fd9914eb2a4e69dc4302eb10a19125eee023f3d23c0cb98f833822a932ff7a9",
+    "1af30ecbd838523986358ffbc8ef71abe4061911ac0fc120f9eecb5d778bd6bb",
+    "a6ac0bcf1a2a2b1c2672dca73ed0893c47f699e4452b93ef3a407853ce7250b9",
+    "c51b9e612ef5f166995bfcb97cf00b18843384aba6cb5a3b3b7f8c34dad12790"
+];
+  function start() {
+    if (!istFragebogen()) return;
+    var p = new URLSearchParams(location.search);
+    var referenz = p.get("k") || p.get("kunde") || p.get("code") || p.get("id") || "";
+    if (!referenz) { startBestehend(); return; }
+    // HTTPS-Portal: Web Crypto ist in den unterstützten Browsern verfügbar.
+    if (!window.crypto || !window.crypto.subtle) { startBestehend(); return; }
+    window.crypto.subtle.digest("SHA-256", new TextEncoder().encode(referenz)).then(function(buffer) {
+      var digest = Array.from(new Uint8Array(buffer)).map(function(b) { return b.toString(16).padStart(2, "0"); }).join("");
+      if (ABGELOESTE_ZUGAENGE.indexOf(digest) !== -1) {
+        window.location.replace("https://protect-12.de/assets/fragebogen-abgeloest.html");
+        return;
+      }
+      startBestehend();
+    }).catch(function() { startBestehend(); });
   }
 
   if (document.readyState !== "loading") start();
