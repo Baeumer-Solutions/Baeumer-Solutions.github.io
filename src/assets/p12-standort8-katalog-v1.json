@@ -1,0 +1,2361 @@
+[
+  {
+    "badge": "A",
+    "title": "Ziel und Planungsrahmen",
+    "intro": "Wir bereiten die Versorgung und den Betrieb eines künftigen Standorts für acht Personen vor. Ein Haus muss dafür noch nicht feststehen. Antworten Sie nach Ihrem heutigen Kenntnisstand. „Offen“, „unbekannt“, „nicht zutreffend“ und „persönlich besprechen“ sind überall möglich. Schätzungen bitte kennzeichnen. Sie können abschnittsweise speichern und später fortsetzen.",
+    "items": [
+      {
+        "type": "q",
+        "id": "Z8.A.01",
+        "frage": "Wie möchten Sie angesprochen werden, und welche E-Mail-Adresse sowie Telefonnummer sollen wir für Rückfragen verwenden?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Bitte bestätigen Sie auch die Schreibweise Ihres Vor- und Nachnamens. Kontaktangaben nur soweit gewünscht."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.A.02",
+        "frage": "Welche drei Fragen oder Sorgen soll die Beratung für Sie vor allem klären?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Bitte priorisieren: Was muss unbedingt geklärt werden, was wäre zusätzlich hilfreich?"
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.A.03",
+        "frage": "Woran würden Sie erkennen, dass Ihr künftiger Standort für die Gruppe ausreichend vorbereitet ist?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Zum Beispiel verlässliche Grundversorgung, unkomplizierte Bedienung, schneller Start, längerer Aufenthalt oder Weiterarbeit."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.A.04",
+        "frage": "Welche Ereignisse sollen durch die Vorbereitung abgedeckt werden?",
+        "must": false,
+        "options": [
+          "Versorgungsunterbrechung",
+          "Strom- oder Kommunikationsausfall",
+          "Eingeschränkte Reisemöglichkeiten",
+          "Naturereignisse oder extremes Wetter",
+          "Gesundheitliche Ausnahmesituation",
+          "Sicherheitslage am Aufenthaltsort",
+          "Sonstiges, im nächsten Feld erläutern",
+          "Offen"
+        ],
+        "textlines": 3,
+        "hints": [
+          "Bitte nennen Sie die für Sie relevanten Situationen und die drei wichtigsten."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.A.05",
+        "frage": "Welche Besonderheiten oder weiteren Szenarien sollen wir berücksichtigen?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Auch Kombinationen, etwa eine gestörte Anreise bei gleichzeitig fehlender Versorgung am Ziel."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.A.06",
+        "frage": "Welcher zeitliche Rahmen ist vorgesehen, und welcher Stand der Vorbereitung ist bereits erreicht?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Geplanter Start, gewünschte Betriebsbereitschaft und mögliche Verzögerungen. Ein Kauf oder Bau kann noch offen sein; technische Gebäudedaten brauchen Sie jetzt nicht."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.A.07",
+        "frage": "Was steht hinsichtlich Montenegro oder Serbien bereits fest?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Nur vorhandene Rahmenvorgaben, bekannte Region oder bestehende Kontakte nennen. Wenn beides offen ist, reicht „Land und Region offen“. Eine Objektauswahl ist hier nicht erforderlich."
+        ],
+        "info": ""
+      },
+      {
+        "type": "tab",
+        "id": "Z8.A.08",
+        "frage": "Wie lange sollen acht Personen am künftigen Standort auskommen können?",
+        "must": false,
+        "hints": [
+          "Bitte Zielwerte nennen. Noch keine Reichweite eines Hauses oder vorhandener Vorräte behaupten."
+        ],
+        "spalten": [
+          {
+            "key": "phase",
+            "label": "Planungsfall",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "dauer",
+            "label": "Gewünschte Tage oder Wochen",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "niveau",
+            "label": "Unverzichtbare Versorgung",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "annahme",
+            "label": "Erwarteter Nachschub / offen",
+            "typ": "text",
+            "hint": "offen möglich"
+          }
+        ],
+        "zeilen_max": 30,
+        "zeilen_fest": [
+          "Ankunft und erste Versorgung",
+          "Überbrückung ohne Einkauf oder Lieferung",
+          "Längerer Aufenthalt mit eingeschränktem Nachschub",
+          "Rückfalllösung bei Verzögerung oder Ausfall des Standorts"
+        ]
+      },
+      {
+        "type": "q",
+        "id": "Z8.A.09",
+        "frage": "Soll der Standort nur zeitweise, regelmäßig oder dauerhaft genutzt werden, und zu welchen Jahreszeiten?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Bitte auch angeben, ob die Gruppe gleichzeitig oder nach und nach ankommen würde."
+        ],
+        "info": ""
+      }
+    ],
+    "source_modules": [
+      "S",
+      "M01",
+      "M08",
+      "M12"
+    ],
+    "nq": 9,
+    "count_label": "9 Fragen"
+  },
+  {
+    "badge": "P",
+    "title": "Die acht Personen in Kürze",
+    "intro": "Bitte bestätigen Sie die aktuelle Gruppe: Sie selbst plus sieben weitere Personen. Ältere Unterlagen nennen einen größeren Kreis. Wir setzen deshalb keine Namen voraus. Je Person genügen wenige Stichpunkte. Gesundheitliche Angaben sind freiwillig; Angaben über andere Personen nur mit deren Abstimmung. Persönliche Details können separat besprochen werden.",
+    "items": [
+      {
+        "type": "q",
+        "id": "Z8.P.01",
+        "frage": "Wer gehört verbindlich zur Achtergruppe, und bei wem ist die Teilnahme noch offen?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Bitte die Zuordnung P1 bis P8 verwenden. Falls sich der Personenkreis geändert hat, kurz erläutern. Namen oder Kürzel reichen."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.P.02",
+        "frage": "P1: Bitte geben Sie einen kurzen Steckbrief an. Beginnen Sie mit sich selbst.",
+        "must": false,
+        "options": [],
+        "textlines": 5,
+        "hints": [
+          "Name/Kürzel und ungefähres Alter; Beruf oder Tätigkeit; praktische Fähigkeiten mit Erfahrung/Aktualität; mögliche Aufgabe und Bereitschaft; übliche Aufenthaltsorte und Verfügbarkeit; wesentliche Unterstützung, die für Reise oder Alltag benötigt wird. Fünf bis sechs kurze Zeilen reichen. Unbekanntes bleibt offen."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.P.03",
+        "frage": "P2: Bitte geben Sie einen kurzen Steckbrief an.",
+        "must": false,
+        "options": [],
+        "textlines": 5,
+        "hints": [
+          "Name/Kürzel und ungefähres Alter; Beruf oder Tätigkeit; praktische Fähigkeiten mit Erfahrung/Aktualität; mögliche Aufgabe und Bereitschaft; übliche Aufenthaltsorte und Verfügbarkeit; wesentliche Unterstützung, die für Reise oder Alltag benötigt wird. Fünf bis sechs kurze Zeilen reichen. Unbekanntes bleibt offen."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.P.04",
+        "frage": "P3: Bitte geben Sie einen kurzen Steckbrief an.",
+        "must": false,
+        "options": [],
+        "textlines": 5,
+        "hints": [
+          "Name/Kürzel und ungefähres Alter; Beruf oder Tätigkeit; praktische Fähigkeiten mit Erfahrung/Aktualität; mögliche Aufgabe und Bereitschaft; übliche Aufenthaltsorte und Verfügbarkeit; wesentliche Unterstützung, die für Reise oder Alltag benötigt wird. Fünf bis sechs kurze Zeilen reichen. Unbekanntes bleibt offen."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.P.05",
+        "frage": "P4: Bitte geben Sie einen kurzen Steckbrief an.",
+        "must": false,
+        "options": [],
+        "textlines": 5,
+        "hints": [
+          "Name/Kürzel und ungefähres Alter; Beruf oder Tätigkeit; praktische Fähigkeiten mit Erfahrung/Aktualität; mögliche Aufgabe und Bereitschaft; übliche Aufenthaltsorte und Verfügbarkeit; wesentliche Unterstützung, die für Reise oder Alltag benötigt wird. Fünf bis sechs kurze Zeilen reichen. Unbekanntes bleibt offen."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.P.06",
+        "frage": "P5: Bitte geben Sie einen kurzen Steckbrief an.",
+        "must": false,
+        "options": [],
+        "textlines": 5,
+        "hints": [
+          "Name/Kürzel und ungefähres Alter; Beruf oder Tätigkeit; praktische Fähigkeiten mit Erfahrung/Aktualität; mögliche Aufgabe und Bereitschaft; übliche Aufenthaltsorte und Verfügbarkeit; wesentliche Unterstützung, die für Reise oder Alltag benötigt wird. Fünf bis sechs kurze Zeilen reichen. Unbekanntes bleibt offen."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.P.07",
+        "frage": "P6: Bitte geben Sie einen kurzen Steckbrief an.",
+        "must": false,
+        "options": [],
+        "textlines": 5,
+        "hints": [
+          "Name/Kürzel und ungefähres Alter; Beruf oder Tätigkeit; praktische Fähigkeiten mit Erfahrung/Aktualität; mögliche Aufgabe und Bereitschaft; übliche Aufenthaltsorte und Verfügbarkeit; wesentliche Unterstützung, die für Reise oder Alltag benötigt wird. Fünf bis sechs kurze Zeilen reichen. Unbekanntes bleibt offen."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.P.08",
+        "frage": "P7: Bitte geben Sie einen kurzen Steckbrief an.",
+        "must": false,
+        "options": [],
+        "textlines": 5,
+        "hints": [
+          "Name/Kürzel und ungefähres Alter; Beruf oder Tätigkeit; praktische Fähigkeiten mit Erfahrung/Aktualität; mögliche Aufgabe und Bereitschaft; übliche Aufenthaltsorte und Verfügbarkeit; wesentliche Unterstützung, die für Reise oder Alltag benötigt wird. Fünf bis sechs kurze Zeilen reichen. Unbekanntes bleibt offen."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.P.09",
+        "frage": "P8: Bitte geben Sie einen kurzen Steckbrief an.",
+        "must": false,
+        "options": [],
+        "textlines": 5,
+        "hints": [
+          "Name/Kürzel und ungefähres Alter; Beruf oder Tätigkeit; praktische Fähigkeiten mit Erfahrung/Aktualität; mögliche Aufgabe und Bereitschaft; übliche Aufenthaltsorte und Verfügbarkeit; wesentliche Unterstützung, die für Reise oder Alltag benötigt wird. Fünf bis sechs kurze Zeilen reichen. Unbekanntes bleibt offen."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.P.10",
+        "frage": "Müssen zusätzlich zur Achtergruppe Kinder, Angehörige, betreute Personen oder Tiere berücksichtigt werden?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Wer wäre betroffen, reist mit oder bleibt anderweitig betreut? Keine zusätzlichen Personen stillschweigend in die acht einrechnen. Bei Tieren: Art, Anzahl, Versorgung und Transportbedarf."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.P.11",
+        "frage": "Welche Aufgaben können die Personen zuverlässig selbst übernehmen, und wobei wird eine externe Fachkraft oder Betreuung gebraucht?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Bitte vorhandene Routine von bloßer Bereitschaft oder geplantem Lernen unterscheiden. Keine psychologischen Bewertungen anderer Personen nötig."
+        ],
+        "info": ""
+      }
+    ],
+    "source_modules": [
+      "S",
+      "M06",
+      "M09",
+      "M11"
+    ],
+    "nq": 11,
+    "count_label": "11 Fragen"
+  },
+  {
+    "badge": "R",
+    "title": "Vorhandene Mittel, Zugriff und Beschaffung",
+    "intro": "Erfassen Sie vorhandene Ressourcen unabhängig davon, ob der spätere Standort bereits feststeht. Die Tabellen können Sie schrittweise ergänzen. Gleiche Gegenstände bitte mit derselben eigenen Kennung bezeichnen, etwa R01. Eine vorhandene Sache zählt erst dann als verfügbar, wenn die Gruppe auch darauf zugreifen kann.",
+    "items": [
+      {
+        "type": "tab",
+        "id": "Z8.R.01",
+        "frage": "Welche Vorräte und Ausrüstungsgegenstände besitzen Sie oder die anderen Personen bereits?",
+        "must": false,
+        "hints": [
+          "Bitte Wasserbehälter/Filter, Nahrung/Kochgeräte, Strom/Licht, Wärme/Schlafen, Hygiene, Erste Hilfe/Hilfsmittel, Kommunikation, Werkzeug, Ersatzteile und Transporthilfen berücksichtigen. Keine genaue Adresse sensibler Lager nötig. Auch „nichts vorhanden“ oder „Inventur offen“ ist eine Antwort."
+        ],
+        "spalten": [
+          {
+            "key": "id",
+            "label": "Kennung / Gegenstand",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "person",
+            "label": "Eigentümer / Person",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "menge",
+            "label": "Menge und Einheit",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "ort",
+            "label": "Lagerort: Ort/Land",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "zustand",
+            "label": "Zustand / letztes Prüfen",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "reserve",
+            "label": "Für die Gruppe freigegebener Anteil",
+            "typ": "text",
+            "hint": "offen möglich"
+          }
+        ],
+        "zeilen_max": 80,
+        "vorlagen": [
+          ""
+        ]
+      },
+      {
+        "type": "tab",
+        "id": "Z8.R.02",
+        "frage": "Wie und wann sind die vorhandenen Mittel für die Gruppe tatsächlich erreichbar?",
+        "must": false,
+        "hints": [
+          "Auch während Ihrer Reisen oder bei Ausfall der besitzenden Person. Keine Schlüsselcodes oder Zugangsdaten eintragen."
+        ],
+        "spalten": [
+          {
+            "key": "id",
+            "label": "Kennung wie oben",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "zugriff",
+            "label": "Wer hat Zugriff?",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "vorlauf",
+            "label": "Vorlauf bis verfügbar",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "abhaengig",
+            "label": "Abhängig von Person/Netz/Schlüssel?",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "bindung",
+            "label": "Anderweitig benötigt?",
+            "typ": "text",
+            "hint": "offen möglich"
+          }
+        ],
+        "zeilen_max": 80,
+        "vorlagen": [
+          ""
+        ]
+      },
+      {
+        "type": "tab",
+        "id": "Z8.R.03",
+        "frage": "Was können und möchten Sie an den künftigen Standort mitnehmen oder vorab verbringen?",
+        "must": false,
+        "hints": [
+          "Ungefähre Mengen genügen. Bei Technik auch Verpackung, Ladehilfen und notwendige Anschlüsse nennen. Rechtliche Zulässigkeit und Transportbedingungen werden bei Bedarf separat geprüft."
+        ],
+        "spalten": [
+          {
+            "key": "id",
+            "label": "Kennung / Gegenstand",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "mass",
+            "label": "Gewicht / Packvolumen",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "weg",
+            "label": "Transportweg / Fahrzeug",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "wer",
+            "label": "Verantwortlich / Zeitpunkt",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "huerde",
+            "label": "Beschränkung oder Prüfung offen",
+            "typ": "text",
+            "hint": "offen möglich"
+          }
+        ],
+        "zeilen_max": 80,
+        "vorlagen": [
+          ""
+        ]
+      },
+      {
+        "type": "tab",
+        "id": "Z8.R.04",
+        "frage": "Was würden Sie vorzugsweise vor Ort beschaffen, mieten oder als Dienstleistung beauftragen?",
+        "must": false,
+        "hints": [
+          "Bitte auch Verbrauchsmittel, Lebensmittel, Trinkwasser, Energie, Wartung und Betreuung bedenken. Lieferfähigkeit nicht voraussetzen."
+        ],
+        "spalten": [
+          {
+            "key": "bedarf",
+            "label": "Ausstattung / Leistung",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "menge",
+            "label": "Menge / für wie viele",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "frist",
+            "label": "Benötigt ab / Priorität",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "kontakt",
+            "label": "Bekannter Anbieter / offen",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "status",
+            "label": "Nur Idee / angefragt / bestätigt",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "ersatz",
+            "label": "Alternative bei Nichtverfügbarkeit",
+            "typ": "text",
+            "hint": "offen möglich"
+          }
+        ],
+        "zeilen_max": 60,
+        "vorlagen": [
+          ""
+        ]
+      },
+      {
+        "type": "q",
+        "id": "Z8.R.05",
+        "frage": "Welche vorhandenen Mittel sollen an den heutigen Aufenthaltsorten bleiben?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Zum Beispiel Versorgung für zurückbleibende Angehörige oder Ihre eigene Absicherung unterwegs. Nur den frei verfügbaren Anteil für den neuen Standort einplanen."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.R.06",
+        "frage": "Welche Bedienungsanleitungen, Inventarlisten oder Nachweise können Sie später ergänzen?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Dokumenttitel oder vorhandenen Ablageort nennen. Keine Zugangsdaten. Fehlende technische Angaben müssen jetzt nicht recherchiert werden."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.R.07",
+        "frage": "Wo sehen Sie bereits Lücken, unzuverlässige Geräte, fehlende Ersatzteile oder unsichere Zusagen?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Bitte unterscheiden: geprüft, geschätzt, nur angekündigt oder unbekannt."
+        ],
+        "info": ""
+      }
+    ],
+    "source_modules": [
+      "M03",
+      "M04",
+      "M05",
+      "M06",
+      "M07",
+      "M08",
+      "M12"
+    ],
+    "nq": 7,
+    "count_label": "7 Fragen"
+  },
+  {
+    "badge": "F",
+    "title": "Frühwarnung und Erreichbarkeit in Europa",
+    "intro": "Protect-12 soll Sie auch während Ihrer Reisen frühzeitig auf relevante Entwicklungen aufmerksam machen. Hier klären wir den Bedarf an Warnung, Erreichbarkeit und Entscheidungen. Überwachungsumfang und konkrete Schwellen werden anschließend gemeinsam festgelegt.",
+    "items": [
+      {
+        "type": "q",
+        "id": "Z8.F.01",
+        "frage": "In welchen Ländern und Regionen Europas halten Sie sich regelmäßig auf, und wie häufig wechseln Sie den Ort?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Typische Reisegebiete, längere Aufenthalte und Planungshorizont. Keine lückenlose Reisehistorie nötig."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.F.02",
+        "frage": "Wie kann Ihr aktueller Aufenthaltsort bei Bedarf aktuell gehalten werden?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Wer würde Änderungen mitteilen, über welchen vereinbarten Kanal und in welcher zeitlichen Genauigkeit? Eine automatische Ortung wird nicht vorausgesetzt."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.F.03",
+        "frage": "Für welche Orte soll das Frühwarnsystem Informationen berücksichtigen?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Eigener Aufenthalt, Aufenthalte der sieben weiteren Personen, Anreisewege, Montenegro/Serbien, wichtige Zwischenstationen oder weitere versorgungsrelevante Orte."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.F.04",
+        "frage": "Bei welchen Entwicklungen möchten Sie informiert werden, und was erfordert für Sie eine sofortige Warnung?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Bitte Themen und gewünschte Dringlichkeit nennen. Die fachliche Bewertung der Lage erfolgt anschließend."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.F.05",
+        "frage": "Über welche Kanäle erreichen wir Sie tagsüber, nachts und während Reisen am zuverlässigsten?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Telefon, SMS, E-Mail oder vereinbarter Messenger; bevorzugte Sprache und Zeiten ohne Erreichbarkeit. Keine Passwörter."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.F.06",
+        "frage": "Wer soll wichtige Warnungen ebenfalls erhalten oder übernehmen, wenn Sie nicht erreichbar sind?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Person/Kürzel, vereinbarter Kontaktweg und Befugnis. Bitte unterscheiden, ob dies schon abgesprochen oder nur vorgeschlagen ist."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.F.07",
+        "frage": "Wie möchten Sie den Empfang einer wichtigen Warnung bestätigen?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Gewünschte Frist, zweiter Kontaktversuch und Vertretung bei ausbleibender Rückmeldung. „Gemeinsam festlegen“ ist möglich."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.F.08",
+        "frage": "Welche Vorwarnzeit brauchen Sie für Prüfung, Vorbereitung und tatsächliche Abreise?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Bitte je Schritt eine realistische Zeit nennen, auch bei einer Dienstreise oder getrennten Aufenthaltsorten."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.F.09",
+        "frage": "Welche Entscheidungsschritte möchten Sie vorab mit der Gruppe vereinbaren?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Zum Beispiel beobachten, Reiseplan anpassen, Material bereitstellen, Zusammenkommen vorbereiten oder Standort aktivieren. Noch keine festen Gefahrenwerte nötig."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.F.10",
+        "frage": "Wer entscheidet über Abreise, Abwarten, Planänderung oder Abbruch, und wer vertritt diese Person?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Bitte auch klären, welche Entscheidungen einzelne Personen selbst treffen dürfen."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.F.11",
+        "frage": "Welche zuverlässigen Informationsquellen und Warnwege nutzen Sie bereits?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Offizielle lokale Meldungen, Reisemeldungen oder andere Quellen; Umgang mit widersprüchlichen Meldungen und Rückfragen."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.F.12",
+        "frage": "Welche Informationen sollen knapp in einer Warnung stehen, damit Sie handeln können?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Zum Beispiel betroffener Ort, Zeitpunkt, Unsicherheit, mögliche Auswirkung, nächste Entscheidung und Zeitpunkt der nächsten Lageprüfung."
+        ],
+        "info": ""
+      }
+    ],
+    "source_modules": [
+      "M01",
+      "M07",
+      "M08",
+      "M11",
+      "M12"
+    ],
+    "nq": 12,
+    "count_label": "12 Fragen"
+  },
+  {
+    "badge": "T",
+    "title": "Anreise und Zusammenkommen",
+    "intro": "Die acht Personen können an verschiedenen Orten starten. Wir erfassen die realistischen Möglichkeiten und Grenzen. Konkrete Routen und rechtliche Voraussetzungen werden erst mit bestätigten Startpunkten, Personen und Reisedaten ausgearbeitet.",
+    "items": [
+      {
+        "type": "tab",
+        "id": "Z8.T.01",
+        "frage": "Von wo würden die acht Personen voraussichtlich starten, und wie schnell könnten sie losfahren?",
+        "must": false,
+        "hints": [
+          "Auch wechselnde Ausgangsorte und nicht planbare Verzögerungen nennen."
+        ],
+        "spalten": [
+          {
+            "key": "person",
+            "label": "Person",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "start",
+            "label": "Typischer Ort / Land",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "zeit",
+            "label": "Vorlauf bis Abreise",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "bindung",
+            "label": "Arbeit / Betreuung / andere Bindung",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "hilfe",
+            "label": "Abholung / Begleitung nötig?",
+            "typ": "text",
+            "hint": "offen möglich"
+          }
+        ],
+        "zeilen_max": 30,
+        "zeilen_fest": [
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7",
+          "P8"
+        ]
+      },
+      {
+        "type": "tab",
+        "id": "Z8.T.02",
+        "frage": "Welche Fahrzeuge und sonstigen Transportmöglichkeiten stehen tatsächlich zur Verfügung?",
+        "must": false,
+        "hints": [
+          "Für Anhänger, Mietfahrzeuge oder andere Verkehrsmittel eigene Zeilen. Unbekannte Zahlen bleiben offen; Fahrzeugdaten können nachgereicht werden."
+        ],
+        "spalten": [
+          {
+            "key": "fahrzeug",
+            "label": "Fahrzeug / Standort",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "zugriff",
+            "label": "Eigentümer / Zugriff",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "sitze",
+            "label": "Nutzbare Sitzplätze",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "gepaeck",
+            "label": "Zuladung / Gepäckraum",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "energie",
+            "label": "Reichweite / Energiebedarf",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "fahrer",
+            "label": "Fahrer / Ersatzfahrer",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "status",
+            "label": "Wartung / Verfügbarkeit",
+            "typ": "text",
+            "hint": "offen möglich"
+          }
+        ],
+        "zeilen_max": 30,
+        "vorlagen": [
+          ""
+        ]
+      },
+      {
+        "type": "q",
+        "id": "Z8.T.03",
+        "frage": "Wie würden Personen, Tiere und unverzichtbares Gepäck auf die Transportmöglichkeiten verteilt?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Bitte P1 bis P8 zuordnen. Noch keine vollständige Packliste nötig. Reicht die Kapazität nur mit externer Unterstützung, bitte nennen."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.T.04",
+        "frage": "Welche Führerscheine, Fahrpraxis und besonderen Transportkenntnisse sind vorhanden?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Nur relevant für die vorgesehenen Fahrzeuge und Gespanne. Keine Dokumentnummern; Gültigkeit und Details werden separat geprüft."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.T.05",
+        "frage": "Welche Grenzen bestehen bei Reisezeit, Gehstrecken, Gepäcktragen und Ein- oder Aussteigen?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Bitte tatsächliche Alltagserfahrung und notwendige Pausen oder Begleitung nennen. Keine Belastungstests durchführen."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.T.06",
+        "frage": "Welche Zwischenstationen oder persönlichen Anlaufstellen kommen für das Zusammenkommen bereits infrage?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Ort/Region, Kontaktrolle, mögliche Personenzahl und ob die Aufnahme wirklich abgesprochen ist. Wenn offen, bitte so angeben."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.T.07",
+        "frage": "Wie soll die Gruppe verfahren, wenn sie sich unterwegs trennt oder einzelne Personen später starten?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Kontaktperson, Rückmeldezeiten, Warteentscheidung und alternative Treffmöglichkeit als Bedarf oder vorhandene Absprache."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.T.08",
+        "frage": "Welche Ersatzmöglichkeiten bestehen, wenn ein Fahrzeug, ein Fahrer oder ein vorgesehenes Verkehrsmittel ausfällt?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Auch denkbare Abholung, vorläufige Unterkunft und Weiterreise zu einem späteren Zeitpunkt."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.T.09",
+        "frage": "Welche Versorgung können alle Personen bereits unterwegs selbst mitführen?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Wasser, Essen, notwendige persönliche Mittel, Licht, Kleidung, Ladung und Dokumente; Umfang oder Lücken nennen."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.T.10",
+        "frage": "Welche Einschränkungen oder Engpässe kennen Sie auf regelmäßig genutzten Reisewegen?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Zum Beispiel saisonale Sperren, lange Grenzwartezeiten, begrenzte Lade-/Tankmöglichkeiten, Fähren oder gebuchte Verbindungen. Eigene Erfahrung und unbestätigte Annahmen trennen."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.T.11",
+        "frage": "Was wäre Ihr Plan, wenn der künftige Standort bei der Anreise noch nicht betriebsbereit oder vorübergehend nicht erreichbar ist?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Vorläufige Versorgung und Unterkunft für alle acht, erreichbarer Kontakt und ungefähre mögliche Dauer."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.T.12",
+        "frage": "Welche persönlichen Reisevoraussetzungen müssen wir für die Planung noch klären?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Je Person nur Staatsangehörigkeit(en), Dokumentart/Gültigkeitsmonat und vorhandener Aufenthaltsstatus soweit relevant und freiwillig. Keine Ausweisnummern. Transit, Einreise, Aufenthalt und mitgeführte Güter werden länderbezogen aktuell geprüft."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.T.13",
+        "frage": "Wer kümmert sich um zurückbleibende Verpflichtungen, Angehörige, Tiere oder Einrichtungen?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Vorhandene Absprachen und Vertretungen; keine Angaben zum technischen Zustand des künftigen Hauses."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.T.14",
+        "frage": "Unter welchen Umständen würden Sie eine Reise verschieben, unterwegs abbrechen oder vorläufig am aktuellen Ort bleiben?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Persönliche Grenzen und Entscheidungsbedarf erfassen. Daraus entstehen später gemeinsam abgestimmte Alternativen."
+        ],
+        "info": ""
+      }
+    ],
+    "source_modules": [
+      "M08",
+      "M07",
+      "M10"
+    ],
+    "nq": 14,
+    "count_label": "14 Fragen"
+  },
+  {
+    "badge": "B",
+    "title": "Ankunft und belastbarer Betrieb",
+    "intro": "Der spätere Standort soll auch dann funktionieren, wenn Sie selbst noch unterwegs sind oder einzelne Personen ausfallen. Jetzt geht es um die gewünschte Organisation und die verfügbaren Menschen.",
+    "items": [
+      {
+        "type": "q",
+        "id": "Z8.B.01",
+        "frage": "Wer könnte als erste Person am Standort eintreffen und die Inbetriebnahme begleiten?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Verfügbarkeit, Vorlauf und vorhandene Fähigkeiten; auch „lokaler Dienstleister noch zu finden“."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.B.02",
+        "frage": "Wer könnte vor Ort in Ihrer Abwesenheit Lieferungen annehmen, Bestände prüfen und Handwerker koordinieren?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Bereits bestätigte Unterstützung von bloßen Kontaktideen unterscheiden."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.B.03",
+        "frage": "Was muss bei Ankunft sofort verfügbar sein, und was darf erst später hinzukommen?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Für die ersten Stunden: Trinken, Essen, Schlafen, Wärme/Kühlung, Hygiene, persönliche Versorgung, Kommunikation."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.B.04",
+        "frage": "Mit welcher kleinsten Besetzung soll der Standort zunächst funktionieren können?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Welche Personen wären verfügbar, welche Aufgaben würden dann entfallen oder extern übernommen? Zielversorgung für acht bleibt die Basis."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.B.05",
+        "frage": "Welche täglichen Aufgaben möchten Sie selbst übernehmen, welche delegieren?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Kochen, Reinigung, Betreuung, Bestandskontrolle, Versorgung, Technik, Lageinformation oder Einkauf."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.B.06",
+        "frage": "Welche Bedienung soll für alle acht Personen möglichst einfach möglich sein?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Zum Beispiel Licht, Trinkwasserzugang, Kommunikation, Hilfe rufen. Sprach-, Seh-, Hör- oder Mobilitätsbedarf nur soweit relevant und gewünscht."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.B.07",
+        "frage": "Wie soll der Standort zwischen Aufenthalten betreut und erneut vorbereitet werden?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Kontrollrhythmus, Vorratsrotation, Wartung, Frost-/Hitzesaison und Übergabe an die nächste ankommende Person als gewünschte Leistung."
+        ],
+        "info": ""
+      }
+    ],
+    "source_modules": [
+      "M09",
+      "M11",
+      "M12"
+    ],
+    "nq": 7,
+    "count_label": "7 Fragen"
+  },
+  {
+    "badge": "W",
+    "title": "Wasser",
+    "intro": "Bitte erfassen Sie Bedarf und vorhandene Ressourcen. Herkunft, Qualität, Speicher, Förderung und technische Auslegung am künftigen Standort werden später fachlich geprüft. Eine vermutete Wasserquelle gilt noch nicht als nutzbare Versorgung.",
+    "items": [
+      {
+        "type": "q",
+        "id": "Z8.W.01",
+        "frage": "Welche täglichen Nutzungen müssen für acht Personen mit Wasser versorgt werden?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Trinken, Kochen, persönliche Hygiene, Reinigung, Wäsche und Toiletten; Tiere oder weitere Zwecke zusätzlich kennzeichnen."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.W.02",
+        "frage": "Gibt es einen erhöhten oder besonderen Wasserbedarf einzelner Personen?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Nur praktische Anforderungen nennen, zum Beispiel Pflege, Ernährung oder Hitzeempfindlichkeit. Medizinische Details können persönlich geklärt werden."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.W.03",
+        "frage": "Welche bekannten Verbrauchswerte oder Erfahrungen können Sie für eine erste Bedarfsrechnung beisteuern?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Liter pro Person oder Gruppe und Zeitraum angeben. Wenn unbekannt, übernehmen wir die spätere Bedarfsrechnung; keine Schätzung erzwingen."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.W.04",
+        "frage": "Welche Trinkwasservorräte und geeigneten Behälter sind bereits für die Gruppe verfügbar?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Verweis auf Ressourcenliste genügt; Inhalt in Litern, leeres Behältervolumen, Zustand, Lagerort und Zugriffszeit unterscheiden."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.W.05",
+        "frage": "Welche Geräte oder Mittel für Wassertransport und Aufbereitung besitzen Sie bereits?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Modell, Herstellerangaben, vorhandene Ersatzteile, Nutzungsstand und eingewiesene Personen; fehlende Daten später ergänzen. Keine Aufbereitungsversuche notwendig."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.W.06",
+        "frage": "Welche Wasserversorgung würden Sie lieber vor Ort beschaffen oder organisieren lassen?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Zum Beispiel bestätigte Lieferung von Trinkwasser, lagerfähiger Vorrat oder Fachplanung. Anbieter, Vorlauf und Verlässlichkeit dürfen offen bleiben."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.W.07",
+        "frage": "Wie viel Bedienaufwand kann die Gruppe täglich für Wassertransport, Ausgabe und Kontrolle aufbringen?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Wer übernimmt, wer vertritt, welche körperlichen oder zeitlichen Grenzen bestehen?"
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.W.08",
+        "frage": "Welche Ersatzversorgung soll möglich sein, wenn Lieferung, Förderung oder Aufbereitung ausfällt?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Gewünschte Überbrückungsdauer, erreichbare Unterstützung und Transportmöglichkeit als Planungsbedarf."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.W.09",
+        "frage": "Welche Komforteinschränkungen beim Wasserverbrauch wären für die Gruppe vorübergehend akzeptabel?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Bitte unverzichtbare Versorgung ausdrücklich ausnehmen und eine realistische Dauer nennen."
+        ],
+        "info": ""
+      }
+    ],
+    "source_modules": [
+      "M03",
+      "S"
+    ],
+    "nq": 9,
+    "count_label": "9 Fragen"
+  },
+  {
+    "badge": "N",
+    "title": "Nahrung, Vorräte und Kochen",
+    "intro": "Wir planen für die tatsächlichen Essgewohnheiten und Möglichkeiten der acht Personen. Vorhandene Lebensmittel und geplante Käufe werden getrennt betrachtet.",
+    "items": [
+      {
+        "type": "q",
+        "id": "Z8.N.01",
+        "frage": "Welche Ernährungsweisen, Allergien oder Unverträglichkeiten müssen wir bei der gemeinsamen Versorgung berücksichtigen?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Freiwillig je Person/Kürzel; alternativ „persönlich besprechen“. Auch erforderliche Trennung bei Lagerung oder Zubereitung nennen."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.N.02",
+        "frage": "Gibt es besondere Anforderungen an Konsistenz, Zubereitung oder Spezialnahrung?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Zum Beispiel weiche Kost, Babynahrung oder fest abgestimmte Produkte; nur falls zutreffend."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.N.03",
+        "frage": "Welche Mahlzeiten und Lebensmittel isst die Gruppe regelmäßig und gern?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Bitte auch haltbare Lieblingsprodukte nennen. Welche Speisen werden nicht akzeptiert?"
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.N.04",
+        "frage": "Welche Lebensmittel stehen bereits zur Verfügung, und für wen sind sie reserviert?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Verweis auf Ressourcenliste; Mengen mit Einheit, Haltbarkeit, Lagerort und erreichbarer Anteil. Schon anderweitig verplante Vorräte nicht doppelt zählen."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.N.05",
+        "frage": "Wie viele Mahlzeiten für acht Personen sollen ohne Einkaufen und ohne Kühlung möglich sein?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Gewünschte Tage/Anzahl sowie Erfahrungswerte zu vorhandenen Vorräten; nicht sicher bekannte Reichweite als offen markieren."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.N.06",
+        "frage": "Welche Kochgeräte, Geschirre und geeigneten Vorratsbehälter können Sie einbringen?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Kapazität für acht, Modell, Energie-/Brennstoffbedarf, kompatible Vorräte und Bedienerfahrung. Standortabhängige sichere Aufstellung wird später geprüft."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.N.07",
+        "frage": "Wer kann für acht Personen planen, einkaufen und kochen, und wer springt ein?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Routine mit Vorratsküche, Hygiene und gegebenenfalls besonderen Ernährungsanforderungen."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.N.08",
+        "frage": "Wie möchten Sie Einkauf, Lagerkontrolle, Haltbarkeiten und regelmäßigen Verbrauch organisieren?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Wer vor Ort mitwirkt, wie oft kontrolliert wird und welche Dokumentation praktikabel ist."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.N.09",
+        "frage": "Welche Lebensmittelversorgung vor Ort möchten Sie aufbauen?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Lokaler Einkauf, Lieferung oder Direktvermarkter; bekannte Kontakte und Ersatzanbieter. Eigenanbau nur, wenn Sie dies wünschen und dafür Zeit, Fähigkeiten oder Betreuung vorhanden sind."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.N.10",
+        "frage": "Welche einfache Ersatzversorgung soll greifen, wenn Kochen, Kühlung oder eine Lieferung ausfällt?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Welche sofort essbaren oder einfach zuzubereitenden Vorräte werden akzeptiert, und für welche Dauer?"
+        ],
+        "info": ""
+      }
+    ],
+    "source_modules": [
+      "M04",
+      "S"
+    ],
+    "nq": 10,
+    "count_label": "10 Fragen"
+  },
+  {
+    "badge": "E",
+    "title": "Energie, Licht, Wärme und Kühlung",
+    "intro": "Die spätere technische Dimensionierung erfolgt anhand bestätigter Standort- und Gerätedaten. Hier erfassen wir kritische Nutzungen, vorhandene Technik und die gewünschte Überbrückung.",
+    "items": [
+      {
+        "type": "tab",
+        "id": "Z8.E.01",
+        "frage": "Welche elektrischen Geräte oder Funktionen müssen für acht Personen weiterlaufen?",
+        "must": false,
+        "hints": [
+          "Kommunikation, persönliche Hilfsmittel, nötige Kühlung, Licht, Arbeit und später Wasser-/Haustechnik. Noch unbekannte Gebäudetechnik als spätere Ergänzung kennzeichnen."
+        ],
+        "spalten": [
+          {
+            "key": "geraet",
+            "label": "Gerät / Funktion",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "anzahl",
+            "label": "Anzahl",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "daten",
+            "label": "Watt/Wh, falls bekannt",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "dauer",
+            "label": "Stunden pro Tag",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "ausfall",
+            "label": "Max. Unterbrechung",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "rang",
+            "label": "Unverzichtbar / verzichtbar",
+            "typ": "text",
+            "hint": "offen möglich"
+          }
+        ],
+        "zeilen_max": 30,
+        "vorlagen": [
+          ""
+        ]
+      },
+      {
+        "type": "q",
+        "id": "Z8.E.02",
+        "frage": "Welche Stromspeicher, Ladegeräte, Solarmodule, Generatoren oder anderen Energiequellen besitzen Sie bereits?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Verweis auf Inventar; Modell, Kapazität, Dauerleistung, Anschlüsse, Zustand, Lagerort. Fehlende Werte können vom Typenschild später ergänzt werden."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.E.03",
+        "frage": "Welche Kombinationen Ihrer vorhandenen Geräte wurden bereits gemeinsam erprobt?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Datum, Dauer, tatsächlich angeschlossene Verbraucher und Ergebnis. Ungetestete Kombinationen als solche benennen."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.E.04",
+        "frage": "Für welche Nutzungen und wie lange wünschen Sie eine Versorgung ohne Netzstrom?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Bitte Prioritäten und tolerierbare Einschränkungen nennen, nicht nur eine pauschale Autarkiezeit."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.E.05",
+        "frage": "Welche Technik möchten Sie transportieren, welche vor Ort beschaffen oder fachgerecht installieren lassen?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Verweis auf Transport-/Beschaffungsliste genügt. Welche Liefer-, Wartungs- oder Bedienungsabhängigkeit möchten Sie vermeiden?"
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.E.06",
+        "frage": "Welche Brennstoffe, Batterien, Ersatzakkus und Verbrauchsmaterialien sind vorhanden?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Art, Menge, Alter, Lagerort, passende Geräte. Eignung, Lagerung und Mitnahme werden gesondert fachlich und rechtlich geprüft."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.E.07",
+        "frage": "Welchen Schutz vor Kälte und Hitze benötigen die acht Personen?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Jahreszeiten, persönliche Bedürfnisse, Schlafen, Aufenthaltsbereiche und unverzichtbare Kühlung. Keine Temperaturmessung eines noch nicht feststehenden Hauses."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.E.08",
+        "frage": "Welche Kleidung, Decken, Schlafsäcke, Schlafunterlagen und mobilen Kühlhilfen stehen für alle acht bereit?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Passende Größen, Anzahl, Zustand und Transportmöglichkeit; bei Herstellereignung oder Einsatzgrenze gern „offen“."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.E.09",
+        "frage": "Welche netzunabhängigen Lichtquellen und passenden Energiequellen sind bereits vorhanden?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Anzahl, Lade-/Batteriesystem und Bedienbarkeit auch bei eingeschränktem Sehen oder Bewegung."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.E.10",
+        "frage": "Wer kann vorhandene Technik bedienen, prüfen und einfache vorgesehene Wartung übernehmen?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Qualifikation, Einweisung, Anleitungen und Vertretung. Facharbeiten bleiben Fachkräften vorbehalten."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.E.11",
+        "frage": "Welche Ersatzlösung soll helfen, wenn die wichtigste Energie- oder Wärmeversorgung ausfällt?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Gewünschte Minimalfunktionen, externe Unterstützung oder vorläufiger Wechsel in eine andere Unterkunft."
+        ],
+        "info": ""
+      }
+    ],
+    "source_modules": [
+      "M05",
+      "M04",
+      "M06"
+    ],
+    "nq": 11,
+    "count_label": "11 Fragen"
+  },
+  {
+    "badge": "H",
+    "title": "Hygiene, Reinigung und Entsorgung",
+    "intro": "Ziel ist ein alltagstauglicher Betrieb für acht Personen auch bei Versorgungsstörungen. Die konkreten Sanitär- und Entsorgungslösungen werden nach Festlegung des Standorts fachlich geplant.",
+    "items": [
+      {
+        "type": "q",
+        "id": "Z8.H.01",
+        "frage": "Welche Anforderungen bestehen bei Toilettennutzung, Körperpflege und Händehygiene?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Anzahl der Personen mit Unterstützung, Zugänglichkeit, Privatsphäre und besondere Artikel nur soweit gewünscht."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.H.02",
+        "frage": "Welche Hygiene-, Reinigungs- und Pflegeartikel sind bereits verfügbar?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Mengen, voraussichtlicher Verbrauch, Lagerort und Haltbarkeit; Verweis auf Inventar möglich."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.H.03",
+        "frage": "Welche zusätzlichen Artikel müssen für einzelne Personen oder Tiere eingeplant werden?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Zum Beispiel Menstruationsartikel, Inkontinenzmaterial, Windeln, Reinigung von Hilfsmitteln oder Tierbedarf. „Nicht zutreffend“ möglich."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.H.04",
+        "frage": "Wie lange soll die Gruppe ohne reguläre Wasser- oder Abwasserfunktion zurechtkommen können?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Gewünschte Überbrückungsdauer und akzeptable Einschränkungen. Keine Annahme über eine schon vorhandene Anlage."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.H.05",
+        "frage": "Welche mobilen Sanitär- oder Waschlösungen besitzen Sie, und womit haben Sie Erfahrung?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Modell, Menge, Bediener und Verbrauchsmittel; fachliche Eignung und Entsorgung vor Ort bleiben zu prüfen."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.H.06",
+        "frage": "Welche Aufgaben für Reinigung, Wäsche, Müll und Vorratsschutz können Sie selbst übernehmen?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Verantwortliche, Vertretung, Zeitbedarf und gewünschte externe Unterstützung."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.H.07",
+        "frage": "Welche Anforderungen bestehen bei ansteckender Erkrankung innerhalb der Gruppe?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Möglichkeit zu Abstand, getrennten persönlichen Artikeln, Unterstützung und Beratung als Bedarf erfassen. Medizinische Maßnahmen werden separat abgestimmt."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.H.08",
+        "frage": "Welche lokale Entsorgungs- oder Reinigungsunterstützung kennen Sie bereits oder möchten Sie organisieren?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Kontakt, zugesagte Leistung und Ausweichmöglichkeit; keine ungeprüfte Entsorgungsweise voraussetzen."
+        ],
+        "info": ""
+      }
+    ],
+    "source_modules": [
+      "M03",
+      "M04",
+      "M06",
+      "M12"
+    ],
+    "nq": 8,
+    "count_label": "8 Fragen"
+  },
+  {
+    "badge": "G",
+    "title": "Gesundheit und Unterstützungsbedarf",
+    "intro": "Alle gesundheitlichen Angaben sind freiwillig. Für diese Vorbereitung genügen praktische Anforderungen; Diagnosen, Dosierungen und ausführliche persönliche Geschichten sind nicht nötig. Bei Angaben über andere Personen vorher deren Zustimmung einholen oder nur „separates Gespräch“ vermerken.",
+    "items": [
+      {
+        "type": "q",
+        "id": "Z8.G.01",
+        "frage": "Welche Unterstützung benötigen einzelne Personen im Alltag oder während der Anreise?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Gehen, Tragen, Orientierung, Hören, Sehen, persönliche Versorgung oder Begleitung; Personenkürzel und praktischer Bedarf genügen."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.G.02",
+        "frage": "Welche regelmäßig notwendigen persönlichen Medikamente oder Hilfsmittel müssen zuverlässig verfügbar bleiben?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Freiwillig nur Versorgungsart, vorhandene Reichweite und Beschaffungskontakt. Einzelheiten bei Bedarf mit der betroffenen Person und Fachpersonal klären."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.G.03",
+        "frage": "Bestehen besondere Anforderungen an Strom, Kühlung, sauberes Wasser oder Verbrauchsmaterial für die persönliche Versorgung?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Welche Unterbrechung ist nach bereits vorliegender fachlicher Auskunft vertretbar? Falls nicht geklärt, bitte „fachlich klären“. Keine Werte schätzen."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.G.04",
+        "frage": "Welche Erste-Hilfe-Ausrüstung und allgemein benötigten Hilfsmittel besitzen Sie bereits?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Verweis auf Inventar; Vollständigkeit, Zustand, Haltbarkeit, Lagerort und Zugriff."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.G.05",
+        "frage": "Wer hat aktuelle Erste-Hilfe-, Pflege- oder medizinische Erfahrung?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Qualifikation, letzte Auffrischung und tatsächliche Verfügbarkeit. Welche Einweisung oder Auffrischung wäre sinnvoll?"
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.G.06",
+        "frage": "Welche behandelnden Kontakte oder Anlaufstellen könnten die Versorgung während eines längeren Aufenthalts unterstützen?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Rolle, Ort/Land, Sprache und Erreichbarkeit; konkrete Kontaktdaten können separat übermittelt werden."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.G.07",
+        "frage": "Welche Fragen zu Versicherungsschutz, Versorgung im Ausland, Transport oder persönlicher Betreuung sind noch offen?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Nur vorhandene Nachweise oder Klärungsbedarf nennen. Umfang und Gültigkeit werden vor einer konkreten Planung geprüft."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.G.08",
+        "frage": "Wie soll Unterstützung organisiert werden, wenn die betreuende Person ausfällt oder jemand medizinische Hilfe außerhalb des Standorts braucht?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Begleitung, Transportmöglichkeit, Vertretung der zurückbleibenden Gruppe und gegebenenfalls Weiterreise als Planungsbedarf."
+        ],
+        "info": ""
+      }
+    ],
+    "source_modules": [
+      "S",
+      "M06",
+      "M08"
+    ],
+    "nq": 8,
+    "count_label": "8 Fragen"
+  },
+  {
+    "badge": "K",
+    "title": "Kommunikation und wichtige Informationen",
+    "intro": "Wir erfassen die vorhandenen Mittel und den gewünschten Ersatz bei Ausfällen. Länderbezogene Nutzbarkeit von Funk- und Satellitendiensten wird vor einer konkreten Empfehlung geprüft.",
+    "items": [
+      {
+        "type": "q",
+        "id": "Z8.K.01",
+        "frage": "Welche Smartphones, Mobilfunkverträge und Kommunikationsgeräte stehen der Gruppe zur Verfügung?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Person/Kürzel, Anbieter, übliche Reisegebiete, bekannte Grenzen und Zugriff. Verweis auf Inventar möglich."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.K.02",
+        "frage": "Welche zusätzlichen Möglichkeiten für Nachrichten, Radioempfang oder Kommunikation besitzen Sie bereits?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Modell, Zubehör, Vertrag oder Berechtigung soweit vorhanden; Reichweite nur als tatsächlich getestete Erfahrung angeben."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.K.03",
+        "frage": "Wer kann die vorhandenen Kommunikationsmittel sicher bedienen und andere einweisen?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Bediener, Vertretung, Sprach- oder Zugänglichkeitsbedarf und Anleitungen."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.K.04",
+        "frage": "Welche Reihenfolge von Kontaktwegen soll greifen, wenn der bevorzugte Kanal ausfällt?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Vorhandene Absprache oder gewünschte Ersatzfolge; auch Ausfall des eigenen Telefons und fehlendes Internet bedenken."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.K.05",
+        "frage": "Wie sollen regelmäßige Rückmeldungen zwischen Gruppe, Reisenden und lokalen Helfern ablaufen?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Häufigkeit, verantwortliche Person, zweite Kontaktstelle und Umgang mit ausbleibender Meldung."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.K.06",
+        "frage": "Welche wichtigen Informationen sind auch ohne Internet verfügbar?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Kontaktliste, Treffpunkte, Routenunterlagen, Dokumentübersicht, Anleitungen und Zuständigkeiten; Papier oder offline lesbar."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.K.07",
+        "frage": "Wie bleiben wichtige Zugänge und Daten erreichbar, wenn ein Gerät oder die Hauptperson ausfällt?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Nur das Verfahren nennen: Vertretung, geschützte Ablage, Wiederherstellung. Keine Passwörter, Codes oder Wiederherstellungsschlüssel eintragen."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.K.08",
+        "frage": "Welche Stromversorgung und Ladeausstattung ist für Kommunikation vorgesehen oder bereits vorhanden?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Geräteanzahl, passende Kabel, Ersatzakkus, gemeinsame Standards und gewünschte Ausfalldauer."
+        ],
+        "info": ""
+      }
+    ],
+    "source_modules": [
+      "M07",
+      "M10",
+      "M12"
+    ],
+    "nq": 8,
+    "count_label": "8 Fragen"
+  },
+  {
+    "badge": "S",
+    "title": "Schutz, Privatsphäre und Alltag",
+    "intro": "Wir erheben den Bedarf an Schutz und klaren Abläufen. Detaillierte Gebäudeprüfung und technische Schutzplanung folgen erst, wenn konkrete Standortdaten vorliegen.",
+    "items": [
+      {
+        "type": "q",
+        "id": "Z8.S.01",
+        "frage": "Welche Schutzbedürfnisse oder besonderen Sorgen sollen wir berücksichtigen?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Zum Beispiel unbefugter Zugang, Diebstahl, Belästigung, Brand, Betrug oder Schutz persönlicher Informationen. Vertrauliche Einzelheiten gern separat."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.S.02",
+        "frage": "Wer soll von der Vorbereitung und dem Aufenthaltsort wissen, und wer darf Informationen weitergeben?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Gewünschte Regeln zu Gruppenkommunikation, sozialen Medien, Besuchern und externen Dienstleistern."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.S.03",
+        "frage": "Welche vorhandene Ausrüstung und Erfahrung können Sie für Brandvorsorge, sichere Orientierung und Hilfeholen einbringen?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Zum Beispiel Melder, geeignete Löschmittel, Beleuchtung und absolvierte Schulungen. Eignung und Platzierung am künftigen Standort sind spätere Fachplanung."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.S.04",
+        "frage": "Welche einfachen Absprachen für Zugang, Besucher, Notfallkontakte und gegenseitige Unterstützung gibt es bereits?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Nur Verfahren und Zuständigkeiten nennen, keine Schlüsselcodes. Fehlende Absprachen können gemeinsam entwickelt werden."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.S.05",
+        "frage": "Welche Bedürfnisse nach Privatsphäre, Rückzug, Schlaf und ruhigen Zeiten muss das Zusammenleben berücksichtigen?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Praktische Anforderungen und Grenzen genügen. Keine psychologischen Einzelprofile."
+        ],
+        "info": ""
+      }
+    ],
+    "source_modules": [
+      "M02",
+      "M11",
+      "M12"
+    ],
+    "nq": 5,
+    "count_label": "5 Fragen"
+  },
+  {
+    "badge": "O",
+    "title": "Zuständigkeiten und lokales Netzwerk",
+    "intro": "Eine Rolle soll zur tatsächlichen Verfügbarkeit und Erfahrung passen. Eine Zusage und eine Idee sind unterschiedliche Planungsgrundlagen.",
+    "items": [
+      {
+        "type": "tab",
+        "id": "Z8.O.01",
+        "frage": "Wer übernimmt welche Aufgabe, und wer kann vertreten?",
+        "must": false,
+        "hints": [
+          "P1 bis P8 verwenden; externe Hilfe ausdrücklich kennzeichnen."
+        ],
+        "spalten": [
+          {
+            "key": "aufgabe",
+            "label": "Aufgabe",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "haupt",
+            "label": "Hauptperson / offen",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "ersatz",
+            "label": "Vertretung / offen",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "koennen",
+            "label": "Erfahren / Einweisung nötig",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "zusage",
+            "label": "Abgesprochen / Vorschlag",
+            "typ": "text",
+            "hint": "offen möglich"
+          }
+        ],
+        "zeilen_max": 30,
+        "zeilen_fest": [
+          "Lageinformation und Warnung",
+          "Abreise und Zusammenkommen",
+          "Ankunft und Standortbetrieb",
+          "Wasser",
+          "Lebensmittel und Kochen",
+          "Energie und Technik",
+          "Gesundheit und Betreuung",
+          "Hygiene und Reinigung",
+          "Kommunikation",
+          "Beschaffung und Budget"
+        ]
+      },
+      {
+        "type": "tab",
+        "id": "Z8.O.02",
+        "frage": "Welche lokalen Kontakte in Montenegro, Serbien oder auf den Reisewegen bestehen bereits?",
+        "must": false,
+        "hints": [
+          "Zum Beispiel vertrauenswürdige Ansprechpartner, Übersetzung, Versorgung, Transport, Handwerk, Medizin und Betreuung. Private Kontaktdaten nur mit Abstimmung; für die erste Planung reichen Kürzel."
+        ],
+        "spalten": [
+          {
+            "key": "rolle",
+            "label": "Kontaktrolle / Kürzel",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "ort",
+            "label": "Ort / Land",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "leistung",
+            "label": "Mögliche Unterstützung",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "sprache",
+            "label": "Sprache",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "verfuegbar",
+            "label": "Verfügbarkeit / Vertretung",
+            "typ": "text",
+            "hint": "offen möglich"
+          },
+          {
+            "key": "zusage",
+            "label": "Bestätigt / offen",
+            "typ": "text",
+            "hint": "offen möglich"
+          }
+        ],
+        "zeilen_max": 30,
+        "vorlagen": [
+          ""
+        ]
+      },
+      {
+        "type": "q",
+        "id": "Z8.O.03",
+        "frage": "Welche wichtigen Fähigkeiten oder lokalen Leistungen fehlen derzeit?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Was sollte vor Inbetriebnahme aufgebaut, geschult oder beauftragt werden?"
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.O.04",
+        "frage": "Wie viel Zeit können die Beteiligten für Vorbereitung, Einweisung und laufende Aufgaben realistisch aufbringen?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Bitte für Sie selbst, Gruppe und gegebenenfalls lokale Unterstützung unterscheiden."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.O.05",
+        "frage": "Wie sollen Entscheidungen getroffen werden, wenn die Beteiligten unterschiedliche Vorstellungen haben?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Ansprechpartner, Entscheidungsspielraum und einfache Regel bei Zeitdruck; noch offene Vereinbarungen markieren."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.O.06",
+        "frage": "Welche Regeln für gemeinsame Arbeit, Ruhezeiten, Kosten und Nutzung möchten Sie vorab klären?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Auch Erwartungen an ankommende Personen, Besucher und eine mögliche spätere Änderung der Gruppe."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.O.07",
+        "frage": "Welche Erfahrungen aus früheren Ausfällen, Reisen oder gemeinsamem Zusammenleben sollten wir berücksichtigen?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Was hat geholfen, was war unpraktisch? Ein bis drei konkrete Beobachtungen reichen."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.O.08",
+        "frage": "Welche Routine soll Überlastung und Ausfall einzelner Personen auffangen?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Pausen, Wechsel von Aufgaben, Vertretung und externe Hilfe; keine Belastungsprobe erforderlich."
+        ],
+        "info": ""
+      }
+    ],
+    "source_modules": [
+      "M09",
+      "M11",
+      "M12"
+    ],
+    "nq": 8,
+    "count_label": "8 Fragen"
+  },
+  {
+    "badge": "I",
+    "title": "Budget und praktische Umsetzung",
+    "intro": "Hier geht es um das Budget für Ausstattung, Vorbereitung und laufenden Betrieb. Das Beratungshonorar ist davon getrennt. Sie können Bandbreiten nennen oder Budgetfragen im Gespräch klären.",
+    "items": [
+      {
+        "type": "q",
+        "id": "Z8.I.01",
+        "frage": "Welches einmalige Budget steht für Resilienzausstattung und Inbetriebnahme zur Verfügung?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Bandbreite genügt. Grundstück, Kauf oder Bau bitte getrennt halten; daraus wird hier keine Gebäudeentscheidung abgeleitet."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.I.02",
+        "frage": "Welches laufende Budget können Sie für Versorgung, Wartung, Betreuung und Ersatzbeschaffung einplanen?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Pro Monat oder Jahr kennzeichnen, ebenso den Unterschied zwischen Leerstand und Aufenthalt von acht Personen."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.I.03",
+        "frage": "Welche Reserve möchten Sie für Verzögerungen, Ausfälle und unerwartete Ersatzbeschaffung freihalten?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Bandbreite oder „gemeinsam planen“ genügt."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.I.04",
+        "frage": "Wer darf Beschaffungen und Dienstleister beauftragen, und welche Freigaben sind nötig?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Verantwortung, Betragsgrenzen und Erreichbarkeit während Reisen; keine Kontodaten."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.I.05",
+        "frage": "Welche Zahlungs- und Beschaffungsmöglichkeiten bleiben bei Karten-, Bank- oder Internetausfall verfügbar?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Nur Wege und gewünschte Überbrückungsdauer nennen. Keine Bargeldverstecke, Kontonummern oder Zugangsdaten."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.I.06",
+        "frage": "Wie sollen Kosten und bereitgestellte Gegenstände innerhalb der Gruppe zugeordnet werden?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Eigentum, gemeinsame Nutzung, Ersatz und mögliche Rücknahme bei Ausscheiden einer Person."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.I.07",
+        "frage": "Welche drei Maßnahmen sollten zuerst umgesetzt werden?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Ihre Prioritäten, vorhandene Ressourcen und feste Termine. „Priorisierung durch Beratung“ ist möglich."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.I.08",
+        "frage": "Welche Arbeiten möchten Sie selbst erledigen und welche als vollständige Leistung vergeben?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Beschaffung, Transport, Lagerorganisation, Einweisung, Wartung und Koordination vor Ort."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.I.09",
+        "frage": "Welche Lieferzeiten, Reisephasen oder anderen Abhängigkeiten begrenzen die Umsetzung?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Auch Verfügbarkeit der Gruppe und der lokalen Ansprechpartner."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.I.10",
+        "frage": "Wie soll nach Einrichtung geprüft werden, ob die Versorgung für acht Personen praktisch funktioniert?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Gewünschte Einweisung, betreuter Probelauf, Inventur und Dokumentation. Keine unangekündigte Abschaltung oder riskanten Tests."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.I.11",
+        "frage": "Wer hält Inventar, Wartungstermine, Ansprechpartner und Pläne aktuell?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Verantwortliche Person, Rhythmus und Auslöser für Änderungen, etwa neue Personen oder geänderte Nutzung."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.I.12",
+        "frage": "Welche Ersatzlösung soll bereitstehen, wenn Zeit, Budget, Material oder lokale Unterstützung nicht wie geplant verfügbar sind?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Welche reduzierte Zwischenlösung wäre tragbar, und was darf keinesfalls fehlen?"
+        ],
+        "info": ""
+      }
+    ],
+    "source_modules": [
+      "S",
+      "M10",
+      "M12"
+    ],
+    "nq": 12,
+    "count_label": "12 Fragen"
+  },
+  {
+    "badge": "D",
+    "title": "Ergänzungen und nächste Schritte",
+    "intro": "Die Regionalanalyse Düsseldorf/Köln ist ein ergänzender Mandatsteil. Hier reichen die Ausgangsdaten. Technische Objektdaten gehören in eine spätere Ergänzung, sobald der Standort feststeht.",
+    "items": [
+      {
+        "type": "q",
+        "id": "Z8.D.01",
+        "frage": "Welche Orte im Raum Düsseldorf/Köln sollen ergänzend betrachtet werden, und welche Rolle spielen sie?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Wohn-/Aufenthaltsort, Startpunkt, Angehörige oder beruflicher Bezug. Zunächst Ort/Stadtteil; genaue Adresse nur bei Bedarf für die spätere Analyse."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.D.02",
+        "frage": "Welche Personen, regelmäßigen Wege oder besonderen Anliegen sind mit diesen Orten verbunden?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Bitte P1 bis P8 oder „außerhalb der Achtergruppe“ angeben. Der Schwerpunkt bleibt die Vorbereitung des künftigen Standorts."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.D.03",
+        "frage": "Wer kann nach Festlegung des Standorts die technischen Unterlagen bereitstellen oder vor Ort prüfen lassen?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Kontaktrolle und erwarteter Zeitpunkt. Später benötigt werden unter anderem Grundriss/Zugänglichkeit, Wasserqualität und Versorgung, elektrische Lasten, Wärme/Kühlung, Sanitär/Entsorgung, Lagerbedingungen, Brandschutz und Erreichbarkeit. Diese Angaben jetzt nicht erfinden oder beschaffen müssen."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.D.04",
+        "frage": "Welche Ihrer Antworten beruhen noch auf Annahmen oder müssen andere Personen bestätigen?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Bitte Frage-ID oder Thema, wer es klärt und gegebenenfalls Termin. Unbekanntes ist ein reguläres Beratungsergebnis, kein Mangel."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.D.05",
+        "frage": "Was möchten Sie nur persönlich besprechen, und welche weitere Frage fehlt Ihnen?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Keine vertraulichen Details nötig; Stichwort und gewünschter Ansprechpartner reichen."
+        ],
+        "info": ""
+      },
+      {
+        "type": "q",
+        "id": "Z8.D.06",
+        "frage": "Welche vorhandenen Unterlagen dürfen wir für diesen neuen Planungsrahmen weiterverwenden?",
+        "must": false,
+        "options": [],
+        "textlines": 3,
+        "hints": [
+          "Bitte Dokument oder bisherigen Bogen und Gültigkeit nennen. Alte Angaben über andere Personen werden nicht ungeprüft als aktueller Stand übernommen."
+        ],
+        "info": ""
+      }
+    ],
+    "source_modules": [
+      "M01",
+      "M08",
+      "M12"
+    ],
+    "nq": 6,
+    "count_label": "6 Fragen"
+  }
+]
