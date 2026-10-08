@@ -19,10 +19,10 @@ const ensure = d => fs.mkdirSync(d, {recursive:true});
 // damit Browser nie eine alte CSS mit einer neuen JS mischen (oder umgekehrt). Das gab am
 // 16.07.2026 die kaputte Grafik im Hero: neue Seiten, alte Datei aus dem Cache.
 const ASSET_V = crypto.createHash("sha1").update(
-  fs.readFileSync(path.join(SRC,"assets","p12.css")) + fs.readFileSync(path.join(SRC,"assets","p12.js")) + fs.readFileSync(path.join(SRC,"assets","p12-visual.js")) + ["p12-experience.css","p12-experience.js","p12-demo-math.js","p12-full-demo.css","p12-full-demo.js","p12-imagery.css"].map(f=>fs.readFileSync(path.join(SRC,"assets",f))).join("")
+  fs.readFileSync(path.join(SRC,"assets","p12.css")) + fs.readFileSync(path.join(SRC,"assets","p12.js")) + fs.readFileSync(path.join(SRC,"assets","p12-visual.js")) + ["p12-experience.css","p12-experience.js","p12-demo-math.js","p12-full-demo.css","p12-full-demo.js","p12-imagery.css","p12-offer.css"].map(f=>fs.readFileSync(path.join(SRC,"assets",f))).join("")
 ).digest("hex").slice(0,8);
 const versionieren = html => html
-  .replace(/\/assets\/(p12-experience\.(?:css|js)|p12-full-demo\.(?:css|js)|p12-imagery\.css|p12-demo-math\.js)(\?v=[a-f0-9]+)?/g, (_,asset)=>"/assets/"+asset+"?v="+ASSET_V)
+  .replace(/\/assets\/(p12-experience\.(?:css|js)|p12-full-demo\.(?:css|js)|p12-imagery\.css|p12-offer\.css|p12-demo-math\.js)(\?v=[a-f0-9]+)?/g, (_,asset)=>"/assets/"+asset+"?v="+ASSET_V)
   .replace(/\/assets\/p12-visual\.js(\?v=[a-f0-9]+)?/g, "/assets/p12-visual.js?v="+ASSET_V)
   .replace(/\/assets\/p12\.css(\?v=[a-f0-9]+)?/g, "/assets/p12.css?v="+ASSET_V)
   .replace(/\/assets\/p12\.js(\?v=[a-f0-9]+)?/g, "/assets/p12.js?v="+ASSET_V);
@@ -175,7 +175,7 @@ if (fs.existsSync(adminSrc)){ ensure(path.join(DIST,"admin")); for (const f of f
 // Eine Projektseite ueberdeckt den gleichnamigen Pfad der Org-Pages. Die URL existiert also,
 // nur eben nicht als Route dieses Builds, deshalb hier von Hand in die Sitemap.
 const EXTERN = ["/lagebild/"];
-const uniq = [...new Set([...routes, ...EXTERN])].filter(r => r !== "/community/");
+const uniq = [...new Set([...routes, ...EXTERN])];
 const sm = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`+
   uniq.map(r=>`  <url><loc>${SITE}${r}</loc><lastmod>${new Date().toISOString().slice(0,10)}</lastmod></url>`).join("\n")+
   `\n</urlset>\n`;

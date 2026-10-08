@@ -53,6 +53,7 @@
     ]},
     {href:"ratgeber.html", label:"Ratgeber"},
     {href:"downloads.html", label:"Downloads"},
+    {href:"community.html", label:"Community"},
     {href:"hofkonzept.html", label:"Hofkonzept"},
     {href:"faq-kontakt.html", label:"FAQ & Kontakt"}
   ];
@@ -129,7 +130,7 @@
     return '<footer class="site-footer"><div class="wrap">'+
       '<div class="cols">'+
         '<div><img class="brandlogo" src="assets/logo-weiss.png" alt="Protect-12" style="height:34px">'+
-          '<p class="brand-blurb">Krisenvorsorge mit System. Eine strukturierte Analyse Ihres Haushalts, ein persönliches Dashboard, ein machbarer Plan und vereinbarte Begleitung.</p></div>'+
+          '<p class="brand-blurb">Ihre persönliche Analyse, ein priorisierter Plan, Dashboard und Arbeitsunterlagen. Mit erklärter Übergabe und persönlichem Kontakt für Rückfragen.</p></div>'+
         '<div><h4>Das System</h4>'+
           '<a href="module.html">Die zw&ouml;lf Module</a><a href="szenarien.html">Die acht Szenarien</a>'+
           '<a href="unterlagen.html">Ihre Unterlagen</a><a href="dashboard.html">Ihr Dashboard</a><a href="praxis.html">In der Praxis</a>'+
@@ -137,7 +138,7 @@
         '<div><h4>Mehr</h4>'+
           '<a href="ablauf-experten.html">Ablauf der Analyse</a><a href="lagebild.html">Lagebild</a>'+
           '<a href="fruehwarnsystem.html">Fr&uuml;hwarnsystem</a>'+
-          '<a href="hofkonzept.html">Hofkonzept</a><a href="ratgeber.html">Ratgeber</a>'+
+          '<a href="community.html">Community</a><a href="hofkonzept.html">Hofkonzept</a><a href="ratgeber.html">Ratgeber</a>'+
           '<a href="downloads.html">Checklisten zum Download</a>'+
           '<a href="faq-kontakt.html">Fragen &amp; Antworten</a></div>'+
         '<div><h4>Kontakt</h4>'+

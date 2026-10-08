@@ -1,90 +1,67 @@
 ---
-title: "Notvorrat anlegen: Liste für 14 Tage, ehrlich gerechnet | Protect-12"
-description: "Notvorrat anlegen: wie viel Wasser, wie viele Kalorien und welche Lebensmittel Sie wirklich brauchen. Warum 2 Liter am Tag zu wenig sind, und was wir stattdessen empfehlen. Mit Liste zum Abhaken."
+title: "Notvorrat für 14 Tage: vorhandene Vorräte sinnvoll ergänzen | Protect-12"
+description: "Ein guter Vorratsplan verbindet Ihren vorhandenen Bestand mit den Menschen, die davon leben sollen. Hier lesen Sie, wie Sie Lebensmittel, Trinkwasser, Zubereitung und Lagerung für einen selbst gewählten Zeitraum zusammen planen."
 slug: "notvorrat-anlegen"
 kicker: "Ratgeber · Notvorrat"
-h1: "Notvorrat anlegen: Ihre Liste für 14 Tage"
-lead: "Ein Notvorrat ist keine Bunkermentalität, sondern gesunder Menschenverstand. Die amtliche Empfehlung lautet zehn Tage und zwei Liter Wasser am Tag. Wir halten beides für zu knapp und sagen Ihnen offen, warum, und mit welchen Zahlen wir stattdessen rechnen."
+h1: "Notvorrat für 14 Tage: vorhandene Vorräte sinnvoll ergänzen"
+lead: "Ein guter Vorratsplan verbindet Ihren vorhandenen Bestand mit den Menschen, die davon leben sollen. Hier lesen Sie, wie Sie Lebensmittel, Trinkwasser, Zubereitung und Lagerung für einen selbst gewählten Zeitraum zusammen planen."
 date: "2026-07-15"
 order: 1
 draft: false
 ---
 
-Die Idee hinter dem Notvorrat ist einfach: Wenn für einige Tage nicht mehr funktioniert, was sonst selbstverständlich ist, sollen Sie nicht in den Supermarkt-Ansturm müssen. Kein Strom heißt oft auch keine Kasse, keine Kühlung, kein Nachschub. Wer vorbereitet ist, bleibt ruhig und handlungsfähig.
+*Überarbeitet am 08.10.2026.*
 
-Das Bundesamt für Bevölkerungsschutz und Katastrophenhilfe (BBK) empfiehlt einen Vorrat für rund zehn Tage und rechnet mit zwei Litern Wasser pro Person und Tag, davon anderthalb zum Trinken und einen halben zum Kochen. Das ist als Untergrenze gedacht, und genau so sollte man es lesen: als das Minimum, unter das niemand fallen sollte. Nicht als Ziel.
+## Zuerst den vorhandenen Bestand nutzen
 
-## Warum zwei Liter am Tag nicht reichen
+Beginnen Sie mit dem, was bereits funktioniert: vorhandene Lebensmittel, eingeübte Mahlzeiten, geeignete Lagerplätze und Ihre verfügbare Technik. Notieren Sie Personen, Zeitraum und Ort. Ein Vorrat am zweiten Wohnort steht dort zur Verfügung und wird nicht gleichzeitig für den Hauptwohnsitz gerechnet.
 
-Rechnen Sie einmal mit: **eine einzige Toilettenspülung verbraucht 6 bis 9 Liter.** Mit der amtlichen Tagesration kommen Sie also nicht einmal zweimal aufs Klo. Von Abwasch, Zähneputzen, einer Katzenwäsche, einem kranken Kind oder einem Hund ist da noch gar nicht die Rede.
+14 Tage sind in diesem Beispiel ein Planungszeitraum. Welcher Zeitraum für Sie sinnvoll ist, hängt von Ihrer Situation ab. Das BBK nennt zehn Tage als Ziel für einen Vorrat und betont zugleich, dass schon eine Reserve für drei Tage hilft. Entscheidend ist, dass Sie einen nutzbaren Bestand aufbauen und dessen Grenzen kennen. [BBK: Essen und Trinken bevorraten](https://www.bbk.bund.de/DE/Warnung-Vorsorge/Vorsorge/Bevorraten/bevorraten.html).
 
-Wir haben in unseren Analysen viele Haushalte gebeten, ihren Wasserverbrauch 24 Stunden lang ehrlich zu messen, inklusive Hygiene und Kochen. Das Ergebnis liegt regelmäßig zwischen acht und zehn Litern pro Person und Tag. Deshalb rechnen wir so:
+## Trinkwasser und sonstigen Wasserbedarf getrennt erfassen
 
-> **Die 3+3-Regel:** 3 Liter zum Trinken plus 3 Liter für Kochen und Hygiene. Macht **6 Liter pro Person und Tag als Untergrenze**, realistisch sind **8 bis 10 Liter**. Für einen vierköpfigen Haushalt und 14 Tage sind das rund **336 bis 560 Liter**.
+Wasser zum Trinken, für Lebensmittel und für Körperpflege oder Reinigung erfüllt unterschiedliche Zwecke. Eine Trinkwasserempfehlung lässt sich deshalb nicht mit dem Verbrauch einer Toilettenspülung vergleichen.
 
-Das ist das Drei- bis Fünffache der amtlichen Zahl. Es klingt nach viel, und das ist der Punkt: 560 Liter sind 28 Kanister zu 20 Litern. Das ist der Moment, in dem den meisten klar wird, dass ein paar Sixpacks Mineralwasser keine Vorsorge sind, sondern Beruhigung.
+Halten Sie je Verwendung fest, welche Menge benötigt wird, welche Qualität erforderlich ist und woher das Wasser kommt. Trinkwasser gehört in dafür geeignete, saubere Behälter. Inhalt, Lagerung und Wechsel richten sich nach Produkt und Herstellerangaben. Wasser aus einer Badewanne oder einer unbekannten Quelle darf nicht automatisch als trinkbar eingeplant werden.
 
-### Drei Dinge, die dabei fast niemand auf dem Schirm hat
+**Die Rechnung ist einfach:** Personenbezogener Tagesbedarf × Tage = Bedarf für den betrachteten Zeitraum. Davon ziehen Sie nur den tatsächlich verfügbaren, geeigneten Bestand am betreffenden Ort ab. Wasser für Tiere und besondere Anforderungen erfassen Sie gesondert.
 
-- **In Mehrfamilienhäusern ist das Wasser oft nach 12 bis 24 Stunden weg,** nicht nach Tagen. Die Druckpumpe braucht Strom. Erdgeschoss und Keller haben länger etwas, die oberen Etagen zuerst nichts.
-- **Die Notstromaggregate der Wasserwerke halten 48 bis 72 Stunden.** Danach entscheidet der Dieselnachschub, nicht die Technik.
-- **Deutschland hat rund 5.000 kommunale Notbrunnen bei 83 Millionen Einwohnern.** Das sind statistisch 16.600 Menschen pro Brunnen. Wer auf den Staat plant, plant auf eine Schlange.
+Auch bei vorhandenen Tanks, Brunnen oder Filtern zählen die Bedingungen: Welche Pumpe braucht Strom? Wer kann sie bedienen? Welche Wasserqualität ist belegt? Welche Ersatzteile und Verbrauchsmittel werden benötigt? Die Größe eines Tanks beantwortet diese Fragen noch nicht.
 
-Die wertvollsten Minuten des ganzen Ereignisses sind die ersten. Solange noch Wasser läuft, füllen Sie alles: Badewanne, jeden Topf, jeden Kanister, jeden Eimer. Wer das sofort tut, hat 200 Liter. Wer eine Stunde überlegt, hat den Spülkasten.
+## Lebensmittel passend zum Haushalt planen
 
-## Wie viele Kalorien pro Tag
+Planen Sie mit vertrauten Mahlzeiten und den Angaben Ihrer tatsächlichen Produkte. Alter, Aktivität, Verträglichkeit und besondere Anforderungen unterscheiden sich. Kinder werden nicht pauschal als ein bestimmter Bruchteil eines Erwachsenen gerechnet.
 
-Pauschal mit 2.200 Kilokalorien zu rechnen, ist bequem, aber ungenau. Wir planen differenziert:
-
-| Person | Kilokalorien pro Tag |
+| Was Sie erfassen | Wozu die Angabe dient |
 |---|---|
-| Mann, moderate Aktivität | 2.300 bis 2.600 |
-| Frau, moderate Aktivität | 1.800 bis 2.100 |
-| Kind, je nach Alter | 1.200 bis 2.000 |
-| Aufschlag bei Kälte, Arbeit, Stress, schlechtem Schlaf | plus 10 bis 20 Prozent |
+| Personen und individuelle Bedarfsannahmen | Die Planungsbasis wird nachvollziehbar |
+| Lebensmittel, Packungsgröße und Stückzahl | Aus dem Regalbestand wird eine berechenbare Menge |
+| Energie und Nährwerte laut Verpackung | Unterschiedliche Produkte werden korrekt berücksichtigt |
+| Zubereitung und Wasserbedarf | Der Vorrat passt zu den verfügbaren Kochmöglichkeiten |
+| Lagerort, Haltbarkeit und Kühlbedarf | Die Lebensmittel bleiben auffindbar und nutzbar |
 
-Und rechnen Sie nicht mit dem Bedarf eines ruhigen Bürotages. In einer Lage ist es kälter, Sie bewegen sich mehr, Sie schlafen schlechter. Der Bedarf steigt, er sinkt nicht.
+Ein Teil des Bestands sollte ohne aufwendige Zubereitung verwendbar sein. Bei kühlpflichtigen Lebensmitteln gelten die tatsächlichen Lagerbedingungen und Herstellerangaben. Eine pauschale Zusage, Käse oder Wurst brauche keine Kühlung, ist keine tragfähige Planungsgrundlage.
 
-**Der wichtigste Hebel ist Fett.** Ein Gramm Fett hat 9 Kilokalorien, ein Gramm Nudeln oder Eiweiß nur 4. Zwei Liter Rapsöl sind rund 18.000 Kilokalorien und passen in eine Ecke. Fast jeder Vorrat, den wir prüfen, hat zu viele Nudeln und zu wenig Fett.
+## Zubereitung und Vorrat gehören zusammen
 
-## Die Vorratsliste (14 Tage, zwei Erwachsene)
+Prüfen Sie vorhandene Kochmöglichkeiten samt Energie, geeignetem Aufstellort und Bedienung. Für den Außenbereich bestimmte Kocher und Grills gehören nicht in Innenräume. Ein offenes Fenster macht ein Außengerät nicht innenraumtauglich.
 
-Diese Mengen ergeben rund **64.000 Kilokalorien**, verteilt nach der Regel 50 bis 55 Prozent Kohlenhydrate, 30 bis 35 Prozent Fett, 15 bis 20 Prozent Protein. Für andere Haushaltsgrößen rechnen Sie hoch oder runter, für Kinder grob mit zwei Dritteln.
+Hülsenfrüchte müssen entsprechend den Zubereitungshinweisen ausreichend gegart werden. Einweichen oder bloßes Warmhalten ersetzt das notwendige Kochen nicht. Das BfR weist auf gesundheitliche Risiken durch unzureichend erhitzte Hülsenfrüchte hin. [BfR: Lektine in Pflanzenkost](https://www.bfr.bund.de/presseinformation/krank-durch-lektine-in-pflanzenkost/).
 
-| Gruppe | Menge | Warum |
-|---|---|---|
-| Nudeln, Reis, Haferflocken, Couscous | 4 kg, 3 kg, 2 kg, 1 kg | Die Basis. 500 g Nudeln sind rund 1.800 kcal |
-| Kartoffelpüree, Knäckebrot, Mehl | 1 kg, 1 kg, 2 kg | Knäckebrot geht ohne jede Zubereitung |
-| Rapsöl, Olivenöl | 1,5 L, 0,5 L | Der Kalorienhebel, siehe oben |
-| Erdnussmus, Nüsse | 1 kg, 1 kg | Energiedicht, sofort essbar |
-| Linsen, Bohnen, Kichererbsen | 1,5 kg, 6 Dosen, 4 Dosen | Protein, lange haltbar |
-| Thunfisch, Makrele, Fleischkonserven | 6, 6, 4 Dosen | Fisch in Öl, nicht in Wasser: das Öl zählt mit |
-| Dauerwurst, Hartkäse | 1 kg | Braucht keine Kühlung, wenn kühl und trocken |
-| Fertiggerichte | 12 Dosen | Für die Tage, an denen niemand kocht. Die kommen |
-| Kaffee, Schokolade, Gewürze | nach Geschmack | Kein Luxus. Normalität hält Familien zusammen |
+## Aus der Bestandsaufnahme wird ein Arbeitsplan
 
-Nach sieben bis zehn Tagen ohne ausreichend Protein merken Sie es an Kraft, Regeneration und Laune, und zwar deutlich. Und ein Vorrat, den niemand mag, wird nie gegessen und deshalb nie erneuert. Er steht drei Jahre im Keller, sieht beruhigend aus und ist im Ernstfall abgelaufen.
+1. Bestand am jeweiligen Standort erfassen.
+2. Bedarf und verfügbare Mengen gegenüberstellen.
+3. Fehlende Lebensmittel oder Voraussetzungen benennen.
+4. Ergänzungen nach Nutzen und Dringlichkeit ordnen.
+5. Lagerung, Verbrauch und regelmäßige Prüfung organisieren.
 
-<div class="dl-inline">
-<div class="dl-inline-k">Zum Mitnehmen</div>
-<h3>Der komplette Vorratsplan als PDF</h3>
-<p>Ein Planungsdokument: die volle Wasserrechnung für Ihre Haushaltsgröße, die Wasser-PACE-Kette, die versteckten Reserven im Haus, das Depotmodell, die Liste zum Abhaken und alles, was nicht essbar und trotzdem Pflicht ist. Dazu der mitrechnende Vorratsrechner als Excel. Kostenlos, ohne Anmeldung.</p>
-<p><a class="btn btn-red" href="/downloads/Protect12_Vorratsplan.pdf" download>Vorratsplan herunterladen &darr;</a>
-<a class="btn btn-line" href="/downloads/">Alle Checklisten ansehen</a></p>
-</div>
+Wer bereits gut ausgestattet ist, beginnt häufig bei Feinheiten: eine bessere Zuordnung, eine eingewiesene Vertretung oder ein verlässlicher Prüfturnus. Eine neue Anschaffung ist nur eine mögliche Maßnahme.
 
-## Fünf Regeln für die Praxis
+## Was Sie bei Protect-12 erhalten
 
-- **Vorrat leben, nicht lagern.** Kaufen Sie, was Sie ohnehin essen, und rotieren Sie: Neues nach hinten, Älteres nach vorn. So läuft nichts ab.
-- **Stromlos denken.** Der halbe Vorrat sollte ohne Herd essbar sein. Ein Blackout trifft zuerst die Küche. Und: Kocher und Grills mit offener Flamme gehören niemals in geschlossene Räume, Kohlenmonoxid ist geruchlos und tötet lautlos.
-- **Individuell ergänzen.** Dauermedikamente, Brille, Säuglingsbedarf, Haustierfutter: das steht in keiner Standardliste, ist aber oft das Wichtigste.
-- **Klein anfangen.** Erst 60 Liter Wasser pro Person, dann der Rest. Ein unvollständiger Vorrat, den Sie haben, schlägt den perfekten, den Sie nie anlegen.
-- **Zwei Orte, nicht einer.** Ein Wasserschaden, ein Brand, ein Einbruch darf nicht alles entwerten.
+Ihr persönlicher Vorratsplan verbindet Menschen, Bestände und Standorte. Er gehört zur umfassenden Analyse mit priorisiertem Umsetzungsplan, Dashboard und Arbeitsunterlagen. Sie erhalten eine nachvollziehbare Planungsbasis und konkrete nächste Schritte. Bei der Übergabe erklären wir Ihnen, wie Sie die Daten weiterpflegen.
 
-## Wo eine Liste an ihre Grenze kommt
+[Das persönliche Ergebnispaket ansehen →](/unterlagen/) · [Vorratsplanung im Dashboard ausprobieren →](/dashboard/)
 
-Eine Vorratsliste ist ein guter Anfang, aber sie ist generisch. Sie weiß nichts von Ihrem Standort, Ihrer Wohnsituation, den Menschen und Tieren in Ihrem Haushalt oder Ihren Abhängigkeiten. Eine alleinstehende Person in der Stadt braucht etwas anderes als eine Familie auf dem Land oder ein älteres Paar mit medizinischen Geräten am Strom.
-
-Sie sagt Ihnen auch nicht, ob Ihr Wasser ohne Strom überhaupt bis in Ihre Etage kommt, ob Ihr Vorrat den Winter übersteht, wenn die Heizung steht, oder ob Ihre Medikamente das schwächste Glied sind.
-
-Genau hier setzt Protect-12 an: Wir rechnen Ihren tatsächlichen Bedarf durch, über alle zwölf Lebensbereiche, nicht nur Wasser und Nahrung. Und wir zeigen Ihnen, welche Lücke bei Ihnen zuerst dran ist. Denn oft ist der wirksamste Hebel keine Anschaffung, sondern eine Reihenfolge.
+Die öffentlichen [Vorlagen und Rechner](/downloads/) helfen bei der eigenen Erfassung. Allgemeine Beispielwerte passen Sie an Ihre Situation an; Ihre persönliche Auswertung entsteht aus Ihren eigenen Angaben.

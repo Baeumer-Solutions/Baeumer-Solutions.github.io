@@ -1,117 +1,80 @@
 ---
-title: "Vorrat für 4 Wochen: der Planer, mit dem es wirklich reicht | Protect-12"
-description: "Vorrat für vier Wochen planen: warum 4 Wochen nicht das Doppelte von 2 Wochen sind, wie viele Kalorien, wie viel Wasser und wie viel Brennstoff Sie brauchen. Mit Wochenplan und Mengenliste."
+title: "Vorrat für vier Wochen: Bestand, Versorgung und Alltag zusammen planen | Protect-12"
+description: "Wer für 28 Tage plant, betrachtet Mengen und Betriebsbedingungen gemeinsam. Auch ein umfangreicher vorhandener Vorrat braucht passende Zubereitung, Wasser, Lagerung und eine klare Zuordnung zu Personen und Orten."
 slug: "vorrat-vier-wochen"
 kicker: "Ratgeber · Vorrat 4 Wochen"
-h1: "Vorrat für 4 Wochen: der Planer, mit dem es wirklich reicht"
-lead: "Zwei Wochen sind der Einstieg, vier Wochen sind der eigentliche Planungshorizont. Der Sprung dazwischen ist aber keine Verdopplung der Einkaufsliste. Ab Woche drei kippt die Logik: Aus Lagern wird Versorgen. Wer das übersieht, hat viel Ware im Keller und trotzdem ein Problem."
+h1: "Vorrat für vier Wochen: Bestand, Versorgung und Alltag zusammen planen"
+lead: "Wer für 28 Tage plant, betrachtet Mengen und Betriebsbedingungen gemeinsam. Auch ein umfangreicher vorhandener Vorrat braucht passende Zubereitung, Wasser, Lagerung und eine klare Zuordnung zu Personen und Orten."
 date: "2026-07-20"
 order: 3
 draft: false
 ---
 
-Die meisten Listen im Netz enden bei zehn oder vierzehn Tagen, und das hat einen Grund: So lange trägt reines Lagern. Sie kaufen mehr von dem, was Sie ohnehin essen, stellen es in den Keller und sind fertig. Alles, was länger dauert, funktioniert anders. Nicht schwieriger, aber anders.
+*Überarbeitet am 08.10.2026.*
 
-Wir empfehlen vier Wochen, weil fast alle realistischen Lagen in diesem Fenster liegen: ein längerer Stromausfall, eine unterbrochene Lieferkette, eine Quarantäne, ein Hochwasser mit zerstörter Infrastruktur, ein Cyberangriff auf Zahlungsverkehr oder Versorger. Vier Wochen sind der Punkt, an dem Sie nicht mehr auf schnelle Normalisierung wetten müssen.
+## Vier Wochen als bewusst gewählter Planungshorizont
 
-## Warum vier Wochen nicht zweimal zwei Wochen sind
+28 Tage sind ein möglicher Zeitraum für Ihre Planung. Daraus folgt keine Vorhersage, dass eine Störung danach endet. Sie entscheiden, welchen Zeitraum Sie betrachten, und halten die Annahmen dazu fest.
 
-Bei einer Verdopplung des Zeitraums wachsen drei Dinge nicht linear mit, sondern werden zum eigenen Thema:
+Die Grundrechnung bleibt nachvollziehbar: Bedarf je Person und Tag × 28 Tage. Anschließend prüfen Sie, welche Bedingungen diesen Bestand nutzbar machen. Lebensmittel, Wasser, Energie und Menschen wirken schon am ersten Tag zusammen, nicht erst ab einer bestimmten Woche.
 
-- **Wasser lässt sich nicht einfach hochskalieren.** Zwei Personen brauchen bei realistischen 8 bis 10 Litern am Tag über vier Wochen **450 bis 560 Liter**, ein vierköpfiger Haushalt **900 bis 1.100 Liter**. Das sind 45 bis 55 Kanister zu 20 Litern. Diese Menge lagert niemand. Ab Woche zwei ist Wasser deshalb keine Lagerfrage mehr, sondern eine Aufbereitungsfrage.
-- **Zubereitung wird zum Engpass.** Bei zwei Wochen kommen Sie mit kalt essbaren Vorräten durch. Über vier Wochen wollen und sollten Sie warm essen, und dafür brauchen Sie Brennstoff, den kaum jemand einplant.
-- **Der Körper meldet sich.** Ein abwechslungsreicher Vorrat muss zu den persönlichen Bedürfnissen und der Verträglichkeit passen.
+## Eine Rechnung mit transparenten Annahmen
 
-> **Die Faustregel:** Bis 14 Tage planen Sie **Vorrat**. Ab 14 Tagen planen Sie **Versorgung**, also Wasseraufbereitung, Brennstoff, Hygiene und Nachschub aus eigener Hand.
+Das folgende Beispiel erläutert die Rechenweise, nicht Ihren persönlichen Ernährungsbedarf:
 
-## Die Kalorienrechnung für vier Wochen
+| Rechenschritt | Beispiel |
+|---|---|
+| Tagesannahme Person A | 2.400 kcal |
+| Tagesannahme Person B | 1.950 kcal |
+| Summe für 28 Tage | (2.400 + 1.950) × 28 = 121.800 kcal |
+| Vergleich mit dem Bestand | Tatsächliche Mengen × Energiegehalt laut Produktangabe |
+| Ergebnis | Rechnerische Deckung unter genau diesen Annahmen |
 
-Rechnen Sie personenbezogen, nicht pauschal. Für zwei Erwachsene mit moderater Aktivität ergibt sich:
+Die Tagesannahmen werden für die tatsächlichen Personen gewählt. Ein pauschaler Zuschlag für jede Krise oder ein fester Kinderfaktor bildet unterschiedliche Bedürfnisse nicht zuverlässig ab. Neben Energie zählen Abwechslung, Verträglichkeit und geeignete Zubereitung.
 
-| Posten | Rechnung | Ergebnis |
-|---|---|---|
-| Mann, moderat | 2.400 kcal x 28 Tage | 67.200 kcal |
-| Frau, moderat | 1.950 kcal x 28 Tage | 54.600 kcal |
-| Zwischensumme | | 121.800 kcal |
-| Aufschlag Kälte, Arbeit, Stress | plus 15 Prozent | rund 140.000 kcal |
+Kilogramm allein sagen wenig aus: Unterschiedliche Lebensmittel haben unterschiedliche Energiegehalte und Packungsgrößen. Rechnen Sie daher mit Ihren Produkten. Ein Gesamtgewicht für jeden Zwei-Personen-Haushalt wäre Scheingenauigkeit.
 
-**Rund 140.000 Kilokalorien für zwei Personen und vier Wochen.** Für Kinder rechnen Sie grob mit zwei Dritteln eines Erwachsenen, für einen vierköpfigen Haushalt mit rund 240.000 Kilokalorien.
+## Wasser und Technik über den gesamten Zeitraum betrachten
 
-Jetzt der Teil, der überrascht: Diese Energie wiegt sehr unterschiedlich viel, je nachdem, woraus sie besteht. Trockenware liefert rund 3.500 Kilokalorien pro Kilogramm, Konserven nur 800 bis 1.000, weil Sie überwiegend Wasser einlagern und bezahlen. Ein Vorrat aus lauter Dosen wiegt für dieselbe Energie das Drei- bis Vierfache und braucht entsprechend Platz.
+Mit längerer Dauer wächst der Bedarf an geeignetem Wasser. Ein vorhandener großer Speicher kann wertvoll sein; seine Kapazität, Qualität, Zugänglichkeit und Nachfüllmöglichkeit gehören gemeinsam in den Plan.
 
-| Vorratstyp | kcal pro kg | Gewicht für 140.000 kcal |
-|---|---|---|
-| Trockenware, Öl, Nüsse | rund 3.500 | rund 40 kg |
-| Gemischter Vorrat, realistisch | rund 2.200 | rund 64 kg |
-| Überwiegend Konserven | rund 900 | rund 155 kg |
+| Vorhandene Lösung | Ergänzende Frage |
+|---|---|
+| Wasserspeicher | Welche nutzbare Menge und welche Wasserqualität sind belegt? |
+| Pumpe oder Hauswasserwerk | Welche Stromversorgung, Bedienung und Ersatzteile sind nötig? |
+| Aufbereitung | Für welche Ausgangsqualität ist das Verfahren geeignet? |
+| Zusätzlicher Standort | Wer erreicht ihn und kann dort tatsächlich auf den Bestand zugreifen? |
 
-**Der Zielkorridor liegt bei 60 bis 70 Kilogramm für zwei Personen.** Konserven bleiben trotzdem wichtig, weil sie ohne Zubereitung essbar sind und Fett und Protein liefern. Aber sie sind die Ergänzung, nicht das Fundament.
+Wasseraufbereitung ist keine automatische Antwort auf jede Verunreinigung. Verfügbare Verfahren und die Eignung der Quelle müssen zusammenpassen. Amtliche Hinweise zur Trinkwassernutzung bleiben maßgeblich.
 
-## Der Wochenplan: was wann passiert
+## Zubereitung ohne pauschale Brennstoffzahlen planen
 
-Ein Vier-Wochen-Vorrat wird nicht gleichmäßig verbraucht. Wer weiß, was wann dran ist, verschwendet in Woche eins nichts, was in Woche vier fehlt.
+Der Verbrauch hängt von Gerät, Leistung, Witterung, Topf und Mahlzeit ab. Nutzen Sie Herstellerangaben und geeignete praktische Verbrauchsmessungen für Ihre konkrete Ausstattung. Halten Sie fest, wer sie bedienen kann und welcher zulässige Vorrat vorhanden ist.
 
-| Zeitraum | Was Sie essen | Worauf es ankommt |
-|---|---|---|
-| Tag 1 bis 3 | Kühlschrank und Gefriertruhe, in dieser Reihenfolge | Türen geschlossen halten. Eine volle Truhe hält 24 bis 48 Stunden. Lebensmittelsicherheit nach tatsächlicher Temperatur und Dauer beurteilen; im Zweifel entsorgen |
-| Tag 4 bis 10 | frische Lagerware: Kartoffeln, Zwiebeln, Möhren, Kohl, Äpfel, Hartkäse, Eier | Diese Woche ist die kulinarisch beste. Nutzen Sie sie, statt Konserven anzubrechen |
-| Tag 11 bis 21 | der klassische Vorrat: Nudeln, Reis, Hülsenfrüchte, Konserven, Öl | Jetzt beginnt die Routine. Feste Essenszeiten helfen mehr, als man denkt |
-| Tag 22 bis 28 | Reserve, Trockenvorrat, Sprossen, Selbstgebackenes | Diese Woche entscheidet, ob Ihr Plan trägt. Sie ist bei fast allen die dünnste |
+Planen Sie auch Mahlzeiten, die wenig oder keine Kochenergie benötigen. Außengeräte bleiben draußen; Brennstoffe werden entsprechend den Produktangaben und den am Standort geltenden Anforderungen gelagert.
 
-Die vierte Woche ist der ehrliche Test. Rechnen Sie Ihren Vorrat einmal rückwärts: Was wäre an Tag 28 noch da? Wenn die Antwort "Nudeln und Salz" lautet, fehlt Fett und Protein.
+Bei Hülsenfrüchten ist die ausreichende Garung wichtig. Einweichen oder ein Warmhaltebeutel rechtfertigen keine pauschale Verkürzung auf wenige Minuten. [BfR: Lektine in Pflanzenkost](https://www.bfr.bund.de/presseinformation/krank-durch-lektine-in-pflanzenkost/).
 
-## Brennstoff: der vergessene Engpass
+## Verbrauch nach Zustand statt nach starrem Kalendertag
 
-28 Tage warm essen bedeutet, ohne Herd zu kochen. Zwei Personen mit zwei warmen Zubereitungen am Tag brauchen etwa 25 bis 30 Minuten Brennzeit täglich, über vier Wochen also **rund 13 bis 15 Stunden**.
+Ein Plan wie „bis Tag drei alles aus der Kühlung essen“ kann die tatsächlichen Temperaturen und Ausfallzeiten nicht ersetzen. Prüfen Sie Haltbarkeit, Lagerbedingungen und Zustand. Leicht verderbliche Lebensmittel benötigen verlässliche Kühlung; im Zweifel gehören unsichere Lebensmittel nicht auf den Speiseplan.
 
-Eine 230-Gramm-Schraubkartusche brennt bei mittlerer Flamme rund 60 bis 70 Minuten. Sie brauchen also **12 bis 15 Kartuschen**, nicht die zwei, die im Campingregal stehen. Bei Spiritus rechnen Sie mit rund 30 Millilitern pro Liter Kochwasser, das sind über vier Wochen etwa 8 bis 10 Liter.
+Führen Sie einen einfachen Verbrauchsplan: Was ist zuerst zu verwenden? Was bleibt für später? Was benötigt Wasser oder Energie? Halten Sie auch fest, welche Mahlzeiten ohne die gewohnte Küche möglich sind. [BfR: Lebensmittelhygiene](https://www.bfr.bund.de/lebensmittel/).
 
-Drei Punkte dazu, die nicht verhandelbar sind:
+## Rotation und Zuständigkeit festlegen
 
-- **Campingkocher mit Gaskartusche und Grills nur im Freien nutzen.** Innen sind ausschließlich dafür zugelassene Geräte geeignet. Herstellerangaben beachten. Kohlenmonoxid ist lebensgefährlich. Ein offenes Fenster oder CO-Melder macht Außengeräte innen nicht sicher.
-- **Gaskartuschen verlieren bei Kälte Druck.** Unter 5 Grad wird eine Standardkartusche zäh. Wer im Winter plant, nimmt Wintergas oder lagert die Kartusche warm.
-- **Kochen Sie in großen Portionen.** Zwei Töpfe an einem Tag verbrauchen weniger Brennstoff als vier kleine, weil das Aufheizen die Energie frisst, nicht das Köcheln.
+Ein erprobtes System kann nach Alltag und Reserve gegliedert sein. Die genauen Prüftermine richten sich nach Produkten und Lagerung. Eine zweite Person sollte die Ordnung verstehen und wissen, wo die Unterlagen liegen.
 
-Wer den Brennstoff halbieren will, plant Einweichen ein: Hülsenfrüchte über Nacht in kaltem Wasser einweichen, dann kochen sie in einem Drittel der Zeit. Ein Warmhaltebeutel oder eine Kiste mit Decken macht aus 20 Minuten Kochen 5 Minuten Kochen plus eine Stunde Nachgaren.
+- Neue Ware so einordnen, dass ältere geeignete Bestände zuerst verwendet werden.
+- Verbrauch und Ersatz im selben Verzeichnis nachführen.
+- Veränderte Personenbedarfe und Standorte berücksichtigen.
+- Bestände an mehreren Orten jeweils getrennt bilanzieren.
+- Offene Betriebsfragen als eigene Aufgabe festhalten.
 
-<div class="dl-inline">
-<div class="dl-inline-k">Zum Mitnehmen</div>
-<h3>Der Vier-Wochen-Plan als PDF</h3>
-<p>Ein Planungsdokument für diesen Horizont: die Kalorienrechnung für 28 Tage, was 140.000 Kilokalorien je nach Vorratstyp wiegen, der Wochenplan von der Gefriertruhe bis zur Reserve, die vollständige Mengenliste mit Energie je Position und Spalte zum Abhaken, Ihr Wasserbedarf über 28 Tage samt Aufbereitungskette, der Brennstoffbedarf in Gaskartuschen und das Depotmodell gegen die Rotationsfalle. Kostenlos, ohne Anmeldung.</p>
-<p><a class="btn btn-red" href="/downloads/Protect12_Vorrat_4_Wochen.pdf" download>Vier-Wochen-Plan herunterladen &darr;</a>
-<a class="btn btn-line" href="/downloads/">Alle Checklisten ansehen</a></p>
-</div>
+## Ihr Ergebnis bei Protect-12
 
-## Abwechslung und persönliche Bedürfnisse mitplanen
+Sie erhalten eine persönliche Analyse, einen begründeten Maßnahmenplan und die dazugehörigen Arbeitsunterlagen. Vorrat, Beschaffung, Packliste und Dashboard greifen auf die beschriebenen Personen und Standorte zurück. So können Sie vorhandene Stärken nutzen und gezielt an den Punkten weiterarbeiten, die für Ihren Haushalt wichtig sind.
 
-Bedürfnisse und Verträglichkeit unterscheiden sich von Mensch zu Mensch. Planen Sie vertraute Lebensmittel und abwechslungsreiche Mahlzeiten. Aus der Dauer eines Vorrats allein lässt sich keine individuelle gesundheitliche Wirkung ableiten.
+[Unterlagen und konkrete Ergebnisse ansehen →](/unterlagen/) · [Ablauf der Zusammenarbeit →](/ablauf-experten/)
 
-- **Alltagstaugliche Mahlzeiten:** Wählen Sie Lebensmittel, die in Ihrem Haushalt gegessen und vertragen werden. Berücksichtigen Sie Wasserbedarf, Zubereitung und Lagerung.
-- **Persönlicher Bedarf:** Alter, Aktivität und gesundheitliche Anforderungen gehören in die Planung. Besondere Ernährungsfragen bei Bedarf ärztlich oder mit einer qualifizierten Ernährungsfachkraft besprechen.
-- **Abwechslung:** Vertraute Gerichte und passende Zutaten erleichtern die Nutzung des Vorrats. Nahrungsergänzung ersetzt keine ausgewogene Ernährung.
-
-**Sprossen benötigen besondere Lebensmittelhygiene.** Rohe Sprossen können Krankheitserreger enthalten. Vor dem Verzehr vollständig erhitzen. Für besonders empfindliche Personen sind rohe Sprossen ungeeignet. Ein Vorrat muss auch ohne frisch gezogene Sprossen verwendbar sein.
-
-## Rotation: das eigentliche Problem eines Vier-Wochen-Vorrats
-
-Ein größerer Lebensmittelvorrat braucht einen bewussten Plan für Lagerung, Nutzung und regelmäßige Prüfung. Genau daran scheitern die meisten großen Vorräte: Sie werden einmal angelegt, nie angefasst und sind nach drei Jahren abgelaufen.
-
-Trennen Sie deshalb in zwei Depots:
-
-| Depot | Inhalt | Umgang |
-|---|---|---|
-| Depot A, rund 14 Tage | alles, was Sie ohnehin essen | steht in der Küche und wird gelebt: Neues nach hinten, Älteres nach vorn |
-| Depot B, Woche 3 und 4 | Langzeitware: Reis, Öl, Nüsse, Hülsenfrüchte, Vollkonserven, Trockenmilch | steht separat, wird einmal im Jahr geprüft und gezielt aufgebraucht |
-
-Setzen Sie sich zwei feste Termine im Jahr, etwa zur Zeitumstellung. Depot B durchsehen, was im nächsten Jahr abläuft, wandert in die Küche und wird ersetzt. Zwanzig Minuten, zweimal im Jahr. Und lagern Sie nicht alles an einem Ort: Ein Wasserschaden, ein Brand oder ein Einbruch darf nicht Ihre gesamte Vorsorge entwerten.
-
-## Wo der Vier-Wochen-Plan an seine Grenze kommt
-
-Ein guter Plan für vier Wochen beantwortet die Frage, was Sie essen. Er beantwortet nicht, ob Sie es zubereiten können, ob Ihr Wasser ohne Strom bis in Ihre Etage kommt, ob Ihre Wohnung im Januar ohne Heizung bewohnbar bleibt oder ob Ihre Dauermedikamente die entscheidende Lücke sind.
-
-Nahrung ist ein Lebensbereich von zwölf, und in unseren Analysen ist sie überraschend selten das schwächste Glied. Häufiger sind es Wasser, Wärme, Medikamente oder schlicht die Frage, wer im Ernstfall welche Entscheidung trifft. Ein voller Keller neben einer offenen Flanke ergibt keine Sicherheit, sondern ein gutes Gefühl an der falschen Stelle.
-
-Deshalb rechnen wir bei Protect-12 nicht nur Mengen, sondern Reihenfolgen: welche Lücke bei Ihnen zuerst zuschlägt, welche Maßnahme zu Bedarf, Aufwand und vorhandenen Ressourcen passt und was Sie sich getrost sparen können. Der wirksamste Hebel ist selten die nächste Anschaffung. Meistens ist es die richtige Reihenfolge.
-
-
-Hinweise: [BBK, Vorsorge für Krisen und Katastrophen](https://www.bbk.bund.de/DE/Warnung-Vorsorge/Vorsorge/vorsorge_node.html) und [BfR, Lebensmittelhygiene](https://www.bfr.bund.de/lebensmittel/).
+Öffentliche [Planungsvorlagen](/downloads/) sind Hilfen zur eigenen Erfassung. Ihre Beispielwerte sind keine Zusage für die Versorgung eines bestimmten Haushalts.
