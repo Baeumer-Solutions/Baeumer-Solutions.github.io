@@ -19,9 +19,10 @@ const ensure = d => fs.mkdirSync(d, {recursive:true});
 // damit Browser nie eine alte CSS mit einer neuen JS mischen (oder umgekehrt). Das gab am
 // 16.07.2026 die kaputte Grafik im Hero: neue Seiten, alte Datei aus dem Cache.
 const ASSET_V = crypto.createHash("sha1").update(
-  fs.readFileSync(path.join(SRC,"assets","p12.css")) + fs.readFileSync(path.join(SRC,"assets","p12.js"))
+  fs.readFileSync(path.join(SRC,"assets","p12.css")) + fs.readFileSync(path.join(SRC,"assets","p12.js")) + fs.readFileSync(path.join(SRC,"assets","p12-visual.js"))
 ).digest("hex").slice(0,8);
 const versionieren = html => html
+  .replace(/\/assets\/p12-visual\.js(\?v=[a-f0-9]+)?/g, "/assets/p12-visual.js?v="+ASSET_V)
   .replace(/\/assets\/p12\.css(\?v=[a-f0-9]+)?/g, "/assets/p12.css?v="+ASSET_V)
   .replace(/\/assets\/p12\.js(\?v=[a-f0-9]+)?/g, "/assets/p12.js?v="+ASSET_V);
 const write = (p, c) => {
