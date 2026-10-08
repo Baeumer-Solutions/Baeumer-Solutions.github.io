@@ -27,7 +27,7 @@
   .gaugewrap .val small{font-size:20px;color:var(--mist-txt);font-weight:600}
   .gaugewrap .msg{color:var(--mist-txt);margin-top:10px;max-width:44ch;margin-left:auto;margin-right:auto;font-size:15px}
 </style>
-</head>
+<link href="assets/p12-experience.css" rel="stylesheet"/></head>
 <body class="p12-visual" data-page="faq-kontakt.html">
 <div id="p12-header"></div>
 <header class="hero">
@@ -35,7 +35,7 @@
 <span class="kicker">Fragen &amp; Antworten</span>
 <h1>Fragen zur Krisenvorsorge-Analyse</h1>
 <p class="lead">Die häufigsten Fragen, ehrlich beantwortet. Und wenn Sie ein erstes Gefühl wollen, bevor Sie mit uns sprechen: der Selbst-Check am Ende dauert zwei Minuten.</p>
-<div class="cta-row"><a class="btn btn-red" data-cta="" href="#">Gespräch vereinbaren →</a><a class="btn btn-ghost" href="#selfcheck">Zum Selbst-Check</a></div>
+<div class="cta-row"><a class="btn btn-red" data-cta="" href="#">Anliegen besprechen →</a><a class="btn btn-ghost" href="#selfcheck">Zum Selbst-Check</a></div>
 </div><figure class="v-hero-art"><img alt="Zwölf miteinander verbundene Lebensbereiche" fetchpriority="high" height="540" src="assets/visual-system.svg" width="640"/></figure></div>
 </header>
 <section id="faq">
@@ -45,29 +45,14 @@
 </div>
 </section>
 <!-- SELFCHECK -->
-<section class="mist" id="selfcheck">
-<div class="wrap" style="max-width:820px">
-<div class="section-head reveal"><span class="kicker">Selbst-Check</span>
-<h2>In zwei Minuten ein Gefühl dafür, wo Sie stehen.</h2>
-<p class="lead">Zwölf kurze Fragen, eine je Lebensbereich. Am Ende sehen Sie eine erste Einschätzung, kein Ersatz für die Analyse, aber ein guter Anfang.</p></div>
-<div class="reveal" id="scform"></div>
-<div class="gaugewrap reveal" style="margin-top:18px">
-<div class="val"><span id="scval">0.0</span><small> / 5</small></div>
-<div class="msg" id="scmsg">Beantworten Sie die zwölf Fragen, um Ihre erste Einordnung zu sehen.</div>
-<div style="margin-top:18px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
-<a class="btn btn-red" data-cta="" href="#">Echte Analyse besprechen →</a>
-<button class="btn btn-ghost" id="screset" type="button">Noch einmal</button>
-</div>
-</div>
-</div>
-</section>
+<section class="e-section" data-graphics="26" id="selfcheck"><div class="wrap"><div class="section-head"><span class="kicker">selfcheck</span><h2>Ihre eigene Einschätzung sichtbar machen.</h2><p>Zwölf kurze Fragen helfen, offene Punkte für ein Gespräch zu finden. Die Antworten bleiben in dieser Seite; sie sind keine fachliche Bewertung.</p></div><div class="e-selfcheck" data-selfcheck=""><div data-selfcheck-questions=""></div><div class="e-self-result"><h3 data-selfcheck-progress="">0 von 12 Bereichen beantwortet</h3><div class="e-self-profile" data-selfcheck-profile=""></div><h4>Drei Fragen für Ihr Gespräch</h4><ul data-selfcheck-prompts=""><li>Welche Funktion ist Ihnen besonders wichtig?</li><li>Welche Angabe ist bisher nur eine Annahme?</li><li>Welcher nächste Schritt passt zu Ihrer Situation?</li></ul><button class="btn btn-line" data-selfcheck-reset="" type="button">Antworten zurücksetzen</button></div></div></div></section>
 <!-- KONTAKT -->
 <section class="band">
 <div class="wrap">
 <span class="kicker">Ihr nächster Schritt</span>
 <h2>Der erste Schritt ist ein Gespräch.</h2>
 <p>Protect-12 gibt Ihrer Krisenvorsorge System. Und Ihnen und Ihren Liebsten echte Resilienz. Wir erklären Ablauf und Umfang persönlich.</p>
-<a class="btn btn-red" data-cta="" href="#">Gespräch vereinbaren →</a>
+<a class="btn btn-red" data-cta="" href="#">Anliegen besprechen →</a>
 <p style="margin-top:22px;font-size:15px;color:var(--mist-txt)">Bäumer Solutions · Kevin Bäumer · <a href="mailto:kontakt@protect-12.de" style="color:#fff">kontakt@protect-12.de</a> · <a href="tel:+4917623998516" style="color:#fff">+49 176 23998516</a></p>
 </div>
 </section>
@@ -83,39 +68,7 @@ FAQ.forEach(function(f,i){ var d=document.createElement("details"); if(i===0)d.o
 // FAQPage JSON-LD
 document.getElementById("faqld").textContent = JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":FAQ.map(function(f){return {"@type":"Question","name":f[0].replace(/&auml;/g,"ä").replace(/&ouml;/g,"ö").replace(/&uuml;/g,"ü").replace(/&szlig;/g,"ß"),"acceptedAnswer":{"@type":"Answer","text":f[1].replace(/&auml;/g,"ä").replace(/&ouml;/g,"ö").replace(/&uuml;/g,"ü").replace(/&szlig;/g,"ß")}};})});
 
-// SELF-CHECK
-var SC=[
- {q:"Kennen Sie die Risiken Ihres Standorts und eine zweite Route, falls die gewohnte Zufahrt gesperrt ist?",o:[["Nein",1],["Teilweise",3],["Ja, beides",5]]},
- {q:"Ist Ihr Zuhause grundlegend gesichert, ohne dass Ihre Vorsorge nach au&szlig;en sichtbar ist?",o:[["Eher nicht",1],["Teilweise",3],["Ja, unauff&auml;llig",5]]},
- {q:"Wie viel Trinkwasser haben Sie sicher im Haus, pro Person?",o:[["Kaum Reserve",1],["F&uuml;r einige Tage",3],["F&uuml;r zwei Wochen oder mehr",5]]},
- {q:"Wie lange tr&auml;gt Ihr Lebensmittelvorrat den Haushalt, ohne einzukaufen?",o:[["Unter drei Tage",1],["Ein bis zwei Wochen",3],["Vier Wochen oder mehr",5]]},
- {q:"Wie lange kommt Ihr Haushalt ohne Strom aus, ohne dass es kritisch wird?",o:[["Unter einem Tag",1],["Ein paar Tage",3],["Eine Woche oder mehr",5]]},
- {q:"H&auml;tten Sie Medikamente und Erste-Hilfe-Material f&uuml;r zwei Wochen ohne Apotheke?",o:[["Nein",1],["Teilweise",3],["Ja, geplant",5]]},
- {q:"K&ouml;nnten Sie ohne Handynetz noch verl&auml;ssliche Informationen bekommen?",o:[["Nein",1],["Vielleicht",3],["Ja, mehrere Wege",5]]},
- {q:"K&ouml;nnten Sie Ihr Zuhause kurzfristig verlassen: Gep&auml;ck, Ziel und Route stehen fest?",o:[["Nein",1],["Grob &uuml;berlegt",3],["Ja, vorbereitet",5]]},
- {q:"Gibt es Menschen in Ihrer N&auml;he, mit denen Sie sich f&uuml;r den Ernstfall abgesprochen haben?",o:[["Nein",1],["Lose",3],["Ja, verbindlich",5]]},
- {q:"H&auml;tten Sie Bargeld und wichtige Dokumente griffbereit, wenn Karten streiken?",o:[["Nein",1],["Teilweise",3],["Ja, geordnet",5]]},
- {q:"Wissen alle im Haushalt, was im Ernstfall zu tun ist?",o:[["Eher nicht",1],["Ungef&auml;hr",3],["Ja, klare Rollen",5]]},
- {q:"Haben Sie Ihre Vorsorge schon einmal durchgespielt oder ge&uuml;bt?",o:[["Nie",1],["Ansatzweise",3],["Ja, regelm&auml;&szlig;ig",5]]}
-];
-var answers={}, scf=document.getElementById("scform");
-SC.forEach(function(s,i){ var d=document.createElement("div"); d.className="scq";
-  var opts=s.o.map(function(o,j){return '<button type="button" data-q="'+i+'" data-v="'+o[1]+'">'+o[0]+'</button>';}).join("");
-  d.innerHTML='<div class="q">'+(i+1)+'. '+s.q+'</div><div class="opts">'+opts+'</div>'; scf.appendChild(d); });
-scf.addEventListener("click",function(e){ var b=e.target.closest("button"); if(!b)return;
-  var q=b.getAttribute("data-q"); answers[q]=parseInt(b.getAttribute("data-v"),10);
-  Array.prototype.forEach.call(scf.querySelectorAll('button[data-q="'+q+'"]'),function(x){x.classList.remove("sel");}); b.classList.add("sel");
-  render(); });
-function render(){ var keys=Object.keys(answers); if(keys.length<SC.length){
-  document.getElementById("scval").textContent=keys.length?"…":"0.0";
-  document.getElementById("scmsg").textContent="Noch "+(SC.length-keys.length)+" Frage"+((SC.length-keys.length)===1?"":"n")+" bis zu Ihrer Einordnung."; return; }
-  var sum=0; keys.forEach(function(k){sum+=answers[k];}); var avg=sum/SC.length;
-  document.getElementById("scval").textContent=avg.toFixed(1).replace(".",",");
-  var m; if(avg<2.5) m="Es gibt sp&uuml;rbare L&uuml;cken. Das ist kein Grund zur Panik, aber ein guter Anlass, genauer hinzusehen. Die Analyse zeigt, was zuerst dran ist.";
-  else if(avg<4) m="Solide Basis mit ein paar offenen Stellen. Genau hier trennt die Analyse, was tr&auml;gt, von dem, was unter Last kippt.";
-  else m="Sehr gute Grundlage. Meist steckt der letzte Hebel in einer Systeml&uuml;cke, nicht in einer Anschaffung. Die Analyse findet sie.";
-  document.getElementById("scmsg").innerHTML=m; }
-document.getElementById("screset").addEventListener("click",function(){ answers={}; Array.prototype.forEach.call(scf.querySelectorAll("button"),function(x){x.classList.remove("sel");}); render(); });
 </script>
-<script src="assets/p12-visual.js"></script></body>
+<script src="assets/p12-visual.js"></script><script src="assets/p12-experience.js"></script></body>
 </html>
+

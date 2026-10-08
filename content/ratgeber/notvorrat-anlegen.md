@@ -68,7 +68,7 @@ Nach sieben bis zehn Tagen ohne ausreichend Protein merken Sie es an Kraft, Rege
 <div class="dl-inline">
 <div class="dl-inline-k">Zum Mitnehmen</div>
 <h3>Der komplette Vorratsplan als PDF</h3>
-<p>16 Seiten: die volle Wasserrechnung für Ihre Haushaltsgröße, die Wasser-PACE-Kette, die versteckten Reserven im Haus, das Depotmodell, die Liste zum Abhaken und alles, was nicht essbar und trotzdem Pflicht ist. Dazu der mitrechnende Vorratsrechner als Excel. Kostenlos, ohne Anmeldung.</p>
+<p>Ein Planungsdokument: die volle Wasserrechnung für Ihre Haushaltsgröße, die Wasser-PACE-Kette, die versteckten Reserven im Haus, das Depotmodell, die Liste zum Abhaken und alles, was nicht essbar und trotzdem Pflicht ist. Dazu der mitrechnende Vorratsrechner als Excel. Kostenlos, ohne Anmeldung.</p>
 <p><a class="btn btn-red" href="/downloads/Protect12_Vorratsplan.pdf" download>Vorratsplan herunterladen &darr;</a>
 <a class="btn btn-line" href="/downloads/">Alle Checklisten ansehen</a></p>
 </div>

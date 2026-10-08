@@ -20,7 +20,7 @@ Bei einer Verdopplung des Zeitraums wachsen drei Dinge nicht linear mit, sondern
 
 - **Wasser lässt sich nicht einfach hochskalieren.** Zwei Personen brauchen bei realistischen 8 bis 10 Litern am Tag über vier Wochen **450 bis 560 Liter**, ein vierköpfiger Haushalt **900 bis 1.100 Liter**. Das sind 45 bis 55 Kanister zu 20 Litern. Diese Menge lagert niemand. Ab Woche zwei ist Wasser deshalb keine Lagerfrage mehr, sondern eine Aufbereitungsfrage.
 - **Zubereitung wird zum Engpass.** Bei zwei Wochen kommen Sie mit kalt essbaren Vorräten durch. Über vier Wochen wollen und sollten Sie warm essen, und dafür brauchen Sie Brennstoff, den kaum jemand einplant.
-- **Der Körper meldet sich.** Zwei Wochen einseitige Ernährung stecken Sie weg. Vier Wochen merken Sie, und zwar an Verdauung, Kraft und Stimmung.
+- **Der Körper meldet sich.** Ein abwechslungsreicher Vorrat muss zu den persönlichen Bedürfnissen und der Verträglichkeit passen.
 
 > **Die Faustregel:** Bis 14 Tage planen Sie **Vorrat**. Ab 14 Tagen planen Sie **Versorgung**, also Wasseraufbereitung, Brennstoff, Hygiene und Nachschub aus eigener Hand.
 
@@ -53,7 +53,7 @@ Ein Vier-Wochen-Vorrat wird nicht gleichmäßig verbraucht. Wer weiß, was wann 
 
 | Zeitraum | Was Sie essen | Worauf es ankommt |
 |---|---|---|
-| Tag 1 bis 3 | Kühlschrank und Gefriertruhe, in dieser Reihenfolge | Türen geschlossen halten. Eine volle Truhe hält 24 bis 48 Stunden. Was auftaut, wird gekocht und gegessen, nicht wieder eingefroren |
+| Tag 1 bis 3 | Kühlschrank und Gefriertruhe, in dieser Reihenfolge | Türen geschlossen halten. Eine volle Truhe hält 24 bis 48 Stunden. Lebensmittelsicherheit nach tatsächlicher Temperatur und Dauer beurteilen; im Zweifel entsorgen |
 | Tag 4 bis 10 | frische Lagerware: Kartoffeln, Zwiebeln, Möhren, Kohl, Äpfel, Hartkäse, Eier | Diese Woche ist die kulinarisch beste. Nutzen Sie sie, statt Konserven anzubrechen |
 | Tag 11 bis 21 | der klassische Vorrat: Nudeln, Reis, Hülsenfrüchte, Konserven, Öl | Jetzt beginnt die Routine. Feste Essenszeiten helfen mehr, als man denkt |
 | Tag 22 bis 28 | Reserve, Trockenvorrat, Sprossen, Selbstgebackenes | Diese Woche entscheidet, ob Ihr Plan trägt. Sie ist bei fast allen die dünnste |
@@ -68,7 +68,7 @@ Eine 230-Gramm-Schraubkartusche brennt bei mittlerer Flamme rund 60 bis 70 Minut
 
 Drei Punkte dazu, die nicht verhandelbar sind:
 
-- **Niemals mit offener Flamme in geschlossenen Räumen kochen oder heizen.** Kohlenmonoxid ist geruchlos, farblos und tötet im Schlaf. Ein CO-Melder kostet keine 30 Euro und ist die günstigste Lebensversicherung im ganzen Vorsorgethema.
+- **Campingkocher mit Gaskartusche und Grills nur im Freien nutzen.** Innen sind ausschließlich dafür zugelassene Geräte geeignet. Herstellerangaben beachten. Kohlenmonoxid ist lebensgefährlich. Ein offenes Fenster oder CO-Melder macht Außengeräte innen nicht sicher.
 - **Gaskartuschen verlieren bei Kälte Druck.** Unter 5 Grad wird eine Standardkartusche zäh. Wer im Winter plant, nimmt Wintergas oder lagert die Kartusche warm.
 - **Kochen Sie in großen Portionen.** Zwei Töpfe an einem Tag verbrauchen weniger Brennstoff als vier kleine, weil das Aufheizen die Energie frisst, nicht das Köcheln.
 
@@ -77,24 +77,24 @@ Wer den Brennstoff halbieren will, plant Einweichen ein: Hülsenfrüchte über N
 <div class="dl-inline">
 <div class="dl-inline-k">Zum Mitnehmen</div>
 <h3>Der Vier-Wochen-Plan als PDF</h3>
-<p>17 Seiten, gebaut für genau diesen Horizont: die Kalorienrechnung für 28 Tage, was 140.000 Kilokalorien je nach Vorratstyp wiegen, der Wochenplan von der Gefriertruhe bis zur Reserve, die vollständige Mengenliste mit Energie je Position und Spalte zum Abhaken, Ihr Wasserbedarf über 28 Tage samt Aufbereitungskette, der Brennstoffbedarf in Gaskartuschen und das Depotmodell gegen die Rotationsfalle. Kostenlos, ohne Anmeldung.</p>
+<p>Ein Planungsdokument für diesen Horizont: die Kalorienrechnung für 28 Tage, was 140.000 Kilokalorien je nach Vorratstyp wiegen, der Wochenplan von der Gefriertruhe bis zur Reserve, die vollständige Mengenliste mit Energie je Position und Spalte zum Abhaken, Ihr Wasserbedarf über 28 Tage samt Aufbereitungskette, der Brennstoffbedarf in Gaskartuschen und das Depotmodell gegen die Rotationsfalle. Kostenlos, ohne Anmeldung.</p>
 <p><a class="btn btn-red" href="/downloads/Protect12_Vorrat_4_Wochen.pdf" download>Vier-Wochen-Plan herunterladen &darr;</a>
 <a class="btn btn-line" href="/downloads/">Alle Checklisten ansehen</a></p>
 </div>
 
-## Was der Körper nach vier Wochen merkt
+## Abwechslung und persönliche Bedürfnisse mitplanen
 
-Hier ist Ehrlichkeit wichtiger als Dramatik. **Skorbut ist bei vier Wochen kein Thema.** Der Körper hat Vitamin-C-Speicher für zwei bis drei Monate, und wer etwas anderes behauptet, verkauft Ihnen Angst. Was in vier Wochen dagegen sehr wohl passiert:
+Bedürfnisse und Verträglichkeit unterscheiden sich von Mensch zu Mensch. Planen Sie vertraute Lebensmittel und abwechslungsreiche Mahlzeiten. Aus der Dauer eines Vorrats allein lässt sich keine individuelle gesundheitliche Wirkung ableiten.
 
-- **Verstopfung.** Der Wechsel von frischer Kost auf Weißmehl, Reis und Konserven senkt die Ballaststoffe drastisch, gleichzeitig trinken die meisten in einer Lage zu wenig. Das ist die häufigste körperliche Beschwerde in langen Ausnahmesituationen und komplett vermeidbar: Haferflocken, Vollkornnudeln, Leinsamen, Trockenpflaumen, Hülsenfrüchte.
-- **Kraft- und Konzentrationsverlust bei zu wenig Protein.** Unter 0,8 Gramm pro Kilogramm Körpergewicht und Tag wird es nach zehn bis vierzehn Tagen spürbar. Für 75 Kilogramm sind das 60 Gramm täglich, also etwa zwei Dosen Fisch oder 250 Gramm Hülsenfrüchte trocken.
-- **Stimmungstief in Woche drei.** Eintönigkeit zermürbt. Gewürze, Kaffee, Schokolade, scharfe Sauce: Das ist kein Luxus, das ist Verpflegungspsychologie und der billigste Posten der ganzen Liste.
+- **Alltagstaugliche Mahlzeiten:** Wählen Sie Lebensmittel, die in Ihrem Haushalt gegessen und vertragen werden. Berücksichtigen Sie Wasserbedarf, Zubereitung und Lagerung.
+- **Persönlicher Bedarf:** Alter, Aktivität und gesundheitliche Anforderungen gehören in die Planung. Besondere Ernährungsfragen bei Bedarf ärztlich oder mit einer qualifizierten Ernährungsfachkraft besprechen.
+- **Abwechslung:** Vertraute Gerichte und passende Zutaten erleichtern die Nutzung des Vorrats. Nahrungsergänzung ersetzt keine ausgewogene Ernährung.
 
-**Der beste Frischehebel ohne Garten sind Sprossen.** Ein Kilogramm Mungbohnen oder Linsen kostet wenige Euro, hält Jahre und ergibt in drei bis vier Tagen ein Vielfaches an frischen Sprossen. Sie brauchen dafür nur ein Glas, Wasser und Licht, keinen Strom, keine Erde. Dazu Sauerkraut aus der Dose oder dem Glas, das liefert Vitamin C und Milchsäurebakterien.
+**Sprossen benötigen besondere Lebensmittelhygiene.** Rohe Sprossen können Krankheitserreger enthalten. Vor dem Verzehr vollständig erhitzen. Für besonders empfindliche Personen sind rohe Sprossen ungeeignet. Ein Vorrat muss auch ohne frisch gezogene Sprossen verwendbar sein.
 
 ## Rotation: das eigentliche Problem eines Vier-Wochen-Vorrats
 
-60 bis 70 Kilogramm Lebensmittel für zwei Personen sind je nach Einkauf 400 bis 600 Euro. Diese Menge rotiert nicht mehr nebenbei durch die Küche. Genau daran scheitern die meisten großen Vorräte: Sie werden einmal angelegt, nie angefasst und sind nach drei Jahren abgelaufen.
+Ein größerer Lebensmittelvorrat braucht einen bewussten Plan für Lagerung, Nutzung und regelmäßige Prüfung. Genau daran scheitern die meisten großen Vorräte: Sie werden einmal angelegt, nie angefasst und sind nach drei Jahren abgelaufen.
 
 Trennen Sie deshalb in zwei Depots:
 
@@ -111,4 +111,7 @@ Ein guter Plan für vier Wochen beantwortet die Frage, was Sie essen. Er beantwo
 
 Nahrung ist ein Lebensbereich von zwölf, und in unseren Analysen ist sie überraschend selten das schwächste Glied. Häufiger sind es Wasser, Wärme, Medikamente oder schlicht die Frage, wer im Ernstfall welche Entscheidung trifft. Ein voller Keller neben einer offenen Flanke ergibt keine Sicherheit, sondern ein gutes Gefühl an der falschen Stelle.
 
-Deshalb rechnen wir bei Protect-12 nicht nur Mengen, sondern Reihenfolgen: welche Lücke bei Ihnen zuerst zuschlägt, welche Maßnahme die größte Wirkung pro Euro hat und was Sie sich getrost sparen können. Der wirksamste Hebel ist selten die nächste Anschaffung. Meistens ist es die richtige Reihenfolge.
+Deshalb rechnen wir bei Protect-12 nicht nur Mengen, sondern Reihenfolgen: welche Lücke bei Ihnen zuerst zuschlägt, welche Maßnahme zu Bedarf, Aufwand und vorhandenen Ressourcen passt und was Sie sich getrost sparen können. Der wirksamste Hebel ist selten die nächste Anschaffung. Meistens ist es die richtige Reihenfolge.
+
+
+Hinweise: [BBK, Vorsorge für Krisen und Katastrophen](https://www.bbk.bund.de/DE/Warnung-Vorsorge/Vorsorge/vorsorge_node.html) und [BfR, Lebensmittelhygiene](https://www.bfr.bund.de/lebensmittel/).

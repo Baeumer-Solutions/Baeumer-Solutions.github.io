@@ -1,0 +1,37 @@
+{
+  "cases": [
+    {
+      "id": "a",
+      "title": "Muster A · Haushalt mit Technik",
+      "short": "Haushalt mit Technik",
+      "context": "Zwei Erwachsene haben einzelne Vorräte, eine vorbereitete Ersatzstromlösung und wichtige Unterlagen. Noch offen sind Laufzeit, Vertretung und eine gemeinsame Reihenfolge.",
+      "question": "Eine wichtige Heizfunktion lässt sich über einen Akku betreiben. Wie lange sie unter den geplanten Bedingungen trägt, ist nicht belegt.",
+      "action": "Betriebsbedingungen klären, erforderliche fachliche Einweisung abstimmen und einen geeigneten Funktionsnachweis planen.",
+      "proof": "Ein dokumentiertes Ergebnis für die tatsächlich geprüften Bedingungen. Die Reichweite bleibt vorher offen.",
+      "roles": "Hauptzuständigkeit und eingewiesene Vertretung gemeinsam festlegen.",
+      "next": "Erst die Funktion und ihre Grenzen verstehen, danach eine Ergänzung planen."
+    },
+    {
+      "id": "b",
+      "title": "Muster B · Wenig Zeit, klare Absprachen",
+      "short": "Wenig Zeit",
+      "context": "Eine alleinlebende erwachsene Person hat wenig Zeit und möchte Unterstützung organisieren. Ein Angehöriger lebt an einem zweiten Ort. Kontakte und Dokumente sind noch nicht zusammengeführt.",
+      "question": "Wer übernimmt eine vereinbarte Rückmeldung, wenn der gewohnte Kontakt ausfällt? Ein bestätigter Ersatzweg fehlt.",
+      "action": "Kontaktpersonen fragen, Zustimmung und Erreichbarkeit festhalten, Rückmeldeweg und geeignete Kontaktprobe vereinbaren.",
+      "proof": "Eine dokumentierte Kontaktprobe. Eine Telefonnummer allein bestätigt keine Hilfeleistung.",
+      "roles": "Kontakt, Vertretung und Unterstützungsbedarf getrennt vereinbaren.",
+      "next": "Zuerst eine verlässliche Absprache, dann weitere Ausstattung."
+    },
+    {
+      "id": "c",
+      "title": "Muster C · Hof und Familie",
+      "short": "Hof und Familie",
+      "context": "Ein rein erfundener Hof möchte Familie und Betrieb besser vorbereiten. Regionale Hilfe ist denkbar; Räume und eine mögliche Aufnahme sind noch nicht geprüft oder zugesagt.",
+      "question": "Welche betrieblichen Aufgaben müssen weiterlaufen, während die Familie selbst Unterstützung benötigt? Verfügbarkeit und Vertretung sind offen.",
+      "action": "Private und betriebliche Funktionen getrennt aufnehmen, Aufgaben und Fähigkeiten abstimmen, eine geeignete Zusammenarbeit erproben.",
+      "proof": "Bestätigte Aufgaben, Einweisung und tatsächliche Verfügbarkeit. Eine Teilnahmeabsicht ist keine Aufnahmevereinbarung.",
+      "roles": "Hofleitung entscheidet über Betrieb und mögliche Aufnahme. Haushalte bestätigen eigene Beiträge und Grenzen.",
+      "next": "Eigene Vorsorge und Betriebsfähigkeit klären, danach passende Zusammenarbeit prüfen."
+    }
+  ]
+}
