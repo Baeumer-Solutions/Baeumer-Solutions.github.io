@@ -1,0 +1,11 @@
+/* Existing Protect-12 illustration series, October 2026. */
+.p12-picture-story{margin:0 0 48px;display:grid;grid-template-columns:minmax(0,1fr);gap:24px}
+.p12-picture-story.is-pair{grid-template-columns:repeat(2,minmax(0,1fr))}
+.p12-picture{margin:0;min-width:0;background:#1b2430;color:#fff;border-bottom:3px solid #c31212;box-shadow:0 14px 36px #17243518}
+.p12-picture img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;background:#17212b}
+.p12-picture figcaption{padding:25px 30px 28px;max-width:100%;color:#fff}
+.p12-picture figcaption strong{display:block;font-size:clamp(18px,2.2vw,26px);line-height:1.35;margin:0 0 9px;letter-spacing:-.02em;color:#fff}
+.p12-picture figcaption span{display:block;font-size:15px;line-height:1.75;color:#e1e7ee;max-width:900px}
+.p12-picture-credit{grid-column:1/-1;margin:0!important;font-size:11px!important;line-height:1.6!important;color:#586573}
+@media(max-width:760px){.p12-picture-story.is-pair{grid-template-columns:minmax(0,1fr)}.p12-picture-story{gap:20px;margin-bottom:32px}.p12-picture figcaption{padding:20px}.p12-picture figcaption span{font-size:14px}}
+@media print{.p12-picture-story{display:none!important}}
