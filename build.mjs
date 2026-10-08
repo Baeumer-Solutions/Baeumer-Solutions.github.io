@@ -45,7 +45,7 @@ function rewriteHtml(html){
 function rewriteJs(js){
   const map = {
     "index.html":"/", "das-system.html":"/das-system/", "ablauf-experten.html":"/ablauf-experten/",
-    "lagebild.html":"/lagebild/", "community.html":"/community/", "faq-kontakt.html":"/faq-kontakt/",
+    "lagebild.html":"/lagebild/", "community.html":"/community/", "hofkonzept.html":"/hofkonzept/", "dashboard.html":"/dashboard/", "faq-kontakt.html":"/faq-kontakt/",
     "ratgeber.html":"/ratgeber/", "downloads.html":"/downloads/",
     "module.html":"/module/", "szenarien.html":"/szenarien/", "praxis.html":"/praxis/",
     "experten.html":"/experten/", "unterlagen.html":"/unterlagen/", "fruehwarnsystem.html":"/fruehwarnsystem/",
@@ -62,9 +62,9 @@ rmDir(DIST); ensure(DIST);
 ensure(path.join(DIST,"assets"));
 // Unterordner in src/assets (z. B. muster/ mit den Seitenbildern) muessen mitkopiert
 // werden. copyFileSync scheitert an Verzeichnissen, deshalb hier die Fallunterscheidung.
-for (const f of fs.readdirSync(path.join(SRC,"assets"))){
+for (const f of fs.readdirSync(path.join(SRC,"assets")).filter(f => f !== "desktop.ini")){
   const from = path.join(SRC,"assets",f), to = path.join(DIST,"assets",f);
-  if (fs.statSync(from).isDirectory()) { fs.cpSync(from, to, {recursive:true}); continue; }
+  if (fs.statSync(from).isDirectory()) { fs.cpSync(from, to, {recursive:true, filter: p => path.basename(p) !== "desktop.ini"}); continue; }
   if (f === "p12.js") write(to, rewriteJs(fs.readFileSync(from,"utf8")));
   else fs.copyFileSync(from, to);
 }
@@ -74,7 +74,7 @@ const dlSrc = path.join(SRC,"downloads");
 let downloads = [];
 if (fs.existsSync(dlSrc)){
   ensure(path.join(DIST,"downloads"));
-  for (const f of fs.readdirSync(dlSrc)){
+  for (const f of fs.readdirSync(dlSrc).filter(f => f !== "desktop.ini")){
     fs.copyFileSync(path.join(dlSrc,f), path.join(DIST,"downloads",f));
     downloads.push({ datei:f, groesse: fs.statSync(path.join(dlSrc,f)).size });
   }
@@ -164,7 +164,7 @@ routes.push("/ratgeber/");
 
 // ---------- admin (CMS) ----------
 const adminSrc = path.join(ROOT,"admin");
-if (fs.existsSync(adminSrc)){ ensure(path.join(DIST,"admin")); for (const f of fs.readdirSync(adminSrc)) fs.copyFileSync(path.join(adminSrc,f), path.join(DIST,"admin",f)); }
+if (fs.existsSync(adminSrc)){ ensure(path.join(DIST,"admin")); for (const f of fs.readdirSync(adminSrc).filter(f => f !== "desktop.ini")) fs.copyFileSync(path.join(adminSrc,f), path.join(DIST,"admin",f)); }
 
 // ---------- sitemap + robots + CNAME ----------
 // /lagebild/ liegt NICHT in diesem Repo: es kommt aus der GitHub-Pages-Projektseite
@@ -172,7 +172,7 @@ if (fs.existsSync(adminSrc)){ ensure(path.join(DIST,"admin")); for (const f of f
 // Eine Projektseite ueberdeckt den gleichnamigen Pfad der Org-Pages. Die URL existiert also,
 // nur eben nicht als Route dieses Builds, deshalb hier von Hand in die Sitemap.
 const EXTERN = ["/lagebild/"];
-const uniq = [...new Set([...routes, ...EXTERN])];
+const uniq = [...new Set([...routes, ...EXTERN])].filter(r => r !== "/community/");
 const sm = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`+
   uniq.map(r=>`  <url><loc>${SITE}${r}</loc><lastmod>${new Date().toISOString().slice(0,10)}</lastmod></url>`).join("\n")+
   `\n</urlset>\n`;

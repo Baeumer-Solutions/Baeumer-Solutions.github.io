@@ -1,680 +1,114 @@
 <!DOCTYPE html>
-<html lang="de">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ablauf der Krisenvorsorge-Analyse: Schritt f&uuml;r Schritt | Protect-12</title>
-<meta name="description" content="Vom ersten Gespr&auml;ch bis zum laufenden Fr&uuml;hwarnsystem: der vollst&auml;ndige Ablauf Ihrer Protect-12 Analyse. Fragebogen, drei pers&ouml;nliche Gespr&auml;che, Analyse durch Fachleute, dreizehn Dokumente. Jede Ma&szlig;nahme auf Ihre Zeit und Ihr Budget gerechnet.">
-<meta name="robots" content="index,follow">
-<link rel="canonical" href="https://protect-12.de/ablauf-experten">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Ablauf der Krisenvorsorge-Analyse | Protect-12">
-<meta property="og:description" content="Acht Schritte von der ersten Frage bis zum laufenden Lagebild. So arbeiten wir.">
-<meta property="og:image" content="https://protect-12.de/assets/og.png">
-<meta property="og:url" content="https://protect-12.de/ablauf-experten">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="assets/p12.css">
-<style>
-/* ======== Reise: vertikaler Zeitstrahl mit Scroll-Fortschritt ======== */
-.reise{position:relative;margin-top:10px}
-.rline{position:absolute;left:33px;top:20px;bottom:90px;width:2px;background:var(--line)}
-.rfill{position:absolute;left:0;top:0;width:2px;height:0;background:var(--red)}
-.stat{display:grid;grid-template-columns:68px 1fr;gap:24px;padding-bottom:54px;position:relative}
-.stat:last-child{padding-bottom:0}
-.mk{position:relative}
-.mk .dot{position:absolute;left:24px;top:18px;width:20px;height:20px;background:#fff;
-  border:2px solid var(--line);z-index:2;transition:background .35s ease,border-color .35s ease}
-.stat.on .mk .dot{background:var(--red);border-color:var(--red)}
-.mk .nr{display:block;padding-top:56px;font-size:40px;font-weight:800;color:var(--navy);
-  opacity:.12;line-height:1;text-align:center;letter-spacing:-.03em;transition:opacity .35s ease,color .35s ease}
-.stat.on .mk .nr{opacity:.34;color:var(--red)}
-.stbody{background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);overflow:hidden;position:relative}
-.sthead{background:linear-gradient(160deg,#243244,#1B2430);color:#fff;padding:26px 32px;position:relative;overflow:hidden}
-.sthead .k{font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--red-soft)}
-.sthead h2{color:#fff;font-size:clamp(21px,2.4vw,29px);margin-top:8px;letter-spacing:-.02em;max-width:26ch}
-.sthead .when{margin-top:13px;display:inline-block;background:rgba(255,255,255,.12);color:#fff;
-  font-size:11.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;padding:6px 13px}
-.sthead .gh{position:absolute;right:18px;bottom:-30px;font-size:104px;font-weight:800;color:#fff;opacity:.07;line-height:1}
-.stinner{padding:28px 32px 32px}
-.stinner p{color:var(--muted);font-size:15.5px}
-.stinner p+p{margin-top:13px}
-.stinner p b{color:var(--navy)}
-.stinner h4{color:var(--navy);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;margin:28px 0 12px;
-  padding-bottom:8px;border-bottom:1px solid var(--grey)}
-.stinner ul{list-style:none;margin-top:2px}
-.stinner li{padding:9px 0 9px 24px;position:relative;font-size:15px;color:var(--muted)}
-.stinner li::before{content:"";position:absolute;left:0;top:16px;width:9px;height:9px;background:var(--red)}
-.stinner li b{color:var(--navy)}
-.merk{background:var(--grey);border-left:3px solid var(--navy);padding:16px 20px;margin-top:20px}
-.merk .tag{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--red)}
-.merk p{color:var(--ink);font-size:15px;margin-top:6px}
-/* ======== Trichter: 651 auf 1 ======== */
-.trichter{background:linear-gradient(160deg,#243244,#1B2430);padding:24px 22px 14px;box-shadow:var(--shadow);position:relative;overflow:hidden;margin-top:18px}
-.trichter .cap{color:var(--mist-txt);font-size:12.5px;letter-spacing:.04em;margin-bottom:10px}
-.trichter .cap b{color:#fff}
-.tb{transform-box:fill-box;transform-origin:center;transform:scaleX(.16);opacity:0;
-  transition:transform .85s cubic-bezier(.2,.75,.3,1),opacity .5s ease}
-.in .tb{transform:scaleX(1);opacity:1}
-.tb.d1{transition-delay:.06s}.tb.d2{transition-delay:.24s}
-.tb.d3{transition-delay:.42s}.tb.d4{transition-delay:.60s}
-/* ======== Qualitaetskette ======== */
-.kette{display:grid;grid-template-columns:repeat(4,1fr);background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);margin-top:6px}
-.kette .kg{padding:24px 22px;border-right:1px solid var(--line);border-top:3px solid var(--navy);position:relative}
-.kette .kg:last-child{border-right:0;border-top-color:var(--red)}
-.kette .kg:not(:last-child)::after{content:"";position:absolute;right:-9px;top:calc(50% - 9px);width:17px;height:17px;
-  background:#fff;border-top:1px solid var(--line);border-right:1px solid var(--line);transform:rotate(45deg);z-index:3}
-.kette .kn{font-size:11.5px;font-weight:800;color:var(--red);letter-spacing:.14em}
-.kette h3{margin:9px 0 8px;font-size:17px}
-.kette p{font-size:14px;color:var(--muted)}
-/* ======== Fragebogen-Vorschau ======== */
-.fbdemo{background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);overflow:hidden;border-top:3px solid var(--red);margin-top:8px}
-.fbtop{display:flex;align-items:center;gap:16px;padding:13px 22px;background:var(--grey);border-bottom:1px solid var(--line);flex-wrap:wrap}
-.fbtop .lb{font-size:11px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--navy)}
-.fbtop .prog{flex:1;min-width:120px;height:7px;background:#fff;border:1px solid var(--line);position:relative}
-.fbtop .prog i{position:absolute;left:0;top:0;bottom:0;background:var(--red);width:0;transition:width .45s ease}
-.fbq{padding:26px 26px 22px}
-.fbq .qn{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--red)}
-.fbq h4{font-size:19px;margin:9px 0 14px;color:var(--navy);line-height:1.36}
-.fbq .erl{background:var(--grey);border-left:3px solid var(--navy);padding:13px 17px;font-size:14px;color:var(--muted)}
-.fbq .erl b{color:var(--navy)}
-.fbopt{display:grid;gap:9px;margin-top:17px}
-.fbopt button{text-align:left;background:#fff;border:1px solid var(--line);padding:12px 16px;font-family:inherit;
-  font-size:14.5px;color:var(--ink);cursor:pointer;transition:border-color .15s ease,background .15s ease}
-.fbopt button:hover{border-color:var(--navy)}
-.fbopt button.sel{border-color:var(--red);background:var(--red-chip-bg);font-weight:700;color:var(--red-chip-tx)}
-.fbfoot{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:15px 26px;border-top:1px solid var(--line);flex-wrap:wrap}
-.fbfoot .zahlt{font-size:12px;color:var(--muted)}
-.fbfoot .zahlt b{color:var(--navy)}
-.fbnav{display:flex;gap:9px}
-.fbnav button{background:#fff;border:1px solid var(--line);padding:9px 16px;font-family:inherit;font-size:13px;
-  font-weight:700;color:var(--navy);cursor:pointer}
-.fbnav button:hover{border-color:var(--navy)}
-.fbnav button[disabled]{opacity:.4;cursor:default}
-/* ======== Expertenkacheln ======== */
-.exp{background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);padding:24px 22px;position:relative;overflow:hidden;border-top:3px solid var(--navy)}
-.exp .no{font-size:12px;font-weight:800;color:var(--red);letter-spacing:.12em}
-.exp h3{margin:8px 0 6px;font-size:17px}
-.exp .fach{font-size:12.5px;font-weight:700;color:var(--navy-3);margin-bottom:9px;padding-bottom:9px;
-  border-bottom:1px solid var(--grey);line-height:1.35}
-.exp p{font-size:14px;color:var(--muted)}
-.exp .gh{position:absolute;right:12px;bottom:-14px;font-size:58px;font-weight:800;color:var(--navy);opacity:.05;line-height:1}
-/* ======== Praxisfaelle ======== */
-.hh{background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);overflow:hidden;position:relative}
-.hh .top{background:linear-gradient(160deg,#243244,#1B2430);color:#fff;padding:22px 26px}
-.hh .top .k{color:var(--red-soft);font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
-.hh .top h3{color:#fff;margin-top:6px;font-size:21px}
-.hh .body{padding:22px 26px}
-.hh .body .row{padding:12px 0;border-bottom:1px solid var(--grey)}
-.hh .body .row:last-child{border:0}
-.hh .body .lbl{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--red)}
-.hh .body p{font-size:14.5px;color:var(--muted);margin-top:3px}
-/* ======== Fuer wen ======== */
-.forwen{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-.forwen .col{padding:30px 28px;box-shadow:var(--shadow);position:relative;overflow:hidden}
-.forwen .yes{background:#fff;border:1px solid var(--line);border-top:3px solid var(--green)}
-.forwen .no{background:var(--navy);color:#fff}
-.forwen h3{margin-bottom:16px;font-size:19px}
-.forwen .no h3{color:#fff}
-.forwen ul{list-style:none}
-.forwen li{padding:10px 0 10px 28px;position:relative;font-size:15px;color:var(--muted)}
-.forwen .no li{color:var(--mist-txt)}
-.forwen .yes li::before{content:"";position:absolute;left:0;top:16px;width:11px;height:11px;background:var(--green)}
-.forwen .no li::before{content:"";position:absolute;left:0;top:17px;width:11px;height:2px;background:var(--red-soft)}
-/* ======== Herkunft: wer das gebaut hat ======== */
-.beleg{background:#fff;border:1px solid var(--line);border-top:3px solid var(--red);box-shadow:var(--shadow);
-  padding:28px 26px;position:relative;overflow:hidden}
-.beleg .bk{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--red)}
-.beleg h3{margin:11px 0 10px;font-size:18px}
-.beleg p{color:var(--muted);font-size:14.5px}
-.beleg p+p{margin-top:9px}
-.beleg .gh{position:absolute;right:12px;bottom:-18px;font-size:70px;font-weight:800;color:var(--navy);opacity:.05;line-height:1}
-/* ======== Kundenspektrum ======== */
-.spektrum{margin:24px 0 2px}
-.spektrum .bar{height:10px;background:linear-gradient(90deg,#D8DCE3 0%,#7B8DA3 50%,#1B2430 100%);position:relative}
-.spektrum .bar i{position:absolute;top:-5px;width:20px;height:20px;background:#fff;border:3px solid var(--red);transform:translateX(-50%)}
-.spektrum .ends{display:flex;justify-content:space-between;margin-top:12px;font-size:11.5px;font-weight:800;
-  letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
-.typ3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
-.typ{background:var(--grey);border-left:3px solid var(--navy);padding:22px 20px}
-.typ .tk{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--red)}
-.typ h5{font-size:16.5px;color:var(--navy);margin:8px 0 9px;font-weight:800;line-height:1.3}
-.typ p{font-size:14.5px;color:var(--muted)}
-.typ p+p{margin-top:9px}
-.typ p b{color:var(--navy)}
-/* ======== Stellschrauben Zeit und Budget ======== */
-.stell{background:linear-gradient(160deg,#243244,#1B2430);color:#fff;padding:34px 32px 32px;margin:26px 0 6px;
-  position:relative;overflow:hidden}
-.stell .gk{font-size:11.5px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--red-soft)}
-.stell h3{color:#fff;font-size:clamp(20px,2.2vw,26px);margin:11px 0 14px;letter-spacing:-.02em;max-width:26ch;line-height:1.22}
-.stell>p{color:var(--mist-txt);font-size:15.5px;max-width:70ch}
-.slid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:28px}
-.slid .s label{display:block;font-size:11px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--red-soft)}
-.slid .s .val{font-size:27px;font-weight:800;color:#fff;margin:8px 0 12px;line-height:1;letter-spacing:-.02em}
-.slid .s .val small{font-size:14px;font-weight:600;color:var(--mist-txt);letter-spacing:0}
-.slid input[type=range]{width:100%;-webkit-appearance:none;appearance:none;height:6px;
-  background:rgba(255,255,255,.2);outline:none;cursor:pointer}
-.slid input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:22px;height:22px;
-  background:var(--red);border:2px solid #fff;cursor:pointer}
-.slid input[type=range]::-moz-range-thumb{width:20px;height:20px;background:var(--red);border:2px solid #fff;
-  border-radius:0;cursor:pointer}
-.slid .sc{display:flex;justify-content:space-between;margin-top:9px;font-size:11.5px;color:#8FA0B4;font-weight:600}
-.erg{margin-top:28px;background:rgba(255,255,255,.07);border-left:3px solid var(--red);padding:22px 24px}
-.erg .el{font-size:11px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--red-soft)}
-.erg .hd{color:#fff;font-size:17px;font-weight:800;margin-top:10px;line-height:1.35}
-.erg .sub{color:var(--mist-txt);font-size:14.5px;margin-top:10px}
-.stell .fuss{margin-top:22px;padding-top:18px;border-top:1px solid rgba(255,255,255,.14);
-  color:var(--mist-txt);font-size:13.5px}
-.frage3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
-.fr{background:#fff;border:1px solid var(--line);border-top:3px solid var(--navy);box-shadow:var(--shadow-sm);padding:22px 20px;position:relative;overflow:hidden}
-.fr .fn{font-size:11px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--red)}
-.fr h5{font-size:17px;color:var(--navy);margin:9px 0 9px;font-weight:800;line-height:1.3}
-.fr p{font-size:14.5px;color:var(--muted)}
-.fr .gh{position:absolute;right:10px;bottom:-16px;font-size:60px;font-weight:800;color:var(--navy);opacity:.05;line-height:1}
-@media(max-width:900px){.slid{grid-template-columns:1fr;gap:22px}.frage3{grid-template-columns:1fr}.stell{padding:26px 22px}}
-/* ======== Grosser Hervorhebungsblock in einer Station ======== */
-.gross{background:linear-gradient(160deg,#243244,#1B2430);color:#fff;padding:36px 34px 34px;margin:28px 0 6px;
-  position:relative;overflow:hidden}
-.gross .gk{font-size:11.5px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--red-soft)}
-.gross h3{color:#fff;font-size:clamp(21px,2.3vw,28px);margin:11px 0 18px;letter-spacing:-.02em;max-width:24ch;line-height:1.2}
-.gross p{color:var(--mist-txt);font-size:15.5px}
-.gross p+p{margin-top:14px}
-.gross p b{color:#fff}
-.blick{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px}
-.blick>div{background:rgba(255,255,255,.06);border-top:2px solid var(--red);padding:18px 18px}
-.blick .bl{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--red-soft)}
-.blick p{color:var(--mist-txt);font-size:14px;margin-top:9px}
-.gross .zu{margin-top:26px;padding-top:20px;border-top:1px solid rgba(255,255,255,.14);font-size:16.5px;
-  font-weight:700;color:#fff}
-@media(max-width:900px){.typ3{grid-template-columns:1fr}.blick{grid-template-columns:1fr}.gross{padding:26px 22px}}
-/* ======== Sprungnavigation ======== */
-.jump{display:flex;gap:8px;flex-wrap:wrap;margin-top:30px}
-.jump a{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.22);color:#fff;text-decoration:none;
-  font-size:12.5px;font-weight:700;padding:8px 13px;letter-spacing:.02em}
-.jump a:hover{background:rgba(255,255,255,.16);border-color:#fff}
-@media(max-width:960px){.kette{grid-template-columns:1fr}
-  .kette .kg{border-right:0;border-bottom:1px solid var(--line)}
-  .kette .kg:not(:last-child)::after{right:calc(50% - 9px);top:auto;bottom:-9px;
-    border-top:0;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
-  .forwen{grid-template-columns:1fr}}
-@media(max-width:700px){
-  .rline{left:21px}
-  .stat{grid-template-columns:44px 1fr;gap:14px;padding-bottom:38px}
-  .mk .dot{left:13px;width:18px;height:18px;top:18px}
-  .mk .nr{padding-top:48px;font-size:25px}
-  .sthead{padding:20px 20px}
-  .sthead .gh{font-size:74px;right:8px}
-  .stinner{padding:22px 20px 24px}
-}
-@media(prefers-reduced-motion:reduce){.tb{transform:none;opacity:1;transition:none}}
-</style>
-</head>
+<html lang="de"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>So läuft Ihre Krisenvorsorge-Analyse ab | Protect-12</title><meta name="description" content="Persönliche Aufnahme, fachliche Klärung, Analyse, Dashboard, Übergabe und vereinbarte Begleitung bei Protect-12."><meta name="robots" content="index,follow">
+<link rel="canonical" href="https://protect-12.de/ablauf-experten/"><meta property="og:type" content="website"><meta property="og:title" content="So läuft Ihre Krisenvorsorge-Analyse ab | Protect-12"><meta property="og:description" content="Persönliche Aufnahme, fachliche Klärung, Analyse, Dashboard, Übergabe und vereinbarte Begleitung bei Protect-12."><meta property="og:url" content="https://protect-12.de/ablauf-experten/"><meta property="og:image" content="https://protect-12.de/assets/og.png"><meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/p12.css"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "So läuft Ihre Krisenvorsorge-Analyse ab", "description": "Persönliche Aufnahme, fachliche Klärung, Analyse, Dashboard, Übergabe und vereinbarte Begleitung bei Protect-12.", "url": "https://protect-12.de/ablauf-experten/"}</script></head>
 <body data-page="ablauf-experten.html">
-<div id="p12-header"></div>
-
+<div id="p12-header">
+</div>
+<main>
 <header class="hero">
-  <div class="wrap">
-    <span class="kicker">Ihr Weg</span>
-    <h1>So l&auml;uft Ihre Analyse ab</h1>
-    <p class="lead">Acht Schritte, drei pers&ouml;nliche Gespr&auml;che, ein Paket aus dreizehn Dokumenten. Und danach h&ouml;rt es nicht auf. <b style="color:#fff">Mitentwickelt von einem ehemaligen Angeh&ouml;rigen milit&auml;rischer Spezialkr&auml;fte, ausgef&uuml;hrt von Fachleuten, die heute beruflich in genau den Bereichen stehen, die sie bewerten.</b> Hier steht jeder Schritt, damit Sie vorher wissen, worauf Sie sich einlassen.</p>
-    <div class="cta-row"><a class="btn btn-red" data-cta href="#">Gespr&auml;ch vereinbaren &rarr;</a><a class="btn btn-ghost" href="#reise">Zum Ablauf</a></div>
-    <div class="jump">
-      <a href="#s1">01 Erstes Gespr&auml;ch</a><a href="#s2">02 Fragebogen</a><a href="#s3">03 Warum 651 Fragen</a>
-      <a href="#s4">04 Auftaktgespr&auml;ch</a><a href="#s5">05 Die Analyse</a><a href="#s6">06 Die &Uuml;bergabe</a>
-      <a href="#s7">07 Ergebnisgespr&auml;ch</a><a href="#s8">08 Fr&uuml;hwarnsystem</a>
-    </div>
-  </div>
+<div class="wrap"><span class="kicker">Ihr Weg</span>
+<h1>Ein begleiteter Weg, der zu Ihnen passt.</h1>
+<p class="lead">Fragebogen, Gespräche und Unterlagen sind Teile eines gemeinsamen Prozesses. Ziel ist, dass Sie Ihre Lage verstehen und mit einem persönlichen Plan und Dashboard praktisch weiterarbeiten können.</p>
+<div class="cta-row"><a class="btn btn-red" data-cta href="#">Gespräch vereinbaren →</a><a class="btn btn-ghost" href="das-system.html">Das Angebot ansehen</a>
+</div>
+</div>
 </header>
-
-<!-- HERKUNFT -->
-<section id="herkunft" style="padding-bottom:56px">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="kicker">Wer dieses System gebaut hat</span>
-      <h2>Entwickelt von Menschen, die im Ernstfall gearbeitet haben.</h2>
-      <p class="lead">Protect-12 ist nicht am Schreibtisch entstanden. Das System wurde ma&szlig;geblich von einem ehemaligen Angeh&ouml;rigen milit&auml;rischer Spezialkr&auml;fte mitentwickelt. Aus dieser Praxis stammt der ganze Aufbau: erst die Lage lesen, dann bewerten, dann handeln, und f&uuml;r jeden Zweck mehr als einen Weg vorhalten.</p>
-    </div>
-    <div class="grid g3 reveal">
-      <div class="beleg"><div class="bk">Der Ursprung</div><h3>Aus der Praxis, nicht aus dem Lehrbuch</h3>
-        <p>Wer in Lagen gearbeitet hat, in denen ein vergessenes Detail teuer wird, baut anders. Deshalb fragt Protect-12 nach Zust&auml;nden statt nach Gef&uuml;hlen, deshalb wird jede Bewertung &uuml;ber sechs Zeithorizonte gerechnet, und deshalb gibt es zu jeder Empfehlung eine R&uuml;ckfallebene.</p>
-        <span class="gh">01</span></div>
-      <div class="beleg"><div class="bk">Die Analysten</div><h3>Menschen, die heute in ihrem Fach stehen</h3>
-        <p>Die Fachanalysen kommen nicht von Beratern, die einmal etwas dar&uuml;ber gelesen haben. Sie kommen von Menschen, die aktuell beruflich in genau dem Modul arbeiten, das sie bewerten: Notfallmedizin, Energietechnik, Funk, Bev&ouml;lkerungsschutz, Einsatzpsychologie, Versorgungslogistik.</p>
-        <p>Das hei&szlig;t: Ihre Empfehlung zu Notstrom kommt von jemandem, der Anlagen dimensioniert. Ihre Empfehlung zu Medikamenten von jemandem, der Menschen versorgt.</p>
-        <span class="gh">02</span></div>
-      <div class="beleg"><div class="bk">Die Diskretion</div><h3>Kompetenzen statt Namen</h3>
-        <p>Wir nennen keine Namen, keine Einheiten und keine Referenzkunden. Wer beruflich in sensiblen Bereichen arbeitet, steht nicht auf einer Website. Diskretion gilt bei uns in beide Richtungen: f&uuml;r die Fachleute und f&uuml;r Sie.</p>
-        <p><a href="experten.html" style="font-weight:700">Die zw&ouml;lf Fachgebiete ansehen &rarr;</a></p>
-        <span class="gh">03</span></div>
-    </div>
-  </div>
+<section class="">
+<div class="wrap">
+<div class="section-head"><span class="kicker">Der Weg</span>
+<h2>Von Ihrer Ausgangslage zum nutzbaren Ergebnis.</h2>
+</div>
+<div class="grid g3">
+<article class="card">
+<div class="num">01</div>
+<h3>Kennenlernen und Umfang klären</h3>
+<p>Wir besprechen Ihre Ausgangslage, Verantwortung, Ziele, Zeit und Budget. Leistungen, Mitwirkung, Kosten und nächste Schritte werden konkret vereinbart.</p>
+</article>
+<article class="card">
+<div class="num">02</div>
+<h3>Ihre Situation aufnehmen</h3>
+<p>Der persönliche Fragebogen und vorhandene Unterlagen erfassen Menschen, Standorte, Ausstattung und Abläufe. Rückfragen richten sich nach Ihrem Fall.</p>
+</article>
+<article class="card">
+<div class="num">03</div>
+<h3>Im Gespräch klären</h3>
+<p>Offene Angaben, Widersprüche, Wünsche und tatsächliche Zuständigkeiten werden gemeinsam besprochen. Ein früherer Kontakt ersetzt keine fehlende fachliche Klärung.</p>
+</article>
+<article class="card">
+<div class="num">04</div>
+<h3>Analysieren und prüfen</h3>
+<p>Die Angaben werden strukturiert ausgewertet. Software und KI unterstützen die Arbeit; fachliche Verantwortung, Prüfung und Freigabe bleiben bei Menschen.</p>
+</article>
+<article class="card">
+<div class="num">05</div>
+<h3>Paket und Dashboard übergeben</h3>
+<p>Sie erhalten Ihre Ergebnisse, Arbeitsunterlagen und das persönliche Dashboard. Wir besprechen Befunde, Prioritäten und die Nutzung der Werkzeuge.</p>
+</article>
+<article class="card">
+<div class="num">06</div>
+<h3>Umsetzen und verbunden bleiben</h3>
+<p>Sie arbeiten in Ihrem Tempo weiter. Persönlicher Kontakt, vereinbarte Begleitung und Lageinformationen unterstützen die nächsten Schritte.</p>
+</article>
+</div>
+</div>
 </section>
-
-<!-- KENNZAHLEN -->
-<section class="mist" style="padding:56px 0">
-  <div class="wrap">
-    <div class="counts reveal">
-      <div class="count"><div class="n"><span data-count="651">0</span></div><div class="l">Fragen im Bogen</div></div>
-      <div class="count"><div class="n"><span data-count="144">0</span></div><div class="l">gepr&uuml;fte Kriterien</div></div>
-      <div class="count"><div class="n"><span data-count="3">0</span></div><div class="l">pers&ouml;nliche Gespr&auml;che</div></div>
-      <div class="count"><div class="n"><span data-count="13">0</span></div><div class="l">Dokumente im Paket</div></div>
-      <div class="count"><div class="n"><span data-count="1">0</span></div><div class="l">Ansprechpartner</div></div>
-    </div>
-  </div>
+<section class="mist">
+<div class="wrap">
+<div class="section-head"><span class="kicker">Die fachliche Verantwortung</span>
+<h2>Software unterstützt. Menschen prüfen und verantworten.</h2>
+</div>
+<p>Protect-12 verbindet eine strukturierte Methodik mit persönlicher Klärung und fachlicher Prüfung. Computergestützte Auswertung hilft, Antworten zu ordnen, Zusammenhänge zu erkennen und Unterlagen aufzubereiten. Jede kundenbezogene Bewertung und Empfehlung benötigt eine Prüfung, bevor sie als Ergebnis übergeben wird.</p>
+<p>Technische, medizinische und rechtliche Einzelfragen werden in ihren fachlichen Grenzen behandelt. Wenn eine besondere Fachprüfung notwendig ist, gehört sie in die konkrete Vereinbarung.</p>
+</div>
 </section>
-
-<!-- DIE REISE -->
-<section id="reise" style="padding-top:70px">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="kicker">Der Ablauf</span>
-      <h2>Von der ersten Frage bis zum laufenden Lagebild.</h2>
-      <p class="lead">Kein Papierstapel, der irgendwann im Briefkasten liegt. Ein begleiteter Weg mit acht festen Schritten. Sie wissen an jedem Punkt, was gerade passiert und was als N&auml;chstes kommt. Und alles, was am Ende dabei herauskommt, ist auf Ihre Zeit und Ihr Budget gerechnet.</p>
-    </div>
-
-    <div class="reise" id="reisebahn">
-      <div class="rline"><span class="rfill" id="rfill"></span></div>
-
-      <!-- 00 -->
-      <article class="stat reveal" id="s1"><div class="mk"><span class="dot"></span><span class="nr">01</span></div>
-      <div class="stbody">
-        <div class="sthead"><div class="k">Ihr erster Schritt</div><h2>Drei Fragen, aus denen alles Weitere folgt</h2>
-          <span class="when">unverbindliches Gespr&auml;ch &middot; etwa 30 Minuten</span><span class="gh">01</span></div>
-        <div class="stinner">
-          <p>Kein Vertrag, kein Formular, keine Vorbereitung n&ouml;tig. Ein Telefonat oder ein Videocall, in dem drei Dinge gekl&auml;rt werden. Die ersten beiden erwarten die meisten. Die dritte Frage ist die, die den Unterschied macht, und fast niemand rechnet damit, dass wir sie so fr&uuml;h stellen.</p>
-          <div class="frage3 reveal">
-            <div class="fr"><div class="fn">Frage 01</div><h5>Wo stehen Sie heute?</h5>
-              <p>Wer geh&ouml;rt zum Haushalt, wie wohnen Sie, was ist bereits da, was treibt Sie um. Grob, ohne Pr&uuml;fung. Wir wollen nur wissen, ob wir von einem leeren Blatt sprechen oder von einem gewachsenen System.</p></div>
-            <div class="fr"><div class="fn">Frage 02</div><h5>Wie viel Zeit haben Sie wirklich?</h5>
-              <p>Nicht wie viel Sie gern h&auml;tten. Wie viel &uuml;brig bleibt, wenn Beruf, Familie und Alltag ihren Teil genommen haben. Bei den meisten sind das ein bis zwei Stunden pro Woche, und das reicht.</p></div>
-            <div class="fr"><div class="fn">Frage 03</div><h5>Welches Budget ist realistisch?</h5>
-              <p>Wir fragen das vor der Analyse, nicht danach. Denn eine Empfehlung, die Ihr Budget sprengt, ist keine Empfehlung. Sie ist eine H&uuml;rde mit schlechtem Gewissen obendrauf.</p></div>
-          </div>
-          <div class="stell reveal">
-            <div class="gk">Das Versprechen dahinter</div>
-            <h3>Nicht die maximale Vorsorge. Die bestm&ouml;gliche f&uuml;r Ihre Lage.</h3>
-            <p>Es gibt genug Stellen, die Ihnen sagen, was man alles haben k&ouml;nnte. Fast keine rechnet aus, was davon in Ihrem Leben tats&auml;chlich m&ouml;glich ist. Genau das macht Protect-12: <b style="color:#fff">jede Ma&szlig;nahme, jede Empfehlung und jeder Plan werden auf Ihre Zeit und Ihr Budget kalibriert.</b> Nicht gek&uuml;rzt, sondern anders sortiert. Die Analyse bleibt dieselbe, die Reihenfolge wird Ihre.</p>
-            <div class="slid">
-              <div class="s">
-                <label for="slZeit">Zeit pro Woche</label>
-                <div class="val" id="valZeit">2 <small>Stunden</small></div>
-                <input type="range" id="slZeit" min="0" max="5" step="1" value="2">
-                <div class="sc"><span>30 Minuten</span><span>8 Stunden</span></div>
-              </div>
-              <div class="s">
-                <label for="slGeld">Budget pro Monat</label>
-                <div class="val" id="valGeld">100 <small>Euro</small></div>
-                <input type="range" id="slGeld" min="0" max="5" step="1" value="2">
-                <div class="sc"><span>0 Euro</span><span>500 Euro und mehr</span></div>
-              </div>
-            </div>
-            <div class="erg">
-              <div class="el">So sieht Ihr Plan bei dieser Einstellung aus</div>
-              <div class="hd" id="ergHd"></div>
-              <div class="sub" id="ergSub"></div>
-            </div>
-            <div class="fuss">Eine Veranschaulichung, kein Ergebnis. Die echte Kalibrierung passiert im Auftaktgespr&auml;ch und flie&szlig;t in Ihren pers&ouml;nlichen Umsetzungsplan ein, inklusive Preis und Zeitaufwand je Ma&szlig;nahme.</div>
-          </div>
-          <h4>Und am Ende sagen wir ehrlich, ob es passt</h4>
-          <p>Nach diesen drei Fragen wissen wir, ob eine Analyse in dieser Tiefe f&uuml;r Sie sinnvoll ist. Manchmal lautet die Antwort nein, und dann sagen wir das auch. Es kostet Sie nichts au&szlig;er einer halben Stunde, und Sie gehen in jedem Fall mit einer klareren Vorstellung heraus, als Sie hineingegangen sind.</p>
-          <h4>Wer zu uns kommt</h4>
-          <p>Eine Frage kommt in fast jedem Erstgespr&auml;ch: <b>Bin ich daf&uuml;r &uuml;berhaupt der Richtige?</b> Die einen f&uuml;rchten, sie seien viel zu weit hinten. Die anderen f&uuml;rchten, sie seien l&auml;ngst zu weit, um noch etwas zu lernen. Beides trifft nicht zu. Unsere Kunden verteilen sich &uuml;ber die gesamte Spanne, und die Analyse liefert an jedem Punkt dieser Spanne eine andere Antwort.</p>
-          <div class="spektrum reveal">
-            <div class="bar"><i style="left:14%"></i><i style="left:50%"></i><i style="left:86%"></i></div>
-            <div class="ends"><span>Bei null angefangen</span><span>Einiges vorhanden</span><span>Seit Jahren dabei</span></div>
-          </div>
-          <div class="typ3 reveal">
-            <div class="typ"><div class="tk">Ausgangslage A</div><h5>Der Einsteiger</h5>
-              <p>Kein Vorrat, keine Ausr&uuml;stung, aber ein wachsendes Unbehagen. Meist ausgel&ouml;st durch ein Ereignis: ein Stromausfall im Ort, eine Nachricht, ein Kind, das jetzt selbst zur Schule geht.</p>
-              <p><b>Was die Analyse liefert:</b> eine Reihenfolge. Nicht f&uuml;nfhundert Empfehlungen, sondern die drei Ma&szlig;nahmen, die bei Ihnen zuerst dran sind, mit Preis und Zeitaufwand. Wer hier startet, sieht die gr&ouml;&szlig;ten Spr&uuml;nge.</p></div>
-            <div class="typ"><div class="tk">Ausgangslage B</div><h5>Der Angefangene</h5>
-              <p>Ein paar K&auml;ufe, eine Kiste im Keller, ein Kanister im Kofferraum. Guter Wille, aber nichts folgt einem Plan, und niemand wei&szlig;, ob das jetzt reicht.</p>
-              <p><b>Was die Analyse liefert:</b> Ordnung. Was zusammenpasst, was doppelt gekauft wurde, was gar nichts bringt, und wo die eine L&uuml;cke sitzt, die den Rest entwertet.</p></div>
-            <div class="typ"><div class="tk">Ausgangslage C</div><h5>Der Erfahrene</h5>
-              <p>Jahre an Besch&auml;ftigung, gute Ausstattung, ge&uuml;bte Abl&auml;ufe. Diese Kunden kommen nicht, weil ihnen etwas fehlt, sondern weil sie wissen, dass man das eigene System nicht objektiv pr&uuml;fen kann.</p>
-              <p><b>Was die Analyse liefert:</b> den blinden Fleck. Er sitzt fast nie beim Material. Er sitzt an der Naht zwischen zwei Bereichen, an einer Annahme, die nie jemand nachgerechnet hat, oder an einer Abh&auml;ngigkeit, die drei Ebenen tiefer liegt.</p></div>
-          </div>
-          <p style="margin-top:20px">Die Methode bleibt in allen drei F&auml;llen dieselbe. Was sich &auml;ndert, ist das Ergebnis: beim einen ein Startplan, beim n&auml;chsten eine Aufr&auml;umaktion, beim dritten ein einziger, unangenehmer Satz &uuml;ber die Stelle, an der alles h&auml;ngt. <b>Es gibt keinen Punkt auf dieser Skala, an dem eine ehrliche Bestandsaufnahme nichts mehr bringt.</b></p>
-          <div class="merk"><div class="tag">Was Sie nach diesen 30 Minuten haben</div>
-            <p>Klarheit &uuml;ber Ablauf, Umfang, Dauer und Preis. Eine ehrliche Einsch&auml;tzung, ob das f&uuml;r Sie sinnvoll ist. Und die Gewissheit, dass niemand Ihnen einen Plan verkauft, f&uuml;r den Sie weder die Zeit noch das Geld haben.</p></div>
-        </div>
-      </div></article>
-
-      <!-- 01 -->
-      <article class="stat reveal" id="s2"><div class="mk"><span class="dot"></span><span class="nr">02</span></div>
-      <div class="stbody">
-        <div class="sthead"><div class="k">Der Fragebogen</div><h2>651 Fragen, in Ihrem Tempo</h2>
-          <span class="when">Ihr Zeitfenster &middot; jederzeit unterbrechbar</span><span class="gh">02</span></div>
-        <div class="stinner">
-          <p>Sie erhalten einen pers&ouml;nlichen Zugang zu Ihrem Fragebogen. Kein PDF zum Ausdrucken, sondern ein Bogen im Browser, der Ihren Fortschritt speichert. Sie f&uuml;llen ihn aus, wann es passt: eine halbe Stunde am Abend, ein Sonntagvormittag, in beliebig vielen Etappen. Die meisten brauchen daf&uuml;r drei bis f&uuml;nf Sitzungen, verteilt &uuml;ber ein bis zwei Wochen. Wer m&ouml;chte, macht es an einem St&uuml;ck, wer lieber gr&uuml;ndlich ist, l&auml;sst sich einen Monat Zeit.</p>
-          <p>Der Bogen passt sich an. Wer keine Tiere h&auml;lt, bekommt keine Tierfragen. Wer zur Miete wohnt, bekommt keine Fragen zur Heizungsanlage im Eigentum. Was f&uuml;r Sie nicht gilt, taucht gar nicht erst auf.</p>
-          <h4>So sieht eine Frage aus</h4>
-          <div class="fbdemo reveal" id="fbdemo">
-            <div class="fbtop"><span class="lb">Protect-12 Fragebogen</span><span class="prog"><i id="fbprog"></i></span><span class="lb" id="fbcount">1 von 3</span></div>
-            <div class="fbq" id="fbq"></div>
-            <div class="fbfoot"><span class="zahlt" id="fbzahlt"></span>
-              <span class="fbnav"><button type="button" id="fbprev">Zur&uuml;ck</button><button type="button" id="fbnext">Weiter</button></span></div>
-          </div>
-          <p style="margin-top:14px;font-size:13.5px">Drei Beispielfragen aus dem echten Bogen. Sie k&ouml;nnen klicken, es wird nichts gespeichert.</p>
-          <div class="gross reveal">
-            <div class="gk">Der eigentliche Effekt</div>
-            <h3>Nach diesem Bogen sehen Sie Ihre Umgebung anders.</h3>
-            <p>Die meisten erwarten ein Formular. Was sie bekommen, ist eine &Uuml;bung im Hinsehen. Sp&auml;testens ab der zweiten Sitzung passiert etwas, das wir von fast jedem Kunden geschildert bekommen: Menschen fangen an nachzusehen. Wie viele Liter stehen wirklich im Keller? Wo ist eigentlich der Hauptwasserhahn? Wie lange l&auml;uft die Heizung ohne Strom? Fragen, die man jahrelang nicht gestellt hat, weil sie nie jemand gestellt hat.</p>
-            <p>Und dann, und das ist der wichtigere Teil, <b>geht der Blick nach drau&szlig;en</b>. Welcher Weg f&uuml;hrt aus dem Viertel, wenn die Hauptstra&szlig;e dicht ist? Wer wohnt eigentlich nebenan, und w&uuml;rde ich dort klingeln? Was ist das f&uuml;r ein Geb&auml;ude an der Ecke, an dem Sie seit zehn Jahren vorbeifahren? Welchen Weg nimmt Ihr Kind zur Schule, und was liegt daran?</p>
-            <p>Genau hier beginnt die Methodik. Im Protect-12 System hei&szlig;t dieser Blick das <b>Grey-Man-Prinzip</b>: nicht Tarnung, nicht Verstecken, sondern Lagebewusstsein. Die F&auml;higkeit, die eigene Umgebung zu lesen, bevor etwas passiert. Wer das kann, trifft im Ernstfall Entscheidungen, w&auml;hrend andere noch Informationen sammeln.</p>
-            <div class="blick">
-              <div><div class="bl">Der Blick nach innen</div><p>Best&auml;nde, Leitungen, Abstellwege, Zust&auml;ndigkeiten. Was im eigenen Haushalt tats&auml;chlich vorhanden ist, nicht was man glaubt zu haben.</p></div>
-              <div><div class="bl">Der Blick nach drau&szlig;en</div><p>Routen, Nachbarschaft, Versorgungspunkte, kritische Infrastruktur im Umkreis. Die Lage, in der Ihr Haushalt steht.</p></div>
-              <div><div class="bl">Was daraus wird</div><p>Eine Aufmerksamkeit, die bleibt. Kunden berichten, dass sie ihre Stadt nach dem Bogen anders wahrnehmen, dauerhaft und ohne Anstrengung.</p></div>
-            </div>
-            <div class="zu">Deshalb steht der Fragebogen am Anfang und nicht das Gespr&auml;ch: Er ver&auml;ndert den, der ihn ausf&uuml;llt. Alles Weitere baut darauf auf.</div>
-          </div>
-        </div>
-      </div></article>
-
-      <!-- 02 -->
-      <article class="stat reveal" id="s3"><div class="mk"><span class="dot"></span><span class="nr">03</span></div>
-      <div class="stbody">
-        <div class="sthead"><div class="k">Die Methode dahinter</div><h2>Warum es 651 Fragen sind und nicht f&uuml;nfzig</h2>
-          <span class="when">Der Kern des Systems</span><span class="gh">03</span></div>
-        <div class="stinner">
-          <p>Eine kurze Checkliste kann eine Vermutung best&auml;tigen. Sie kann keine Bewertung tragen. Protect-12 vergibt f&uuml;r <b>144 Kriterien</b> jeweils eine Note von 0 bis 5, eine Ampel und eine Angabe dar&uuml;ber, wie belastbar diese Aussage ist. Damit das kein Ratespiel wird, braucht jedes Kriterium mehrere unabh&auml;ngige Belege aus Ihren Antworten. Aus dieser Rechnung ergibt sich der Umfang, nicht aus dem Wunsch nach einem gro&szlig;en Bogen.</p>
-          <div class="trichter reveal">
-            <div class="cap"><b>Aus Antworten wird ein Lagebild</b> &nbsp;&middot;&nbsp; jede Frage zahlt auf mindestens ein Kriterium ein</div>
-            <svg viewBox="0 0 880 330" width="100%" height="auto" aria-label="Vom Fragebogen zum Lagebild">
-              <g fill="#ffffff" opacity=".07">
-                <polygon points="20,72 860,72 755,94 125,94"/>
-                <polygon points="125,152 755,152 650,174 230,174"/>
-                <polygon points="230,232 650,232 545,254 335,254"/>
-              </g>
-              <g class="tb d1"><rect x="20" y="14" width="840" height="58" fill="#2E4056"/>
-                <text x="440" y="51" text-anchor="middle" font-family="Montserrat" fill="#ffffff"><tspan font-size="30" font-weight="800">651</tspan><tspan font-size="15" font-weight="500">&#160;&#160;Antworten aus Ihrem Haushalt</tspan></text></g>
-              <g class="tb d2"><rect x="125" y="94" width="630" height="58" fill="#37506C"/>
-                <text x="440" y="131" text-anchor="middle" font-family="Montserrat" fill="#ffffff"><tspan font-size="30" font-weight="800">144</tspan><tspan font-size="15" font-weight="500">&#160;&#160;bewertete Kriterien</tspan></text></g>
-              <g class="tb d3"><rect x="230" y="174" width="420" height="58" fill="#425F80"/>
-                <text x="440" y="211" text-anchor="middle" font-family="Montserrat" fill="#ffffff"><tspan font-size="30" font-weight="800">12</tspan><tspan font-size="15" font-weight="500">&#160;&#160;Lebensbereiche</tspan></text></g>
-              <g class="tb d4"><rect x="335" y="254" width="210" height="58" fill="#C31212"/>
-                <text x="440" y="291" text-anchor="middle" font-family="Montserrat" fill="#ffffff"><tspan font-size="30" font-weight="800">1</tspan><tspan font-size="15" font-weight="500">&#160;&#160;Lagebild</tspan></text></g>
-            </svg>
-          </div>
-          <h4>Vier Regeln, nach denen jede Frage gebaut ist</h4>
-          <ul>
-            <li><b>Zustand statt Meinung.</b> Gefragt wird, was da ist und was funktioniert, nicht, wie sicher Sie sich f&uuml;hlen. Gef&uuml;hle sind ehrlich, aber nicht rechenbar.</li>
-            <li><b>Erl&auml;uterung bei jeder Frage.</b> Unter jeder Frage steht, was genau gemeint ist und warum sie gestellt wird. Sie sollen nicht raten, was wir h&ouml;ren wollen.</li>
-            <li><b>Keine Frage ohne Ziel.</b> Jede Frage zahlt auf mindestens ein Kriterium ein. Was nirgends einzahlt, wird nicht gefragt.</li>
-            <li><b>Aussteigen erlaubt.</b> Sie k&ouml;nnen Fragen &uuml;berspringen. Eine ausgelassene Frage senkt die Belastbarkeit des betroffenen Kriteriums und wird in der Analyse als solche ausgewiesen, statt still weggerechnet zu werden.</li>
-          </ul>
-          <div class="merk"><div class="tag">Der Grund f&uuml;r die letzte Regel</div>
-            <p>Eine Analyse, die nicht sagt, wie sicher sie sich ist, ist eine Meinung mit Zahlen. Deshalb steht bei jedem Kriterium, worauf die Bewertung beruht.</p></div>
-        </div>
-      </div></article>
-
-      <!-- 03 -->
-      <article class="stat reveal" id="s4"><div class="mk"><span class="dot"></span><span class="nr">04</span></div>
-      <div class="stbody">
-        <div class="sthead"><div class="k">Das Auftaktgespr&auml;ch</div><h2>Der Videocall, in dem aus Antworten Ihre Geschichte wird</h2>
-          <span class="when">Videocall &middot; 60 bis 90 Minuten</span><span class="gh">04</span></div>
-        <div class="stinner">
-          <p>Ihr Bogen liegt vor uns, ausgewertet und markiert. Wir gehen nicht alle 651 Fragen durch. Wir gehen die Stellen durch, an denen eine Antwort mehrere Lesarten zul&auml;sst, an denen sich zwei Antworten widersprechen oder an denen Ihr Fall vom &uuml;blichen Muster abweicht.</p>
-          <h4>Was in diesem Gespr&auml;ch passiert</h4>
-          <ul>
-            <li><b>R&uuml;ckfragen zum Bogen.</b> Unklare Angaben werden gekl&auml;rt, bevor sie in eine Bewertung einflie&szlig;en. Eine falsch verstandene Antwort erzeugt sonst eine falsche Empfehlung.</li>
-            <li><b>Ihre Extraw&uuml;nsche.</b> Sagen Sie, wo wir tiefer gehen sollen. Ein Betrieb im Haus, ein pflegebed&uuml;rftiger Angeh&ouml;riger, eine Zweitimmobilie, ein Bootsliegeplatz, eine geplante Auswanderung. Was Ihnen wichtig ist, wird zum Schwerpunkt.</li>
-            <li><b>Ihre roten Linien.</b> Manches wollen Sie nicht: keine Waffen, kein Umzug, kein Umbau, keine Ver&auml;nderung, die im Alltag auff&auml;llt. Das nehmen wir auf, damit die Empfehlungen anschlussf&auml;hig bleiben.</li>
-            <li><b>Zeit und Budget, jetzt genau.</b> Im Erstgespr&auml;ch war es eine grobe Zahl, hier wird sie konkret: Wie viele Stunden pro Woche sind realistisch, welcher Betrag pro Monat, und gibt es einen einmaligen Rahmen f&uuml;r gr&ouml;&szlig;ere Anschaffungen? Auf diese Zahlen wird sp&auml;ter jede Ma&szlig;nahme und der komplette Umsetzungsplan gerechnet.</li>
-            <li><b>Bilder und Unterlagen.</b> Fotos vom Keller, ein Grundriss, ein Versicherungsschein: was Sie zeigen wollen, flie&szlig;t mit ein. Was Sie nicht zeigen wollen, bleibt drau&szlig;en.</li>
-          </ul>
-          <div class="merk"><div class="tag">Unsere Grundregel</div>
-            <p>Ihre Angabe schl&auml;gt unsere Messung. Wenn eine Berechnung sagt, der Weg dauert zw&ouml;lf Minuten, und Sie sagen, er dauert eine halbe Stunde, dann gilt Ihre halbe Stunde. Sie kennen Ihre Lage.</p></div>
-        </div>
-      </div></article>
-
-      <!-- 04 -->
-      <article class="stat reveal" id="s5"><div class="mk"><span class="dot"></span><span class="nr">05</span></div>
-      <div class="stbody">
-        <div class="sthead"><div class="k">Die Analyse</div><h2>Vier Stufen, bevor eine Seite Sie erreicht</h2>
-          <span class="when">meist innerhalb von zwei Wochen</span><span class="gh">05</span></div>
-        <div class="stinner">
-          <p>Jetzt arbeiten wir, und Sie haben Ruhe. Ihre Angaben laufen durch einen festen Ablauf mit vier Stufen. Keine Stufe wird &uuml;bersprungen, auch nicht bei einem einfachen Fall. <b>Von Ihrem Auftaktgespr&auml;ch bis zur fertigen Analyse vergehen in der Regel etwa zwei Wochen.</b> Sollte in einem Einzelfall mehr Zeit n&ouml;tig sein, sagen wir Ihnen das vorher und nennen einen neuen Termin.</p>
-          <div class="kette reveal">
-            <div class="kg"><div class="kn">01</div><h3>Fachanalyse</h3><p>Erfahrene Analysten bewerten Modul f&uuml;r Modul, Kriterium f&uuml;r Kriterium, &uuml;ber sechs Zeithorizonte von der ersten Stunde bis zum Jahr.</p></div>
-            <div class="kg"><div class="kn">02</div><h3>Aufbereitung</h3><p>Alle Ergebnisse werden in eine einheitliche, verst&auml;ndliche Sprache und ein durchg&auml;ngiges Erscheinungsbild gebracht. Fachjargon fliegt raus.</p></div>
-            <div class="kg"><div class="kn">03</div><h3>Gegenpr&uuml;fung</h3><p>Die fertigen Unterlagen gehen zur&uuml;ck an die Analysten. Stimmt jede Aussage fachlich, ist bei der Aufbereitung nichts verloren gegangen?</p></div>
-            <div class="kg"><div class="kn">04</div><h3>Freigabe</h3><p>Die letzte Abnahme macht die Projektleitung pers&ouml;nlich. Erst mit dieser Freigabe geht Ihr Paket raus.</p></div>
-          </div>
-          <h4>Wer daran arbeitet</h4>
-          <p>F&uuml;r jeden der zw&ouml;lf Module steht ein eigenes Fachgebiet: Lagebeurteilung, Notfallmedizin, Funktechnik, Energietechnik, Einsatzpsychologie und weitere. Es sind keine Berater, die sich in ein Thema eingelesen haben. <b>Es sind Menschen, die aktuell beruflich in diesem Feld arbeiten</b> und deshalb wissen, was in der Praxis h&auml;lt und was nur auf dem Papier funktioniert.</p>
-          <p>Sie arbeiten im Hintergrund und werden nicht genannt. Diskretion ist bei diesen Berufen keine Marketingentscheidung, sondern Voraussetzung daf&uuml;r, dass sie &uuml;berhaupt mitarbeiten k&ouml;nnen.</p>
-          <p><a href="experten.html" style="font-weight:700">Das Expertennetzwerk im Einzelnen ansehen &rarr;</a></p>
-          <h4>Was in dieser Zeit bei Ihnen passiert</h4>
-          <p>Nichts. Das ist so gewollt. Sie haben Ihren Teil geleistet, jetzt ist die Arbeit auf unserer Seite. Sollte im Laufe der Analyse eine Frage auftauchen, die Ihre Angaben nicht beantworten, melden wir uns kurz, statt zu raten. Das kommt vor und ist ein gutes Zeichen.</p>
-          <div class="merk"><div class="tag">Vertraulichkeit</div>
-            <p>Ihre Angaben sind die Grundlage Ihrer Analyse und bleiben es auch. Sie werden vertraulich behandelt und ausschlie&szlig;lich f&uuml;r Ihre pers&ouml;nliche Auswertung verwendet.</p></div>
-        </div>
-      </div></article>
-
-      <!-- 05 -->
-      <article class="stat reveal" id="s6"><div class="mk"><span class="dot"></span><span class="nr">06</span></div>
-      <div class="stbody">
-        <div class="sthead"><div class="k">Die &Uuml;bergabe</div><h2>Ihr Paket kommt, bevor wir dar&uuml;ber sprechen</h2>
-          <span class="when">einige Tage vor dem Ergebnisgespr&auml;ch</span><span class="gh">06</span></div>
-        <div class="stinner">
-          <p>Sie bekommen die Unterlagen zuerst, nicht erst im Gespr&auml;ch. Das ist Absicht: Sie sollen in Ruhe lesen, sich &auml;rgern, sich freuen, Fragen aufschreiben. Wer die Ergebnisse zum ersten Mal live pr&auml;sentiert bekommt, kann nur nicken.</p>
-          <h4>Was ankommt</h4>
-          <ul>
-            <li><b>Dreizehn Dokumente in f&uuml;nf Ordnern.</b> Vom vollst&auml;ndigen Hauptdokument &uuml;ber die Schwachstellen-Analyse und die Szenarien&uuml;bersicht bis zu Notfallkarten und Packliste. Jede Unterlage funktioniert auch f&uuml;r sich allein.</li>
-            <li><b>Drei Excel-Werkzeuge zum Arbeiten.</b> Die Checklisten-Arbeitsmappe, der Vorratsrechner und die Packliste.</li>
-            <li><b>Eine Executive Summary auf drei Seiten.</b> Damit Sie Partner oder Familie mitnehmen k&ouml;nnen, ohne dass jemand dreihundert Seiten lesen muss.</li>
-            <li><b>Ein pers&ouml;nliches Anschreiben.</b> Verankert an Ihren eigenen Aussagen aus Bogen und Gespr&auml;ch, keine Schablone.</li>
-          </ul>
-          <p><a href="unterlagen.html" style="font-weight:700">Alle dreizehn Dokumente im Detail &rarr;</a></p>
-          <div class="merk"><div class="tag">Der Moment, den wir am liebsten m&ouml;gen</div>
-            <p>Fast jeder Kunde ruft irgendwann an oder schreibt, bevor der Termin ansteht. Nicht weil etwas unklar ist, sondern weil er etwas gefunden hat. Meistens ist es nicht der schlechteste Wert, der die Leute bewegt, sondern eine Kleinigkeit, die sie seit Jahren &uuml;bersehen haben.</p></div>
-        </div>
-      </div></article>
-
-      <!-- 06 -->
-      <article class="stat reveal" id="s7"><div class="mk"><span class="dot"></span><span class="nr">07</span></div>
-      <div class="stbody">
-        <div class="sthead"><div class="k">Das Ergebnisgespr&auml;ch</div><h2>Wir gehen es gemeinsam durch, Sie f&uuml;hren</h2>
-          <span class="when">Videocall &middot; 90 bis 120 Minuten</span><span class="gh">07</span></div>
-        <div class="stinner">
-          <p>Der zweite Videocall geh&ouml;rt Ihnen. Wir beginnen mit Ihren Fragen aus dem Lesen, nicht mit unserer Gliederung. Danach gehen wir die drei Dinge durch, die z&auml;hlen: die wichtigsten Befunde, die gr&ouml;&szlig;ten Hebel und die ersten drei Ma&szlig;nahmen f&uuml;r die n&auml;chsten Wochen.</p>
-          <h4>Womit Sie aus dem Gespr&auml;ch gehen</h4>
-          <ul>
-            <li><b>Ein verstandener Befund.</b> Nicht nur eine Note, sondern der Grund dahinter und was er f&uuml;r Ihren Alltag bedeutet.</li>
-            <li><b>Eine Reihenfolge.</b> Nicht alles auf einmal. Was zuerst, was danach, was kann warten.</li>
-            <li><b>Ein realistischer Takt.</b> Zwei Stunden pro Woche, ein Wochenende im Quartal, ein Budget pro Monat: der Umsetzungsplan wird auf Ihre echte Zeit kalibriert, nicht auf die gew&uuml;nschte.</li>
-          </ul>
-          <div class="merk"><div class="tag">Was danach noch offen ist</div>
-            <p>Nichts, was Sie allein herausfinden m&uuml;ssten. R&uuml;ckfragen zu den Unterlagen beantworten wir auch nach dem Gespr&auml;ch.</p></div>
-        </div>
-      </div></article>
-
-      <!-- 07 -->
-      <article class="stat reveal" id="s8"><div class="mk"><span class="dot"></span><span class="nr">08</span></div>
-      <div class="stbody" style="border-top:3px solid var(--red)">
-        <div class="sthead" style="background:linear-gradient(160deg,#B81111,#7E0D0D)">
-          <div class="k" style="color:#fff">Das Fr&uuml;hwarnsystem</div><h2>Und dann h&ouml;rt es nicht auf</h2>
-          <span class="when">laufend, nach der &Uuml;bergabe</span><span class="gh">08</span></div>
-        <div class="stinner">
-          <p>Eine Analyse ist eine Aufnahme Ihrer Lage zu einem Zeitpunkt. Die Welt bleibt aber nicht stehen. Deshalb endet Protect-12 nicht mit dem letzten Videocall.</p>
-          <p>Sie kennen bereits unser <b>Lagebild</b>: es beantwortet die Frage, wie die Lage gerade jetzt ist. Es misst Zust&auml;nde, es z&auml;hlt Warnungen, es zeigt Messwerte. Das <b>Fr&uuml;hwarnsystem</b> beantwortet drei andere Fragen.</p>
-          <div class="grid g3 reveal" style="margin-top:18px;gap:14px">
-            <div class="card" style="padding:22px 20px"><div class="num">FRAGE 1</div><h3 style="font-size:17px">Wohin bewegt es sich?</h3><p style="font-size:14px">Nicht der Zustand, sondern die Richtung. Zieht etwas an, entspannt sich etwas, und wie schnell?</p><span class="ghost">1</span></div>
-            <div class="card" style="padding:22px 20px"><div class="num">FRAGE 2</div><h3 style="font-size:17px">Wie sicher ist das?</h3><p style="font-size:14px">Jede Einsch&auml;tzung tr&auml;gt ihre eigene Belastbarkeit. Eine unsichere Lage wird als unsicher ausgewiesen.</p><span class="ghost">2</span></div>
-            <div class="card" style="padding:22px 20px"><div class="num">FRAGE 3</div><h3 style="font-size:17px">Woran w&uuml;rde man merken, dass es falsch ist?</h3><p style="font-size:14px">Bei jeder Einsch&auml;tzung steht, was eintreten m&uuml;sste, damit sie widerlegt w&auml;re. Das macht aus einer Meinung ein pr&uuml;fbares Produkt.</p><span class="ghost">3</span></div>
-          </div>
-          <h4>Was Sie davon haben</h4>
-          <p>Sie m&uuml;ssen nicht selbst Nachrichten sortieren. Sie bekommen eine Einordnung, die sagt, ob etwas Ihre Vorbereitung betrifft oder nicht. Und wenn ja: welche der Ma&szlig;nahmen aus Ihrem Umsetzungsplan gerade vorzuziehen w&auml;re.</p>
-          <p style="margin-top:16px"><a class="btn btn-red" href="fruehwarnsystem.html">Wie das Fr&uuml;hwarnsystem arbeitet &rarr;</a></p>
-        </div>
-      </div></article>
-
-    </div><!-- /reise -->
-  </div>
+<section class="">
+<div class="wrap">
+<div class="section-head"><span class="kicker">Während der Umsetzung</span>
+<h2>Kontakt endet nicht beim letzten Dokument.</h2>
+</div>
+<p>Fragen zu Ihrer Analyse und zur Umsetzung können weiter aufgenommen und besprochen werden. Welche Begleitung, Änderungen oder erneuten Prüfungen enthalten sind, richtet sich nach Ihrer Vereinbarung.</p>
+<p>Analysekunden gehören zum Protect-12 Frühwarnsystem. Entwicklungsstand, verfügbare Lageinformationen und konkrete Leistungen werden transparent erklärt. Das öffentlich zugängliche Lagebild können Sie bereits nutzen.</p>
+<p><a href="fruehwarnsystem.html">Lagebild und Frühwarnsystem →</a></p>
+</div>
 </section>
-
-<!-- WEITERLESEN -->
-<section id="weiterlesen">
-  <div class="wrap">
-    <div class="section-head reveal"><span class="kicker">Tiefer einsteigen</span>
-      <h2>Vier Seiten, wenn Sie es genauer wissen wollen.</h2>
-      <p class="lead">Der Ablauf oben ist das Ger&uuml;st. Was in den zw&ouml;lf Modulen gepr&uuml;ft wird, welche Lagen wir dagegen laufen lassen, wer dahintersteht und wie das in echten Haushalten ausgeht, steht jeweils auf einer eigenen Seite.</p></div>
-    <div class="grid g2 reveal">
-      <div class="beleg"><div class="bk">Die Methodik</div><h3>Die zw&ouml;lf Module</h3>
-        <p>Alle 144 Pr&uuml;fkriterien im Klartext, dazu je Modul die Messlatte von 0 bis 5, die Annahme die in der Praxis regelm&auml;&szlig;ig scheitert und ein realer Fall, der es belegt.</p>
-        <p><a href="module.html" style="font-weight:700">Die zw&ouml;lf Module ansehen &rarr;</a></p><span class="gh">12</span></div>
-      <div class="beleg"><div class="bk">Die Belastungsprobe</div><h3>Die acht Szenarien</h3>
-        <p>Welche Lagen wir gegen Ihre Werte laufen lassen, warum genau diese acht, wann bei jeder der kritische Punkt liegt und was wir bewusst nicht durchspielen.</p>
-        <p><a href="szenarien.html" style="font-weight:700">Die acht Szenarien ansehen &rarr;</a></p><span class="gh">08</span></div>
-      <div class="beleg"><div class="bk">Die Menschen</div><h3>Das Expertennetzwerk</h3>
-        <p>F&uuml;r jedes Modul ein eigenes Fachgebiet, besetzt mit Menschen, die heute beruflich genau darin arbeiten. Kompetenzen statt Namen.</p>
-        <p><a href="experten.html" style="font-weight:700">Das Netzwerk ansehen &rarr;</a></p><span class="gh">01</span></div>
-      <div class="beleg"><div class="bk">Die Ergebnisse</div><h3>Aus der Praxis</h3>
-        <p>Drei anonymisierte Analysen im Detail: Ausgangslage, Befund, die gr&ouml;&szlig;ten Hebel mit Preis und Zeitaufwand, und was nach einem Jahr davon &uuml;brig war.</p>
-        <p><a href="praxis.html" style="font-weight:700">Die Fallstudien lesen &rarr;</a></p><span class="gh">03</span></div>
-    </div>
-  </div>
+<section class="mist">
+<div class="wrap">
+<div class="section-head"><span class="kicker">Weitere Möglichkeiten</span>
+<h2>Eine persönliche Analyse kann der Anfang sein.</h2>
+</div>
+<div class="grid g3">
+<article class="card">
+<div class="num">01</div>
+<h3>Das Hofkonzept</h3>
+<p>Eigene Vorsorge, Hofvorsorge und vorbereitete Zusammenarbeit passend zum tatsächlichen Bedarf.</p>
+<p><a href="hofkonzept.html">Mehr erfahren →</a></p>
+</article>
+<article class="card">
+<div class="num">02</div>
+<h3>Mehrere Standorte und Betriebe</h3>
+<p>Private und betriebliche Funktionen getrennt aufnehmen und ihre Abhängigkeiten zusammen betrachten.</p>
+<p><a href="das-system.html">Mehr erfahren →</a></p>
+</article>
+<article class="card">
+<div class="num">03</div>
+<h3>Erneute Prüfung</h3>
+<p>Veränderte Lebenssituation, Ausstattung oder Übungsergebnisse zum Anlass nehmen, die Vorbereitung neu zu bewerten.</p>
+<p><a href="faq-kontakt.html">Mehr erfahren →</a></p>
+</article>
+</div>
+</div>
 </section>
-<!-- FUER WEN -->
-<section id="fuerwen">
-  <div class="wrap">
-    <div class="section-head reveal"><span class="kicker">F&uuml;r wen</span>
-      <h2>Protect-12 ist nicht f&uuml;r jeden. Das ist Absicht.</h2>
-      <p class="lead">Eine Analyse mit dieser Tiefe lohnt sich f&uuml;r Menschen, die sie ernst nehmen. Deshalb sagen wir ehrlich, f&uuml;r wen Protect-12 gedacht ist, und f&uuml;r wen nicht.</p></div>
-    <div class="forwen reveal">
-      <div class="col yes"><h3>Protect-12 ist f&uuml;r Sie, wenn &hellip;</h3><ul>
-        <li>Sie Verantwortung tragen: f&uuml;r Partner, Kinder, Eltern oder ein Team.</li>
-        <li>Sie Klarheit wollen statt Bauchgef&uuml;hl und Schlagzeilen.</li>
-        <li>Sie einen ehrlichen Blick auf Ihr Zuhause zulassen.</li>
-        <li>Sie umsetzen wollen, in Ihrem Tempo und Ihrem Budget.</li></ul></div>
-      <div class="col no"><h3>Und nichts f&uuml;r Sie, wenn &hellip;</h3><ul>
-        <li>Sie eine fertige Einkaufsliste aus dem Internet erwarten.</li>
-        <li>Sie Weltuntergangsstimmung suchen statt belastbarer Vorbereitung.</li>
-        <li>Sie eine Standardl&ouml;sung von der Stange wollen.</li></ul></div>
-    </div>
-  </div>
-</section>
-
 <section class="band">
-  <div class="wrap">
-    <span class="kicker">Ihr n&auml;chster Schritt</span>
-    <h2>Schritt 01 ist ein Gespr&auml;ch.</h2>
-    <p>Unverbindlich, etwa dreissig Minuten. Danach wissen Sie, ob Protect-12 zu Ihrer Situation passt und was es Sie an Zeit und Geld kosten w&uuml;rde.</p>
-    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
-      <a class="btn btn-red" data-cta href="#">Gespr&auml;ch vereinbaren &rarr;</a>
-      <a class="btn btn-ghost" href="das-system.html">Die Methodik im Detail</a></div>
-  </div>
+<div class="wrap">
+<div class="section-head"><span class="kicker">Ihr nächster Schritt</span>
+<h2>Beginnen wir mit Ihrer Situation.</h2>
+</div>
+<p>Im persönlichen Gespräch klären wir Ihr Anliegen und den passenden nächsten Schritt.</p>
+<p><a class="btn btn-red" data-cta href="#">Gespräch vereinbaren →</a></p>
+</div>
 </section>
-
-<div id="p12-footer"></div>
-<script src="assets/p12.js"></script>
-<script>
-
-/* ---------- Zeitstrahl: Fortschritt und aktive Stationen ---------- */
-(function(){
-  var bahn=document.getElementById("reisebahn"); if(!bahn) return;
-  var line=bahn.querySelector(".rline"), fill=document.getElementById("rfill");
-  var stats=Array.prototype.slice.call(bahn.querySelectorAll(".stat"));
-  var wartet=false;
-  function tick(){
-    wartet=false;
-    var lr=line.getBoundingClientRect();
-    var mark=window.innerHeight*0.42;
-    var h=Math.min(lr.height, Math.max(0, mark-lr.top));
-    fill.style.height=h.toFixed(1)+"px";
-    stats.forEach(function(s){
-      var d=s.querySelector(".dot").getBoundingClientRect();
-      if(d.top<=mark) s.classList.add("on"); else s.classList.remove("on");
-    });
-  }
-  function anstossen(){ if(!wartet){ wartet=true; requestAnimationFrame(tick); } }
-  addEventListener("scroll",anstossen,{passive:true});
-  addEventListener("resize",anstossen);
-  tick();
-})();
-
-/* ---------- Stellschrauben Zeit und Budget ---------- */
-(function(){
-  var sz=document.getElementById("slZeit"), sg=document.getElementById("slGeld");
-  if(!sz||!sg) return;
-  var vz=document.getElementById("valZeit"), vg=document.getElementById("valGeld");
-  var hd=document.getElementById("ergHd"), sub=document.getElementById("ergSub");
-  var ZEIT=[
-    {t:"30 Minuten",k:"in kurzen Handgriffen"},
-    {t:"1 Stunde",k:"in kurzen Handgriffen"},
-    {t:"2 Stunden",k:"in einer festen Wocheneinheit"},
-    {t:"4 Stunden",k:"in einer festen Wocheneinheit"},
-    {t:"6 Stunden",k:"in gr&ouml;&szlig;eren Bl&ouml;cken"},
-    {t:"8 Stunden",k:"in gr&ouml;&szlig;eren Bl&ouml;cken"}
-  ];
-  var GELD=["0 Euro","50 Euro","100 Euro","200 Euro","350 Euro","500 Euro"];
-  var ZTX=[
-    "Ihr Plan zerlegt jede Ma&szlig;nahme in Schritte von h&ouml;chstens einer halben Stunde. Nichts, was am St&uuml;ck erledigt werden muss.",
-    "Ihr Plan zerlegt jede Ma&szlig;nahme in Schritte von h&ouml;chstens einer halben Stunde. Nichts, was am St&uuml;ck erledigt werden muss.",
-    "Ihr Plan arbeitet mit einer festen Wocheneinheit. Ein Punkt pro Woche, abhakbar, mit Zeitangabe je Aufgabe.",
-    "Ihr Plan arbeitet mit einer festen Wocheneinheit. Ein Punkt pro Woche, abhakbar, mit Zeitangabe je Aufgabe.",
-    "Ihr Plan b&uuml;ndelt zu Projekten: ein Thema pro Wochenende, dazwischen kleine Routineaufgaben.",
-    "Ihr Plan b&uuml;ndelt zu Projekten: ein Thema pro Wochenende, dazwischen kleine Routineaufgaben."
-  ];
-  var GTX=[
-    "Ohne Budget beginnt der Plan mit dem, was nichts kostet: Ordnung, Dokumente, Absprachen, Rollen, ge&uuml;bte Abl&auml;ufe. In der Praxis sind das oft die wirksamsten Punkte &uuml;berhaupt.",
-    "Mit kleinem Budget kommen zuerst die g&uuml;nstigen Hebel mit gro&szlig;er Wirkung: Wasser, Licht, Bargeld, ein zweiter Lagerort, ein Radio.",
-    "Mit diesem Budget l&auml;sst sich die komplette Sofort-Stufe abarbeiten, bevor gr&ouml;&szlig;ere Anschaffungen &uuml;berhaupt Thema werden.",
-    "Mit diesem Budget kommen nach der Sofort-Stufe die ersten strukturellen Punkte dazu, etwa Aufbereitung, Heizen ohne Netz oder Funk.",
-    "Mit diesem Budget lassen sich mehrere Bereiche parallel ausbauen, statt streng nacheinander.",
-    "Mit diesem Budget rechnet der Plan auch gr&ouml;&szlig;ere Investitionen mit, dimensioniert nach Ihrem tats&auml;chlichen Bedarf, nicht nach Katalog."
-  ];
-  function zeichnen(){
-    var z=parseInt(sz.value,10), g=parseInt(sg.value,10);
-    vz.innerHTML=ZEIT[z].t.replace(/^(\S+)\s(.+)$/,'$1 <small>$2</small>');
-    vg.innerHTML=GELD[g].replace(/^(\S+)\s(.+)$/,'$1 <small>$2</small>');
-    hd.innerHTML="Umsetzung "+ZEIT[z].k+", "+(g===0?"ohne laufendes Budget":"finanziert mit "+GELD[g]+" im Monat")+".";
-    sub.innerHTML=ZTX[z]+" "+GTX[g]+" <b style='color:#fff'>Das Ziel bleibt in jeder Einstellung dasselbe: die bestm&ouml;gliche Resilienz, die unter diesen Bedingungen erreichbar ist.</b>";
-  }
-  sz.addEventListener("input",zeichnen); sg.addEventListener("input",zeichnen);
-  zeichnen();
-})();
-
-/* ---------- Fragebogen-Vorschau ---------- */
-var FRAGEN=[
- {nr:"Frage 128 von 651", bereich:"Bereich 03 &middot; Wasser",
-  q:"Wie viele Liter Trinkwasser sind aktuell in Ihrem Haushalt gelagert, unabh&auml;ngig von der Leitung?",
-  erl:"<b>Gemeint ist</b> abgef&uuml;lltes Wasser in Flaschen, Kanistern oder Tanks, das Sie ohne Aufbereitung trinken k&ouml;nnten. Nicht gemeint sind Getr&auml;nke wie Saft oder Bier und nicht der Inhalt von Heizungs- oder Regenwasserspeichern.<br><b>Warum wir fragen:</b> Aus dieser Menge, der Personenzahl und Ihrem Standort ergibt sich Ihre Reichweite in Tagen. Sie ist die Grundlage f&uuml;r fast jede Empfehlung in diesem Bereich.",
-  opt:["Kein gesonderter Vorrat","Bis etwa 20 Liter","20 bis 60 Liter","60 bis 150 Liter","Mehr als 150 Liter","Wei&szlig; ich nicht genau"]},
- {nr:"Frage 244 von 651", bereich:"Bereich 05 &middot; Energie und W&auml;rme",
-  q:"K&ouml;nnen Sie mindestens einen Wohnraum beheizen, wenn gleichzeitig Strom und Gas ausfallen?",
-  erl:"<b>Gemeint ist</b> eine W&auml;rmequelle, die ohne Netzstrom und ohne Gasanschluss funktioniert, also zum Beispiel ein Kaminofen, ein Holzofen oder eine Petroleumheizung mit ausreichender Bel&uuml;ftung.<br><b>Warum wir fragen:</b> Die meisten modernen Heizungen brauchen Strom f&uuml;r Pumpe und Steuerung, auch wenn sie mit &Ouml;l oder Gas laufen. Ohne zweiten Energiepfad bleibt es im Winter innerhalb weniger Stunden kalt.",
-  opt:["Ja, dauerhaft und mit Brennstoffvorrat","Ja, aber nur wenige Tage","Vorhanden, aber seit Jahren nicht benutzt","Nein","Wei&szlig; ich nicht genau"]},
- {nr:"Frage 431 von 651", bereich:"Bereich 09 &middot; Netzwerk und Gemeinschaft",
-  q:"Wie viele Menschen in Ihrer unmittelbaren Nachbarschaft w&uuml;rden Sie in einer Notlage um Hilfe bitten?",
-  erl:"<b>Gemeint sind</b> Personen, die Sie zu Fu&szlig; in wenigen Minuten erreichen und die Sie mit Namen kennen. Familie, die weiter weg wohnt, z&auml;hlt hier nicht mit.<br><b>Warum wir fragen:</b> Im Ernstfall ist die erste Reihe fast nie der Staat, sondern das eigene Umfeld. Diese Zahl ist einer der wenigen Werte, die sich ohne Geld deutlich verbessern lassen.",
-  opt:["Niemanden","Eine Person","Zwei bis drei Personen","Vier bis sechs Personen","Mehr als sechs Personen"]}
-];
-(function(){
-  var box=document.getElementById("fbq"); if(!box) return;
-  var i=0, gewaehlt=[null,null,null];
-  var prog=document.getElementById("fbprog"), zaehl=document.getElementById("fbcount"),
-      zahlt=document.getElementById("fbzahlt"),
-      vor=document.getElementById("fbnext"), zur=document.getElementById("fbprev");
-  function zeichnen(){
-    var f=FRAGEN[i];
-    box.innerHTML='<div class="qn">'+f.nr+'</div><h4>'+f.q+'</h4>'+
-      '<div class="erl">'+f.erl+'</div><div class="fbopt">'+
-      f.opt.map(function(o,k){ return '<button type="button" data-k="'+k+'"'+(gewaehlt[i]===k?' class="sel"':'')+'>'+o+'</button>'; }).join("")+'</div>';
-    Array.prototype.forEach.call(box.querySelectorAll("[data-k]"),function(b){
-      b.addEventListener("click",function(){ gewaehlt[i]=parseInt(b.getAttribute("data-k"),10); zeichnen(); });
-    });
-    prog.style.width=Math.round((i+1)/FRAGEN.length*100)+"%";
-    zaehl.textContent=(i+1)+" von "+FRAGEN.length;
-    zahlt.innerHTML='Zahlt ein auf: <b>'+f.bereich+'</b>';
-    zur.disabled=(i===0); vor.disabled=(i===FRAGEN.length-1);
-  }
-  vor.addEventListener("click",function(){ if(i<FRAGEN.length-1){ i++; zeichnen(); } });
-  zur.addEventListener("click",function(){ if(i>0){ i--; zeichnen(); } });
-  zeichnen();
-})();
-</script>
-
-</body>
-</html>
+</main>
+<div id="p12-footer">
+</div><script src="assets/p12.js"></script></body></html>

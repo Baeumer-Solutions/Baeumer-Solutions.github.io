@@ -1,7 +1,7 @@
 /* ============================================================
    PROTECT-12 · Website-Relaunch v57 · gemeinsame Interaktion
    Header + Footer (echtes Logo), Mobile-Nav, Reveal, Zaehler,
-   Impressum/Datenschutz-Overlays und die Anfrage-/Community-Formulare.
+   Impressum/Datenschutz-Overlays und die Anfrage-/Hofkonzept-Formulare.
    ============================================================ */
 (function(){
   "use strict";
@@ -15,7 +15,7 @@
   /* Make-Webhooks. Beim Deploy bestaetigen/ersetzen (Kontakt-Hook aus altem Live-Bundle als Default). */
   var P12_HOOKS = {
     contact:   "https://hook.eu2.make.com/i44tx5i2o9okgqib6fh4cl239an2jdd7",
-    community: "https://hook.eu2.make.com/i44tx5i2o9okgqib6fh4cl239an2jdd7"
+    hof: "https://hook.eu2.make.com/i44tx5i2o9okgqib6fh4cl239an2jdd7"
   };
 
   /* Riegel seit 11.08.2026: der Webhook stand offen, Bots haben leere POSTs
@@ -25,8 +25,8 @@
 
   var MAILTO_CONTACT = "mailto:"+MAIL+"?subject=Protect-12%20Gespr%C3%A4ch%20vereinbaren&body="+
     encodeURIComponent("Guten Tag,\n\nich interessiere mich fuer eine Protect-12 Krisenvorsorge-Analyse und wuerde gern ein unverbindliches Gespraech vereinbaren.\n\nName:\nWohnort (ungefaehr):\nHaushalt (Personen):\nTelefonisch erreichbar:\n\nViele Gruesse");
-  var MAILTO_COMMUNITY = "mailto:"+MAIL+"?subject=Voranmeldung%20Krisenvorsorge-Netzwerk&body="+
-    encodeURIComponent("Guten Tag,\n\nich moechte mich fuer das Protect-12 Krisenvorsorge-Netzwerk vormerken lassen.\n\nName:\nRegion/PLZ (optional):\nWarum ich dabei sein moechte:\n\nViele Gruesse");
+  var MAILTO_HOF = "mailto:"+MAIL+"?subject=Anfrage%20Protect-12%20Hofkonzept&body="+
+    encodeURIComponent("Guten Tag,\n\nich interessiere mich fuer das Protect-12 Hofkonzept.\n\nName:\nRegion/PLZ (optional):\nMein Anliegen als Hof oder Haushalt:\n\nViele Gruesse");
 
   /* Echtes Protect-12 Schild (Marke, aus dem Logo vektorisiert). Fuellregel evenodd
      wegen der Spirale. Wird als angeschnittenes Wasserzeichen an den Rand gesetzt. */
@@ -42,6 +42,7 @@
       {href:"module.html", label:"Die zw&ouml;lf Module"},
       {href:"szenarien.html", label:"Die acht Szenarien"},
       {href:"unterlagen.html", label:"Ihre Unterlagen"},
+      {href:"dashboard.html", label:"Ihr Dashboard"},
       {href:"praxis.html", label:"Aus der Praxis"},
       {href:"experten.html", label:"Das Expertennetzwerk"}
     ]},
@@ -52,7 +53,7 @@
     ]},
     {href:"ratgeber.html", label:"Ratgeber"},
     {href:"downloads.html", label:"Downloads"},
-    {href:"community.html", label:"Community"},
+    {href:"hofkonzept.html", label:"Hofkonzept"},
     {href:"faq-kontakt.html", label:"FAQ & Kontakt"}
   ];
 
@@ -128,15 +129,15 @@
     return '<footer class="site-footer"><div class="wrap">'+
       '<div class="cols">'+
         '<div><img class="brandlogo" src="assets/logo-weiss.png" alt="Protect-12" style="height:34px">'+
-          '<p class="brand-blurb">Krisenvorsorge mit System. Eine strukturierte Analyse Ihres Haushalts, ein laufendes Lagebild und ein gepr&uuml;ftes Netzwerk.</p></div>'+
+          '<p class="brand-blurb">Krisenvorsorge mit System. Eine strukturierte Analyse Ihres Haushalts, ein persönliches Dashboard, ein machbarer Plan und vereinbarte Begleitung.</p></div>'+
         '<div><h4>Das System</h4>'+
           '<a href="module.html">Die zw&ouml;lf Module</a><a href="szenarien.html">Die acht Szenarien</a>'+
-          '<a href="unterlagen.html">Ihre Unterlagen</a><a href="praxis.html">Aus der Praxis</a>'+
+          '<a href="unterlagen.html">Ihre Unterlagen</a><a href="dashboard.html">Ihr Dashboard</a><a href="praxis.html">In der Praxis</a>'+
           '<a href="experten.html">Expertennetzwerk</a></div>'+
         '<div><h4>Mehr</h4>'+
           '<a href="ablauf-experten.html">Ablauf der Analyse</a><a href="lagebild.html">Lagebild</a>'+
           '<a href="fruehwarnsystem.html">Fr&uuml;hwarnsystem</a>'+
-          '<a href="community.html">Community</a><a href="ratgeber.html">Ratgeber</a>'+
+          '<a href="hofkonzept.html">Hofkonzept</a><a href="ratgeber.html">Ratgeber</a>'+
           '<a href="downloads.html">Checklisten zum Download</a>'+
           '<a href="faq-kontakt.html">Fragen &amp; Antworten</a></div>'+
         '<div><h4>Kontakt</h4>'+
@@ -307,7 +308,7 @@
     if(b && m){ b.addEventListener("click", function(){ m.classList.toggle("open"); }); }
 
     bindAll("[data-cta]", function(ev){ ev.preventDefault(); openForm("contact"); });
-    bindAll("[data-community]", function(ev){ ev.preventDefault(); openForm("community"); });
+    bindAll("[data-hof]", function(ev){ ev.preventDefault(); openForm("hof"); });
     bindAll("[data-legal]", function(ev){ ev.preventDefault(); openLegal(ev.currentTarget.getAttribute("data-legal")); });
 
     /* threshold 0 statt .12: Bloecke, die hoeher sind als der Bildschirm (ganze
@@ -349,12 +350,12 @@
   }
 
   function openForm(type){
-    var cfg = type==="community" ? {
-      title:"Voranmeldung Krisenvorsorge-Netzwerk",
-      sub:"Lassen Sie sich unverbindlich vormerken. Sie erfahren als Erstes, wenn es losgeht.",
-      submit:"Vormerken lassen", hook:P12_HOOKS.community, mailto:MAILTO_COMMUNITY, formular:"Community-Voranmeldung",
+    var cfg = type==="hof" ? {
+      title:"Über das Hofkonzept sprechen",
+      sub:"Schildern Sie Ihr Anliegen als Hof oder Haushalt. Wir klären den passenden nächsten Schritt persönlich.",
+      submit:"Anfrage senden", hook:P12_HOOKS.hof, mailto:MAILTO_HOF, formular:"Kontakt",
       fields:[{name:"name",label:"Name",req:true},{name:"email",label:"E-Mail",type:"email",req:true},
-              {name:"region",label:"Region / PLZ (optional)"},{name:"reason",label:"Warum moechten Sie dabei sein? (optional)",type:"textarea",full:true}]
+              {name:"region",label:"Region / PLZ (optional)"},{name:"reason",label:"Ihr Anliegen als Hof oder Haushalt (optional)",type:"textarea",full:true}]
     } : {
       title:"Gespraech vereinbaren",
       sub:"Schildern Sie uns kurz Ihre Situation. Wir melden uns fuer ein unverbindliches Gespraech.",
@@ -387,7 +388,7 @@
       if(!form.querySelector("#p12f_consent").checked) ok=false;
       if(!ok){ errBox.innerHTML="Bitte f&uuml;llen Sie die Pflichtfelder aus und best&auml;tigen Sie die Datenschutzerkl&auml;rung."; errBox.style.display="block"; return; }
       var btn=form.querySelector("button[type=submit]"); btn.disabled=true; btn.textContent="Wird gesendet ...";
-      var nachricht = (type==="community") ? ("VORANMELDUNG Krisenvorsorge-Netzwerk.\n"+(raw.region?("Region/PLZ: "+raw.region+"\n"):"")+(raw.reason?("Begruendung: "+raw.reason):"")) : ((raw.message||"")+(raw.ort?("\nWohnort: "+raw.ort):"")+(raw.haushalt?("\nHaushalt: "+raw.haushalt):""));
+      var nachricht = (type==="hof") ? ("ANFRAGE Protect-12 Hofkonzept.\n"+(raw.region?("Region/PLZ: "+raw.region+"\n"):"")+(raw.reason?("Anliegen: "+raw.reason):"")) : ((raw.message||"")+(raw.ort?("\nWohnort: "+raw.ort):"")+(raw.haushalt?("\nHaushalt: "+raw.haushalt):""));
       var data={ formular:cfg.formular, name:(raw.name||""), email:(raw.email||""), telefon:(raw.phone||""), seite:location.href, nachricht:nachricht, datenschutz:"ja", zeit:new Date().toISOString(), token:P12_TOKEN };
       fetch(cfg.hook, {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify(data)})
         .then(function(r){ if(!r.ok) throw new Error(r.status); return r; })

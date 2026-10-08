@@ -1,338 +1,443 @@
 <!DOCTYPE html>
-<html lang="de">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Die zw&ouml;lf Module der Krisenvorsorge-Analyse | Protect-12</title>
-<meta name="description" content="Zw&ouml;lf Module mit je zw&ouml;lf Pr&uuml;fkriterien, 144 insgesamt, bewertet von 0 bis 5 &uuml;ber sechs Zeithorizonte. Alle Kriterien im Klartext, mit Messlatte, Annahme und realem Fall je Modul.">
-<meta name="robots" content="index,follow">
-<link rel="canonical" href="https://protect-12.de/module">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Die zw&ouml;lf Module der Protect-12 Analyse">
-<meta property="og:description" content="144 Kriterien, sechs Zeithorizonte, Bewertung von 0 bis 5. Jedes Modul im Detail.">
-<meta property="og:image" content="https://protect-12.de/assets/og.png">
-<meta property="og:url" content="https://protect-12.de/module">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="assets/p12.css">
-<style>
-.bl{background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);overflow:hidden;position:relative;margin-bottom:30px}
-.bl .kopf{background:linear-gradient(160deg,#243244,#1B2430);color:#fff;padding:28px 34px;position:relative;overflow:hidden}
-.bl .kopf .bn{font-size:11.5px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--red-soft)}
-.bl .kopf h2{color:#fff;font-size:clamp(22px,2.4vw,30px);margin-top:8px;letter-spacing:-.02em}
-.bl .kopf .tags{margin-top:14px;display:flex;gap:8px;flex-wrap:wrap}
-.bl .kopf .tags span{background:rgba(255,255,255,.12);color:#fff;font-size:11.5px;font-weight:700;
-  letter-spacing:.06em;padding:6px 12px}
-.bl .kopf .gh{position:absolute;right:22px;bottom:-32px;font-size:112px;font-weight:800;color:#fff;opacity:.07;line-height:1}
-.bl .rumpf{padding:30px 34px 32px}
-.bl h4{color:var(--navy);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;margin:30px 0 12px;
-  padding-bottom:8px;border-bottom:1px solid var(--grey)}
-.bl h4:first-child{margin-top:0}
-.bl p{color:var(--muted);font-size:15.5px}
-.bl p+p{margin-top:12px}
-.bl p b{color:var(--navy)}
-/* Kriterienliste, alle zwoelf */
-.k12{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}
-.k12 span{background:var(--grey);color:var(--navy);font-size:13px;font-weight:600;padding:10px 13px;
-  border-left:2px solid var(--navy-3);display:block}
-.k12 span i{font-style:normal;color:var(--red);font-weight:800;margin-right:7px}
-/* Messlatte */
-.mess{background:var(--navy);color:#fff;padding:24px 26px;position:relative;overflow:hidden}
-.mess .ml{font-size:11px;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--red-soft)}
-.mess h5{color:#fff;font-size:18px;margin:9px 0 6px;font-weight:800}
-.mess .dsc{color:var(--mist-txt);font-size:14.5px;margin-bottom:18px}
-.stufen{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.stufen>div{background:rgba(255,255,255,.07);padding:16px 16px;border-top:3px solid #7B8DA3}
-.stufen>div.s0{border-top-color:#C31212}
-.stufen>div.s3{border-top-color:#E0A63A}
-.stufen>div.s5{border-top-color:#2F7D4F}
-.stufen .sn{font-size:22px;font-weight:800;color:#fff;line-height:1}
-.stufen .sl{font-size:10.5px;font-weight:800;letter-spacing:.11em;text-transform:uppercase;color:var(--mist-txt);margin-top:5px}
-.stufen p{color:var(--mist-txt);font-size:13.5px;margin-top:10px}
-.mess .fuss{margin-top:16px;padding-top:14px;border-top:1px solid rgba(255,255,255,.14);color:var(--mist-txt);font-size:13.5px}
-/* Zeithorizonte */
-.horiz{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
-.horiz>div{background:var(--grey);border-top:3px solid var(--navy);padding:13px 12px;text-align:center}
-.horiz .hn{font-size:10.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--red)}
-.horiz .ht{font-size:14px;font-weight:700;color:var(--navy);margin-top:5px;line-height:1.25}
-/* Annahme + Fall */
-.annahme{background:var(--grey);border-left:3px solid var(--navy);padding:17px 21px}
-.annahme p{color:var(--ink);font-size:15.5px}
-.echt{background:#fff;border:1px solid var(--line);border-left:3px solid var(--red);padding:17px 21px}
-.echt .tag{font-size:11px;font-weight:800;letter-spacing:.1em;color:var(--red);text-transform:uppercase}
-.echt p{color:var(--ink);margin-top:7px;font-size:15.5px}
-/* Was Sie bekommen */
-.liefert{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.liefert>div{background:#fff;border:1px solid var(--line);border-top:3px solid var(--red);padding:18px 18px}
-.liefert .ln{font-size:10.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--red)}
-.liefert h6{font-size:15px;color:var(--navy);margin:8px 0 7px;font-weight:800}
-.liefert p{font-size:13.5px;color:var(--muted)}
-/* Index */
-.idx{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:26px}
-.idx a{background:#fff;border:1px solid var(--line);border-top:3px solid var(--navy);box-shadow:var(--shadow-sm);
-  padding:15px 16px;text-decoration:none;display:block;transition:border-color .15s ease,transform .15s ease}
-.idx a:hover{border-top-color:var(--red);transform:translateY(-2px)}
-.idx .n{font-size:11px;font-weight:800;color:var(--red);letter-spacing:.12em}
-.idx .t{font-size:14.5px;font-weight:700;color:var(--navy);margin-top:5px;line-height:1.3}
-/* Ampel */
-.ampel{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.ampel>div{background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);padding:24px 22px;border-top:4px solid var(--navy)}
-.ampel>div.gruen{border-top-color:#2F7D4F}
-.ampel>div.gelb{border-top-color:#E0A63A}
-.ampel>div.rot{border-top-color:#C31212}
-.ampel .aw{font-size:26px;font-weight:800;color:var(--navy);letter-spacing:-.02em}
-.ampel h3{font-size:17px;margin:7px 0 8px}
-.ampel p{font-size:14px;color:var(--muted)}
-@media(max-width:1000px){.k12{grid-template-columns:repeat(2,1fr)}.horiz{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:960px){.idx{grid-template-columns:repeat(2,1fr)}.stufen{grid-template-columns:1fr}
-  .liefert{grid-template-columns:1fr}.ampel{grid-template-columns:1fr}}
-@media(max-width:600px){.idx{grid-template-columns:1fr}.k12{grid-template-columns:1fr}
-  .horiz{grid-template-columns:repeat(2,1fr)}.bl .kopf{padding:22px 20px}.bl .rumpf{padding:24px 20px 26px}}
-</style>
-</head>
+<html lang="de"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Die zwölf Lebensbereiche und 144 Kriterien | Protect-12</title><meta name="description" content="Die aktuellen zwölf Protect-12 Lebensbereiche mit je zwölf Kriterien: Standort, Menschen, Ressourcen und Abhängigkeiten."><meta name="robots" content="index,follow">
+<link rel="canonical" href="https://protect-12.de/module/"><meta property="og:type" content="website"><meta property="og:title" content="Die zwölf Lebensbereiche und 144 Kriterien | Protect-12"><meta property="og:description" content="Die aktuellen zwölf Protect-12 Lebensbereiche mit je zwölf Kriterien: Standort, Menschen, Ressourcen und Abhängigkeiten."><meta property="og:url" content="https://protect-12.de/module/"><meta property="og:image" content="https://protect-12.de/assets/og.png"><meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/p12.css"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Die zwölf Lebensbereiche und 144 Kriterien", "description": "Die aktuellen zwölf Protect-12 Lebensbereiche mit je zwölf Kriterien: Standort, Menschen, Ressourcen und Abhängigkeiten.", "url": "https://protect-12.de/module/"}</script></head>
 <body data-page="module.html">
-<div id="p12-header"></div>
-
+<div id="p12-header">
+</div>
+<main>
 <header class="hero">
-  <div class="wrap">
-    <span class="kicker">Die Methodik</span>
-    <h1>Zw&ouml;lf Module. Je zw&ouml;lf Kriterien.</h1>
-    <p class="lead">Ein Haushalt f&auml;llt nie an einer Stelle aus, sondern der Reihe nach. Deshalb wird jedes der zw&ouml;lf Module mit zw&ouml;lf eigenen Pr&uuml;fkriterien analysiert, <b style="color:#fff">144 insgesamt</b>, jedes einzeln bewertet von 0 bis 5 und &uuml;ber sechs Zeithorizonte durchgerechnet. Auf dieser Seite steht jedes Modul im Klartext: was gepr&uuml;ft wird, wie tief, woran gemessen wird und was am Ende in Ihren Unterlagen landet.</p>
-    <div class="cta-row"><a class="btn btn-red" data-cta href="#">Gespr&auml;ch vereinbaren &rarr;</a><a class="btn btn-ghost" href="#m01">Zu Modul 01</a></div>
-  </div>
+<div class="wrap"><span class="kicker">Die Lebensbereiche</span>
+<h1>Zwölf Bereiche. 144 Kriterien. Ihre persönliche Situation.</h1>
+<p class="lead">Vorbereitung ist mehr als ein Bestand an Geräten und Vorräten. Wir prüfen die einzelnen Funktionen und betrachten anschließend, ob sie zusammen für Ihre Personen und Standorte tragen.</p>
+<div class="cta-row"><a class="btn btn-red" data-cta href="#">Gespräch vereinbaren →</a><a class="btn btn-ghost" href="das-system.html">Das Angebot ansehen</a>
+</div>
+</div>
 </header>
-
-<section>
-  <div class="wrap">
-    <div class="counts reveal" style="margin-bottom:44px">
-      <div class="count"><div class="n"><span data-count="12">0</span></div><div class="l">Module</div></div>
-      <div class="count"><div class="n"><span data-count="144">0</span></div><div class="l">Pr&uuml;fkriterien</div></div>
-      <div class="count"><div class="n"><span data-count="6">0</span></div><div class="l">Zeithorizonte</div></div>
-      <div class="count"><div class="n"><span data-count="864">0</span></div><div class="l">Einzelbewertungen</div></div>
-    </div>
-    <div class="section-head reveal"><span class="kicker">Vor dem Einstieg</span>
-      <h2>Wie ein Modul bewertet wird.</h2>
-      <p class="lead">Damit die zw&ouml;lf Kapitel unten lesbar sind, hier zuerst das Ma&szlig;system dahinter. Es ist f&uuml;r alle Module identisch, das ist der Punkt: nur so lassen sich Wasser und F&uuml;hrungsf&auml;higkeit &uuml;berhaupt miteinander vergleichen.</p></div>
-    <div class="grid g3 reveal">
-      <div class="card"><div class="num">SCHRITT 1</div><h3>Jedes Kriterium einzeln, 0 bis 5</h3><p>F&uuml;r jedes der zw&ouml;lf Kriterien eines Moduls gibt es eine ausformulierte Definition, was 0 bedeutet und was 5 bedeutet. Bewertet wird gegen diese Definition, nicht gegen ein Bauchgef&uuml;hl. Dazu kommen eine Begr&uuml;ndung, ein Satz warum es nicht h&ouml;her steht, und eine Konfidenzangabe.</p><span class="ghost">1</span></div>
-      <div class="card"><div class="num">SCHRITT 2</div><h3>Modul-Score als Mittelwert</h3><p>Der Modul-Score ist das arithmetische Mittel der zw&ouml;lf Kriterien. Keine Gewichtung, keine Schwerpunkte, keine Sch&ouml;nrechnung. Ein einzelner Nullwert zieht das ganze Modul messbar nach unten, und genau das soll er auch.</p><span class="ghost">2</span></div>
-      <div class="card"><div class="num">SCHRITT 3</div><h3>Sechs Zeithorizonte</h3><p>Jedes Modul wird zus&auml;tzlich &uuml;ber sechs Zeitr&auml;ume durchgerechnet. Viele Haushalte sind in den ersten 72 Stunden gut aufgestellt und kippen ab Woche zwei. Ohne diese zweite Achse w&uuml;rde man das nie sehen.</p><span class="ghost">3</span></div>
-    </div>
-    <h3 style="margin:38px 0 14px;font-size:19px">Die Ampel und ihre Schwellen</h3>
-    <div class="ampel reveal">
-      <div class="gruen"><div class="aw">4.0 und h&ouml;her</div><h3>Solide</h3><p>Tr&auml;gt auch unter Last. Hier geht es um Erhalt und Routine, nicht um Ausbau. Wer hier steht, sollte nicht weiter investieren, sondern &uuml;ben.</p></div>
-      <div class="gelb"><div class="aw">2.5 bis 3.9</div><h3>Handlungsbedarf</h3><p>Funktioniert im Alltag, wird unter Druck d&uuml;nn. Der gr&ouml;&szlig;te Teil aller Befunde liegt in diesem Band, und hier ist auch der Hebel pro investierter Stunde am gr&ouml;&szlig;ten.</p></div>
-      <div class="rot"><div class="aw">unter 2.5</div><h3>Kritisch</h3><p>H&auml;lt einer St&ouml;rung nicht stand. Diese Werte wandern in die Schwachstellen-Analyse und stehen in Ihrem Umsetzungsplan ganz oben, unabh&auml;ngig davon, wie teuer die L&ouml;sung ist.</p></div>
-    </div>
-    <h3 style="margin:38px 0 14px;font-size:19px">Die sechs Zeithorizonte</h3>
-    <div class="horiz reveal">
-      <div><div class="hn">Horizont 1</div><div class="ht">Akut<br>0 bis 72 Stunden</div></div>
-      <div><div class="hn">Horizont 2</div><div class="ht">&Uuml;bergang<br>3 bis 14 Tage</div></div>
-      <div><div class="hn">Horizont 3</div><div class="ht">4 Wochen</div></div>
-      <div><div class="hn">Horizont 4</div><div class="ht">3 Monate</div></div>
-      <div><div class="hn">Horizont 5</div><div class="ht">6 Monate</div></div>
-      <div><div class="hn">Horizont 6</div><div class="ht">1 Jahr</div></div>
-    </div>
-    <div class="claim reveal" style="margin-top:26px">
-      <div class="lbl">Der Vorratsstandard, der &uuml;berall gilt</div>
-      <p>F&uuml;r alle vorrats- und autarkiebezogenen Kriterien gilt modul&uuml;bergreifend derselbe Ma&szlig;stab: Mindeststandard vier Wochen, Empfehlung drei bis sechs Monate. Wo reines Lagern an Grenzen st&ouml;&szlig;t, etwa bei Wasser und Energie, wird die H&ouml;chststufe nicht durch Stapeln erreicht, sondern durch die Kombination aus Vorrat, nachliefernder Quelle und Aufbereitung.</p>
-    </div>
-    <div class="section-head reveal" style="margin-top:52px"><span class="kicker">Die zw&ouml;lf Module</span>
-      <h2>Springen Sie direkt zu dem, was Sie interessiert.</h2></div>
-    <div class="idx reveal" id="idx"></div>
-  </div>
+<section class="">
+<div class="wrap">
+<div class="section-head"><span class="kicker">Die zwölf Lebensbereiche</span>
+<h2>Jeder Bereich zählt. Die Verbindung entscheidet.</h2>
+</div>
+<p>Je Lebensbereich betrachten wir zwölf Kriterien. Welche Angaben gesichert sind, welche Nachweise fehlen und welche Abhängigkeiten bestehen, bleibt in Ihrer persönlichen Bewertung erkennbar. Die Kriterienübersicht beschreibt den Prüfgegenstand, nicht das Ergebnis Ihres Haushalts.</p>
+</div>
 </section>
-
-<section class="mist" id="blaetter">
-  <div class="wrap" id="blattbereich"></div>
+<section class="mist">
+<div class="wrap">
+<div class="section-head"><span class="kicker">M01</span>
+<h2>Standort &amp; Umfeld</h2>
+</div>
+<details>
+<summary>Die zwölf Kriterien öffnen</summary>
+<h3>Mikrolage &amp; Exposition</h3>
+<p>Sichtbarkeit des Standorts, Nähe zu Hauptverkehrsachsen, Publikumsfrequenz und allgemeine Exponiertheit.</p>
+<h3>Verkehrs- und Achsenabhängigkeit</h3>
+<p>Abhängigkeit von einzelnen Zufahrten, Straßen oder Verkehrsachsen.</p>
+<h3>Zivile Chokepoints im Umfeld</h3>
+<p>Nähe und Abhängigkeit von Brücken, Tunneln, Bahnquerungen oder anderen Engstellen im Umfeld und auf der Hauptroute, einschließlich Wasserhindernissen zwischen Standort und Ziel.</p>
+<h3>Nähe zu kritischer Infrastruktur</h3>
+<p>Nähe zu Umspannwerken, Wasserwerken, Logistikzentren, Bahnknoten oder vergleichbarer Infrastruktur.</p>
+<h3>Militärische Exposition (defensiv)</h3>
+<p>Nähe zu militärischen Einrichtungen mit möglichem Sperr- oder Kontrollpotenzial.</p>
+<h3>Versorgungsdichte</h3>
+<p>Verfügbarkeit und Redundanz von Supermärkten, Apotheken und Krankenhäusern im Radius von 0-10 km.</p>
+<h3>Behörden- und Kontrolldichte</h3>
+<p>Nähe zu Behörden, Polizeistandorten, Verwaltungszentren und potenziellen Kontrollpunkten.</p>
+<h3>Bebauungs- und Sozialstruktur</h3>
+<p>Bebauungsdichte, Nutzungsmischung und soziale Stabilität des Umfelds.</p>
+<h3>Gebäude- und Grundstücksrobustheit</h3>
+<p>Grundsätzliche Robustheit der Bausubstanz und Rückzugsmöglichkeiten (ohne Bauanleitung).</p>
+<h3>Signatur (Licht / Geräusch)</h3>
+<p>Außenwirkung durch Licht, Geräusche und Aktivität.</p>
+<h3>Routen &amp; Sammelpunkte</h3>
+<p>Existenz und Qualität mehrerer realistisch nutzbarer Routen und Sammelpunkte.</p>
+<h3>Stör- und Evakuierungsdruck</h3>
+<p>Wahrscheinlichkeit von Sperren, Staus, Abwanderung oder Evakuierungsdruck.</p></details>
+</div>
 </section>
-
+<section class="mist">
+<div class="wrap">
+<div class="section-head"><span class="kicker">M02</span>
+<h2>Grey Man &amp; Selbstschutz</h2>
+</div>
+<details>
+<summary>Die zwölf Kriterien öffnen</summary>
+<h3>Signaturbewusstsein (Außenwirkung)</h3>
+<p>Bewusstsein und Kontrolle darüber, wie der Haushalt nach außen wirkt (Ressourcen, Status, Aktivität, Routinen).</p>
+<h3>Verhaltensdisziplin &amp; Routinen</h3>
+<p>Disziplinierte, vorhersehbare und konfliktarme Routinen; Fähigkeit, Gewohnheiten bei Bedarf schnell anzupassen.</p>
+<h3>Deeskalationsfähigkeit</h3>
+<p>Fähigkeit, Konflikte früh zu erkennen und mit Sprache, Distanz und Verhalten zu entschärfen (zivil).</p>
+<h3>Situational Awareness</h3>
+<p>Wahrnehmungsfähigkeit: Muster erkennen, Umfeld lesen, Risiken frühzeitig identifizieren, ohne Paranoia.</p>
+<h3>Informationsdisziplin (Reden, Posten, Teilen)</h3>
+<p>Kontrolle über Informationen über Vorräte, Pläne, Abwesenheiten, finanzielle/operative Details.</p>
+<h3>Haushaltsabstimmung &amp; Rollen</h3>
+<p>Alle Haushaltsmitglieder kennen Grundregeln (Verhalten, Außenwirkung, Kontaktregeln, Notfallabläufe).</p>
+<h3>Ziviler Objektschutz (präventiv)</h3>
+<p>Präventive Schutzmaßnahmen im legalen Rahmen (Ordnung, Sichtschutz, Zugangskontrolle, Routinehygiene). Keine Bauanleitungen.</p>
+<h3>Bewegungsdisziplin (Alltag &amp; Krise)</h3>
+<p>Fähigkeit, Wege, Zeitfenster und Verhalten so zu wählen, dass Risiken minimiert werden (zivil, defensiv).</p>
+<h3>Kontakt- &amp; Nachbarschaftsmanagement</h3>
+<p>Umgang mit Nachbarn und Umfeld: hilfsbereit ohne Preisgabe von Ressourcen und Plänen; klare Grenzsetzung.</p>
+<h3>Notfallverhalten bei akuten Störungen</h3>
+<p>Handlungslogik bei Alarm, Unruhe, Polizeieinsatz, Sperrungen: ruhig bleiben, sichere Entscheidungen, Familie koordinieren (zivil).</p>
+<h3>Täuschungs- &amp; Absichtserkennung</h3>
+<p>Fähigkeit, Täuschungsversuche, Lügenindikatoren, Anomalien und Pre-Attack-Signale bei Personen zu erkennen.</p>
+<h3>Verhalten in Menschenmengen &amp; Crowd-Sicherheit</h3>
+<p>Wissen und Handlungsfähigkeit bei Massenansammlungen: Eskalationsphasen erkennen, sichere Position, rechtzeitiger Rückzug.</p></details>
+</div>
+</section>
+<section class="mist">
+<div class="wrap">
+<div class="section-head"><span class="kicker">M03</span>
+<h2>Wasser</h2>
+</div>
+<details>
+<summary>Die zwölf Kriterien öffnen</summary>
+<h3>Vorratsmenge (Tage-Abdeckung)</h3>
+<p>Wie lange kann der Haushalt den Bedarf decken (Trinken, Kochen, Hygiene-Grundbedarf), aus eingelagertem Vorrat und, ab 4 Wochen, aus nachliefernder Quelle mit Aufbereitung. Zielwert: mindestens 4 Wochen, Empfehlung 3 bis 6 Monate.</p>
+<h3>Vorratsqualität &amp; Lagerung</h3>
+<p>Geeignete Behälter, Lagerort, Schutz vor Licht/Hitze/Verunreinigung, Rotationssystem.</p>
+<h3>Verteilung im Haushalt (Handling)</h3>
+<p>Praktische Fähigkeit, Wasser zu entnehmen, zu portionieren, zu transportieren und im Haushalt zu verteilen (auch ohne Strom).</p>
+<h3>Aufbereitung (Filter/Abkochen/Chemie): Redundanz</h3>
+<p>Vorhandene Möglichkeiten zur Wasseraufbereitung und deren Redundanz (mindestens 2 unabhängige Wege).</p>
+<h3>Wasserhygiene &amp; Kontaminationsschutz</h3>
+<p>Wissen und Maßnahmen zur Vermeidung von Verkeimung, Kreuzkontamination, sauberes Arbeiten, getrennte Zonen.</p>
+<h3>Alternative Bezugsquellen (ohne Leitungsnetz)</h3>
+<p>Realistische, erreichbare Alternativen (z. B. Brunnen, Gewässer, Sammelmöglichkeiten) und deren Risiken und Praktikabilität.</p>
+<h3>Energieunabhängigkeit der Wasserstrategie</h3>
+<p>Funktioniert die Versorgung und Aufbereitung auch ohne Strom (Kochen, Pumpen, Filtern, Handling).</p>
+<h3>Haushaltsplanung (Bedarf, Prioritäten, Regeln)</h3>
+<p>Bedarfskalkulation, Verbrauchsregeln, Prioritäten (Trinken &gt; Hygiene &gt; Sonstiges), Zuständigkeiten.</p>
+<h3>Spezialbedarf &amp; Risikofaktoren</h3>
+<p>Berücksichtigung von Kindern, Pflegebedarf, Medikamentenanforderungen, Haustieren, Hitze- und Kälteeffekten.</p>
+<h3>Praktische Einsatzbereitschaft (Routine/Übung)</h3>
+<p>Wird die Wasserstrategie realistisch getestet (Rotation, Filtereinsatz, Notbetrieb) oder existiert sie nur theoretisch?</p>
+<h3>Hygiene- &amp; Brauchwasser-Management</h3>
+<p>Konzept für Körperpflege, Toilette, Abwasser und Fäkalienentsorgung ohne fließendes Wasser, Seuchenprävention.</p>
+<h3>Langzeit-Wasserbezug &amp; Autarkie (Regen/Brunnen/Oberflächenwasser)</h3>
+<p>Fähigkeit, Wasser über lange Lagen eigenständig zu gewinnen und aufzubereiten (Regenwasser, Brunnen, Gewässer).</p></details>
+</div>
+</section>
+<section class="mist">
+<div class="wrap">
+<div class="section-head"><span class="kicker">M04</span>
+<h2>Nahrung &amp; Vorrat</h2>
+</div>
+<details>
+<summary>Die zwölf Kriterien öffnen</summary>
+<h3>Kalorienabdeckung (Tage/Person)</h3>
+<p>Reichweite der Vorräte gemessen an realistischem Kalorienbedarf pro Person (Ziel: 2000-2500 kcal/Tag).</p>
+<h3>Makronährstoff-Balance</h3>
+<p>Ausgewogenheit von Kohlenhydraten, Fetten und Proteinen, gerechnet aus der Warengruppentabelle: Fettanteil und proteinnaher Anteil an den Vorratskalorien, ergänzt um die Selbsteinschätzung.</p>
+<h3>Individuelle Nährstoffversorgung</h3>
+<p>Nachvollziehbare Planung der Ernährung und bei individuell bestätigtem Bedarf geeigneter Ergänzung. Keine Gleichsetzung von Supplementbesitz mit Resilienz oder Gesundheit.</p>
+<h3>Zubereitbarkeit ohne Strom</h3>
+<p>Fähigkeit, Mahlzeiten ohne Netzstrom sicher zuzubereiten (Kochgeräte, Brennstoff, Rohverzehr).</p>
+<h3>Wasserabhängigkeit der Ernährung</h3>
+<p>Wasserbedarf für Zubereitung und Hygiene im Verhältnis zur Wasserstrategie des Haushalts.</p>
+<h3>Haltbarkeit &amp; Lagerfähigkeit</h3>
+<p>Haltbarkeit der Vorräte und Eignung der Lagerräume: Fläche und Klima je Raum aus der Raumtabelle, Feuchte, Hochwasser unter Geländeniveau, Zugang ohne Strom, Abschließbarkeit und Kälteerhalt der Tiefkühlung.</p>
+<h3>Rotation &amp; Bestandsmanagement</h3>
+<p>Systematische Rotation (FIFO), Nachkauf, Übersicht über Bestände und Verbräuche.</p>
+<h3>Ernährungsroutinen &amp; Tagesstruktur</h3>
+<p>Feste Mahlzeiten, Portionslogik und Tagesstruktur zur Stabilisierung von Leistung und Psyche.</p>
+<h3>Spezialbedarfe &amp; Unverträglichkeiten</h3>
+<p>Berücksichtigung von Kindern, Senioren, Allergien, Diäten, Medikamenteninteraktionen, Haustieren.</p>
+<h3>Praktische Einsatzbereitschaft (Routine/Übung)</h3>
+<p>Wurde die Ernährung im Notbetrieb getestet (Kochen, Portionieren, Wasserverbrauch, BOB-Nahrung)?</p>
+<h3>Langzeit-Nahrungsautarkie (Anbau/Sprossen/Konservierung)</h3>
+<p>Fähigkeit, Nahrung über Vorräte hinaus selbst zu produzieren oder haltbar zu machen (Garten, Sprossen, Einkochen, Trocknen, Fermentieren) für Krisen über 30 Tage.</p>
+<h3>Esskultur, Moral &amp; Tagesstruktur (Comfort/Routinen)</h3>
+<p>Psychologische Stabilisierung durch Mahlzeitenkultur, Comfort-Food, Rituale und Tagesstruktur, Nahrung als Moralträger in der Krise.</p></details>
+</div>
+</section>
+<section class="mist">
+<div class="wrap">
+<div class="section-head"><span class="kicker">M05</span>
+<h2>Energie &amp; Wärme</h2>
+</div>
+<details>
+<summary>Die zwölf Kriterien öffnen</summary>
+<h3>Strom-Backup (Verfügbarkeit &amp; Laufzeit)</h3>
+<p>Netzunabhängige Stromquelle und deren realistische Laufzeit für den Haushalt.</p>
+<h3>Priorisierung kritischer Verbraucher</h3>
+<p>Klarheit und Verschriftlichung, welche Verbraucher bei Knappheit zuerst Strom erhalten.</p>
+<h3>Energiequellen-Redundanz (PACE)</h3>
+<p>Mehrstufige, voneinander unabhängige Energiequellen nach PACE-Logik, gezählt aus dem Technik-Inventar: Netz, Speicher, Aggregat, Solar, USV, dazu die Art der Einspeisung ins Haus.</p>
+<h3>Wärmeversorgung ohne Netz</h3>
+<p>Fähigkeit, im Winter ohne Netz/Gas sichere Wärme zu erhalten (Hypothermieschutz).</p>
+<h3>Brennstoff-/Energieträger-Verfügbarkeit &amp; Lagerung</h3>
+<p>Sichere Vorhaltung und Rotation von Brennstoffen/Energieträgern passend zur geplanten Laufzeit.</p>
+<h3>Kochen ohne Strom</h3>
+<p>Netzunabhängige, sichere Möglichkeit, Mahlzeiten und Heißwasser zuzubereiten: Kochgeräte, Brennstoffreichweite in Tagen, Kartuschenbestand und Lüftung beim Kochen in Innenräumen.</p>
+<h3>Sicherheits- &amp; Lüftungskonzept (CO/Brand)</h3>
+<p>Schutz vor Kohlenmonoxid, Brand und Abgasen bei jedem Verbrennungsbetrieb.</p>
+<h3>Haushaltsroutinen im Notbetrieb</h3>
+<p>Eingespielte Abläufe für Energie-/Wärmebetrieb im Ausfall (wer macht was, wann).</p>
+<h3>Abhängigkeit von externer Infrastruktur</h3>
+<p>Grad der Unabhängigkeit von Netz, Lieferketten und Dritten bei Energie/Wärme.</p>
+<h3>Praktische Einsatzbereitschaft (Routine/Übung)</h3>
+<p>Tatsächliche Erprobung und Wartung der Energie-/Wärmeausstattung.</p>
+<h3>Licht &amp; Orientierung im Notbetrieb</h3>
+<p>Redundante, energieeffiziente Beleuchtung und Orientierung bei Stromausfall.</p>
+<h3>Nachladefähigkeit &amp; Langzeit-Autarkie</h3>
+<p>Fähigkeit, Energiespeicher über lange Lagen (Wochen bis Jahr) eigenständig nachzuladen.</p></details>
+</div>
+</section>
+<section class="mist">
+<div class="wrap">
+<div class="section-head"><span class="kicker">M06</span>
+<h2>Gesundheit &amp; Medizin</h2>
+</div>
+<details>
+<summary>Die zwölf Kriterien öffnen</summary>
+<h3>Medikamentenabdeckung (Dauer &amp; Zugriff)</h3>
+<p>Abdeckung lebensnotwendiger und regelmäßig benötigter Medikamente inkl. Zugriff, Reserve und Rotation.</p>
+<h3>Berücksichtigung von Vorerkrankungen</h3>
+<p>Erfassung und Planung für chronische Erkrankungen, Allergien, besondere Risiken und pflegebedürftige Personen.</p>
+<h3>Hausapotheke: Grundausstattung</h3>
+<p>Vollständigkeit und Zweckmäßigkeit der Hausapotheke für häufige Notfälle (Schmerz, Wunde, Magen, Fieber).</p>
+<h3>Erste-Hilfe-Kompetenz</h3>
+<p>Kenntnisse und Fähigkeiten der Haushaltsmitglieder zur Erstversorgung, ohne invasive medizinische Eingriffe.</p>
+<h3>Hygiene- &amp; Infektionsschutz</h3>
+<p>Maßnahmen zur Hygiene, Wundpflege, Infektionsvermeidung und Sanitärversorgung im Krisenhaushalt.</p>
+<h3>Medizinische Hilfsmittel &amp; Verbrauchsmaterial</h3>
+<p>Verfügbarkeit von Verbandsmaterial, IFAK, medizinischen Hilfsmitteln und Verbrauchsgütern mit Rotation.</p>
+<h3>Dokumentation &amp; medizinische Informationen</h3>
+<p>Verfügbarkeit wichtiger medizinischer Informationen (Medikamente, Dosierungen, Allergien, Notfallkontakte), offline zugänglich.</p>
+<h3>Zugriff auf externe medizinische Hilfe</h3>
+<p>Realistische Möglichkeiten, medizinische Hilfe zu erreichen, ohne Garantieannahmen beim Rettungsdienst.</p>
+<h3>Psychische Stabilität &amp; Stressbewältigung</h3>
+<p>Umgang mit Stress, Angst, Trauma und psychischer Belastung in medizinischen Ausnahmesituationen.</p>
+<h3>Praktische Einsatzbereitschaft (Routine/Übung)</h3>
+<p>Wurden Abläufe, Materialzugriff und Notfallreaktionen realistisch geprüft und geübt?</p>
+<h3>Trauma- &amp; taktische Erste Hilfe (schwere Verletzungen/Blutung)</h3>
+<p>Kompetenz und Ausrüstung zur Versorgung lebensbedrohlicher Verletzungen: Massenblutungen, Schusswunden, Thoraxverletzungen, orientiert an TCCC-Prinzipien für Zivilisten.</p>
+<h3>Medikamenten-Kühlkette &amp; geräteabhängige Therapien (Strom/Kälte)</h3>
+<p>Sicherung der Kühlkette für temperaturempfindliche Medikamente (Insulin, Biologika) und Weiterbetrieb stromabhängiger Medizingeräte (CPAP, Dialyse, Beatmung) bei Infrastrukturausfall.</p></details>
+</div>
+</section>
+<section class="mist">
+<div class="wrap">
+<div class="section-head"><span class="kicker">M07</span>
+<h2>Kommunikation &amp; Information</h2>
+</div>
+<details>
+<summary>Die zwölf Kriterien öffnen</summary>
+<h3>Primäre Kommunikationskanäle</h3>
+<p>Verfügbarkeit und Stabilität der Kanäle, über die der Haushalt im Alltag und bei Netzausfall Verbindung hält: Festnetz, Mobilfunk, netzunabhängiges Radio, Funk, Satellit. Passwort- und Datensicherheit liegt in M07_K8.</p>
+<h3>Redundante Kommunikationsmittel</h3>
+<p>Vorhandensein und Einsatzbereitschaft alternativer Kommunikationsmittel jenseits Mobilfunk und Internet.</p>
+<h3>Energieversorgung der Kommunikation</h3>
+<p>Ladewege, Akkus und Powerbank-Reserve für jedes Kommunikationsgerät bei Stromausfall: Laden über 12 V oder Solar, einheitliches Akkusystem, Speicher aus dem Technik-Inventar. Antennenreichweite liegt in M07_K11.</p>
+<h3>Informationsquellen &amp; Bewertung</h3>
+<p>Zugriff auf verlässliche, netzunabhängige Informationsquellen (Radio, Behörden) und Fähigkeit zur Quellenbewertung.</p>
+<h3>Warnsysteme &amp; Alarmierung</h3>
+<p>Kenntnis und Nutzung staatlicher/kommunaler Warnsysteme (Cell-Broadcast, NINA, Sirenen, Warn-Apps) und deren Ausfallgrenzen.</p>
+<h3>Interne Kommunikationsregeln</h3>
+<p>Klare Regeln zur internen Kommunikation im Haushalt und Vertrauenskreis, wer informiert wen, wann, wie, mit welchem Kanal.</p>
+<h3>Externe Kontakte &amp; Notfallnummern</h3>
+<p>Vorhandensein wichtiger Kontakte und Notfallnummern, offline verfügbar, gedruckt, aktuell.</p>
+<h3>Informationsdisziplin &amp; OPSEC</h3>
+<p>Kontrollierter Umgang mit sensiblen Informationen (Vorräte, Standort, Pläne) und Vermeidung unnötiger Preisgabe (Grey-Man-Prinzip).</p>
+<h3>Koordination bei Ausfall/Lagewechsel</h3>
+<p>Fähigkeit, bei Kommunikationsausfall oder Lageänderung schnell auf alternative Wege umzuschalten und Lagebild aufrechtzuerhalten.</p>
+<h3>Praktische Einsatzbereitschaft (Routine/Übung)</h3>
+<p>Wurden Kommunikations- und Alarmierungsabläufe realistisch getestet und Geräte auf Funktion geprüft?</p>
+<h3>Notfunk &amp; lizenzfreie Funkredundanz (PMR/CB/Amateurfunk)</h3>
+<p>Aufbau und Beherrschung einer mehrstufigen, infrastrukturunabhängigen Funkkommunikation, von lizenzfreiem PMR/CB bis hin zu Amateurfunk, für Reichweiten von 1 km bis überregional.</p>
+<h3>Desinformations- &amp; Lageresilienz (Quellenkritik/kognitive Manipulation)</h3>
+<p>Fähigkeit, in Krisen ein stabiles, quellenkritisches Lagebild aufzubauen, resistent gegen Gerüchte, Propaganda, Panik-Narrative und gezielte kognitive Manipulation (Operation Doppelgänger-Typ).</p></details>
+</div>
+</section>
+<section class="mist">
+<div class="wrap">
+<div class="section-head"><span class="kicker">M08</span>
+<h2>Mobilität &amp; Bewegung</h2>
+</div>
+<details>
+<summary>Die zwölf Kriterien öffnen</summary>
+<h3>Primäre Mobilitätsmittel</h3>
+<p>Verfügbarkeit, Zustand und Zuverlässigkeit der primären Transportmittel des Haushalts in Krisenlagen.</p>
+<h3>Treibstoff- &amp; Energieverfügbarkeit</h3>
+<p>Vorgehaltene Treibstoff- oder Energiereserve für motorisierte und elektrische Mobilität sowie Kenntnis des realen Verbrauchsprofils.</p>
+<h3>Alternative Fortbewegungsmittel</h3>
+<p>Verfügbarkeit und Einsatzbereitschaft alternativer Mobilitätsoptionen (Fahrrad, Lastenrad, ÖPNV-Basisfähigkeit) für den Fall des Fahrzeugausfalls.</p>
+<h3>Bewegungsreichweite ohne Motor</h3>
+<p>Realistische Gehstrecke und körperliche Belastbarkeit aller Haushaltsmitglieder zu Fuß oder per Rad unter Last.</p>
+<h3>Bewegungsdisziplin &amp; Timing</h3>
+<p>Fähigkeit, Zeitfenster für Bewegung zu erkennen und zu nutzen, Routenwahl situationsangepasst vorzunehmen und Verhalten an Kontrollpunkten zu steuern.</p>
+<h3>Flexibilität bei Sperren &amp; Störungen</h3>
+<p>Fähigkeit, bei Straßensperren, Staus, Fahrzeugausfall oder ÖPNV-Ausfall schnell auf Alternativrouten und -mittel umzuschalten.</p>
+<h3>Transport von Personen &amp; Material</h3>
+<p>Kapazität und Planung für den Transport aller Personen und des notwendigen Materials: Zuladung aus der Fahrzeugtabelle (zulässiges Gesamtgewicht minus Leermasse minus Personen), Sitzplatzbilanz, Anhänger-Nutzlast, Ladehilfen und Zwei-Fahrten-Regel.</p>
+<h3>Abhängigkeit von externer Infrastruktur</h3>
+<p>Grad der Abhängigkeit von Tankstellen, Ladepunkten, ÖPNV, Straßenbetrieb oder Dritten für grundlegende Mobilität.</p>
+<h3>Haushaltsabstimmung &amp; Entscheidungslogik</h3>
+<p>Klarheit und Verlässlichkeit der Entscheidungsregeln im Haushalt für Mobilitätsfragen: wer entscheidet, was passiert bei Trennung, Treffpunktlogik.</p>
+<h3>Praktische Einsatzbereitschaft (Übung &amp; Wartung)</h3>
+<p>Grad der realen Erprobung und regelmäßigen Wartung der Mobilitätsausstattung; Unterschied zwischen gedanklicher und körperlich geübter Vorbereitung.</p>
+<h3>Bug-out-Location &amp; Zielort-Anbindung (Rückzugsraum)</h3>
+<p>Existenz, Eignung und Erreichbarkeit eines vorbereiteten Zweitstandorts: Versorgungsgrad (Lagerfläche, Bestand, Wasser, Wärme), Erreichbarkeit im Winter, Entscheidungsrecht vor Ort und Tage, die der Haushalt dort mit dem heutigen Bestand bleiben könnte.</p>
+<h3>Evakuierungs-Timing &amp; Auslöser (Entscheidung Bleiben/Gehen, &#x27;Roter Tag&#x27;)</h3>
+<p>Vorhandensein schriftlich definierter Auslöser-Kriterien für die Bleiben/Gehen-Entscheidung und Kenntnis der dreiphasigen Evakuierungslogik (0-12h / 12-24h / 24-48h).</p></details>
+</div>
+</section>
+<section class="mist">
+<div class="wrap">
+<div class="section-head"><span class="kicker">M09</span>
+<h2>Netzwerk &amp; Gemeinschaft</h2>
+</div>
+<details>
+<summary>Die zwölf Kriterien öffnen</summary>
+<h3>Netzwerkgröße &amp; Erreichbarkeit</h3>
+<p>Anzahl verlässlich erreichbarer Kontakte in Krisenlagen und deren analoge Erreichbarkeit ohne digitale Infrastruktur.</p>
+<h3>Verlässlichkeit der Kontakte</h3>
+<p>Tatsächliche Belastbarkeit und Zuverlässigkeit der Netzwerkpartner, geprüft durch Alltagserfahrung oder bewusste Beobachtung, nicht Annahme.</p>
+<h3>Fähigkeiten &amp; Ressourcen im Netzwerk</h3>
+<p>Bekannte und kartierte Fähigkeiten (Medizin, Handwerk, Landwirtschaft, Technik, Recht) und Ressourcen (Fahrzeuge, Lager, Kommunikation) im Vertrauenskreis.</p>
+<h3>Rollen- &amp; Erwartungsklarheit</h3>
+<p>Klarheit über Rollen, gegenseitige Erwartungen und Grenzen im Netzwerk, vorab besprochen, nicht im Ernstfall zu klären.</p>
+<h3>Informations- &amp; Vertrauensniveau</h3>
+<p>Angemessenes, bewusst gesteuertes Maß an Informationsaustausch und Vertrauen, differenziert nach Kreis und Funktion.</p>
+<h3>Nachbarschaftliche Einbindung</h3>
+<p>Qualität der Beziehungen zur unmittelbaren Nachbarschaft; Unterschied zwischen Bekanntschaft und tragfähiger nachbarschaftlicher Einbindung.</p>
+<h3>Grenzsetzungsfähigkeit</h3>
+<p>Fähigkeit, in Krisenlagen Hilfe zu leisten ohne Selbstüberforderung, Ressourcenerschöpfung oder Ausnutzung, klare rote Linien, kommuniziert und eingehalten.</p>
+<h3>Koordination im Bedarfsfall</h3>
+<p>Fähigkeit, bei Aktivierung des Vertrauenskreises schnell, strukturiert und verlässlich zu koordinieren, Aktivierungsprotokoll, Aufgabenverteilung, Kommunikationskette.</p>
+<h3>Abhängigkeit vom Netzwerk</h3>
+<p>Grad der Abhängigkeit von externer Hilfe, Haushalt ist Nettoempfänger oder Nettogeber; Risiko der Handlungsunfähigkeit ohne Netzwerkunterstützung.</p>
+<h3>Praktische Einsatzbereitschaft (Übung &amp; Aktivierung)</h3>
+<p>Grad der realen Erprobung von Netzwerkstrukturen, von regelmäßigem Kontakt bis zu Trockenübungen des Aktivierungsprotokolls.</p>
+<h3>Nachbarschafts- &amp; Gemeinschaftsorganisation (lokale Resilienz)</h3>
+<p>Grad der organisierten lokalen Resilienz in der unmittelbaren Nachbarschaft oder Gemeinschaft, von Einzelkontakt über sachliche Absprachen bis zu strukturierter lokaler Selbsthilfe.</p>
+<h3>Vertrauenskreis vs. OPSEC (Informationsdisziplin im Netzwerk)</h3>
+<p>Konsequente Informationsdisziplin innerhalb und außerhalb des Vertrauenskreises, was wird mit wem geteilt, klare OPSEC-Regeln für Vorräte, Pläne, BOL-Standort und Ausstattung.</p></details>
+</div>
+</section>
+<section class="mist">
+<div class="wrap">
+<div class="section-head"><span class="kicker">M10</span>
+<h2>Finanzen &amp; Werte</h2>
+</div>
+<details>
+<summary>Die zwölf Kriterien öffnen</summary>
+<h3>Kurzfristige Liquidität (0-14 Tage)</h3>
+<p>Sofort verfügbare Mittel für laufende Ausgaben in den ersten 14 Tagen einer Krise, ohne Bankzugang, ohne Karte, ohne Online-Banking.</p>
+<h3>Barverfügbarkeit</h3>
+<p>Physisch gehaltenes Bargeld in alltagstauglicher Stückelung (10er, 20er) für Zahlungen bei Ausfall digitaler Zahlungssysteme.</p>
+<h3>Zugriff auf Konten &amp; Zahlungsmittel</h3>
+<p>Redundanz der Zugangswege zu Konten und Zahlungsmitteln, Vollmachten, Mehrbankstrategie, Ausfallszenarien geregelt.</p>
+<h3>Fixkosten-Resilienz</h3>
+<p>Fähigkeit, Fixkosten (Miete, Versicherungen, Abonnements, Kredite) bei Einnahmeausfall mindestens 3-6 Monate zu bedienen oder flexibel zu reduzieren.</p>
+<h3>Vermögensdiversifikation</h3>
+<p>Bewusste Streuung von Vermögenswerten über Jurisdiktionen, Währungen und Asset-Klassen zur strukturellen Risikoreduktion.</p>
+<h3>Werterhalt &amp; Inflationsschutz</h3>
+<p>Maßnahmen zum Schutz vor Kaufkraftverlust durch Inflation, Sachwerte, inflationsgeschützte Anlagen, physische Wertreserven.</p>
+<h3>Finanzielle Frühwarnindikatoren &amp; Kapitalflucht-Signale</h3>
+<p>Fähigkeit, frühzeitige Warnsignale einer Finanzkrise zu erkennen, Bankverhalten, Limit-Änderungen, Transferverzögerungen, und entsprechend zu handeln bevor offizielle Daten reagieren.</p>
+<h3>Zahlungsfähigkeit im Alltagsbetrieb (eingeschränkte Lage)</h3>
+<p>Praktische Fähigkeit, alltägliche Zahlungen auch bei eingeschränkter Infrastruktur (Karten-, Internet-, Stromausfall) zu leisten.</p>
+<h3>Abhängigkeit von digitalen Finanzsystemen</h3>
+<p>Grad der Abhängigkeit von Online-Banking, Karte, Apps und digitaler Zahlungsinfrastruktur, Fähigkeit zur vollständig analogen Zahlungsabwicklung.</p>
+<h3>Praktische Einsatzbereitschaft (Drills &amp; Überprüfung)</h3>
+<p>Regelmäßige, reale Überprüfung der finanziellen Krisenvorsorge, Bargeld-Rotation, Edelmetall-Inventur, Vollmachten-Refresh, Bankkonten-Prüfung.</p>
+<h3>Tausch- &amp; Sachwerte (Barter, Edelmetalle, Naturalien)</h3>
+<p>Vorhandensein und Qualität einer strukturierten Tausch- und Sachwert-Reserve für Szenarien, in denen Bargeld entwertet ist oder nicht akzeptiert wird, physische Edelmetalle (kleinste Stückelung), Tauschgüter-Vorrat und Barter-Strategie.</p>
+<h3>Dokumenten- &amp; Identitätssicherung (Notfalldokumente, Nachweise)</h3>
+<p>Vollständigkeit, Redundanz und Zugänglichkeit aller identitäts- und rechtlich relevanten Dokumente in analoger und digitaler Sicherungskopie, sofort greifbar für Evakuierung und rechtlich handlungsfähig auch bei Systemausfall.</p></details>
+</div>
+</section>
+<section class="mist">
+<div class="wrap">
+<div class="section-head"><span class="kicker">M11</span>
+<h2>Mentalität, Führung &amp; Entscheidung</h2>
+</div>
+<details>
+<summary>Die zwölf Kriterien öffnen</summary>
+<h3>Stress- und Emotionsregulation</h3>
+<p>Fähigkeit, unter Druck ruhig, kontrolliert und handlungsfähig zu bleiben.</p>
+<h3>Verantwortungsübernahme</h3>
+<p>Bereitschaft und Fähigkeit, in Krisenlagen aktiv Verantwortung zu übernehmen und Entscheidungen zu tragen.</p>
+<h3>Entscheidungsfähigkeit unter Unsicherheit</h3>
+<p>Treffen tragfähiger Entscheidungen bei unvollständiger Informationslage und Zeitdruck.</p>
+<h3>Priorisierung &amp; Fokus</h3>
+<p>Fähigkeit, Wesentliches von Unwesentlichem zu trennen und Ressourcen gezielt einzusetzen.</p>
+<h3>Kommunikation unter Druck</h3>
+<p>Klare, ruhige und situationsgerechte Kommunikation im Haushalt bei hoher Belastung.</p>
+<h3>Rollen- und Führungsakzeptanz</h3>
+<p>Klärung und Akzeptanz von Führungsrollen und getroffenen Entscheidungen im Haushalt vor und während einer Krise.</p>
+<h3>Durchhaltefähigkeit</h3>
+<p>Mentale Ausdauer und Belastbarkeit bei langanhaltenden Einschränkungen und Krisenlagen.</p>
+<h3>Lern- und Anpassungsfähigkeit</h3>
+<p>Fähigkeit, aus Fehlern, neuen Informationen und veränderten Bedingungen zu lernen und Strategien anzupassen.</p>
+<h3>Werte- und Entscheidungsrahmen</h3>
+<p>Vorhandensein eines klaren, vorab definierten Werte- und Entscheidungsrahmens für moralisch und praktisch schwierige Situationen.</p>
+<h3>Praktische Einsatzbereitschaft (Drills &amp; Reflexion)</h3>
+<p>Ausmaß, in dem mentale und Führungsaspekte durch reale Übungen, Drills und systematische Reflexion erprobt wurden.</p>
+<h3>Manipulations- &amp; Kognitive-Kriegsführungs-Resilienz (Desinfo/Propaganda)</h3>
+<p>Fähigkeit, Desinformation, Propaganda und kognitive Manipulation zu erkennen, kritisch einzuordnen und die eigene Entscheidungsfähigkeit zu schützen.</p>
+<h3>Familien-/Gruppenführung &amp; Rollenklarheit unter Druck</h3>
+<p>Fähigkeit, den eigenen Haushalt oder eine kleine Gruppe aktiv zu führen, Rollen klar zu verteilen und Kinder/Senioren/vulnerable Personen situationsgerecht einzubinden.</p></details>
+</div>
+</section>
+<section class="mist">
+<div class="wrap">
+<div class="section-head"><span class="kicker">M12</span>
+<h2>Gesamtsystem &amp; Integration</h2>
+</div>
+<details>
+<summary>Die zwölf Kriterien öffnen</summary>
+<h3>Kohärenz der Module</h3>
+<p>Passen die einzelnen Module logisch und praktisch zueinander, oder bestehen Widersprüche und Lücken im Gesamtsystem?</p>
+<h3>Abhängigkeiten zwischen Modulen</h3>
+<p>Erkennung und aktives Management kritischer Abhängigkeiten (z. B. Energie → Wasser → Nahrung → Medizin).</p>
+<h3>Redundanz auf Systemebene</h3>
+<p>Systemübergreifende Redundanzen und Einzelrisiken: Rollenvertretung im Haushalt plus die Zwei-Bediener-Regel je Gerät aus Technik-, Fahrzeug- und Anhängertabelle (nur eine Person kann das Gerät bedienen = Einzelrisiko), dazu Werkzeug- und Ersatzteildepot.</p>
+<h3>Priorisierung &amp; Reihenfolge</h3>
+<p>Klare, nachvollziehbare Priorisierung von Maßnahmen und Ressourcen über alle 12 Module hinweg.</p>
+<h3>Umsetzbarkeit im Alltag</h3>
+<p>Ist das Gesamtsystem realistisch im Alltag betreibbar, pflegbar und überprüfbar ohne Überfrachtung?</p>
+<h3>Dokumentation &amp; Übersicht</h3>
+<p>Übersichtlichkeit und Nachvollziehbarkeit der Gesamtplanung; Zugänglichkeit für alle relevanten Personen.</p>
+<h3>Entscheidungs- und Eskalationslogik</h3>
+<p>Klare, vorab definierte Entscheidungsregeln und Eskalationsstufen für alle Module und Szenarien.</p>
+<h3>Anpassungs- und Lernfähigkeit des Systems</h3>
+<p>Fähigkeit, das Gesamtsystem an neue Lagen, Erkenntnisse und veränderte Rahmenbedingungen strukturiert anzupassen.</p>
+<h3>Pflege- und Überprüfungsroutinen</h3>
+<p>Existenz und Konsequenz fester Routinen zur regelmäßigen Überprüfung, Rotation und Aktualisierung aller Module.</p>
+<h3>Gesamtrobustheit des Systems</h3>
+<p>Robustheit des Gesamtsystems in längeren Lagen: gerechnete Reichweiten für Wasser, Nahrung, Strom und Medikamente gegen die Selbstschätzung der Durchhaltetage. Weicht die Schätzung um mehr als die Hälfte von der gerechneten Reichweite ab, ist das ein Beraterhinweis.</p>
+<h3>Trainings- &amp; Übungsregime (Drills, Assessment, Wiederholung)</h3>
+<p>Existenz und Qualität eines strukturierten Trainings- und Übungssystems für das gesamte Haushaltssystem; Abdeckung aller Module durch regelmäßige Drills.</p>
+<h3>Dokumentation &amp; Decision-Architektur (Pläne, SOPs, Notfallordner)</h3>
+<p>Vollständigkeit, Aktualität und Zugänglichkeit aller Pläne, Standard Operating Procedures und des Notfallordners; Entscheidungsarchitektur schriftlich und offline verfügbar.</p></details>
+</div>
+</section>
+<section class="">
+<div class="wrap">
+<div class="section-head"><span class="kicker">Bewertung und Belastbarkeit</span>
+<h2>Die Begründung gehört zum Ergebnis.</h2>
+</div>
+<p>Die Kriterien werden zu einer Bereichsbewertung zusammengeführt. Selbstauskunft, belegte Angaben, persönliche Voraussetzungen und Abhängigkeiten werden nachvollziehbar berücksichtigt. Ein Punktwert ist kein Nachweis einer garantierten Reichweite.</p>
+<p>Aus den Befunden entstehen priorisierte Maßnahmen. Umsetzung und Funktionsprüfung sind eigene Schritte. Im Dashboard bleiben Aufgaben, Rückfragen und Bearbeitungsstand zugänglich.</p>
+<p><a href="dashboard.html">Das persönliche Dashboard →</a></p>
+</div>
+</section>
 <section class="band">
-  <div class="wrap">
-    <span class="kicker">Das Modul, das am Ende z&auml;hlt</span>
-    <h2>Die Schwachstelle sitzt selten im Modul. Meist an der Naht zwischen zweien.</h2>
-    <p>Genau daf&uuml;r gibt es Modul 12. Und genau deshalb l&auml;sst sich das nicht mit einer Checkliste erledigen.</p>
-    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
-      <a class="btn btn-red" data-cta href="#">Gespr&auml;ch vereinbaren &rarr;</a>
-      <a class="btn btn-ghost" href="experten.html">Wer die Module bewertet</a>
-      <a class="btn btn-ghost" href="szenarien.html">Die acht Szenarien</a><a class="btn btn-ghost" href="praxis.html">Drei Analysen aus der Praxis</a></div>
-  </div>
+<div class="wrap">
+<div class="section-head"><span class="kicker">Ihr nächster Schritt</span>
+<h2>Beginnen wir mit Ihrer Situation.</h2>
+</div>
+<p>Im persönlichen Gespräch klären wir Ihr Anliegen und den passenden nächsten Schritt.</p>
+<p><a class="btn btn-red" data-cta href="#">Gespräch vereinbaren →</a></p>
+</div>
 </section>
-
-<div id="p12-footer"></div>
-<script src="assets/p12.js"></script>
-<script>
-var M = [
-{n:"01",t:"Standort &amp; Umfeld",f:"Lagebeurteilung &amp; Sicherheitsanalyse",fr:"73 Fragen im Bogen",
- warum:"Der Standort ist das einzige Modul, das Sie nicht durch Anschaffungen verbessern k&ouml;nnen. Er ist gesetzt. Genau deshalb steht er an erster Stelle: Er entscheidet dar&uuml;ber, welche Gefahren f&uuml;r Sie &uuml;berhaupt relevant sind und welche Empfehlungen in den elf folgenden Modulen &uuml;berhaupt Sinn ergeben. Ein Notstromkonzept f&uuml;r eine Etagenwohnung im f&uuml;nften Stock sieht anders aus als eines f&uuml;r ein freistehendes Haus mit Garten.",
- wo:"Bewertet werden Lage, Sichtbarkeit, Zufahrten, Sozialstruktur, N&auml;he zu kritischer Infrastruktur und die Robustheit des Geb&auml;udes selbst. Dazu geh&ouml;rt auch, wie leicht Ihr Standort im Alltag aufgefallen w&auml;re: Licht, Ger&auml;usch, Sichtbarkeit von der Stra&szlig;e. Und es geh&ouml;rt dazu, welche Wege im Ernstfall &uuml;brig bleiben, wenn die gewohnte Verbindung ausf&auml;llt.",
- k:["Mikrolage &amp; Exposition","Verkehrs- und Achsenabh&auml;ngigkeit","Zivile Chokepoints im Umfeld","N&auml;he zu kritischer Infrastruktur","Milit&auml;rische Exposition, defensiv","Versorgungsdichte","Beh&ouml;rden- und Kontrolldichte","Bebauungs- und Sozialstruktur","Geb&auml;ude- und Grundst&uuml;cksrobustheit","Signatur, Licht und Ger&auml;usch","Routen &amp; Sammelpunkte","St&ouml;r- und Evakuierungsdruck"],
- mk:"K1 Mikrolage &amp; Exposition", md:"Sichtbarkeit des Standorts, N&auml;he zu Hauptverkehrsachsen, Publikumsfrequenz und allgemeine Exponiertheit.",
- m0:"Stark exponiert, direkte Hauptstra&szlig;enlage oder Hotspot-N&auml;he unter 200 Metern.",
- m3:"Gemischte Lage mit moderater Exposition, einige Einschr&auml;nkungen.",
- m5:"Ruhige, abgeschirmte Wohnlage mit geringer Frequenz und nat&uuml;rlichem Sichtschutz.",
- d:"Man geht davon aus, dass die gewohnte Route immer offen ist. Eine einzige gesperrte Zufahrt widerlegt das.",
- tag:"Ahrtal 2021", e:"Die einzige Zufahrt mehrerer Orte war 36 Stunden gesperrt. Haushalte ohne zweite Route waren handlungsunf&auml;hig. Die Analyse pr&uuml;ft deshalb jede Route auf ihre Engstellen, zu Fu&szlig; wie mit dem Fahrzeug."},
-
-{n:"02",t:"Grey Man &amp; Selbstschutz",f:"Selbstschutz &amp; Deeskalation",fr:"97 Fragen im Bogen",
- warum:"Dieses Modul hat den gr&ouml;&szlig;ten Fragenanteil im ganzen Bogen, und das aus einem Grund: Verhalten l&auml;sst sich nicht kaufen. Es geht hier nicht um Ausr&uuml;stung, sondern um das Grey-Man-Prinzip, also Lagebewusstsein statt Tarnung. Wer seine Umgebung liest, bevor etwas passiert, trifft Entscheidungen, w&auml;hrend andere noch Informationen sammeln.",
- wo:"Bewertet werden Au&szlig;enwirkung, Routinen, Deeskalationsf&auml;higkeit, Wahrnehmung, Informationsdisziplin und das Verhalten in Menschenmengen. Dazu kommt der pr&auml;ventive Objektschutz, also alles, was ein Haus unattraktiv macht, ohne dass es nach Festung aussieht. Der Ansatz bleibt durchgehend n&uuml;chtern: Position, Distanz und klare Ansprache wirken zuverl&auml;ssiger als jedes mitgef&uuml;hrte Werkzeug.",
- k:["Signaturbewusstsein, Au&szlig;enwirkung","Verhaltensdisziplin &amp; Routinen","Deeskalationsf&auml;higkeit","Situational Awareness","Informationsdisziplin","Haushaltsabstimmung &amp; Rollen","Ziviler Objektschutz, pr&auml;ventiv","Bewegungsdisziplin","Kontakt- &amp; Nachbarschaftsmanagement","Notfallverhalten bei akuten St&ouml;rungen","T&auml;uschungs- &amp; Absichtserkennung","Verhalten in Menschenmengen"],
- mk:"K4 Situational Awareness", md:"Wahrnehmungsf&auml;higkeit: Muster erkennen, Umfeld lesen, Risiken fr&uuml;hzeitig identifizieren, ohne Paranoia.",
- m0:"Geringe Wahrnehmung, reagiert zu sp&auml;t oder gar nicht.",
- m3:"Situationswahrnehmung funktional, l&uuml;ckenhaft unter Stress.",
- m5:"Hohe Lagewahrnehmung, ruhige fr&uuml;he Entscheidungen, Baseline-Methodik verinnerlicht.",
- d:"Man glaubt, ein mitgef&uuml;hrtes Werkzeug schaffe Sicherheit. In der Praxis schlagen Distanz und klare Ansprache es fast immer.",
- tag:"Frankfurt 2024", e:"Eine aufgeheizte Situation am Hauptbahnhof wurde durch Distanz und klare Ansprache binnen Sekunden entsch&auml;rft. Position und Stimme schlagen jedes mitgef&uuml;hrte Werkzeug."},
-
-{n:"03",t:"Wasser",f:"Wasserversorgung &amp; Aufbereitung",fr:"40 Fragen im Bogen",
- warum:"Wasser ist die h&auml;rteste W&auml;hrung im Ernstfall und zugleich die, die zuerst knapp wird. Es ist auch das Modul mit dem klarsten Rechenweg: Bedarf mal Personen mal Tage, plus Tiere, plus Hygiene, plus Kochwasser. Genau deshalb ist es der beste Einstieg in die Analyse, denn hier sieht man sofort, wie weit Selbstwahrnehmung und Rechnung auseinanderliegen.",
- wo:"Gepr&uuml;ft werden Menge, Qualit&auml;t und Lagerung des Vorrats, die Aufbereitung mit ihren Redundanzen, alternative Bezugsquellen ohne Leitungsnetz und die Frage, wie viel Energie Ihre Wasserstrategie eigentlich braucht. Eine Pumpe ohne Strom ist kein Bezugsweg. Dazu kommt das Brauchwasser, das in fast jeder Selbsteinsch&auml;tzung vergessen wird und in der Rechnung den gr&ouml;&szlig;eren Anteil ausmacht.",
- k:["Vorratsmenge, Tage-Abdeckung","Vorratsqualit&auml;t &amp; Lagerung","Verteilung im Haushalt","Aufbereitung: Redundanz","Wasserhygiene &amp; Kontaminationsschutz","Alternative Bezugsquellen","Energieunabh&auml;ngigkeit der Wasserstrategie","Haushaltsplanung: Bedarf und Regeln","Spezialbedarf &amp; Risikofaktoren","Praktische Einsatzbereitschaft","Hygiene- &amp; Brauchwasser-Management","Langzeitbezug &amp; Autarkie"],
- mk:"K1 Vorratsmenge, Tage-Abdeckung", md:"Wie lange der Haushalt den Bedarf decken kann: Trinken, Kochen, Hygiene-Grundbedarf. Ab vier Wochen z&auml;hlt zus&auml;tzlich die nachliefernde Quelle mit Aufbereitung.",
- m0:"Unter einem Tag Wasservorrat, praktisch kein Puffer.",
- m3:"Ein bis zwei Wochen Abdeckung bei realem Bedarf, inklusive Kochen und Hygiene.",
- m5:"Drei bis sechs Monate gesichert, aus Vorrat plus nachliefernder Quelle mit Aufbereitung.",
- d:"Man rechnet mit dem Hahn. F&auml;llt der Druck, sind die oberen Etagen zuerst trocken.",
- tag:"Texas 2021", e:"Eingefrorene Hauptleitungen lie&szlig;en 14 Millionen Menschen tagelang ohne Trinkwasser. Wer 14 Tage Reserve im Haus hatte, blieb handlungsf&auml;hig."},
-
-{n:"04",t:"Nahrung &amp; Vorrat",f:"Lebensmitteltechnologie &amp; Vorratslogistik",fr:"56 Fragen im Bogen",
- warum:"Ein Vorrat ist kein Bunkerregal, sondern ein System, das im Alltag mitl&auml;uft. Das ist der Grund, warum dieses Modul nicht bei der Menge aufh&ouml;rt: Ein Vorrat, den niemand mag, wird nicht rotiert, und ein Vorrat, der nicht rotiert wird, verf&auml;llt unbemerkt. Deshalb werden hier auch Esskultur und Tagesstruktur bewertet, was auf den ersten Blick weich klingt und in langen Lagen &uuml;ber die Moral entscheidet.",
- wo:"Gerechnet wird gegen einen realistischen Bedarf von 2000 bis 2500 Kilokalorien pro Person und Tag, aufgeschl&uuml;sselt nach Makron&auml;hrstoffen, Mikron&auml;hrstoffen und Salz. Dazu kommen die Zubereitbarkeit ohne Strom, der Wasserbedarf der eingelagerten Lebensmittel, Haltbarkeit, Rotation und Spezialbedarfe wie Unvertr&auml;glichkeiten, Kleinkinder oder Tiere.",
- k:["Kalorienabdeckung, Tage je Person","Makron&auml;hrstoff-Balance","Mikron&auml;hrstoffe &amp; Salz","Zubereitbarkeit ohne Strom","Wasserabh&auml;ngigkeit der Ern&auml;hrung","Haltbarkeit &amp; Lagerf&auml;higkeit","Rotation &amp; Bestandsmanagement","Ern&auml;hrungsroutinen &amp; Tagesstruktur","Spezialbedarfe &amp; Unvertr&auml;glichkeiten","Praktische Einsatzbereitschaft","Langzeit-Nahrungsautarkie","Esskultur, Moral &amp; Tagesstruktur"],
- mk:"K1 Kalorienabdeckung, Tage je Person", md:"Reichweite der Vorr&auml;te, gemessen am realistischen Kalorienbedarf pro Person von 2000 bis 2500 Kilokalorien am Tag.",
- m0:"Unter drei Tage Abdeckung, kein Vorrat.",
- m3:"Zwei bis vier Wochen Abdeckung mit bekannten Lebensmitteln.",
- m5:"Drei bis sechs Monate Abdeckung, kalkuliert, rotiert, mit bekannten Lebensmitteln.",
- d:"Man denkt, der Wocheneinkauf reicht. Er reicht f&uuml;r Tage, nicht f&uuml;r eine St&ouml;rung.",
- tag:"Fr&uuml;hjahr 2020", e:"Wer einen Grundvorrat hatte, musste nicht in den ersten Ansturm. Andere kauften Wochen sp&auml;ter zu H&ouml;chstpreisen nach. Ein Monatsvorrat ist eine Versicherungspr&auml;mie, kein Luxus."},
-
-{n:"05",t:"Energie &amp; W&auml;rme",f:"Energietechnik &amp; Notstrom",fr:"Modulspezifischer Fragenblock",
- warum:"Energie ist das Modul mit den meisten Kaskaden. F&auml;llt es aus, kippen W&auml;rme, K&uuml;hlung, Wasserdruck, Kommunikation und Licht nacheinander, und zwar in dieser Reihenfolge. Deshalb wird hier nicht nur gefragt, ob etwas da ist, sondern in welcher Reihenfolge es welche Verbraucher versorgt. Ein Generator ohne Priorisierungsliste ist im Ernstfall eine Diskussion mit der Familie.",
- wo:"Bewertet werden Strom-Backup und dessen realistische Laufzeit, die Priorisierung kritischer Verbraucher, die Redundanz der Energiequellen nach dem PACE-Prinzip, W&auml;rmeversorgung ohne Netz, Brennstofflagerung, Kochen und Licht. Ein eigenes Kriterium tr&auml;gt das Sicherheits- und L&uuml;ftungskonzept: Die meisten Sch&auml;den bei Notheizungen entstehen nicht durch K&auml;lte, sondern durch Kohlenmonoxid.",
- k:["Strom-Backup: Verf&uuml;gbarkeit &amp; Laufzeit","Priorisierung kritischer Verbraucher","Energiequellen-Redundanz nach PACE","W&auml;rmeversorgung ohne Netz","Brennstoff-Verf&uuml;gbarkeit &amp; Lagerung","Kochen ohne Strom","Sicherheits- &amp; L&uuml;ftungskonzept","Haushaltsroutinen im Notbetrieb","Abh&auml;ngigkeit von externer Infrastruktur","Praktische Einsatzbereitschaft","Licht &amp; Orientierung im Notbetrieb","Nachladef&auml;higkeit &amp; Langzeit-Autarkie"],
- mk:"K4 W&auml;rmeversorgung ohne Netz", md:"F&auml;higkeit, im Winter ohne Netz und ohne Gas sichere W&auml;rme zu erhalten. Ma&szlig;stab ist der Schutz vor Unterk&uuml;hlung.",
- m0:"Keine W&auml;rmestrategie ohne Netz.",
- m3:"W&auml;rmeraum-Idee vorhanden, Basisausstattung f&uuml;r K&ouml;rperw&auml;rme.",
- m5:"Sicheres Heizsystem mit CO-Schutz, W&auml;rmeraum, K&ouml;rperw&auml;rme und ge&uuml;btem Plan.",
- d:"Man verl&auml;sst sich auf einen Energiepfad. F&auml;llt der aus, bleibt es kalt und dunkel.",
- tag:"Texas 2021", e:"Gas- und Stromnetz fielen gleichzeitig aus. Heizungen ohne zweiten Energiepfad blieben tagelang kalt. Redundanz bei W&auml;rme ist Pflicht, nicht Komfort."},
-
-{n:"06",t:"Gesundheit &amp; Medizin",f:"Notfallmedizin &amp; Eigenversorgung",fr:"Modulspezifischer Fragenblock",
- warum:"Dieses Modul ist das einzige, das strikt pro Person gerechnet wird und nicht pro Haushalt. Ein Insulinbedarf teilt sich nicht durch vier. Wenn professionelle Hilfe verz&ouml;gert eintrifft, z&auml;hlt allein die eigene Reichweite, und die ist bei jedem Bewohner eine andere. Deshalb entstehen hier auch die pers&ouml;nlichsten Empfehlungen des ganzen Pakets.",
- wo:"Gepr&uuml;ft werden Medikamentenabdeckung nach Dauer und Zugriff, Vorerkrankungen, Hausapotheke, Erste-Hilfe-Kompetenz, Hygiene, Hilfsmittel und Dokumentation. Zwei Kriterien gehen deutlich weiter als &uuml;blich: die taktische Erste Hilfe bei schweren Blutungen und die K&uuml;hlkette f&uuml;r ger&auml;te- oder k&auml;lteabh&auml;ngige Therapien. Beides f&auml;llt bei Stromausfall zuerst aus und wird fast nie mitgedacht.",
- k:["Medikamentenabdeckung: Dauer &amp; Zugriff","Ber&uuml;cksichtigung von Vorerkrankungen","Hausapotheke: Grundausstattung","Erste-Hilfe-Kompetenz","Hygiene- &amp; Infektionsschutz","Medizinische Hilfsmittel &amp; Verbrauchsmaterial","Dokumentation &amp; medizinische Informationen","Zugriff auf externe medizinische Hilfe","Psychische Stabilit&auml;t &amp; Stressbew&auml;ltigung","Praktische Einsatzbereitschaft","Trauma- &amp; taktische Erste Hilfe","Medikamenten-K&uuml;hlkette"],
- mk:"K1 Medikamentenabdeckung", md:"Abdeckung lebensnotwendiger und regelm&auml;&szlig;ig ben&ouml;tigter Medikamente, inklusive Zugriff, Reserve und Rotation.",
- m0:"Keine Reserve, unklarer Zugriff, Tagesdosis ohne Puffer.",
- m3:"Reserve f&uuml;r zwei bis vier Wochen, Rotation ansatzweise.",
- m5:"Reserve f&uuml;r drei bis sechs Monate, soweit &auml;rztlich und rechtlich m&ouml;glich, mit Rotation, mit dem Arzt abgestimmt, Zugriff gesichert.",
- d:"Man hat genug f&uuml;r diese Woche. Reicht die Lieferkette nicht, wird jeder Tag kritisch.",
- tag:"Ukraine 2024", e:"In frontnahen Regionen brachen Lieferketten f&uuml;r Insulin vollst&auml;ndig ein. Haushalte mit mehreren Wochen Puffer kamen durch. Die Analyse rechnet diese Reichweiten f&uuml;r jeden Bewohner einzeln durch."},
-
-{n:"07",t:"Kommunikation &amp; Information",f:"Fernmelde- &amp; Funktechnik",fr:"Modulspezifischer Fragenblock",
- warum:"Dieses Modul entscheidet dar&uuml;ber, ob Sie in einer Lage handlungsf&auml;hig oder nur versorgt sind. Ein Haushalt kann Monate an Vorrat haben und trotzdem blind sein, sobald das Netz weg ist. Genau dieser Befund ist einer der h&auml;ufigsten in der Praxis, und zwar besonders bei sehr gut ausgestatteten Haushalten. Deshalb wird hier nicht nur Technik bewertet, sondern auch die Frage, wer wann wen erreicht und was gilt, wenn niemand antwortet.",
- wo:"Gepr&uuml;ft werden prim&auml;re Kan&auml;le und ihre Redundanzen, die Energieversorgung der Kommunikation selbst, Informationsquellen und deren Bewertung, Warnsysteme, interne Regeln und externe Notfallnummern. Zwei Kriterien gehen &uuml;ber Technik hinaus: die Informationsdisziplin und die Widerstandsf&auml;higkeit gegen Desinformation. Wer im Ernstfall die falschen Informationen f&uuml;r richtig h&auml;lt, ist schlechter dran als jemand ohne Informationen.",
- k:["Prim&auml;re Kommunikationskan&auml;le","Redundante Kommunikationsmittel","Energieversorgung der Kommunikation","Informationsquellen &amp; Bewertung","Warnsysteme &amp; Alarmierung","Interne Kommunikationsregeln","Externe Kontakte &amp; Notfallnummern","Informationsdisziplin","Koordination bei Lagewechsel","Praktische Einsatzbereitschaft","Notfunk &amp; lizenzfreie Funkredundanz","Desinformations- &amp; Lageresilienz"],
- mk:"K2 Redundante Kommunikationsmittel", md:"Vorhandensein und Einsatzbereitschaft alternativer Kommunikationsmittel jenseits von Mobilfunk und Internet.",
- m0:"Keine Redundanz, vollst&auml;ndige Abh&auml;ngigkeit von Mobilfunk.",
- m3:"PMR-Funk vorhanden und getestet, kein weiteres Backup.",
- m5:"Vollst&auml;ndige Redundanzkette aus PMR plus CB oder Freenet plus Amateurfunk, regelm&auml;&szlig;ig ge&uuml;bt.",
- d:"Man verl&auml;sst sich auf das Handynetz. F&auml;llt es aus, ist man gut versorgt und zugleich blind.",
- tag:"Ahrtal 2021", e:"Mobilfunk und Festnetz fielen binnen Stunden aus. Funkamateure waren zeitweise die einzige Verbindung zwischen den Orten. Redundanz ist hier keine Technikfrage, sondern eine Sicherheitsfrage."},
-
-{n:"08",t:"Mobilit&auml;t &amp; Bewegung",f:"Einsatz- &amp; Verlegeplanung",fr:"Modulspezifischer Fragenblock",
- warum:"In diesem Modul liegt die unangenehmste Frage der ganzen Analyse: Woran genau erkennen Sie, dass es Zeit ist zu gehen, und wer entscheidet das? Wege und Fahrzeuge sind der einfache Teil. Der schwierige Teil ist der Ausl&ouml;ser, denn er muss vorher feststehen. Unter Druck wird er sonst immer weiter verschoben, und irgendwann ist die Entscheidung keine mehr.",
- wo:"Bewertet werden prim&auml;re Mobilit&auml;t, Treibstoffreichweite, Alternativen ohne Motor, die realistische Gehstrecke aller Haushaltsmitglieder unter Last, Bewegungsdisziplin und Timing sowie die Flexibilit&auml;t bei Sperren. Zwei Kriterien gehen ans Grundsatzliche: die Anbindung eines R&uuml;ckzugsorts und die Entscheidungslogik zwischen Bleiben und Gehen, intern der Rote Tag genannt.",
- k:["Prim&auml;re Mobilit&auml;tsmittel","Treibstoff- &amp; Energieverf&uuml;gbarkeit","Alternative Fortbewegungsmittel","Bewegungsreichweite ohne Motor","Bewegungsdisziplin &amp; Timing","Flexibilit&auml;t bei Sperren &amp; St&ouml;rungen","Transport von Personen &amp; Material","Abh&auml;ngigkeit von externer Infrastruktur","Haushaltsabstimmung &amp; Entscheidungslogik","Praktische Einsatzbereitschaft","R&uuml;ckzugsraum &amp; Zielort-Anbindung","Evakuierungs-Timing &amp; Ausl&ouml;ser"],
- mk:"K4 Bewegungsreichweite ohne Motor", md:"Realistische Gehstrecke und k&ouml;rperliche Belastbarkeit aller Haushaltsmitglieder, zu Fu&szlig; oder per Rad, unter Last.",
- m0:"Physische Einschr&auml;nkungen machen motorenlose Bewegung kaum m&ouml;glich.",
- m3:"Bewegung ohne Motor m&ouml;glich und grob realistisch eingesch&auml;tzt.",
- m5:"Realistische, getestete Reichweite unter Last f&uuml;r alle Haushaltsmitglieder, Routen geplant und tats&auml;chlich abgegangen.",
- d:"Man rechnet mit dem Auto und der Br&uuml;cke. F&auml;llt eine Verbindung, ist der Ort abgeschnitten.",
- tag:"Ahrtal 2021", e:"Ein Br&uuml;ckenausfall trennte zw&ouml;lf Orte wochenlang vom Umland. Fu&szlig;wege und Fahrr&auml;der waren die einzigen Verbindungen. Zweitmobilit&auml;t ist Reserve, kein Hobby."},
-
-{n:"09",t:"Netzwerk &amp; Gemeinschaft",f:"Bev&ouml;lkerungsschutz &amp; Nachbarschaft",fr:"Modulspezifischer Fragenblock",
- warum:"Dieses Modul l&auml;sst sich ohne einen einzigen Euro verbessern und wird trotzdem am h&auml;ufigsten vernachl&auml;ssigt. Im Ernstfall ist die erste Reihe fast nie der Staat, sondern das eigene Umfeld. Bei Alleinlebenden verschiebt sich das Gewicht dieses Moduls deutlich nach oben, denn was in einer Familie die zweite Person auff&auml;ngt, f&auml;llt hier ersatzlos aus.",
- wo:"Bewertet werden Gr&ouml;&szlig;e und analoge Erreichbarkeit des Netzwerks, die Verl&auml;sslichkeit der Kontakte, vorhandene F&auml;higkeiten und Ressourcen, Rollenklarheit und die Einbindung in die Nachbarschaft. Zwei Kriterien wirken in die Gegenrichtung: die F&auml;higkeit, Grenzen zu setzen, und das Spannungsfeld zwischen Vertrauenskreis und Informationsdisziplin. Ein zu gro&szlig;er Kreis ist kein Netzwerk mehr, sondern ein Risiko.",
- k:["Netzwerkgr&ouml;&szlig;e &amp; Erreichbarkeit","Verl&auml;sslichkeit der Kontakte","F&auml;higkeiten &amp; Ressourcen im Netzwerk","Rollen- &amp; Erwartungsklarheit","Informations- &amp; Vertrauensniveau","Nachbarschaftliche Einbindung","Grenzsetzungsf&auml;higkeit","Koordination im Bedarfsfall","Abh&auml;ngigkeit vom Netzwerk","Praktische Einsatzbereitschaft","Gemeinschaftsorganisation vor Ort","Vertrauenskreis gegen Informationsdisziplin"],
- mk:"K1 Netzwerkgr&ouml;&szlig;e &amp; Erreichbarkeit", md:"Anzahl verl&auml;sslich erreichbarer Kontakte in Krisenlagen und deren analoge Erreichbarkeit ohne digitale Infrastruktur.",
- m0:"Kaum oder keine erreichbaren Kontakte, vollst&auml;ndige soziale Isolation im Ernstfall.",
- m3:"Begrenztes, teils analog erreichbares Netzwerk von weniger als f&uuml;nf Haushalten.",
- m5:"Verl&auml;ssliches Netzwerk aus mindestens f&uuml;nf Haushalten, analoge Kontaktliste mit Adressen und Nummern, offline verf&uuml;gbar und f&uuml;r alle Haushaltsmitglieder zug&auml;nglich.",
- d:"Man rechnet mit der Rettung von au&szlig;en. Meist rettet die N&auml;he zuerst.",
- tag:"Ahrtal 2021", e:"Drei Viertel der ersten Rettungen leisteten Nachbarn, nicht Einsatzkr&auml;fte. Wer keinen Vertrauenskreis hat, hat keine erste Reihe."},
-
-{n:"10",t:"Finanzen &amp; Werte",f:"Finanz- &amp; Verm&ouml;gensplanung",fr:"Modulspezifischer Fragenblock",
- warum:"Hier geht es nicht um Rendite, sondern um Verf&uuml;gbarkeit an dem Tag, an dem sie gebraucht wird. Ein Verm&ouml;gen, an das man drei Tage lang nicht herankommt, ist in einer akuten Lage kein Verm&ouml;gen. Deshalb steht am Anfang dieses Moduls nicht die Anlage, sondern die Frage, wie lange Sie ohne funktionierendes Zahlungssystem handlungsf&auml;hig blieben.",
- wo:"Bewertet werden kurzfristige Liquidit&auml;t f&uuml;r die ersten 14 Tage, Barverf&uuml;gbarkeit in alltagstauglicher St&uuml;ckelung, Kontozugriff, Fixkosten-Resilienz, Diversifikation und Werterhalt. Dazu kommen die Abh&auml;ngigkeit von digitalen Finanzsystemen, Tausch- und Sachwerte sowie die krisenfeste Sicherung von Dokumenten und Nachweisen, die in der Praxis fast immer der schw&auml;chste Punkt dieses Moduls ist.",
- k:["Kurzfristige Liquidit&auml;t, 0 bis 14 Tage","Barverf&uuml;gbarkeit","Zugriff auf Konten &amp; Zahlungsmittel","Fixkosten-Resilienz","Verm&ouml;gensdiversifikation","Werterhalt &amp; Inflationsschutz","Finanzielle Fr&uuml;hwarnindikatoren","Zahlungsf&auml;higkeit im eingeschr&auml;nkten Betrieb","Abh&auml;ngigkeit von digitalen Finanzsystemen","Praktische Einsatzbereitschaft","Tausch- &amp; Sachwerte","Dokumenten- &amp; Identit&auml;tssicherung"],
- mk:"K2 Barverf&uuml;gbarkeit", md:"Physisch gehaltenes Bargeld in alltagstauglicher St&uuml;ckelung f&uuml;r Zahlungen bei Ausfall digitaler Zahlungssysteme.",
- m0:"Kein oder kaum Bargeld, vollst&auml;ndige Abh&auml;ngigkeit von Karte und App.",
- m3:"Begrenzter, teilweise geplanter Barbestand.",
- m5:"Ausreichender Bestand in kleiner St&uuml;ckelung, dezentral gelagert, mit Rotationsplan, Notfallumschlag je Person und rechtskonformer Aufbewahrung.",
- d:"Man vertraut darauf, dass Guthaben immer verf&uuml;gbar ist. Nicht jede Lage l&auml;sst das zu.",
- tag:"Zypern 2013", e:"Guthaben oberhalb der Einlagensicherung wurden zwangsweise zur Bankenrettung herangezogen. Die Verteilung &uuml;ber mehrere Institute rettete die Liquidit&auml;t."},
-
-{n:"11",t:"Mentalit&auml;t, F&uuml;hrung &amp; Entscheidung",f:"Einsatzpsychologie &amp; F&uuml;hrung",fr:"Modulspezifischer Fragenblock",
- warum:"Von allen zw&ouml;lf Modulen ist dieses das billigste und in der Auswertung regelm&auml;&szlig;ig das wirksamste. Es ist zugleich das einzige, das als Gewichtungsfaktor auf alle anderen wirkt: Wer hervorragend ausgestattet ist, aber unter Druck nicht handelt, bekommt in den betroffenen Modulen eine Abwertung. Material ohne Entscheidungsf&auml;higkeit ist Inventar.",
- wo:"Bewertet werden Stressregulation, Verantwortungs&uuml;bernahme, Entscheidungsf&auml;higkeit unter Unsicherheit, Priorisierung, Kommunikation unter Druck, Rollenakzeptanz und Durchhalteverm&ouml;gen. Zwei Kriterien richten sich nach au&szlig;en: die Widerstandsf&auml;higkeit gegen gezielte Manipulation und die F&uuml;hrung der eigenen Familie oder Gruppe, wenn es unangenehm wird.",
- k:["Stress- und Emotionsregulation","Verantwortungs&uuml;bernahme","Entscheidungsf&auml;higkeit unter Unsicherheit","Priorisierung &amp; Fokus","Kommunikation unter Druck","Rollen- und F&uuml;hrungsakzeptanz","Durchhaltef&auml;higkeit","Lern- und Anpassungsf&auml;higkeit","Werte- und Entscheidungsrahmen","Praktische Einsatzbereitschaft","Manipulations-Resilienz","Familien- und Gruppenf&uuml;hrung unter Druck"],
- mk:"K3 Entscheidungsf&auml;higkeit unter Unsicherheit", md:"Tragf&auml;hige Entscheidungen treffen bei unvollst&auml;ndiger Informationslage und unter Zeitdruck.",
- m0:"Entscheidungsblockade bei Unsicherheit, wartet auf vollst&auml;ndige Information.",
- m3:"Zeitgerechte Entscheidungen in den meisten Lagen, anf&auml;llig bei Komplexit&auml;t.",
- m5:"Ruhige, zeitgerechte, dokumentierte Entscheidungen, klare Priorisierung, Entscheidungsrahmen vorab definiert.",
- d:"Man glaubt, im Ernstfall funktioniere man automatisch. Ohne ge&uuml;bte Abl&auml;ufe wird improvisiert.",
- tag:"Israel 2024", e:"Familien mit regelm&auml;&szlig;igen &Uuml;bungen reagierten bei Vorwarnungen deutlich schneller als unge&uuml;bte. &Uuml;bungskultur ist der st&auml;rkste einzelne Resilienzfaktor."},
-
-{n:"12",t:"Gesamtsystem &amp; Integration",f:"Systemanalyse &amp; Integration",fr:"Modul&uuml;bergreifende Auswertung",
- warum:"Dieses Modul bewertet nicht Sie, sondern Ihr System. Es ist der Grund, warum Protect-12 keine Sammlung von zw&ouml;lf Einzelgutachten ist. Gepr&uuml;ft wird das Zusammenspiel: Wo h&auml;ngen mehrere gr&uuml;ne Module an einem einzigen Punkt, welche Kaskade l&auml;uft los, wenn dieser Punkt f&auml;llt, und in welcher Reihenfolge wirken Ma&szlig;nahmen &uuml;berhaupt? Aus diesem Modul stammt die Priorisierung Ihres Umsetzungsplans.",
- wo:"Bewertet werden Koh&auml;renz und Abh&auml;ngigkeiten der elf vorherigen Module, Redundanz auf Systemebene, Priorisierung, Alltagstauglichkeit, Dokumentation und Eskalationslogik. Grundlage ist eine Abh&auml;ngigkeitsmatrix aller Module gegeneinander. Zwei Kriterien schauen nach vorn: das &Uuml;bungsregime und die Entscheidungsarchitektur, also Pl&auml;ne, feste Abl&auml;ufe und der Notfallordner.",
- k:["Koh&auml;renz der Module","Abh&auml;ngigkeiten zwischen Modulen","Redundanz auf Systemebene","Priorisierung &amp; Reihenfolge","Umsetzbarkeit im Alltag","Dokumentation &amp; &Uuml;bersicht","Entscheidungs- und Eskalationslogik","Anpassungs- und Lernf&auml;higkeit","Pflege- und &Uuml;berpr&uuml;fungsroutinen","Gesamtrobustheit des Systems","Trainings- &amp; &Uuml;bungsregime","Dokumentation &amp; Decision-Architektur"],
- mk:"K2 Abh&auml;ngigkeiten zwischen Modulen", md:"Erkennung und aktives Management kritischer Abh&auml;ngigkeiten, etwa Energie auf Wasser auf Nahrung auf Medizin.",
- m0:"Abh&auml;ngigkeiten nicht erkannt, Kaskadenrisiken ignoriert.",
- m3:"Teilweise erkannt und dokumentiert, Kaskadenszenarien nicht durchgespielt.",
- m5:"Vollst&auml;ndige Abh&auml;ngigkeitsanalyse, Kaskadenszenarien durchgespielt, Kompensationsma&szlig;nahmen definiert.",
- d:"Man optimiert einzelne Module. Die Schwachstelle sitzt oft an der Naht zwischen ihnen.",
- tag:"Schweden 2024", e:"Die nationale Sicherheitsdoktrin baut B&uuml;rger gezielt in die Resilienzkette ein, vom Haushalt &uuml;ber die Nachbarschaft bis zur Gemeinde. Anschlussf&auml;higkeit ist Teil der Bewertung."}
-];
-
-var idx=document.getElementById("idx");
-M.forEach(function(m){ var a=document.createElement("a"); a.href="#m"+m.n;
-  a.innerHTML='<div class="n">Modul '+m.n+'</div><div class="t">'+m.t+'</div>'; idx.appendChild(a); });
-
-var bb=document.getElementById("blattbereich");
-M.forEach(function(m){
-  var s=document.createElement("article"); s.className="bl reveal"; s.id="m"+m.n;
-  s.innerHTML=
-   '<div class="kopf"><div class="bn">Modul '+m.n+' von 12</div><h2>'+m.t+'</h2>'+
-     '<div class="tags"><span>'+m.f+'</span><span>12 Kriterien</span><span>'+m.fr+'</span></div>'+
-     '<span class="gh">'+m.n+'</span></div>'+
-   '<div class="rumpf">'+
-     '<h4>Warum das ein eigenes Modul ist</h4><p>'+m.warum+'</p>'+
-     '<h4>Was in diesem Modul gepr&uuml;ft wird</h4><p>'+m.wo+'</p>'+
-     '<h4>Alle zw&ouml;lf Pr&uuml;fkriterien</h4><div class="k12">'+
-       m.k.map(function(k,i){ return '<span><i>K'+(i+1)+'</i>'+k+'</span>'; }).join("")+'</div>'+
-     '<h4>Wie tief gemessen wird</h4>'+
-     '<div class="mess"><div class="ml">Beispiel-Messlatte aus diesem Modul</div>'+
-       '<h5>'+m.mk+'</h5><div class="dsc">'+m.md+'</div>'+
-       '<div class="stufen">'+
-         '<div class="s0"><div class="sn">0</div><div class="sl">Kritisch</div><p>'+m.m0+'</p></div>'+
-         '<div class="s3"><div class="sn">3</div><div class="sl">Handlungsbedarf</div><p>'+m.m3+'</p></div>'+
-         '<div class="s5"><div class="sn">5</div><div class="sl">Solide</div><p>'+m.m5+'</p></div>'+
-       '</div>'+
-       '<div class="fuss">So sieht jedes der 144 Kriterien aus: eine ausformulierte Definition f&uuml;r jede Stufe von 0 bis 5. '+
-       'Bewertet wird gegen diese Definition, plus Begr&uuml;ndung, plus ein Satz warum es nicht h&ouml;her steht, plus Konfidenz. '+
-       'Anschlie&szlig;end wird dasselbe Kriterium &uuml;ber alle sechs Zeithorizonte gerechnet.</div></div>'+
-     '<h4>Die Annahme, die in der Praxis scheitert</h4><div class="annahme"><p>'+m.d+'</p></div>'+
-     '<h4>Ein realer Fall</h4><div class="echt"><div class="tag">'+m.tag+'</div><p>'+m.e+'</p></div>'+
-     '<h4>Was daraus in Ihren Unterlagen wird</h4>'+
-     '<div class="liefert">'+
-       '<div><div class="ln">Teil 1</div><h6>F&uuml;nf bis zehn Risiken</h6><p>Je Modul mindestens f&uuml;nf ausformulierte Risiken mit Mechanik, Ausl&ouml;ser und Folgen. Keine Stichworte, sondern erkl&auml;rt.</p></div>'+
-       '<div><div class="ln">Teil 2</div><h6>Ma&szlig;nahmen in drei Horizonten</h6><p>Sofort, mittelfristig, strukturell. Jede Ma&szlig;nahme mit Kostenklasse und Zeitaufwand, gerechnet auf Ihr Budget.</p></div>'+
-       '<div><div class="ln">Teil 3</div><h6>Quick Wins unter 100 Euro</h6><p>Separat ausgewiesen, weil in der Praxis genau diese Punkte am h&auml;ufigsten den gr&ouml;&szlig;ten Sprung bringen.</p></div>'+
-     '</div>'+
-   '</div>';
-  bb.appendChild(s);
-});
-</script>
-</body>
-</html>
+</main>
+<div id="p12-footer">
+</div><script src="assets/p12.js"></script></body></html>
