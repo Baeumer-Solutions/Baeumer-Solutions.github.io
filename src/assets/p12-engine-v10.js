@@ -1,3 +1,7 @@
+/* Scoped Exclusiv Circle adapter: all existing customer routes remain unchanged. */
+if(new URLSearchParams(location.search).get("set")==="exclusiv" && new URLSearchParams(location.search).get("fb")==="exec9"){
+var ecScript=document.createElement("script");ecScript.src="https://protect-12.de/assets/p12-exclusiv-portal-v1.js";ecScript.defer=true;document.body.appendChild(ecScript);
+}else{
 /* Protect-12 Fragebogen-Engine v10 (Katalog v9): wie v9 plus Tabellentyp "tab".
 
    Antwort einer Tabelle = JSON-String eines Arrays von Zeilenobjekten unter answers[id].
@@ -314,3 +318,4 @@ if(!url){ROOT.innerHTML='<p style="font-family:sans-serif;color:#D50000">P12_CON
 fetch(url).then(function(r){return r.json();}).then(boot).catch(function(e){ROOT.innerHTML='<p style="font-family:sans-serif;color:#D50000">Fragenkatalog konnte nicht geladen werden ('+esc(String(e))+').</p>';});
 
 })();
+}
